@@ -1,0 +1,149 @@
+{
+  "date": "2026-07-21",
+  "items": [
+    {
+      "index": 1,
+      "title": "China’s open-weights AI strategy is winning",
+      "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+      "score": 8.0,
+      "content": "\n--- Top Comments ---\n\n[geophile]: The lesson of the last 50 years of the computer and software marketplace is that free and low-end eventually wins. - PCs destroyed minicomputers. Mainframes survive, but serving a much tinier portion of the market than they used to. - PC office productivity software destroyed expensive professional products. - Windows (low end) and Linux (free) completely destroyed the UNIX marketplace, and again, have taken huge market share from the mainframe world. Ignoring the huge Chinese open-weight mod...\n\n[bg24]: There is no coming back. After all, open-weight is NOT open-source. It is basically free model. And you pay to host it. The value proposition is that 100&#x27;s of providers and host and sell it. 1000s of businesses (eg. Microsoft, Databricks, Palantir to small startups) can run it, finetune it and own the IP and pay only for hosting. On the other hand, you have OpenAI and Anthropic, who need to charge at 90%+ inference margin. It is because of 1) sunk cost, 2) sky-high salaries that they pai...\n\n[frollogaston]: &quot;Getting there in the US needs more nuanced strategy and support than we’re seeing today.&quot; What is the author suggesting the US or US companies do exactly? Playing China&#x27;s game would mean copying Chinese models. Not saying it&#x27;s wrong to copy the models, since the closed models were trained on scraped data to begin with, just that one depends on the other.\n\n[overgard]: I do think open-weights models are going to &quot;win&quot; in the sense that they&#x27;re probably going to be dominant when the hardware to run them becomes affordable. (which might be a while). Although I guess you could probably rent the GPU&#x27;s yourself to hypothetically save on costs. (I&#x27;m a little skeptical -- I&#x27;ve heard of companies doing this and the inference bills are surprisingly high -- assuming the sources are correct. I don&#x27;t know if a lot of people  really wa...\n\n[tyleo]: I’m suspicious of some quotes here, “80% of startups using Chinese models,” doesn’t seem quite right to me. I just interviewed at several startups and they were all using the US models. Maybe they have some minor use of Chinese models but the bread-and-butter of most of these businesses model use is the Claude and Codex subscriptions.",
+      "summary": "China’s open-weights AI strategy is winning",
+      "detailed_summary_zh": "文章认为中国开放权重AI模型策略正在获胜，因为开源和低成本最终会主导市场。社区讨论指出开放权重并非真正开源，但相比闭源模型具有成本优势。",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "AI compute stocks bounce as Hut 8, IREN land billions in new contracts",
+      "url": "https://www.coindesk.com/business/2026/07/20/hut-8-surges-on-usd9-8-billion-ai-data-center-lease-lifting-compute-sector",
+      "score": 8.0,
+      "content": "AI compute stocks bounce as Hut 8, IREN land billions in new contracts\nThe deals sparked a rebound in AI compute stocks after investors questioned demand for new data center capacity.\n- Hut 8 shares jumped as much as 17% Monday after the company signed a $9.8 billion, 15-year lease for the second phase of its Beacon Point AI data center campus in Texas.\n- IREN surged 19% after announcing $2.8 billion in new multiyear cloud services contracts with AI developers\n- The announcement helped lift other bitcoin miners repositioning as AI infrastructure providers, with Cipher Mining, TeraWulf and the CoinShares Bitcoin Miners ETF all climbing.\nShares of bitcoin miners turned AI infrastructure providers surged Monday after Hut 8 (HUT) and IREN (IREN) announced billions of dollars in new contracts, easing concerns that demand for AI computing capacity may be slowing.\nHut 8 rose as much as 17% after signing a 15-year, $9.8 billion lease for the second phase of its Beacon Point AI data center campus in Texas. The agreement, with the same investment-grade customer that leased the first phase, doubles the tenant's footprint to 704 megawatts (MW) and fully commercializes the site's 1 gigawatt of power capacity.\nIREN gained as much as 19% after announcing $2.8 billion in new multiyear cloud services contracts with AI developers. The company raised its year-end AI Cloud annualized run-rate revenue target to more than $4 billion, saying about 85% of that revenue is now under contract.\nThe news spilled over to peers across the high-performance compute sector. Mining (CIFR) gained 11% and TeraWulf (WULF) added 6.4%. Bitcoin miners Riot Platforms (RIOT) and MARA Holdings (MARA) advanced 5% and 9%, respectively. The CoinShares Bitcoin Miners ETF (WGMI) rose 8.5%.\nThe share-price surge comes after AI infrastructure companies stumbled in recent weeks as investors questioned whether the industry's breakneck spending on data centers would continue.\nEarlier buoyant sentiment cooled after Chinese firms released open-source AI models that appeared to require less computing power than Western rivals. Before that, reports that Facebook parent Meta Platforms (META) was considering a cloud service to rent AI computing capacity also raised concerns that additional supply could weigh on data center operators.\nUPDATE (July 20, 15:08 UTC): Rewrites headline, first paragraph to add IREN contracts, adds IREN in third paragraph and updates share price moves.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nWhy it matters:\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.",
+      "summary": "AI compute stocks bounce as Hut 8, IREN land billions in new contracts",
+      "detailed_summary_zh": "Hut 8和IREN分别获得98亿美元和28亿美元的AI数据中心合同，推动AI计算股票大幅反弹。这些交易缓解了市场对AI计算需求放缓的担忧，并提振了转型为AI基础设施提供商的比特币矿企股价。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Moonshot AI IPO push follows Kimi, Alibaba AI releases that shook bitcoin",
+      "url": "https://www.coindesk.com/tech/2026/07/20/moonshot-ai-ipo-push-follows-kimi-alibaba-ai-releases-that-shook-bitcoin",
+      "score": 8.0,
+      "content": "Moonshot AI IPO push follows Kimi, Alibaba AI releases that shook bitcoin\nDays after Kimi K3 rattled chip stocks, Moonshot is moving toward a Hong Kong listing at a $30 billion-plus valuation while Alibaba's Qwen goes open-weight.\n- Moonshot AI is seeking shareholder approval for a Hong Kong IPO within six months as it closes a funding round that could lift its valuation above $30 billion.\n- Demand for Moonshot’s new Kimi K3 open-weight model has surged, pushing annual recurring revenue to $300 million and forcing a temporary pause on new subscriptions.\n- The strong performance of K3 and Alibaba’s Qwen3.8 open-weight model is intensifying competitive pressure on U.S. AI providers and feeding volatility in bitcoin and semiconductor stocks tied to the AI investment cycle.\nMoonshot AI is preparing to go public within six months, moving to tap capital markets days after its Kimi K3 model upended assumptions about how far behind China's AI sector really is.\nThe company has distributed a shareholder resolution seeking its backers' approval for a Hong Kong listing, Bloomberg reported Monday, a step that signals an IPO could come within half a year. The company is also wrapping a funding round that may value the three-year-old startup at more than $30 billion, up from the $20 billion it commanded in a Meituan-led round in May.\nThe timing follows a sharp jump in the numbers driving the company’s growth. Moonshot's annual recurring revenue, a gauge of forward sales, reached $300 million in June, up from $200 million in April.\nIt temporarily paused new subscriptions for K3 over the weekend as demand outstripped capacity, with daily sales said to be up at least sixfold since the model launched last week.\nK3 forms the bedrock of why the listing looks different than it would have a month ago. The open-weight model outscored every rival - except Anthropic's Claude Fable 5 and OpenAI's GPT-5.6 - on certain parameters, and topped a widely watched coding benchmark outright, triggering a semiconductor selloff on Friday that dragged crypto down with it.\nMoonshot is not moving alone, however. China’s Alibaba said Sunday its Qwen3.8 model is going open-weight, a 2.4 trillion-parameter system the company claims trails only Fable 5 among frontier models. A preview version, Qwen3.8-Max, is already live across Alibaba's developer tools.\nOpen weights let anyone run a model without paying its maker, which pressures the pricing power of American providers that charge by the token.\nA parameter is one of the internal dials a model adjusts during training to get better at predicting text. Modern models have billions or trillions of them, and the count is the rough, imperfect shorthand the industry uses for raw size.\nBitcoin has traded as a proxy for the AI capital cycle all month, and its miners have rebuilt themselves into AI data-center landlords whose leases depend on demand for compute holding up.\nThe next read comes this week, when Alphabet, Tesla and Intel report earnings that will show whether AI capital spending is still climbing, and whether the miners betting on it keep their footing.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nWhy it matters:\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.",
+      "summary": "Moonshot AI IPO push follows Kimi, Alibaba AI releases that shook bitcoin",
+      "detailed_summary_zh": "Moonshot AI 计划在六个月内于香港上市，估值超300亿美元，其Kimi K3模型年化收入达3亿美元。同时，阿里巴巴的Qwen3.8开源模型加剧了中美AI竞争，并引发比特币和芯片股波动。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 4,
+      "title": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
+      "url": "https://www.coindesk.com/markets/2026/07/20/inside-cardano-s-van-rossum-hard-fork-and-what-it-means-for-users",
+      "score": 7.0,
+      "content": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users\nThe Van Rossem hard fork moved Cardano to version 11 on Saturday. And for the first time, Cardano's community voted in the upgrade, not the company that built it.\n- Cardano’s Van Rossem hard fork activated on July 18, moving the network to protocol version 11 and lowering smart contract execution costs while preparing for a future scalability upgrade.\n- The upgrade is the first in Cardano’s history to be proposed, debated and ratified entirely through its onchain governance system, rather than by founding developer Input Output, marking a shift in who controls protocol changes.\n- While everyday ADA transactions remain unchanged for now, the fork enables cheaper, more capable smart contracts and lays procedural and technical groundwork for the planned Ouroboros Leios scaling upgrade expected in 2026.\nCardano activated its Van Rossem hard fork on Saturday, moving the mainnet to protocol version 11. The technical changes lower smart contract costs and lay groundwork for an upcoming scalability overhaul.\nBut a more consequential change is who directed the upgrade. For the first time in Cardano's history, it wasn't Input Output, the engineering firm that designed and built the blockchain.\nEvery previous Cardano hard fork was coordinated top-down by the network’s founding entities, chiefly Input Output, but Van Rossem was initiated, debated and ratified entirely through Cardano's onchain governance system, the framework introduced in the so-dubbed Voltaire era that lets stakeholders vote directly on protocol changes.\nIt is the first Cardano upgrade approved end-to-end by the network's own participants rather than its creators.\nOnchain data from Cardanoscan shows the network moved from version 10 in epoch 643 to version 11 in epoch 644, with the action enacted activated Saturday, July 18 at 21:44 UTC after ratification on July 13. Passage required sign-off from three separate bodies, and the tallies show how differently each treated it.\nDelegated representatives — or stakeholders that ADA holders elect to vote on governance proposals on their behalf, similar to representatives in a parliament — voted 78.97% in favor against a 60% threshold.\nThe constitutional committee, a body of elected members that rules only on whether a proposal complies with the Cardano Constitution rather than on its merits, found the hard fork compliant, with all seven members agreeing where five were required.\nInterestingly, the pool operators who actually run Cardano's infrastructure approved the community's first self-directed hard fork by the narrowest of its three margins, with 53.02% of operators voting to approve the upgrade, a reminder that decentralized governance means the founders' preferred outcome is no longer guaranteed.\nUnder Cardano's constitution, the upgrade also required at least 85% of stake pools by active stake to run compatible node software before ratification. Network telemetry showed adoption well ahead of that, with roughly 93% of block production already on version 11 heading into activation.\nWhat is version 11\nOn the technical side, version 11 is an intra-era hard fork, meaning it stays within Cardano's current governance-focused era and does not change the structure of transactions, so the work required to upgrade is minimal for the wider ecosystem.\nIt adds new capabilities to Plutus, the platform developers use to write Cardano's smart contracts, unifying the built-in functions available across the platform's three versions so older applications gain newer features.\nThe upgrade also tightens several of the ledger's validation rules, including one guaranteeing that no two stake pools can reuse the same cryptographic identity key.\n\"As well as Plutus improvements and Plutus Cost Model enhancements, this upgrade lays the foundation for the next upgrade, the Dijkstra era hard fork, which will introduce Ouroboros Leios to Cardano,\" Input Output wrote in a development report on Friday.\nOuroboros Leios is a scaling proposal for the proof-of-stake consensus model that Cardano runs. It is expected later in 2026 and aimed at sharply increasing transactions per second without weakening the protocol's security guarantees.\nVan Rossem is the procedural groundwork for Ouroboros, both in the ledger changes it ships and in the precedent it sets: that Cardano can now upgrade itself by vote.\nThe hard fork is named for Max van Rossem, a Cardano governance contributor who helped shape the network's constitution and died in October 2025.\nWhat the hard fork means for a Cardano user\nThere are no visible changes for someone casually holding or spending ADA. Transactions work the same way, wallets do not need updating and the fee to send ADA is unchanged. The upgrade does not alter how the network looks or feels to use.\nThe benefits arrive through the apps that can be built on Cardano over time. The Plutus changes lower the costs of running a smart contract — the code behind any onchain service — from DeFi protocols to NFT marketplaces.\nA user pays a fee every time they interact with one of those apps, and part of that fee reflects how much computation the contract demands. Cheaper execution means those apps can charge less per transaction, though the savings are not automatic, since developers have to rebuild their contracts to capture it.\nOver time, the larger shift is over who controls what comes next. On most blockchains, a founding company or core team sets the roadmap and users take what they are given.\nVan Rossem showed that Cardano's holders can approve a protocol change themselves, without the founders directing the change. For investors holding ADA, that is the difference between owning a token on a network someone else steers and having a formal vote in where it goes. Whether that is worth more than faster, top-down development is a separate debate, but it is a real change in who holds the wheel.\nMeanwhile, the upgrade a user will actually feel is still ahead. Van Rossem lays the groundwork for Leios, the scaling change meant to sharply increase how many transactions Cardano can process. That is what would deliver faster confirmations and more capacity when the network is busy.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nWhy it matters:\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.",
+      "summary": "Inside Cardano's 'Van Rossum' hard fork, and what it means for users",
+      "detailed_summary_zh": "Cardano于7月18日激活了Van Rossem硬分叉，将网络升级至协议版本11，降低了智能合约执行成本，并为未来的可扩展性升级做准备。这是Cardano历史上首次完全通过链上治理系统提出、辩论和批准升级，标志着协议控制权从创始开发团队转移至社区。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 5,
+      "title": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit",
+      "url": "https://www.coindesk.com/business/2026/07/20/cross-chain-protocol-allbridge-halts-after-usd1-65-million-flash-loan-exploit",
+      "score": 7.0,
+      "content": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit\nThe attacker used a $1.12 million flash loan from Kamino to manipulate pool ratios, enabling them to withdraw assets at favorable rates before bridging funds.\n- Allbridge Core paused its protocol following a $1.65 million flash loan exploit on its Solana liquidity pools.\n- The attacker used a $1.12 million flash loan from Kamino to manipulate pool ratios, enabling them to withdraw assets at favorable rates before bridging funds.\n- Allbridge paused operations for investigation and advised liquidity providers to withdraw, while also asking traders who profited from the imbalance to return funds.\nAllbridge Core has paused its cross-chain stablecoin protocol after an attacker stole roughly $1.65 million from its Solana liquidity pools, according to security firms CertiK and PeckShield.\nAllbridge is a bridge that lets users move assets between blockchains that do not communicate directly. Its Core product uses liquidity pools to transfer native stablecoins such as USDC and USDT without issuing wrapped versions of the assets.\nThe attacker used a $1.12 million flash loan from Solana lending protocol Kamino to rapidly swap USDC and USDT, manipulating the pools’ internal ratios before withdrawing assets at favorable rates, according to Onchain Lens. A flash loan is a loan taken and repaid within the same transaction.\nThe stolen assets were bridged to an Ethereum address and dispersed across additional addresses. It isn’t currently clear how much remains under the attacker’s control.\nAllbridge said it paused the protocol while investigating, and told liquidity providers to withdraw from affected pools. The initial manipulation left the pools imbalanced and created a temporary arbitrage opportunity. Allbridge asked traders who profited from the pricing distortion to return funds for LP compensation.\nAllbridge suffered a similar flash loan attack in 2023 that drained roughly $650,000 from its BNB Chain pools. The firm later said it recovered most of the funds and changed its liquidity and withdrawal calculations. Allbridge had raised $2 million in 2022 to expand the bridge and fund security audits.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.\nWhy it matters:\nCEX trading volumes rose for the first time in five months in June, with spot climbing 15.3% to $1.11T and RWA perpetual volumes surging to a record $311B.",
+      "summary": "Cross-chain protocol Allbridge halts after $1.65 million flash loan exploit",
+      "detailed_summary_zh": "跨链协议Allbridge因Solana流动性池遭遇闪电贷攻击，损失约165万美元后暂停运营。攻击者利用Kamino提供的112万美元闪电贷操纵池比率，以有利汇率提取资产。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Google is working on a new AI chip designed to make Gemini more efficient",
+      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+      "score": 7.0,
+      "content": "Alphabet, Google's parent company, is reportedly working on a new chip designed to make its Gemini models run much more efficiently.",
+      "summary": "Google is working on a new AI chip designed to make Gemini more efficient",
+      "detailed_summary_zh": "谷歌母公司Alphabet正在研发一款新AI芯片，旨在提升其Gemini模型的运行效率。这一举措可能显著降低AI推理成本并加速模型部署。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 7,
+      "title": "OpenAI is scared of open-weight models. Should the US be?",
+      "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+      "score": 7.0,
+      "content": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of  turning AI into a business.",
+      "summary": "OpenAI is scared of open-weight models. Should the US be?",
+      "detailed_summary_zh": "文章讨论了美国对开源大语言模型的担忧，特别是针对中国制造的开源模型，揭示了将AI商业化的挑战。作者认为，禁止开源模型可能适得其反，并引发关于创新与安全平衡的辩论。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "AI’s most important protocol is getting a little bit easier to use",
+      "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/",
+      "score": 6.0,
+      "content": "Under the new system, the protocol will take a looser, \"stateless\" approach to session IDs on the server side, similar to how most ordinary websites already work.",
+      "summary": "AI’s most important protocol is getting a little bit easier to use",
+      "detailed_summary_zh": "AI领域最重要的协议正在简化，采用无状态会话ID方式，类似普通网站的工作模式。这一变化降低了使用门槛，但属于渐进式改进。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "YouTube clarifies policies around AI slop and upsetting videos",
+      "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
+      "score": 6.0,
+      "content": "YouTube has updated its monetization policies to more clearly define the kinds of AI-generated and low-quality videos that can’t earn ad revenue.",
+      "summary": "YouTube clarifies policies around AI slop and upsetting videos",
+      "detailed_summary_zh": "YouTube更新了其变现政策，更明确地定义了哪些AI生成和低质量视频不能获得广告收入。此举旨在规范平台内容质量，减少AI“垃圾”内容对广告生态的影响。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "UK pension insurers raise exposure to opaque private credit",
+      "url": "https://www.ft.com/content/82e9b2fc-0dd8-4560-837c-2e7695457783?syn-25a6b1a6=1",
+      "score": 5.0,
+      "content": "S&amp;P warns on hard-to-price private assets that make up over 10% of portfolios at L&amp;G, Standard Life and Just Group",
+      "summary": "UK pension insurers raise exposure to opaque private credit",
+      "detailed_summary_zh": "英国养老金保险公司增加对不透明私人信贷的敞口，S&P警告称这些难以定价的私人资产已占L&G、Standard Life和Just Group投资组合的10%以上。这反映了金融风险向非公开市场的转移，可能影响系统稳定性。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 11,
+      "title": "Morgan Stanley cashes in on AI boom with debt deals",
+      "url": "https://www.ft.com/content/e2a3ea85-e4f2-4344-ac70-8410333e8749?syn-25a6b1a6=1",
+      "score": 5.0,
+      "content": "Wall Street bank emerges as chief architect of financing structures behind build-out of data centres",
+      "summary": "Morgan Stanley cashes in on AI boom with debt deals",
+      "detailed_summary_zh": "摩根士丹利通过为数据中心建设设计融资结构，在AI热潮中获利。该行成为华尔街数据中心债务交易的主要架构师。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 12,
+      "title": "Portfolio construction in the shadow of the AI bubble",
+      "url": "https://www.ft.com/content/9523ead6-6599-4ed0-9b14-dfa70fd1b180?syn-25a6b1a6=1",
+      "score": 4.0,
+      "content": "Hard choices on all sides",
+      "summary": "Portfolio construction in the shadow of the AI bubble",
+      "detailed_summary_zh": "文章讨论了在AI泡沫背景下投资组合构建的艰难选择。内容较为泛泛，缺乏具体技术或市场深度分析。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    }
+  ]
+}

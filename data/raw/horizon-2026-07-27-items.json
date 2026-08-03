@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-27",
+  "items": [
+    {
+      "index": 1,
+      "title": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google",
+      "url": "https://www.coindesk.com/tech/2026/07/27/nvidia-forms-37-member-ai-security-alliance-without-openai-anthropic-or-google",
+      "score": 8.0,
+      "content": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google\nThe chipmaker and 36 other companies say defenders need AI they can run themselves. Major AI players OpenAI, Anthropic and Google are not among them.\n- Nvidia and 36 other technology firms have formed the Open Secure AI Alliance to develop open-source security tools for AI, arguing that closed models can hinder incident response.\n- The group, which includes Microsoft, IBM, Red Hat, Cloudflare, CrowdStrike, Palantir, Databricks, Hugging Face, SpaceXAI and the Linux Foundation, was galvanized by a Hugging Face breach in which OpenAI test models escaped a sandbox and closed AI tools blocked forensic analysis.\n- Members are open-sourcing systems such as Nvidia’s NOOA, Microsoft’s MDASH and SpaceXAI’s Grok Build as crypto networks face escalating, irreversible attacks that exploit trusted controls rather than breaking cryptography.\nAmerican chipmaker Nvidia and 36 other major technology companies launched an alliance on Monday to build open-source security tools for AI systems, citing an incident this month in which closed AI models obstructed a company's attempt to investigate a breach of its own servers.\nThe Open Secure AI Alliance includes Microsoft, IBM, Red Hat, Cloudflare, CrowdStrike, Palantir, Databricks, Hugging Face, SpaceXAI and the Linux Foundation, and builds on the foundation's existing Akrites initiative and OpenSSF work. OpenAI, Anthropic and Google, which develop the industry's most capable closed models, are not listed among the inaugural partners.\nThe founding argument rests on the Hugging Face breach disclosed last week, as CoinDesk reported.\nOpenAI said models it was testing on an internal hacking benchmark, running with cyber safety refusals deliberately lowered, escaped their test environment and gained the ability to run commands on Hugging Face's production servers.\nAccording to Nvidia, the cleanup then ran into a problem of its own. Closed AI tools, \"unable to distinguish attackers from defenders,\" blocked the forensic analysis. Hugging Face instead ran GLM 5.2, an open-weight model from Chinese developer Z.ai, on its own infrastructure to review more than 17,000 actions and contain the intrusion.\n\"When defenders cannot inspect, adapt and run advanced AI on their own infrastructure, their ability to respond is constrained at exactly the moment speed matters most,\" Nvidia said.\nMembers are contributing specific tools. NVIDIA released NOOA, a framework for making AI agent behavior easier to test and audit, on GitHub. Microsoft contributed MDASH, a system that runs multiple AI agents to find exploitable bugs, while SpaceXAI open-sourced its Grok Build coding agent and said it plans to release the weights of its Grok models.\nThe alliance arrives with cybersecurity teams on heightened alert globally, and crypto networks and wallets remain a favored target, since a single successful exploit can pay out enormously and cannot be reversed.\nFour protocols were drained of more than $35 million in a single stretch last week, including AFX, Verus and Bitcoin scaling network B², and none of the attacks broke any cryptography. Each abused a trusted control, the same class of long-horizon, multi-step work that AI systems are getting measurably better at. Unlike a corporate breach, a drained contract cannot be undone.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google",
+      "detailed_summary_zh": "英伟达与36家公司成立开放安全AI联盟，旨在开发开源AI安全工具，排除OpenAI、Anthropic和谷歌等主要AI公司。联盟源于Hugging Face的安全事件，强调封闭模型阻碍事件响应，成员将开源多个安全系统。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "Circle buys nearly 1,000 blockchain patents from IBM",
+      "url": "https://www.coindesk.com/business/2026/07/27/circle-buys-nearly-1-000-blockchain-patents-from-ibm",
+      "score": 8.0,
+      "content": "Circle buys nearly 1,000 blockchain patents from IBM\nThe portfolio covers blockchain technology, banking, insurance, and cloud security, though the financial terms of the deal were not disclosed.\n- Circle acquired nearly 1,000 blockchain-anchored patents from IBM, becoming the largest holder of such patents in the United States.\n- The portfolio covers blockchain technology, banking, insurance, and cloud security, though the financial terms of the deal were not disclosed.\n- Circle plans to use these patents to support USDC, its Arc blockchain, and financial tools for AI agents, while exploring future IBM partnerships.\nStablecoin issuer Circle (CRCL) has acquired nearly 1,000 issued blockchain-anchored patents from IBM, a deal the firm said makes it the largest holder of blockchain patents in the United States.\nThe portfolio spans more than 680 patent families covering blockchain technology, banking, financial services, insurance, enterprise infrastructure, supply-chain verification and cloud security, according to a press release.\nThe deal’s financial terms weren’t disclosed.\nIBM was already among the largest U.S. blockchain patent holders before the sale. A December 2025 analysis by patent analytics firm PatSnap credited it with 790 patents, alongside Advanced New Technologies and Bank of America.\nCircle said the portfolio would support USDC, Circle Payments Network, its Arc blockchain and financial tools designed for AI agents. Circle and IBM also plan to explore further commercial opportunities, the document adds.\n“Intellectual property is critical to advancing our mission and expanding adoption of onchain infrastructure,” said Sarah Wilson, Circle’s general counsel and corporate secretary.\nCircle received its first patent, covering parallel blockchain data processing, in December 2023. It had earlier joined the LOT Network to protect its products from patent-assertion firms.\nThe company did not disclose how many acquired patents were issued in the U.S., whether IBM retained licensing rights or whether it plans to license or enforce the portfolio.\nCoinDesk has reached out to Circle for comment but hasn’t heard back at the time of writing. CRCL shares are up 2.5% in premarket trading.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Circle buys nearly 1,000 blockchain patents from IBM",
+      "detailed_summary_zh": "Circle从IBM购买了近1000项区块链专利，成为美国最大的区块链专利持有者。这些专利覆盖区块链、银行、保险等领域，旨在支持USDC和Arc区块链。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Google’s AI search is rapidly becoming the default, new data shows",
+      "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
+      "score": 8.0,
+      "content": "Google’s AI Overviews now appear in 43% of searches, underscoring how quickly AI-generated answers are becoming the default way people discover information online.",
+      "summary": "Google’s AI search is rapidly becoming the default, new data shows",
+      "detailed_summary_zh": "谷歌的AI概览功能现在出现在43%的搜索中，凸显了AI生成的答案正迅速成为人们在线发现信息的默认方式。这一趋势标志着搜索引擎领域的重要转变。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 4,
+      "title": "Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research",
+      "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+      "score": 8.0,
+      "content": "After two years in stealth, Safe Superintelligence has announced a long-term partnership with Nvidia as it prepares to scale to its next phase.",
+      "summary": "Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research",
+      "detailed_summary_zh": "Safe Superintelligence 与 Nvidia 建立长期合作，准备扩大其 AI 研究规模。该合作标志着从隐身模式进入新阶段，可能加速 AI 安全领域的发展。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 5,
+      "title": "Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack",
+      "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+      "score": 8.0,
+      "content": "\"The first autonomous agent cyberattack is an unprecedented event. It deserves an unprecedented response!\"",
+      "summary": "Hugging Face CEO calls for ‘radical transparency’ after ‘unprecedented’ OpenAI hack",
+      "detailed_summary_zh": "OpenAI遭受首次自主智能体网络攻击，Hugging Face CEO呼吁彻底透明反应。这一事件标志着AI安全领域的新挑战，需要行业协同应对。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
+      "url": "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack",
+      "score": 7.0,
+      "content": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack\nBitkub was the victim of a cyberattack in May 2021, which led to hacks stealing 1.7 billion baht across 16 different digital assets.\n- Thailand’s SEC alleged that cryptocurrency exchange Bitkub and two of its former directors concealed a cyberattack that led to the theft of around 1.7 billion baht ($50 million) in May 2021.\n- The SEC alleged that Sakolkorn Sakavee and Thaweesap Rawan made false statements in company documents to deceive the regulator.\n- While the SEC and Bitkub made good the losses by the end of October that year, the regulator said it discovered that Bitkub did not disclose the incident accurately in relevant reports from that period.\nThailand’s Securities and Exchange Commission (SEC) alleged that cryptocurrency exchange Bitkub and two former directors concealed a cyberattack that led to the theft of around 1.7 billion baht ($50 million), according to reports in local media on Thursday.\nThe SEC filed a criminal complaint against Bitkub with the Economic Crime Suppression Division (ECD), accusing the exchange of providing false information and alleging that former directors Sakolkorn Sakavee and Thaweesap Rawan made false statements in company documents to deceive the regulator, the reports said.\nBitkub was the victim of a cyberattack in May 2021, and 16 different digital assets were subsequently stolen, according to SEC’s investigation.\nThe SEC and Bitkub made good the losses by the end of October that year. The regulator said it discovered Bitkub did not disclose the incident accurately in relevant reports from that period.\nThe SEC’s case will now proceed to a police investigation followed by possible public prosecution, the reports said.\nBitkub is Thailand’s biggest crypto exchange, with 24-hour trading volume of more than $500 million. It did not immediately respond to CoinDesk’s request for comment.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
+      "detailed_summary_zh": "泰国证券交易委员会指控加密货币交易所Bitkub及其两名前董事隐瞒了一起导致约5000万美元损失的网络攻击。该事件发生在2021年5月，涉及16种数字资产被盗，委员会称Bitkub未准确披露事件。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "Crypto is the canary in the coal mine for the quantum computing threat, experts say",
+      "url": "https://www.coindesk.com/markets/2026/07/27/crypto-is-the-canary-in-the-coal-mine-for-the-quantum-computing-threat-experts-say",
+      "score": 7.0,
+      "content": "Crypto is the canary in the coal mine for the quantum computing threat, experts say\nAs estimates for “Q-Day” move closer, experts warn that crypto’s slow governance, not its cryptography, may be the biggest obstacle to defending against quantum attacks.\n- Quantum computing could first expose vulnerabilities in crypto networks, positioning Bitcoin as an early warning system for broader financial infrastructure risk.\n- The real bottleneck is governance, not cryptography, as Bitcoin’s slow, consensus-driven upgrade process lags behind centralized institutions.\n- “Q-Day” is a gradual threat, not a single moment, with attackers needing only enough quantum power to break encryption before assets lose value.\nQuantum computing is a risk factor for every encrypted system on the planet, including major banks. But crypto, due to the way it works, may be the technology that gets tested first.\n\"Cryptocurrencies are the canary in the coal mine,\" Eddy Zervigon, CEO of Quantum Xchange, said in an interview with CoinDesk. Zervigon's firm builds infrastructure to shield networks, including financial ones, from quantum-enabled attacks, and he's blunt about where the first casualty is likely to show up.\n\"That's the first place of attack because of the decentralized nature,\" Zervigon said. \"Once you see it happening there, then you know that someone somewhere has a cryptographically relevant quantum computer.\"\nA cryptographically relevant quantum computer, capable of breaking the elliptic-curve cryptography underpinning the Bitcoin blockchain's signatures, along with the encryption securing bank rails, doesn't exist yet. The consensus estimate for when it will is compressing, not stretching.\n\"The folks spending billions of dollars, like Microsoft, IBM, and others developing quantum computers, generally believe there will be a commercially relevant, cryptographically relevant quantum computer in the 2029 timeframe,\" Zervigon said. \"That's not me making stuff up. That's based on what people like Arvind Krishna at IBM have said.\"\nThat estimate is consistent with recent hardware developments. Earlier this year, Google researchers revealed that breaking the elliptic-curve cryptography safeguarding top cryptocurrencies like bitcoin and ether would require fewer than 500,000 physical qubits, a 20-fold decline from previous estimates. That prompted several observers, including Google, to pull forward the so-called Q-Day deadline to 2029.\nThe White House, meanwhile, is aiming to develop a powerful quantum computer by 2028 and shift high-value assets and federal data to post-quantum cryptography by 2030. \"That sets the clock. It creates a sense of urgency,” Zervigon said.\nConsensus speed is the real risk factor\nZervigon isn't alone in pointing to slow governance, not cryptography, as crypto's weak point.\nDeutsche Digital Assets framed it as a clear cut speed differential between TradFi and decentralized rails.\n\"The difference — and this is the honest answer to the 'Bitcoin is uniquely vulnerable' narrative — is governance speed,\" the bank wrote on July 23.\nIt explained that an investment bank like JPMorgan does not need to get a go ahead from millions of pseudonymous global participants before upgrading its cryptographic infrastructure.\n“It needs a board resolution, a budget, and a vendor. Large financial institutions can and will migrate to post-quantum standards faster, more quietly, and more predictably than a decentralised public blockchain. That is not an argument against Bitcoin. It is an argument for taking its governance process seriously,” Deutsche Digital Assets added.\nAcademic literature, such as the 2024 arXiv paper \"Downtime Required for Bitcoin Quantum-Safety\" validates this argument citing Bitcoin's own upgrade history as the cautionary precedent.\n\"Before any upgrade process can be commenced, a 90% consensus among Bitcoin miners has to be achieved over the particular details of the upgrade,\" the researchers wrote. \"Historically, considerable changes to the Bitcoin network have been met with high resistance. A notable example of this was the SegWit upgrade in 2017.\"\nThat upgrade triggered disagreement in the community to such an extent that the Bitcoin blockchain eventually split into several different versions through hard forks, creating the Bitcoin Cash and Bitcoin Gold networks.\nThe takeaway, therefore, is that post-quantum cryptography itself could be ready in time. What's uncertain is whether Bitcoin's governance layer can arrive at a 90% consensus to deploy the defenses.\nQ-Day isn't a print, it's a trend\nMarkets tend to model this as a binary event, where encryption holds until a specific date, then it doesn't. Zervigon says that framework is wrong, and it understates how early the risk actually bites.\n\"Everybody talks about the moment you can break an algorithm,\" he said. \"You don't necessarily need to do it in one moment to be effective. If it takes me three months or six months to decrypt data that still has value, I've achieved the same goal.\"\nThat collapses the usual timeline math. A quantum computer doesn't need enough throughput to break a signature in real time to be a threat, it only needs enough throughput to get there before the underlying data or funds stop being worth stealing.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Crypto is the canary in the coal mine for the quantum computing threat, experts say",
+      "detailed_summary_zh": "量子计算对加密货币构成潜在威胁，专家指出加密网络可能是最先暴露漏洞的领域。真正的瓶颈在于治理而非密码学，比特币缓慢的共识升级流程可能滞后于集中式机构。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "Making sense of the panic over Chinese AI",
+      "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
+      "score": 7.0,
+      "content": "On the latest episode of Equity, we discussed why Moonshot AI's Kimi seemed to panic Silicon Valley and Wall Street.",
+      "summary": "Making sense of the panic over Chinese AI",
+      "detailed_summary_zh": "本文讨论了Moonshot AI的Kimi模型为何引发硅谷和华尔街的恐慌，分析中国AI快速发展对西方科技界的冲击。文章指出这一现象反映了中美AI竞争加剧的现状。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "European start-up with SpaceX ambitions aims for a $2bn valuation",
+      "url": "https://www.ft.com/content/f91661b4-5d1d-4da0-b00d-88c1bc4fe5b0?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "The Exploration Company in talks to raise $300mn for reusable space capsules",
+      "summary": "European start-up with SpaceX ambitions aims for a $2bn valuation",
+      "detailed_summary_zh": "一家欧洲初创公司正寻求以20亿美元估值融资3亿美元，用于开发可重复使用的太空舱，对标SpaceX。这反映了私营航天领域的持续活跃和欧洲在商业太空竞赛中的进展。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 10,
+      "title": "Nvidia Credit Risk Jumps in Swaps Market on AI Deal Talks",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-27/nvidia-credit-risk-jumps-in-swaps-market-on-ai-deal-talk-reports",
+      "score": 5.0,
+      "content": "The cost of protecting Nvidia Corp.’s debt against default surged by the most on record Monday, after reports of the chipmaker being in conversations on more than $750 billion of artificial intelligence infrastructure deals stoked fears about the company’s obligations.",
+      "summary": "Nvidia Credit Risk Jumps in Swaps Market on AI Deal Talks",
+      "detailed_summary_zh": "英伟达的信用违约互换价格周一创纪录飙升，因报道称该公司正在洽谈超过7500亿美元的人工智能基础设施交易，引发市场对其债务义务的担忧。这反映了大型科技公司在巨额AI投资中面临的财务风险。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "date": "2026-07-29",
+  "items": [
+    {
+      "index": 1,
+      "title": "The inside story of how a hike in Hong Kong changed crypto trading forever",
+      "url": "https://www.coindesk.com/business/2026/07/29/the-inside-story-of-how-a-hike-in-hong-kong-changed-crypto-trading-forever",
+      "score": 8.0,
+      "content": "It was sometime in 2015, on a hiking trail in Hong Kong, that the perpetual swap — also called a perpetual future or a “perp” for short — was born. Ben Delo, the mathematician and co-founder of BitMEX, was walking with a friend called Bavik, a derivatives trader, wrestling with a problem that had been nagging at him for months.\nBitMEX had been trying everything. Quarterly futures, monthly futures, weekly futures, 48-hour futures, even a contract that lasted just 24 hours before resetting. Nothing was working. Customers kept complaining that their positions were closing without warning. They wanted something that looked like spot, traded like spot, but gave them the leverage that only a derivatives exchange could offer.\n\"What if a future never expired?\" Delo asked.\nBavik's answer was immediate. \"Mathematically, it would be worth infinity,\" Delo recalls him saying.\nTechnically, he was right. A futures contract's value is partly derived from the time remaining until expiry and the cost of carrying the position. Remove the expiry date and that carrying cost compounds indefinitely, making the theoretical value infinite. But then Bavik offered a solution: just charge traders the bitcoin overnight rate, the way you might charge LIBOR (London Interbank Offered Rate) in traditional finance.\nThere was one problem. \"I said, what's that?\" Delo recalls. \"He said, ‘Hm, just charge them the overnight bitcoin interest rate’. I said, ‘I don't think that exists.’\"\nSo Delo built it. And in doing so, he invented one of the most consequential financial products of the 21st century.\nBuilding BitMEX\nTo understand why the perpetual swap mattered, you have to understand what BitMEX was trying to be before it became the most liquid bitcoin market in the world.\nWhen Delo and Arthur Hayes founded the exchange in 2014, they were not thinking about retail traders chasing 100x leverage. They were thinking about institutional hedgers. Hayes had worked at Deutsche Bank, while Delo spent years building high-frequency trading systems at JP Morgan. Their thesis was that bitcoin miners and payment companies needed a way to hedge their exposure, and BitMEX would provide the professional infrastructure to do it.\n\"We built it basically to look like a Bloomberg terminal,\" Delo said. \"We used Reuters instruction codes. Z14 meant expiring December 2014.\"\nThe institutions never came. What came instead were traders, sophisticated but retail, people who had financial experience but were playing with their own money. And what they wanted was not guaranteed settlement or low leverage. They wanted to speculate, and they wanted to do it with as much size and leverage as possible.\nBitMEX listened. By Halloween 2015, the exchange was offering 100x leverage, made possible by a real-time margining system that Delo had built from scratch. \"I built the order matching engine, the position keeping system, the margining system, the PnL system, the settlement system,\" he says. \"Everything on that was me.\"\nThe issue with futures, even short-dated ones, is basis, the premium at which a futures contract trades above the spot price of the underlying asset. A futures contract trades at a premium to the underlying asset, and that premium reflects an implied interest rate. In traditional finance, this is well understood. In crypto, in 2015, it confused almost everyone.\n\"Our customers would be like, why is bitcoin so expensive on your exchange?\" Delo recalled \"And we would say, ‘Well, if it is expensive, why don't you short it?’ And that would blow some of their minds. You could short something rather than just long it.\"\nBitMEX kept shortening the expiry of its listed futures contracts. Weekly futures. Then 48-hour. Then a contract that relisted every single day.\n\"Every 24 hours, it would expire or settle. And people would say, ‘Why did you liquidate me?’ And we'd say, ‘We didn't liquidate you. Your position closed at the index price. You got exactly the spot price,’” Delo said. “They're like, ‘We don't understand.’\"\nThe customers knew what they wanted, even if they could not articulate it. They wanted a leveraged product that never went away. Delo's hiking trail conversation gave him the framework to build one.\nInventing the funding rate\nThe perpetual swap launched in May 2016 with little ceremony. The core mechanic was straightforward: a futures contract with no expiry date, anchored to the spot price through a daily funding rate. Longs paid shorts, or vice versa, depending on whether the swap was trading above or below spot. BitMEX took no cut. The rate was purely a balancing mechanism.\nThe early funding rate was derived from third-party lending markets, primarily Bitfinex, where traders could borrow dollars or lend out Bitcoin. Take the dollar borrow rate, subtract the Bitcoin borrow rate, and you had something approximating the cost of holding a long position.\nIt worked, until it did not. As Bitcoin began its rise through 2016 and into 2017, demand for long exposure on BitMEX overwhelmed the funding mechanism. The swap started trading at a persistent premium to spot, causing the contract price to drift away from the actual price of bitcoin and undermining the mechanism designed to keep them aligned. The interest rate being imported from Bitfinex was simply not high enough to reflect what was happening on BitMEX itself.\n\"We had to dynamically adjust how we calculated that funding rate,\" Delo said.\nThe original funding rate had been imported from external lending markets, a fixed reference point that could not respond to conditions on BitMEX itself. The new approach replaced that with a dynamic one, looking inward at how the swap was actually trading rather than outward at what Bitfinex was charging to borrow dollars.\nThe solution was elegant. Rather than looking outward to other markets, BitMEX would look inward. The exchange began measuring how far the swap was trading above or below spot over an eight-hour window, treating that gap as an implied basis, and back-calculating the annualized rate from it. That rate would then be charged at the end of the next eight-hour window.\n\"This was very important because you gave market makers notice of how you were calculating it, what it would be, and then when you would charge it,\" Delo said. \"Because it was paid from longs to shorts, if the swap was trading at a 1% premium, you would charge longs 1% but give 1% to shorts. And then immediately the market makers, knowing that, would come in, short the swap, and anchor it back down to the spot price. It was a dynamic equilibrium.\"\nThis is, in essence, the funding rate mechanism that every major derivatives exchange in the world now uses.\nThe product that took over\nBy 2017, BitMEX was the most liquid bitcoin market on the planet. The exchange was processing $3-4 billion a day, and the perpetual swap was at the center of it all. Price discovery for bitcoin was happening not on Coinbase or Bitstamp but on the BitMEX order book.\nThe concentration of liquidity was itself a product of the swap's design. Before it launched, BitMEX had been running quarterly, monthly, weekly, 48-hour and 24-hour contracts simultaneously, spreading market maker capital thin across six different tenors. The swap collapsed all of that into one instrument.\n\"By offering one product, they [traders] were able to consolidate their liquidity, which meant a more liquid market, tighter spreads,\" Delo said.\nCompetitors noticed. Another competitor exchange copied so literally that it reproduced portions of the BitMEX FAQ without understanding how the product worked, Delo told CoinDesk. Others took the concept more seriously. Eventually, every major exchange in crypto offered its own perpetual swap, each one built on the funding rate architecture that Delo had begun assembling on that Hong Kong hiking trail.\n\"The fact that every other exchange has copied the swap just proves what a financial innovation it is,\" he said. \"I think it now does $40, 50 trillion dollars a year of turnover. It's one of the most successful products in the history of capitalism.\"\nWhat comes next\nBitMEX chose not to patent the perpetual swap. Delo says they considered it and decided the startup's time was better spent building.\n\"We were a scrappy startup,\" he says. \"We thought, just get it out there. If it was any good, the market would show us.\"\nAnd show them the market did. Now, a decade on, the product is starting to attract the attention of traditional finance regulators. The CFTC is reportedly making room for perpetual swaps under its framework, and there is speculation that the CME could eventually list them on equities.\nFor Delo, that prospect is the final validation of something that started as a question on a hillside above Hong Kong, asked by someone who had grown tired of watching his customers complain about positions that kept disappearing.\n\"I think once traditional finance sees the benefits of this financial product,\" he said, \"it'll be impressive.\"",
+      "summary": "The inside story of how a hike in Hong Kong changed crypto trading forever",
+      "detailed_summary_zh": "文章讲述了2015年在香港徒步时，BitMEX联合创始人Ben Delo构思出永续合约（perpetual swap）的过程，解决了期货到期问题，彻底改变了加密货币交易。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "BNY targets $8.6 trillion transfer agency market on blockchain rails",
+      "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails",
+      "score": 8.0,
+      "content": "BNY targets $8.6 trillion transfer agency market on blockchain rails\nThe world’s largest custodian will keep its existing system while adding a digital ownership record for tokenized funds.\n- BNY is shifting its core transfer agency record-keeping onto blockchain to create a single on-chain ownership ledger and reduce reliance on intermediaries.\n- The move will initially support clients including Baillie Gifford, BlackRock and BNY’s Dreyfus unit for what is described as the first fully native U.K.-regulated tokenized fund and other planned tokenized products.\n- While BNY and other major banks are building blockchain-based infrastructure and tokenized deposit networks, the bank expects traditional systems to coexist for years amid ongoing cyber and smart-contract risks.\nBNY, which has more than $59 trillion in assets under custody and administration, is moving one of its core record-keeping businesses onto blockchain as Wall Street builds the infrastructure for tokenized funds, the Financial Times reported Thursday.\n\"We think of BNY as modernizing a function that sits behind every single fund transaction by bringing the books and records onchain,\" Carolyn Weinberg, chief product and innovation officer at the 242-year-old financial services giant.\nBNY, which services about $8.6 trillion in assets across 7.6 million accounts, said moving its transfer agency onto blockchain would create a single record of ownership, cutting out the need for multiple intermediaries.\n\"We fully recognize you've got trillions and trillions of dollars' worth of funds that... will continue to exist on traditional rails,\" said Emily Portney, BNY's global head of asset servicing, the bank's largest business.\nBNY did not immediately respond to a CoinDesk request for further information.\nBaillie Gifford, a BNY client with more than $261 billion under management, will use the service for what the companies describe as the first fully native U.K.-regulated tokenized fund, according to FT. BlackRock and Dreyfus, BNY’s money-market and cash-management business, are expected to use it for planned funds.\nBlackRock, Franklin Templeton and other asset managers have launched tokenized money-market funds in recent years. The funds hold short-term debt and cash but issue ownership interests as blockchain tokens.\nEdwin Mata, CEO and founder of tokenization platform Brickken, estimates that Wall Street will run entirely on blockchain technology by 2030. America's biggest banks, including JPMorgan, Citi and Bank of America, plan to build a shared, tokenized deposit network by the first half of 2027 to protect their deposits from the threat posed by stablecoins.\nBNY does not expect the old system to disappear, FT said. The bank will keep its traditional transfer agent and says trillions of dollars in funds will remain on existing rails for years. Blockchain also brings cyber risks, including bugs in smart contracts and bridges linking networks. BNY is betting that a single ownership ledger can replace some of the costly reconciliation work that still runs through fund administration.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "BNY targets $8.6 trillion transfer agency market on blockchain rails",
+      "detailed_summary_zh": "全球最大托管银行BNY将其核心转让代理记账转移到区块链上，创建单一链上所有权账本，减少中介依赖。此举将支持贝莱德等客户的代币化基金，标志着传统金融基础设施的重大变革。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "BNY to adopt blockchain technology for records in new era for Wall Street",
+      "url": "https://www.ft.com/content/7b1197a5-e59a-4beb-ab83-e800e6ebc527?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Banks rush to embrace tokenised system blurring the lines between traditional finance and digital asset ecosystem",
+      "summary": "BNY to adopt blockchain technology for records in new era for Wall Street",
+      "detailed_summary_zh": "纽约梅隆银行将采用区块链技术进行记录，标志着华尔街进入新时代。银行纷纷拥抱代币化系统，模糊了传统金融与数字资产生态之间的界限。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 4,
+      "title": "Stablecoin firm Brale says new protocol can remove a major hurdle to scaling custom tokens",
+      "url": "https://www.coindesk.com/business/2026/07/29/stablecoin-firm-brale-says-new-protocol-can-remove-a-major-hurdle-to-scaling-custom-tokens",
+      "score": 7.0,
+      "content": "Stablecoin firm Brale says new protocol can remove a major hurdle to scaling custom tokens\nToday's bridge model won't scale as hundreds of companies issue their own stablecoins, fragmenting liquidity, Brale CEO Ben Milne said in an interview.\n- Stablecoin infrastructure firm Brale introduced ION Protocol, an interoperability system that lets participating stablecoins move across blockchains by burning tokens on one chain and minting them on another.\n- The testnet debut comes amid rapid growth and fragmentation in the stablecoin market, with more than 350 tokens and over $300 billion in market capitalization.\n- Unlike traditional blockchain bridges that rely on pre-funded liquidity pools, ION aims to reduce capital requirements and address what Brale sees as a scaling bottleneck for custom stablecoins.\nStablecoin infrastructure firm Brale is rolling out an interoperability protocol designed to end what it says is a bottleneck in the industry's growth: moving a rapidly expanding number of custom stablecoins across blockchains.\nDubbed ION Protocol, it allows participating stablecoins to move between blockchains by burning tokens on one network and minting an equivalent amount on another. Unlike most blockchain bridges, the model does not require liquidity pools to be pre-funded on every supported chain.\nWhile the $300 billion stablecoin market is dominated by Tether's USDT and Circle Internet's USDC, new participants are piling in. Banks, fintechs, crypto firms and asset managers are increasingly issuing their own branded tokens for payments, settlements and tokenized assets.\nData provider CoinGecko already tracks more than 350 of the coins, whose value is pegged to a real-world asset such as a fiat currency, underscoring the growing need for infrastructure to connect an increasingly fragmented ecosystem. Brale argues today's interoperability model won't scale as more issuers introduce their own versions.\nStablecoin scaling problem\nThe company supports over a hundred stablecoin programs across more than 30 blockchains, founder and CEO Ben Milne said in an interview with CoinDesk. Many of its customers process billions of dollars in monthly payment volume while maintaining relatively small stablecoin balances because their tokens are designed for transactions rather than investment.\nMoving assets across blockchains typically depends on liquidity pools or wrapped tokens, requiring capital to be locked up across each supported network. As the number of stablecoins and blockchains grows, the capital requirement grows with it.\n“The liquidity between stablecoin programs is the No. 1 barrier to scaling bespoke stablecoins,” said Milne. “There's not enough capital in the world to solve the problem,” he added.\nWith insufficient capital to build deep liquidity pools for every stablecoin on every blockchain, the current model becomes unsustainable as issuance accelerates. Instead, ION adopts a burn-and-mint approach similar to USDC issuer Circle's Cross-Chain Transfer Protocol (CCTP), extending the model to any participating stablecoin issuer rather than a single token.\nThe protocol debuts with partners including Monad, Rain, Coinflow, Turnkey, Etherfuse, Spark and Canton, initially on testnet before a broader rollout.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "Stablecoin firm Brale says new protocol can remove a major hurdle to scaling custom tokens",
+      "detailed_summary_zh": "稳定币基础设施公司 Brale 推出了 ION 协议，这是一种跨链互操作方案，通过销毁和铸造代币实现稳定币在不同区块链间的转移。该协议旨在解决传统桥接模型依赖预资助流动性池的瓶颈，随着稳定币市场碎片化加剧，ION 能降低资本需求并促进定制稳定币的扩展。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 5,
+      "title": "Ethereum Foundation names pcaversaccio to board amid leadership changes",
+      "url": "https://www.coindesk.com/tech/2026/07/29/ethereum-foundation-names-pcaversaccio-to-board-amid-leadership-changes",
+      "score": 7.0,
+      "content": "Ethereum Foundation names pcaversaccio to board amid leadership changes\npcaversaccio (known as \"pc\"), is a prominent security researcher in the Ethereum ecosystem. His addition brings the foundation's board to four members.\n- The Ethereum Foundation appointed longtime contributor and prominent security community member pcaversaccio to its board on a one-year voluntary term, expanding the leadership group responsible for the organization's long-term strategy and governance.\n- The appointment comes as the Ethereum Foundation undergoes a broader leadership overhaul, with several high-profile departures and new Ethereum-focused organizations spinning out as the foundation refocuses on long-term stewardship.\nThe Ethereum Foundation (EF) has appointed longtime ecosystem contributor pcaversaccio (known as \"pc\") to its board, expanding the group's leadership as it continues to refine the governance of the organization behind the world's second-largest blockchain.\npc, a security researcher and co-founder of the emergency response initiative SEAL 911, joins the board for an initial one-year voluntary term. He has also served on the EF's Silviculture Society, an advisory group that provides informal guidance on preserving the foundation's core principles, including censorship resistance, open source development, privacy and security.\nThe appointment brings the Ethereum Foundation's board to four members: President Aya Miyaguchi, Ethereum co-founder Vitalik Buterin, Swiss legal counsel Patrick Storchenegger and pcaversaccio.\nThe board is responsible for setting the EF's strategic vision and ensuring management's decisions remain aligned with the organization's values, accordinfg to the Foundation. It also serves as a \"security council\" tasked with safeguarding the foundation's mission and ensuring compliance with the laws of Switzerland, where it is currently based.\npc’s appointment comes during a period of significant change at the Ethereum Foundation. In recent months, a number of high-profile researchers and executives have departed the organization, with several launching new Ethereum-focused ventures outside the foundation, as the EF reshapes its role around long-term stewardship rather than acting as the center of ecosystem development.\n“We’re pleased to welcome @pcaversaccio to the EF Board,” the foundation wrote on X. “We look forward to working together to help steward Ethereum’s long-term future.”\nRead more: Ethereum startup EthSystems bets privacy is key to getting banks on public blockchains\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "Ethereum Foundation names pcaversaccio to board amid leadership changes",
+      "detailed_summary_zh": "以太坊基金会任命知名安全研究员pcaversaccio加入董事会，任期一年。此举正值基金会领导层改组，多名高管离职，基金会重新聚焦长期管理。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Hedge funds face demands to stump up collateral as AI stocks tumble",
+      "url": "https://www.ft.com/content/5c8a2816-8f28-4257-8707-b22ebaa6089c?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Scale of losses in recent weeks sparks growing risk aversion on Wall Street",
+      "summary": "Hedge funds face demands to stump up collateral as AI stocks tumble",
+      "detailed_summary_zh": "近期AI股票暴跌导致对冲基金面临追加抵押品的要求，华尔街风险厌恶情绪上升。这一事件反映了AI股票市场波动对金融系统的连锁影响。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 7,
+      "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+      "url": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
+      "score": 7.0,
+      "content": "The deal is Cyera's third acquisition this year.",
+      "summary": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+      "detailed_summary_zh": "Cyera同意以10亿美元收购Oasis Security，旨在保护日益增多的AI代理。这是Cyera今年第三次收购，凸显其在该领域的战略布局。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "AI isn’t taking jobs, yet",
+      "url": "https://www.ft.com/content/e5f66a11-02bc-4caa-bdbf-9ed1f60747f5?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Plus, oil is a problem again",
+      "summary": "AI isn’t taking jobs, yet",
+      "detailed_summary_zh": "这篇来自金融时报的文章指出，人工智能尚未导致大规模失业，同时提到石油问题再次成为焦点。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 9,
+      "title": "Rio Tinto buoyant on AI demand for metals as earnings soar",
+      "url": "https://www.ft.com/content/b65619cf-0a79-443c-beef-ea9410f5caff?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Miner hails outcome of cost cuts and says data centre investments will raise need for commodities",
+      "summary": "Rio Tinto buoyant on AI demand for metals as earnings soar",
+      "detailed_summary_zh": "Rio Tinto报告盈利大幅增长，得益于成本削减和人工智能数据中心对金属需求的预期提升。公司认为AI发展将推动铜、铝等大宗商品需求增加。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 10,
+      "title": "Hint, a new AI startup co-founded by Martha Stewart, offers an AI assistant for homeowners",
+      "url": "https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners/",
+      "score": 6.0,
+      "content": "AI home management startup Hint, co-founded by Martha Stewart, wants to become an “AI for your home,” combining property records, maintenance schedules, home documents, and an AI assistant into a single app.",
+      "summary": "Hint, a new AI startup co-founded by Martha Stewart, offers an AI assistant for homeowners",
+      "detailed_summary_zh": "玛莎·斯图尔特联合创立了一家名为Hint的AI初创公司，致力于为房主提供整合房产记录、维护计划和文档的AI助手。该应用旨在成为家庭的智能管理工具。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 11,
+      "title": "Encore AI raises $30M to build AI agents that learn from customer calls",
+      "url": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls/",
+      "score": 6.0,
+      "content": "The startup analyzes calls, messages, and CRM data to identify effective sales techniques and turn them into playbooks for AI agents.",
+      "summary": "Encore AI raises $30M to build AI agents that learn from customer calls",
+      "detailed_summary_zh": "Encore AI 获得3000万美元融资，用于开发能从客户通话中学习并优化销售话术的AI代理。该技术通过分析通话、消息和CRM数据，提炼有效销售技巧并转化为自动化流程。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 12,
+      "title": "As AI content floods the internet, Pangram raises $9M to detect it",
+      "url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/",
+      "score": 6.0,
+      "content": "Pangram has raised $9 million to scale its AI detection software. The startup has also released a new AI text detection model, Pangram 4, and an AI image detection model in research preview.",
+      "summary": "As AI content floods the internet, Pangram raises $9M to detect it",
+      "detailed_summary_zh": "Pangram 获得 900 万美元融资，用于扩展其 AI 检测软件。该公司还发布了新的 AI 文本检测模型 Pangram 4 以及研究预览版的 AI 图像检测模型。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    }
+  ]
+}

@@ -153,13 +153,34 @@ class RSSScraper(BaseScraper):
         Returns:
             str: Extracted text content
         """
-        # Try different content fields
-        if "summary" in entry:
-            return entry.summary
-        if "description" in entry:
-            return entry.description
+        # Try different content fields (skip empty strings)
+        content = entry.get("summary", "")
+        if content:
+            return content
+        content = entry.get("description", "")
+        if content:
+            return content
         if "content" in entry and entry.content:
-            # content is usually a list
-            return entry.content[0].get("value", "")
+            content = entry.content[0].get("value", "")
+            if content:
+                return content
+
+        # Fallback: RSS feed didn't provide content, try to fetch full article
+        link = entry.get("link", "")
+        if link:
+            try:
+                import subprocess
+                import trafilatura
+
+                result = subprocess.run(
+                    ["curl", "-s", "-L", "--max-time", "15", link],
+                    capture_output=True, text=True, timeout=20
+                )
+                if result.returncode == 0 and result.stdout:
+                    text = trafilatura.extract(result.stdout)
+                    if text and len(text) > 100:
+                        return text
+            except Exception:
+                pass
 
         return ""

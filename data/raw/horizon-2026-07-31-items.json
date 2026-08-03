@@ -1,0 +1,149 @@
+{
+  "date": "2026-07-31",
+  "items": [
+    {
+      "index": 1,
+      "title": "Bitcoin's quantum plan assumes some algorithms break. AI just weakened one in 60 hours",
+      "url": "https://www.coindesk.com/tech/2026/07/29/bitcoin-s-quantum-plan-assumes-some-algorithms-break-ai-just-weakened-one-in-60-hours",
+      "score": 8.0,
+      "content": "Bitcoin's quantum plan assumes some algorithms break. AI just weakened one in 60 hours\nThe HAWK system isn't deployed anywhere, and Bitcoin doesn't use it. But is sitting in the same quantum race that Bitcoin developers are scrambling to finish.\n- Anthropic’s Claude Mythos Preview model uncovered a flaw in the proposed HAWK digital-signature scheme that effectively halves its smallest key strength, undermining one of the candidates to replace current web and banking signatures in a post-quantum world.\n- The AI-driven attack, which cost about 60 hours and $100,000 in computing, slashed the work needed to break HAWK’s smallest parameter set from roughly 2^64 to 2^38 operations, while rendering larger, compensating key sizes far less attractive.\n- Although today’s bitcoin and ether signatures are unaffected, the results reinforce warnings that classical cryptanalytic attacks are rapidly improving, just as bitcoin and other networks debate how and when to migrate to quantum-resistant cryptography.\nAI heavyweight Anthropic said earlier this week that its Claude Mythos Preview model had discovered an attack that halves the effective key strength of HAWK, a proposed replacement for the digital signatures that protect online banking and web payments.\nThe work took about 60 hours and roughly $100,000 in computing costs, against an algorithm that had survived two years and two rounds of expert human review.\nDigital signature schemes such as HAWK prove that a message or data set came from whoever holds a particular digital key that points to that exact message. Bitcoin uses one every time a coin moves, and so does every website showing a padlock in the browser.\nThe versions in use today are expected to fail to quantum computers, and HAWK is one of the candidates under review to replace them. It has not been publicly deployed anywhere.\nNothing in the research affects bitcoin or ether currently, as both secure transactions with elliptic curve signatures, which neither attack had targeted. HAWK is not one of the schemes bitcoin would migrate to.\nBIP-360, the proposal to give bitcoin quantum-resistant addresses, specifies three algorithms NIST has already standardized, and includes several deliberately so users have fallbacks if one is later broken by quantum or classical advances.\nWhat changed is the speed of the classical side. BIP-361, the companion proposal that would freeze more than a third of bitcoin's supply, argues that the migration window is closing because cryptographic attacks are improving by up to 20-fold. Anthropic's results align with that trend, with a model behind it.\nAgainst HAWK’s smallest parameter set, Anthropic said the expected cost of recovering a key fell from about 2^64 operations to 2^38. Larger keys remain impractical to attack, but doubling key sizes to compensate removes most of what made HAWK attractive.\nThe company disclosed the attack to HAWK’s authors in June and coordinated publication with NIST’s public mailing list.\nA second result improved attacks on a deliberately weakened version of AES, the cipher used across the industry to encrypt wallet files, by factors of 200 to 800.\nImportantly for crypto developers, Anthropic said the model produced smaller improvements, under tenfold, against Poseidon, the hash function that underpins many zero-knowledge proof systems, including those securing rollups and privacy protocols.\nClaude, the firm’s popular AI tool, initially refused the AES problem, telling researchers it was “genuinely hard\" and that there was “nothing easy to find.” But after three short prompts, it produced a billion output tokens over three days and found the improvement. Verifying it took two Anthropic researchers nearly a month.\nThe timing sits oddly well. Privacy network Zcash activated an upgrade on Tuesday, introducing a new shielded pool designed to remain recoverable if quantum computers become available.\nThe schemes meant to carry both through that transition are now being stress-tested by something that works faster than the people designing them.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "Bitcoin's quantum plan assumes some algorithms break. AI just weakened one in 60 hours",
+      "detailed_summary_zh": "Claude Mythos模型在60小时内发现HAWK数字签名方案的漏洞，将其安全强度从2^64降至2^38，成本约10万美元。尽管比特币当前不受影响，但该结果凸显了经典密码学攻击的快速进步，量子安全迁移迫在眉睫。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "url": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+      "score": 8.0,
+      "content": "As experts have warned for the last two years, some companies — like Microsoft and now Google — are finding and patching an exponential number of bugs in their products, thanks to the use of LLMs and AI tools.",
+      "summary": "Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "detailed_summary_zh": "Google表示，借助AI工具，其在6月份修复的Chrome漏洞数量超过了前两年的总和。这凸显了大型语言模型在软件安全漏洞检测和修复中的巨大潜力。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 3,
+      "title": "Okta buys AI security startup Permiso — source says for about $200M",
+      "url": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/",
+      "score": 8.0,
+      "content": "The deal gives Okta identity threat detection capabilities as enterprises seek to secure AI agents and other non-human identities across cloud environments.",
+      "summary": "Okta buys AI security startup Permiso — source says for about $200M",
+      "detailed_summary_zh": "Okta以约2亿美元收购AI安全初创公司Permiso，以增强对AI代理和非人类身份的威胁检测能力。这笔交易反映了企业对AI安全需求的增长。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 4,
+      "title": "In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
+      "url": "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/",
+      "score": 8.0,
+      "content": "Cybersecurity experts told TechCrunch that one of the biggest lessons to be taken from the OpenAI hack against Hugging Face has nothing to do with AI, but traditional cybersecurity defense.",
+      "summary": "In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
+      "detailed_summary_zh": "这篇报道分析了OpenAI黑客攻击Hugging Face的事件，强调传统网络安全防御的重要性，而非AI相关漏洞。专家认为这次攻击虽然快速且嘈杂，但并非不可阻止。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 5,
+      "title": "Microsoft is openly competing with OpenAI, Anthropic more than ever",
+      "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
+      "score": 8.0,
+      "content": "Microsoft pitched its own homegrown AI models, harnesses, and even a Mythos competitor on Wednesday, telling Wall Street it plans for continued growth.",
+      "summary": "Microsoft is openly competing with OpenAI, Anthropic more than ever",
+      "detailed_summary_zh": "微软在财报会议上向华尔街展示了自研AI模型和工具，公开与OpenAI和Anthropic竞争。这表明微软在AI领域的战略转变，从合作伙伴转向直接竞争者。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue",
+      "url": "https://www.coindesk.com/tech/2026/07/30/the-economics-behind-the-aave-proposal-to-ditch-6-chains-that-earn-chump-change",
+      "score": 7.0,
+      "content": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue\nA governance proposal would shut deployments on Sonic, Scroll, zkSync, Metis, Soneium and Aptos, and retire 50 asset markets elsewhere. Deposits on some have fallen more than 90%.\n- Aave plans to exit six low-usage blockchains, affecting about $98 million in deposits, as part of a broader cleanup of underperforming markets.\n- The six chains together account for less than 1% of Aave’s roughly $14 billion in assets and generate under $5,000 in quarterly revenue each, far below the cost of maintaining them.\n- Aave will freeze these markets to new activity and make borrowing prohibitively expensive so users unwind positions voluntarily, framing the move as both a cost-cutting and risk-reduction measure.\nAave, the largest decentralized lending protocol, is considering a proposal to abandon six of the blockchains it had expanded onto, in a cleanup affecting about $98 million in deposits. The proposal would see Aave retire “low-adoption” asset markets and 21 expired Pendle principal tokens across 11 Aave deployments, while shutting down its presence on Sonic, Scroll, zkSync, Metis, Soneium and Aptos entirely.\nThe arguments is based on economics. Each of the six deployments now generate less than $5,000 a quarter. Metis, Soneium and Aptos bring in under $1,000 each, according to the proposal. That does not cover the cost of running them, which includes maintaining price feeds, liquidation systems and monitoring for each market.\nFor context, Aave’s Ethereum mainnet deployment generates more than $142 million a year and Base about $4.7 million, while Metis produces roughly $3,000.\nDeposits have collapsed across all six over six months. Soneium fell 95%, available liquidity on Aptos dropped 94%, zkSync declined 88% to about $844,000, Scroll fell 86% to roughly $2 million, Metis dropped 79%, and Sonic, the largest of the group, fell 74% to just under $8 million.\nThe six hold a cominbed $13 million in deposits against Aave’s roughly $14 billion across 23 chains, DefiLlama data shows, or under 1% of the protocol’s assets.\nAave’s borrowers paid about $888 million in interest over the past year, but almost all of it flows straight back out to the people who supplied the money. Aave itself kept roughly $117 million, according to DefiLlama, or about 13 cents of every dollar collected. The quarterly accounts show the same split. Of $156 million in gross revenue in the second quarter.\nThe numbers stop being marginal and become trivial when applied to six chains. Each generates under $5,000 a quarter in revenue, and Metis, Soneium and Aptos bring in less than $1,000 each. At Aave’s usual take, the protocol’s own share of a $5,000 quarter is a few hundred dollars. Metis, on those terms, is worth roughly the price of a dinner.\nThe timing is explained by the bottom line, which is falling. Gross revenue dropped from $198 million in the first quarter to $156 million in the second, a decline of a fifth. Third-quarter figures are one month old and running well below that pace, with liquidation fees the clearest casualty, down from $27 million in the second quarter to under $200,000 so far.\nExisting positions would not be forcibly closed. The markets would be frozen to new deposits, borrowing and collateral use, with supply and borrowing limits cut to a single token, 99% of borrower interest routed to Aave’s treasury and a 5% base borrowing rate introduced, making it expensive enough to stay that remaining users leave on their own.\nThe proposal could be seen as the logical conclusion of Aave’s new direction that was set out months ago. In December, the Aave Chan Initiative proposed rolling back deployments on zkSync, Metis and Soneium as having “proven to lack product market fit,” and pushed a rule requiring any future deployment to commit to at least $2 million in annual revenue.\nAave has cast the cleanup as risk reduction as much as cost-cutting: one factor overlaps the other.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "The economics behind Aave proposal to ditch 6 chains that earn loose change in revenue",
+      "detailed_summary_zh": "Aave提议关闭6个低收入的区块链部署，这些链的存款总额约9800万美元，每季度收入不足5000美元，远低于维护成本。此举旨在削减成本和降低风险，冻结市场并逐步清退用户头寸。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "Institutional crypto trading hits a record 72% as Wall Street calms crypto's wild swings",
+      "url": "https://www.coindesk.com/markets/2026/07/30/institutional-trading-hits-a-record-72-as-wall-street-quietens-down-crypto-s-wild-swings",
+      "score": 7.0,
+      "content": "Institutional crypto trading hits a record 72% as Wall Street calms crypto's wild swings\nA new report from market maker Wintermute found that institutions now dominate crypto trading, driving lower volatility, selective altcoin flows and growth in tokenized assets.\n- Institutions accounted for a record 72% of spot trading volume on Wintermute's OTC desk in the first half of 2026.\n- The report says institutional capital is reducing volatility while concentrating liquidity in a smaller group of cryptocurrencies.\n- Demand for crypto derivatives and tokenized real-world assets continued to grow as professional investors expanded beyond spot trading.\nInstitutional investors are now shaping crypto markets more than retail traders, marking what Wintermute has described as a turning point in the evolution of digital assets.\nAccording to the firm's latest market report, institutions accounted for roughly 72% of spot trading volume on its over-the-counter (OTC) desk during the first half of 2026, the highest share on record and a sharp increase from about 61% in the second half of last year.\n\"As crypto works through a bear market, with retail largely absent and preoccupied with equities, the structure underneath is easier to see,\" the report said. \"The asset class is maturing, whatever recent price action suggests.\"\nRather than chasing short-term price swings, institutional investors tend to operate under defined mandates and risk limits, holding positions over longer periods. The result, the report said, is a market with lower volatility and liquidity concentrated in a smaller group of assets.\nRealized volatility has fallen from roughly 70% in earlier market cycles to around 45% in the current one, according to Wintermute's analysis. The report also found institutional investors trade a relatively narrow universe of tokens, while retail investors continue to spread activity across a much larger number of assets.\nThat concentration could make future altcoin rallies more selective.\n\"The result is a market where the flow that increasingly sets direction is concentrated in fewer names, traded more selectively,\" the report said. It added that broad-based rallies, where most alternative cryptocurrencies rise together, are becoming less likely as institutional capital focuses on a handful of assets.\nDerivatives and tokenization gain traction\nThe report also points to growing use of derivatives as another defining trend. Wintermute said notional trading volume in altcoin options on its OTC desk increased about 3.4 times from the second half of 2025 to the first half of 2026, driven largely by investors seeking yield rather than outright price exposure. At the same time, contracts for difference, or CFDs, are being used across a wider range of cryptocurrencies for directional trading, hedging and basket strategies.\nBeyond trading, tokenized real-world assets continued to gain momentum, with the value of tokenized assets climbing nearly 50% to $31 billion during the first six months of the year, while average monthly transfer volume more than doubled to $9 billion. The firm said institutions are primarily adopting tokenized Treasuries, money market funds and private credit, while retail investors remain more active in tokenized equities.\nWhile Wintermute expects retail participation to return during the next crypto bull market, it argues institutional influence is unlikely to fade. Instead, it said the market is increasingly taking on the characteristics of its largest participants, with professional investors shaping liquidity, pricing and the types of assets that attract capital.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "Institutional crypto trading hits a record 72% as Wall Street calms crypto's wild swings",
+      "detailed_summary_zh": "据Wintermute报告，2026年上半年机构在加密货币现货交易中的占比达到创纪录的72%，标志着市场主导权从散户转向机构。机构资本的涌入降低了市场波动性，并推动了衍生品和代币化资产的需求增长。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "Ethereum enters its second decade after a year of upheaval at the foundation",
+      "url": "https://www.coindesk.com/tech/2026/07/30/ethereum-enters-its-second-decade-after-a-year-of-upheaval-at-the-foundation",
+      "score": 7.0,
+      "content": "Ethereum enters its second decade after a year of upheaval at the foundation\nFew periods in Ethereum's 11-year history have brought as much change, from leadership shakeups at the Ethereum Foundation to institutional adoption, as the past year has.\n- Ethereum's 11th year was defined by a dramatic transformation of the Ethereum Foundation, with leadership departures, layoffs, a new CROPS mandate, and the spinout of EthLabs, Ethereum Systems, and Ethereum Institutional as the organization sought to decentralize its own role in the ecosystem.\n- Despite the internal overhaul, Ethereum continued advancing technically and institutionally, rolling out the Fusaka upgrade while attracting deeper Wall Street adoption through BlackRock, JPMorgan, growing tokenized assets, and more than $11.23 billion in cumulative inflows into U.S. spot Ethereum ETFs.\nOn July 30, 2015, Ethereum launched with an ambitious vision: to become a decentralized world computer. Eleven years later, the blockchain has evolved into the base layer for billions of dollars in tokenized assets and the settlement layer underpinning much of decentralized finance. Yet as Ethereum enters its second decade, the story is no longer just about the network itself. It is also about the institution that has helped steward it since the beginning, and how that institution has been fundamentally reshaped over the last year.\nFew periods in Ethereum's history have brought as much change to the Ethereum Foundation as the past year has. What began as mounting frustration from developers, investors and community members over the foundation's pace of execution ultimately became the catalyst for the most significant organizational overhaul since Ethereum's launch. Leadership changes, staff departures and structural reforms have transformed not only how the foundation operates, but also the nature of its role within an ecosystem that has grown far beyond any single organization.\nThe criticism had been building for months. As competing blockchains moved aggressively to try to attract developers and users, some members of Ethereum's community questioned whether the foundation had become too inward-looking and too slow to adapt. Calls for greater transparency, clearer priorities and stronger execution grew louder, placing unprecedented scrutiny on an organization that has traditionally preferred to work in silence behind the scenes.\nThat pressure culminated in sweeping internal changes. Over the past 7 months, nine senior members departed the Ethereum Foundation, including co-executive directors Hsiao-Wei Wang and Tomasz Stańczak, whose resignations marked the end of an experiment in dual leadership that had itself been introduced as part of an earlier restructuring effort. The foundation also reduced its workforce by 20% through layoffs, underscoring a broader effort to redefine its mission and focus resources more deliberately.\nThe reorganization wasn't simply about changing leadership. In March, the foundation published its first formal mandate, effectively a manifesto for how it intends to operate going forward. At its core is a framework known as CROPS: Censorship Resistance, Open Source, Privacy and Security, which the foundation described as the non-negotiable principles that should guide every technical and organizational decision. The document also makes another notable commitment: that the foundation's long-term success should be measured by its ability to reduce its own influence over Ethereum, reflecting a belief that the ecosystem should increasingly stand on its own rather than depend on a single institution to guide it.\nThat philosophy has become visible in the emergence of new independent entities that have spun out of the organization, including EthLabs, EthereumSystems and Ethereum Institutional, each designed to focus on different aspects of ecosystem development. While the foundation remains a central steward of protocol research and public-goods funding, the spinouts reflect a conscious move toward distributing responsibilities that were once concentrated under one roof.\nThe timing is fitting. Ethereum has always championed decentralization at the protocol level, eliminating single points of failure through distributed consensus. Now, eleven years after genesis, that same principle is increasingly being applied to its institutions.\nIn the same period, Ethereum's technical roadmap has continued moving forward. The activation of the Fusaka upgrade demonstrated that the network's development process remained resilient. At the heart of the upgrade is PeerDAS, an advance in data availability designed to make layer-2s efficient. While unlikely to generate the same public attention as the network’s most well-known upgrade, the Merge, Fusaka represented another important milestone in Ethereum's scaling strategy.\nAmid Ethereum’s internal changes, Wall Street's relationship with the network has changed dramatically over the past year. What was once viewed primarily as the infrastructure for decentralized finance is increasingly becoming infrastructure for traditional finance as well.\nAsset management giant BlackRock has continued to expand into the Ethereum ecosystem, dipping its toes in Ethereum DeFi, and launching staked ether ETFs, while JPMorgan deepened its blockchain-based settlement initiatives. Together, these efforts illustrate a broader institutional shift toward using Ethereum as the base layer for tokenized real-world assets, drawn by its security, composability and mature developer ecosystem.\nTradFi’s growing acceptance of Ethereum is also evident in the markets. Since their launch in 2024, spot U.S. Ethereum spot exchange-traded funds (ETFs) have accumulated more than $11.23 billion in net inflows, reflecting steadily increasing institutional demand for exposure to ETH. Just as importantly, institutions are no longer limiting their relationship with Ethereum to holding its native asset. They are increasingly issuing financial products directly on the network itself.\nThat contrast may ultimately define Ethereum's eleventh year. Internally, the ecosystem has experienced one of the most consequential periods of introspection in its history, forcing its leading institution to rethink its structure, leadership and purpose. Externally, Ethereum has never appeared more firmly embedded within the global financial system.\nFor much of its first decade, Ethereum's challenge was proving that decentralized infrastructure could work. Its second decade begins with a different challenge: ensuring that the institutions surrounding that infrastructure can evolve without compromising the decentralized principles that made Ethereum possible in the first place.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.\nWhy it matters:\nAnvil is a shared on-chain collateral layer built on a programmable letter of credit: reserve assets as a guarantee -no loan, no interest, keep custody & yield.",
+      "summary": "Ethereum enters its second decade after a year of upheaval at the foundation",
+      "detailed_summary_zh": "以太坊进入第二个十年，基金会经历领导层变动、裁员等重大重组，同时推进技术升级（Fusaka）并加深机构采用（贝莱德、摩根大通等）。尽管内部动荡，但以太坊仍保持了技术发展和华尔街的接纳。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 9,
+      "title": "CoreWeave bows to investor pushback on debt linked to Anthropic contracts",
+      "url": "https://www.ft.com/content/9d2117af-b3ec-4ca4-b00f-6813ab5075ec?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Sweetened terms reflect shifting power dynamics as lenders grow cautious on AI risks",
+      "summary": "CoreWeave bows to investor pushback on debt linked to Anthropic contracts",
+      "detailed_summary_zh": "CoreWeave因与Anthropic合同相关的债务受到投资者反对，被迫调整条款。这反映了贷款方对AI风险日益谨慎，市场权力动态正在转变。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 10,
+      "title": "Has the market lost its mind over AI? You asked, we answered",
+      "url": "https://www.ft.com/content/07e7e839-6d7c-4da3-a207-de5bbfb67746?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Lex head John Foley and tech comment editor Elaine Moore replied to reader questions",
+      "summary": "Has the market lost its mind over AI? You asked, we answered",
+      "detailed_summary_zh": "两位FT编辑回答了读者关于AI市场是否过热的问题，讨论AI投资泡沫与市场情绪。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 11,
+      "title": "‘My life’s screwed’: Korean investors stress out after AI bubble bursts",
+      "url": "https://www.ft.com/content/23f388eb-e8ab-4fb1-b1ca-8e04eb4561a1?syn-25a6b1a6=1",
+      "score": 5.0,
+      "content": "Millions suffer ‘unprecedented’ losses after Samsung and SK Hynix stock tumbles",
+      "summary": "‘My life’s screwed’: Korean investors stress out after AI bubble bursts",
+      "detailed_summary_zh": "韩国投资者因AI泡沫破裂导致三星和SK海力士股价暴跌，遭受“前所未有”的损失。该事件反映了AI行业市场情绪的剧烈波动对实体经济的影响。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 12,
+      "title": "Winner of US-China AI rivalry falls 2% in Hong Kong debut",
+      "url": "https://www.ft.com/content/cc7d24ec-abfe-440b-9e85-4d725567f278?syn-25a6b1a6=1",
+      "score": 5.0,
+      "content": "Shandong-based Innolight supplies data centre equipment to American and Chinese tech groups",
+      "summary": "Winner of US-China AI rivalry falls 2% in Hong Kong debut",
+      "detailed_summary_zh": "山东公司Innolight在港交所上市首日下跌2%，该公司为美国和中国科技集团提供数据中心设备。这一事件反映了中美AI竞争背景下的市场动态。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    }
+  ]
+}

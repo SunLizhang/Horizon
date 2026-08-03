@@ -1,5 +1,7 @@
 """Webhook notification service for Horizon."""
 
+import hashlib
+import hmac
 import json
 import logging
 import os
@@ -487,6 +489,33 @@ class WebhookNotifier:
             ]
 
         delivery = getattr(self.config, "delivery", "summary")
+        if _is_feishu_platform(self.config.platform) and delivery == "summary_and_items":
+            # Feishu text: merge overview + all items into ONE message
+            overview_text = summarizer.generate_webhook_overview(
+                important_items,
+                date,
+                all_items_count,
+                language=lang,
+            )
+            item_lines = []
+            for item_index, item in enumerate(important_items, start=1):
+                item_text = summarizer.generate_webhook_item(
+                    item,
+                    language=lang,
+                    index=item_index,
+                    total=len(important_items),
+                )
+                item_lines.append(item_text)
+            merged = overview_text + "\n\n---\n\n" + "\n\n---\n\n".join(item_lines)
+            return [
+                {
+                    **base_vars,
+                    "message_title": f"Horizon {date} Daily" if lang == "en" else f"Horizon {date} 日报",
+                    "message_kind": "summary_and_items",
+                    "summary": merged,
+                }
+            ]
+
         if delivery == "summary_and_items":
             item_messages: List[dict[str, Any]] = []
             overview = summarizer.generate_webhook_overview(
@@ -571,6 +600,91 @@ class WebhookNotifier:
 
         request_url, body_content, headers = self._render_request_components(variables)
         safe_url = redact_url(request_url)
+
+        # Feishu/Lark: if no body was rendered, build one from the summary variable
+        if (
+            body_content is None
+            and _is_feishu_platform(self.config.platform)
+        ):
+            summary = variables.get("summary") or ""
+            # Strip HTML tags and <details> blocks for clean Feishu text
+            clean = re.sub(r"<[^>]+>", "", summary)
+            # Remove Markdown links: [text](url) → text
+            clean = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", clean)
+            clean = re.sub(r"\n{3,}", "\n\n", clean).strip()
+            # Add cost estimate (DeepSeek: ~¥2/1M input, ¥8/1M output tokens)
+            input_tokens = variables.get("input_tokens", 0)
+            output_tokens = variables.get("output_tokens", 0)
+            try:
+                inp_cost = int(input_tokens) * 2 / 1_000_000 * 7.3  # ¥2 → ~¥7.3/1M input
+                out_cost = int(output_tokens) * 8 / 1_000_000 * 7.3  # ¥8 → ~¥7.3/1M output
+                total_cost = inp_cost + out_cost
+                clean += f"\n\n---\n🧮 本次用量：{int(input_tokens) + int(output_tokens):,} tokens | 💰 估算费用：¥{total_cost:.4f}"
+            except (ValueError, TypeError):
+                pass
+            wrapped = {
+                "msg_type": "text",
+                "content": {"text": clean},
+            }
+            body_content = json.dumps(wrapped, ensure_ascii=False)
+            headers["Content-Type"] = "application/json"
+
+        # Feishu/Lark: wrap plain text body in msg_type/content envelope
+        if (
+            body_content is not None
+            and _is_feishu_platform(self.config.platform)
+        ):
+            try:
+                existing = json.loads(body_content)
+                needs_envelope = "msg_type" not in existing
+            except (json.JSONDecodeError, ValueError, TypeError):
+                existing = None
+                needs_envelope = True
+            if needs_envelope:
+                # Use the full rendered body as the text content
+                text_content = body_content
+                # If body is JSON string, try to get the summary field
+                try:
+                    parsed = json.loads(body_content)
+                    if isinstance(parsed, str):
+                        text_content = parsed
+                except Exception:
+                    pass
+                wrapped = {
+                    "msg_type": "text",
+                    "content": {"text": text_content},
+                }
+                body_content = json.dumps(wrapped, ensure_ascii=False)
+                headers["Content-Type"] = "application/json"
+                logger.debug("Wrapped body in Feishu text envelope")
+
+        # Inject Feishu/Lark timestamp + sign into JSON body when signing_secret is set
+        if (
+            body_content is not None
+            and _is_feishu_platform(self.config.platform)
+        ):
+            secret = self.config.signing_secret or ""
+            if secret:
+                try:
+                    body_dict = json.loads(body_content)
+                except (json.JSONDecodeError, ValueError):
+                    body_dict = None
+                if body_dict is not None and "timestamp" not in body_dict:
+                    timestamp = str(int(datetime.now(timezone.utc).timestamp()))
+                    sign_string = f"{timestamp}\n{secret}"
+                    signature = hmac.new(
+                        secret.encode("utf-8"),
+                        sign_string.encode("utf-8"),
+                        hashlib.sha256,
+                    ).hexdigest()
+                    body_dict["timestamp"] = timestamp
+                    body_dict["sign"] = signature
+                    body_content = json.dumps(body_dict, ensure_ascii=False)
+                    logger.debug(
+                        "Injected Feishu signature (timestamp=%s, sign=%s...)",
+                        timestamp, signature[:16],
+                    )
+
         if body_content is not None:
             logger.debug(
                 "Webhook POST body (%d chars): %s",
@@ -717,6 +831,8 @@ class WebhookNotifier:
         date: str,
         lang: str,
         summarizer: DailySummarizer,
+        input_tokens: int = 0,
+        output_tokens: int = 0,
     ) -> None:
         """Send daily summary webhook notification.
 
@@ -748,6 +864,8 @@ class WebhookNotifier:
 
         self.console.print(f"🔔 Sending {lang.upper()} webhook notification...")
         for message in messages:
+            message["input_tokens"] = input_tokens
+            message["output_tokens"] = output_tokens
             await self.notify(message)
 
     async def send_failure(

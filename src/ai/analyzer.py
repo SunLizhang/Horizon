@@ -160,3 +160,7 @@ class ContentAnalyzer:
         item.ai_reason = result.get("reason", "")
         item.ai_summary = result.get("summary", item.title)
         item.ai_tags = result.get("tags", [])
+        # Store Chinese summary for Feishu briefings
+        summary_zh = result.get("summary_zh", "")
+        if summary_zh:
+            item.metadata["detailed_summary_zh"] = summary_zh

@@ -92,6 +92,11 @@ class DailySummarizer:
         if not items:
             return self._generate_empty_summary(date, total_fetched, labels)
 
+        # For Chinese Feishu briefings: just the numbered list, no header/TOC/source
+        if language == "zh":
+            parts = [self._format_item(item, labels, language, i + 1) for i, item in enumerate(items)]
+            return "".join(parts).strip()
+
         header = (
             f"# {labels['header']} - {date}\n\n"
             f"> {labels['selected_items'].format(total=total_fetched, selected=len(items))}\n\n"
@@ -186,6 +191,19 @@ class DailySummarizer:
             summary = _pangu(summary)
             background = _pangu(background)
             discussion = _pangu(discussion)
+
+        # For Feishu briefings: use numbered format with score + Chinese summary + source URL
+        if language == "zh":
+            star = "⭐" if isinstance(score, (int, float)) or (isinstance(score, str) and score.replace('.','').isdigit()) else ""
+            url_line = f"[原文]({url})" if url else ""
+            lines = [
+                f"{index}. {star}{score} {summary}",
+                f"   🔗 {url_line}" if url_line else "",
+                "",
+            ]
+            return "\n".join(lines) + "\n\n"
+
+        # Source line with parts joined by " · ", link appended at end
 
         # Source line with parts joined by " · ", link appended at end
         source_type = item.source_type.value

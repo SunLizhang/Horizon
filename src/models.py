@@ -283,6 +283,12 @@ class WebhookConfig(BaseModel):
     url_env: Optional[str] = (
         None  # Environment variable name containing the webhook URL
     )
+    signing_secret_env: Optional[str] = (
+        None  # Environment variable name for Feishu/Lark signing secret
+    )
+    signing_secret: Optional[str] = (
+        None  # Direct Feishu/Lark signing secret value (if not using env var)
+    )
     request_body: Optional[Union[str, dict, list]] = (
         None  # POST body: real JSON object or string with #{key} placeholders; if empty, will use GET
     )
@@ -378,6 +384,14 @@ class FilteringConfig(BaseModel):
     category_groups: Dict[str, CategoryGroupConfig] = Field(default_factory=dict)
     default_group: str = "other"
     default_group_limit: Optional[int] = Field(default=None, gt=0)
+    keyword_filters: Optional[List[str]] = Field(
+        default=None,
+        description="If set, only items whose title contains at least one of these "
+        "keywords (case-insensitive) will be sent to AI for scoring. "
+        "Items not matching any keyword get a default low score, "
+        "skipping the AI analysis call entirely to save tokens. "
+        "Example: ['AI', 'GPT', 'OpenAI', '芯片', '融资']"
+    )
 
 
 class Config(BaseModel):

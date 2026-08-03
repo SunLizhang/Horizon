@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-03",
+  "items": [
+    {
+      "index": 1,
+      "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
+      "url": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
+      "score": 7.0,
+      "content": "",
+      "summary": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
+      "detailed_summary_zh": "Coldcard硬件钱包遭攻击，导致8900万美元的比特币损失，投资者因此将资金转回交易所。与FTX崩盘不同，此次事件虽引发市场担忧，但影响可能相对有限。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "Sam Altman and AI’s decel debate",
+      "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      "score": 6.0,
+      "content": "On the latest episode of Equity, we discuss why Sam Altman has calling on the industry to \"pace the rate of AI development.\"",
+      "summary": "Sam Altman and AI’s decel debate",
+      "detailed_summary_zh": "本期TechCrunch的Equity播客讨论了Sam Altman呼吁业界放慢AI发展速度的言论。这一表态引发了关于AI安全与竞争压力的广泛讨论。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 3,
+      "title": "Counting down the days: State of Crypto",
+      "url": "https://www.coindesk.com/policy/2026/08/02/counting-down-the-days-state-of-crypto",
+      "score": 5.0,
+      "content": "",
+      "summary": "Counting down the days: State of Crypto",
+      "detailed_summary_zh": "这篇文章讨论了加密货币的当前状况，包括政策动态和市场趋势。作者分析了影响加密货币行业的关键因素。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 4,
+      "title": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
+      "url": "https://www.coindesk.com/tech/2026/08/02/the-future-of-crypto-payments-won-t-include-on-ramps-or-bridges-fun-ceo-says",
+      "score": 4.0,
+      "content": "",
+      "summary": "The future of crypto payments won't include on-ramps or bridges, Fun CEO says",
+      "detailed_summary_zh": "Fun CEO 表示，未来的加密货币支付将不再需要法币入口（on-ramps）或跨链桥（bridges），意味着支付流程将更加直接和简化。这一观点反映了业界对加密支付基础设施演进的思考，但属于前瞻性评论而非技术突破。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 5,
+      "title": "The reverse bridge: Crypto meets Wall Street using perps",
+      "url": "https://www.coindesk.com/business/2026/08/02/the-reverse-bridge-crypto-meets-wall-street-using-perps",
+      "score": 3.0,
+      "content": "",
+      "summary": "The reverse bridge: Crypto meets Wall Street using perps",
+      "detailed_summary_zh": "本文讨论了加密货币衍生品（特别是永续合约）如何成为连接数字资产与传统华尔街金融的桥梁。内容聚焦于市场结构变化和机构参与度提升，但缺乏技术深度。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    }
+  ]
+}

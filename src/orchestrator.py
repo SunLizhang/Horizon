@@ -143,7 +143,11 @@ class HorizonOrchestrator:
             # 6. Search related stories + enrich with background knowledge (2nd AI pass)
             await self._enrich_important_items(important_items)
 
-            # 7. Generate and save daily summaries for each configured language
+            # 7. Save raw item data to JSON (for Feishu detail lookup)
+            today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            await self._save_raw_items(important_items, today)
+
+            # 8. Generate and save daily summaries for each configured language
             today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
             for lang in self.config.ai.languages:
                 summarizer = DailySummarizer()
@@ -197,6 +201,10 @@ class HorizonOrchestrator:
 
                 # Send webhook notification if configured
                 if self.webhook_notifier:
+                    # Capture token usage before webhook
+                    usage = get_usage_snapshot()
+                    input_tokens = usage.total_input_tokens if hasattr(usage, 'total_input_tokens') else 0
+                    output_tokens = usage.total_output_tokens if hasattr(usage, 'total_output_tokens') else 0
                     await self.webhook_notifier.send_daily_summary(
                         summary=summary,
                         important_items=important_items,
@@ -204,6 +212,8 @@ class HorizonOrchestrator:
                         date=today,
                         lang=lang,
                         summarizer=summarizer,
+                        input_tokens=input_tokens,
+                        output_tokens=output_tokens,
                     )
 
             self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
@@ -662,6 +672,10 @@ class HorizonOrchestrator:
         if not items:
             return
 
+        # Skip enrichment if concurrency is 0 (saves tokens)
+        if self.config.ai.enrichment_concurrency == 0:
+            return
+
         self.console.print("📚 Enriching with background knowledge...")
         ai_client = create_ai_client(self.config.ai)
         enricher = ContentEnricher(ai_client)
@@ -670,6 +684,10 @@ class HorizonOrchestrator:
 
     async def _analyze_content(self, items: List[ContentItem]) -> List[ContentItem]:
         """Analyze content items with AI.
+
+        If keyword_filters is configured, only items whose title matches at least
+        one keyword are sent to AI for scoring — non-matching items are given a
+        default low score to save tokens.
 
         Args:
             items: Items to analyze
@@ -682,7 +700,69 @@ class HorizonOrchestrator:
         ai_client = create_ai_client(self.config.ai)
         analyzer = ContentAnalyzer(ai_client)
 
-        return await analyzer.analyze_batch(items)
+        # Keyword pre-filter: skip AI for items whose title doesn't match
+        keywords = self.config.filtering.keyword_filters
+        if keywords:
+            matched = []
+            skipped = []
+            for item in items:
+                title_lower = (item.title or "").lower()
+                if any(kw.lower() in title_lower for kw in keywords):
+                    matched.append(item)
+                else:
+                    # Give a default low score so they still appear in the pipeline
+                    # but won't pass the ai_score_threshold without real analysis
+                    item.ai_score = 2.0
+                    item.ai_summary = item.title
+                    item.ai_tags = []
+                    skipped.append(item)
+            if skipped:
+                self.console.print(
+                    f"🔑 Keyword filter: {len(matched)} items matched, "
+                    f"{len(skipped)} items skipped (saved ~{len(skipped) * 800} AI tokens)"
+                )
+            items_to_analyze = matched
+        else:
+            items_to_analyze = items
+
+        if items_to_analyze:
+            analyzed = await analyzer.analyze_batch(items_to_analyze)
+        else:
+            analyzed = []
+
+        # Merge skipped items back
+        if keywords:
+            return analyzed + skipped
+        return analyzed
+
+    async def _save_raw_items(self, items: List[ContentItem], date: str) -> None:
+        """Save raw item data to JSON for detail lookup (Feishu @Hermes+N)."""
+        import json
+        from pathlib import Path
+
+        raw_dir = Path("data/raw")
+        raw_dir.mkdir(parents=True, exist_ok=True)
+
+        items_data = []
+        for i, item in enumerate(items):
+            items_data.append({
+                "index": i + 1,
+                "title": item.title,
+                "url": str(item.url),
+                "score": item.ai_score,
+                "content": item.content or "",
+                "summary": item.ai_summary or "",
+                "detailed_summary_zh": item.metadata.get("detailed_summary_zh", ""),
+                "background_zh": item.metadata.get("background_zh", ""),
+                "source_type": item.source_type.value,
+                "feed_name": item.metadata.get("feed_name", ""),
+            })
+
+        data = {"date": date, "items": items_data}
+        path = raw_dir / f"horizon-{date}-items.json"
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        self.console.print(f"💾 Saved {len(items_data)} raw items to: {path}\n")
 
     async def _generate_summary(
         self,

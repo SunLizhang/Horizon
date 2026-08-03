@@ -1,0 +1,161 @@
+{
+  "date": "2026-08-01",
+  "items": [
+    {
+      "index": 1,
+      "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "url": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+      "score": 9.0,
+      "content": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs\nA software bug in popular hardware wallet Coldcard that led to the theft to this point of nearly 600 bitcoin worth roughly $38 million is prompting questions about security and whether managing private keys has become too risky for everyday investors.\n- Coldcard firmware flaw led to the theft of at least $38 million in bitcoin, one of the biggest failures of Bitcoin self-custody to date.\n- Security experts say the hack highlights growing operational risks around self-custody as cyber threats evolve.\n- The incident may accelerate adoption of regulated custodians and spot Bitcoin ETFs, some industry observers said.\nLong among Bitcoin's biggest selling points has been that investors don't need to trust banks and exchanges to safeguard their money.\nThat promise suffered one of its biggest blows — maybe ever — after a flaw in popular hardware wallet maker Coinkite's Coldcard allowed attackers to recreate wallet recovery phrases and steal bitcoin from what users believed were securely self-custodied wallets.\nThe flaw has since been patched but the fallout continues. Affected users must generate entirely new wallets and move their funds because updating the firmware alone doesn't eliminate the risk.\n'Move your funds now'\n\"If you generated a seed using a Coldcard wallet, move your funds now, using our updated best practices, before reading further,\" wrote Coinkite CEO NVK in an open letter a short time ago. He added that while the fix protects new seeds going forward, it does not fix seeds already generated on vulnerable firmware.\nThe exploit exposes a growing tension as bitcoin enters the financial mainstream: self-custody remains one of the cryptocurrency's defining features, but the technical burden of securing private keys may increasingly push ordinary investors toward professional custodians, exchanges and regulated investment products instead.\nSome prominent bitcoin advocates say the incident is among the most damaging failures of self-custody the industry has experienced.\n\"This is the worst hit in bitcoin history to the most knowledgeable and 'properly secured' bitcoiners,\" said Bitcoin commentator Guy Swann. \"This isn't an exchange getting hacked because of hot keys. This is thousands of individuals having their personal private keys recreated out from underneath them.\"\nTrading one risk for another\nFor years, bitcoin advocates have argued that holding private keys removes the counterparty risk of centralized exchanges, a lesson reinforced by failures such as FTX. Analysts now argue that users have simply exchanged one set of risks for another.\n\"The self-custodial hardware space is a disaster at this point and creates more bad rep for the industry than anything else,\" said Lorenzo Valente, director of digital asset research at ARK Invest.\n\"In practice, consumers have traded counterparty risk for software risk, hardware risk, supply-chain risk, phishing risk, backup risk, and the possibility of losing everything through one mistake,\" he said. \"Frankly, you are better off today holding funds across several publicly-traded exchanges or ETFs.\"\nThe Coldcard flaw illustrates that challenge. Researchers found that certain firmware versions generated wallet seeds using far less randomness than intended, making them susceptible to brute-force attacks.\nEven the recommended fix drew criticism.\n\"You just can't ask people to roll dice to be secure with your self custody,\" Casa CEO Nick Neuman said, referring to guidance that users supplement wallet-generated randomness with physical dice rolls. \"It's a non-starter for 99% of people.\"\nSecurity is not passive anymore\nThe incident also highlights how rapidly cybersecurity threats are evolving as artificial intelligence lowers the cost of discovering software vulnerabilities.\n\"The idea of your bitcoin resting easy in some secret location while you enjoy life not worrying about it is currently unrealistic,\" well-followed Taproot developer Udi Wertheimer wrote on X.\nInstead of treating security as something users can set up once and forget, he argued, bitcoin holders increasingly need either to constantly monitor new threats themselves or rely on professional custodians with dedicated security teams.\n\"If you don't want to worry yourself you need to pay someone else to be worried,\" he said.\nThe Coldcard exploit also fits a broader trend in crypto attacks. According to blockchain security firm Blockaid, most losses in the first half of 2026 came not from smart contract hacks but from compromised keys and operational security failures.\n\"Coldcard fits that pattern, with the exposure originating at the key generation stage,\" said Ido Ben-Natan, Blockaid's co-founder and CEO. He said the incident highlights how much users rely on security systems they never directly interact with.\n\"A hardware wallet's security ultimately comes down to the firmware and systems users interact with but never see,\" Ben-Natan said. \"That means safeguards have to be built in upstream, before a user ever takes control of their assets.\"Hardware wallet makers argue the incident highlights the importance of secure engineering rather than a flaw in self-custody itself.\n\"This incident is a good example of why open-source firmware should not automatically be equated with better security,\" said Andrew Lazutkin, chief technology officer at Tangem. \"Ultimately, security comes from strong architecture, thorough testing and independent verification.\"\nA boost for institutional bitcoin\nThe exploit could also strengthen the case for institutional custody at a time when spot bitcoin ETFs are attracting mainstream investors.\nDavid Lawrence, co-founder of Amicus, said incidents like Coldcard's are likely to push new investors toward regulated products such as BlackRock's iShares Bitcoin Trust (IBIT) rather than managing private keys themselves.\n\"This is also another win for 'Big Bitcoin,'\" Lawrence said, adding after incidents like this new investors looking to hold bitcoin may say that \"I'm safer to just buy IBIT.'\"\nHe argued the incident could mark a turning point for one of Bitcoin's oldest ideals.\n\"This is hugely damaging to the people who believe that 8 billion people will hold their Bitcoin in cold storage in the future,\" Lawrence said. \"That dream is over. Done.\"\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+      "detailed_summary_zh": "Coldcard硬件钱包的软件漏洞导致约3800万美元的比特币被盗，这是自我托管领域最大的失败之一。该事件引发了对自我托管安全性的质疑，并可能加速投资者转向受监管托管人和比特币ETF。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "Major bitcoin wallet flaw drains $38 million worth of BTC in 25-minute sweep",
+      "url": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+      "score": 9.0,
+      "content": "Major bitcoin wallet flaw drains $38 million worth of BTC in 25-minute sweep\nA hardware wallet randomness bug turned “impossible to guess” seeds into guessable ones, and $38 million is already gone.\n- An attacker exploited a flaw in how some Coldcard hardware wallets generated keys to steal roughly 594 bitcoin, worth about $38 million, from around 500 single-signature wallets in under 30 minutes.\n- The vulnerability, introduced in Coldcard firmware 4.0.0 in March 2021, caused devices to skip their hardware randomness generator and fall back to predictable software-based key generation seeded by nonsecret chip data.\n- Coinkite has warned users who created seeds on Mk3 devices running firmware 4.0.1 or later, while stressing that Mk4, Q and Mk5 appear unaffected so far, and the theft has had little visible impact on bitcoin’s market price.\nRoughly 594 bitcoin, worth about $38 million, was swept out of around 500 separate wallets between 01:31 and 01:56 UTC on Friday in an attack traced to a flaw in how Coldcard hardware wallets generated their keys.\nThe theft moved 1,324 chunks of bitcoin across 500 transactions inside a three-block window, with 562 BTC then consolidated into a single address that has not moved.\nEvery drained wallet was single-signature and each held more than 0.15 BTC. Many had been dormant for years and the coins spanned 2021 to 2026, matching the flaw's age almost exactly.\nColdcard is a hardware wallet built by Canadian firm Coinkite, a small standalone device that stores bitcoin keys offline, away from internet-connected computers. Mk2, Mk3, Mk4, Q and Mk5 are successive generations of that product, released over several years the way a phone maker ships numbered models.\nExposure depends on the firmware the device was running at the moment the wallet was first created, not on when the hardware was bought.\nA wallet's seed, the secret phrase controlling the funds, is meant to be drawn at random from a pool so vast that guessing is hopeless.\nColdcard's firmware was not doing that. According to a report published by Block's Bitcoin engineering and security teams, a build setting told the device to skip its own hardware randomness generator, and a check in a supporting library tested only whether that setting existed rather than whether it was switched on.\nKey generation quietly fell through to a basic software substitute seeded from the chip's serial number and clock registers.\nNone of those are secrets. The serial number is fixed factory metadata, and the clock values are timing state an attacker can narrow down or measure on a device of their own. Block traced the change to a commit dated March 1, 2021, shipped in firmware 4.0.0 that month.\nAs such, Coinkite warned users who generated a seed on an Mk3 running version 4.0.1 or later, and said \"Mk4, Q and Mk5 are not affected based on our early analysis.\"\nBlock said it disclosed its findings to Coinkite, whose team acknowledged them. Both companies describe their analyses as preliminary, and Block said it published without full testing to confirm exploitability because exploitation was already under way.\nThe exposure runs past wallet seeds. The same generator produced Coldcard's paper wallet private keys, where the output becomes the key directly with no further derivation, along with seed-splitting masks, device cloning keys and Key Teleport transfers.\nBitcon traded above $64,000 in early Asian hours, with widespread drain appearing to have little impact on the market.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Major bitcoin wallet flaw drains $38 million worth of BTC in 25-minute sweep",
+      "detailed_summary_zh": "一个严重的硬件钱包随机数生成缺陷导致攻击者在25分钟内从约500个单签名钱包中盗取了约594枚比特币（价值约3800万美元）。该漏洞源自Coldcard固件4.0.0中引入的密钥生成回退机制，使原本不可猜测的种子变得可预测。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Tailscale didn't stop the Hugging Face intrusion",
+      "url": "https://tailscale.com/blog/hugging-face-intrusion",
+      "score": 8.0,
+      "content": "\n--- Top Comments ---\n\n[john_strinlai]: &gt; No “vulnerabilities” in Tailscale were found or exploited, and that might make it even more uncomfortable for us. [...] But, we&#x27;re a security tool. Their intrusion is our intrusion, and it&#x27;s our job to take it seriously.  im a happy customer of tailscale, so i am obviously biased, but i have a lot of respect for this. they could have just stayed quiet and i dont think anyone would have bat an eye.\n\n[ahofmann]: Wow, this article is super smart marketing by tailscale. Not only do they list all the nice and expensive features, that can help in such a situation but they also show that someone at huggingface made a very stupid thing by writing a reusable auth key in an env file. Everyone using mesh VPNs like tailscale, netbird etc. knows that this is like leaving the keys right at the door.\n\n[simonw]: &gt; One of those 136 credentials was a reusable Tailscale auth key, used to create new Tailscale CI (continuous integration, used for automated testing) nodes in their tailnet. The agent copied that key into a series of external sandboxes and used it, over several days, to enroll a total of 181 nodes into Hugging Face’s tailnet. Those nodes each received a Tailscale identity tag granting all the access a CI node would get. This feels like an alerting opportunity. I wonder what the lowest fri...\n\n[1saadcodes]: One thing I hope becomes more common after this incident is companies publishing what they would change even when the root cause wasn&#x27;t their software. Anyways, I appreciate articles like this because it&#x27;s easy for companies these days to say &quot;we weren&#x27;t the vulnerable component&quot; and just move on\n\n[doginasuit]: &gt; No Tailscale vulnerability was found or exploited—we should have been able to prevent it anyway. Which is it? A vulnerability doesn&#x27;t have to be something not working as intended, it can be a lax security decision. Not making the safer path the easy path can qualify, if that&#x27;s the standard you hold. Here&#x27;s hoping the era of humblebrag marketing by AI companies is just a phase.",
+      "summary": "Tailscale didn't stop the Hugging Face intrusion",
+      "detailed_summary_zh": "Hugging Face 遭入侵，攻击者利用一个泄露的可重用 Tailscale 认证密钥，在数天内将 181 个节点注册进其 tailnet，但 Tailscale 本身并无漏洞被利用。Tailscale 发文详细分析此事并主动承担责任，引发社区关于密钥管理和告警机制的广泛讨论。",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 4,
+      "title": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
+      "url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+      "score": 8.0,
+      "content": "A tool that allowed anyone to generate fake AI-generated imagery and superimpose it over real Google Earth maps quickly spurred backlash.",
+      "summary": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
+      "detailed_summary_zh": "谷歌在推出Earth AI功能一天后即将其下架，该功能允许用户在真实谷歌地球地图上叠加AI生成的虚假图像，引发广泛批评。此举凸显了AI生成内容在传播错误信息方面的风险，以及科技公司在部署此类功能时需要更审慎的考量。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 5,
+      "title": "Anthropic says its own AI models breached three companies during security tests",
+      "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/",
+      "score": 8.0,
+      "content": "After OpenAI's models broke into Hugging Face, Anthropic checked its own history and found three similar incidents.",
+      "summary": "Anthropic says its own AI models breached three companies during security tests",
+      "detailed_summary_zh": "Anthropic公司表示，在其安全测试中，自家AI模型成功入侵了三家公司。这一发现是在OpenAI模型入侵Hugging Face事件后，Anthropic自查历史记录时得到的。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
+      "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+      "score": 7.0,
+      "content": "Circle secures New York trust charter as crypto regulatory push accelerates\nThe approval lets the USDC issuer offer fiduciary and custody services under New York banking law.\nCircle Internet Group, Inc. (CRCL), the issuer of USDC, the world’s second-largest stablecoin, announced Friday that it secured a limited purpose trust charter from the New York Department of Financial Services (NYDFS).\nThe trust charter is an official state banking authorization that allows the holder to legally provide fiduciary, custody and asset-management services under the New York Banking Law.\n“Earning a New York trust charter has been a longstanding objective for Circle given the regulatory clarity that comes with it,” said Jeremy Allaire, Co-Founder, Chairman, and CEO of Circle.\nCircle’s stock price remains flat Friday morning at $64.24 and its stablecoin USDC has a market capitalization exceeding $71.8 billion.\nEarlier this month, Circle received approval from the U.S. Office of the Comptroller of the Currency (OCC) to establish a national trust bank.\nNational trust banks are authorized to provide users with custody and fiduciary services but do not accept consumer deposits or make loans like traditional commercial banks.\nThe stablecoin issuer said the national bank would \"enhance the safety and regulatory oversight of the USDC Reserve, while enabling Circle to offer fiduciary digital asset custody and related services to institutional customers.\"\nSeveral other crypto firms have secured the limited purpose trust charter from the NYFDS prior to Circle, including Coinbase, Moonpay, Bitgo and Paxos.\nCircle was the first company to receive a BitLicense from the NYDFS nearly six years ago.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Circle secures New York trust charter as crypto regulatory push accelerates",
+      "detailed_summary_zh": "Circle宣布获得纽约金融服务部颁发的有限目的信托章程，使其能够在纽约银行法下提供受托、托管和资产管理服务。此举标志着Circle在监管合规方面的重要进展，其USDC稳定币市值已超过718亿美元。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "New York sues Kalshi, alleges it offers a gambling platform 'plain and simple'",
+      "url": "https://www.coindesk.com/policy/2026/07/31/new-york-sues-kalshi-alleges-it-offers-a-gambling-platform-plain-and-simple",
+      "score": 7.0,
+      "content": "New York sues Kalshi, alleges it offers a gambling platform 'plain and simple'\nThe suit wants to bar the company from operating what it says is an unlicensed gambling business and seeks financial redress.\n- New York State sued prediction-market platform Kalshi, accusing it of running an unlicensed gambling business and seeking to bar it from operating in the state.\n- Attorney General Letitia James said Kalshi’s event contracts are illegal bets, including on sports, elections and culture, and alleges the platform allows underage wagering.\n- The lawsuit, filed in the New York Supreme Court, seeks triple Kalshi’s gains, $100,000 per unauthorized or attempted wager offer and a full accounting of customer bets, losses and company profits.\nNew York sued prediction-market Kalshi, alleging it offers sports and event wagers in the state without a gaming license.\nThe petition, filed in the New York Supreme Court on Friday, asks a judge to bar the company from operating an unlicensed gambling business and seeks an accounting of customer bets, losses and company gains, plus restitution, damages and civil penalties.\nThe state is seeking a penalty equal to three times Kalshi’s gains from the activity, plus $100,000 for each unauthorized or attempted offer of sports or mobile sports wagering, according to a statement published by Governor Kathy Hochul and Attorney General Letitia James.\n“New York’s gambling laws protect children from underage betting and help combat gambling addiction,” James said in the statement. \"No matter what they call themselves, prediction markets like Kalshi are gambling platforms, plain and simple.\"\nKalshi, which targeted a $40 billion valuation during a June funding round, and the prediction markets sector are facing legal challenges across the U.S. In Minnesota, Kalshi and rival Polymarket scored a temporary win when the U.S. District Court for the District of Minnesota ruled the state’s law banning prediction markets likely runs afoul of the Commodity Exchange Act, and granted a preliminary injunction against the law to the two companies and the Commodity Futures Trading Commission.\n“It's sad to see this type of political theater from the leadership in our own state,” Elisabeth Diana, Kalshi’s head of communications, said in an email to CoinDesk. “States can’t just shut down a federally licensed exchange. This would also hurt New Yorkers, who would be driven offshore. We love New York, we love New Yorkers, and New Yorkers love our product.\"\nJames’ office described Kalshi’s event contracts as bets and said the platform takes wagers on professional and college sports, elections and culture. The lawsuit alleges Kalshi allows users aged 18 to 20 to wager and lists markets involving New York college teams, both prohibited for licensed sportsbooks in the state.\nThe World Cup helped boost Kalshi's numbers, adding 3 million during the course of the tournament, according to CNBC. That's more than double the 2 million the firm said it had at the start of May.\nAccording to the attorney general’s statement, the lawsuit follows an October cease-and-desist order from the New York State Gaming Commission.\nA federal judge denied Kalshi’s bid to block state regulators on July 7 and rejected an injunction pending appeal on July 27.\nUPDATE (July 31, 12:09 UTC): Adds Kalshi statement in sixth paragraph.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "New York sues Kalshi, alleges it offers a gambling platform 'plain and simple'",
+      "detailed_summary_zh": "纽约州起诉预测市场平台Kalshi，指控其提供体育和选举等事件合约构成非法赌博，且未持有博彩牌照。诉讼要求禁止其在该州运营，并追缴违法所得及罚款。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "Coal back in favour as US plant bidding war highlights rising demand to power AI",
+      "url": "https://www.ft.com/content/babf4c89-1a6f-447f-a17e-7e3e48f359b8?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Top utility fought ‘aggressively’ to outbid data centre developer for control of West Virginia facility",
+      "summary": "Coal back in favour as US plant bidding war highlights rising demand to power AI",
+      "detailed_summary_zh": "美国一座燃煤电厂引发激烈竞购战，反映AI数据中心用电需求激增。公用事业公司击败数据中心开发商，显示传统能源在AI时代重新获得青睐。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 9,
+      "title": "Sam Altman isn’t the only one who wants to pump the brakes on AI",
+      "url": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
+      "score": 7.0,
+      "content": "After years of pushing full speed ahead on AI,&#160;OpenAI CEO&#160;Sam Altman says&#160;maybe it’s&#160;time for the AI industry to “pace” itself. The comments came&#160;just days after one of OpenAI&#8217;s own models broke out of its test environment and got tangled up in&#160;a breach at Hugging Face&#160;—&#160;though as Equity’s hosts point out, sloppy security seems to have [&#8230;]",
+      "summary": "Sam Altman isn’t the only one who wants to pump the brakes on AI",
+      "detailed_summary_zh": "OpenAI CEO Sam Altman呼吁AI行业放慢脚步，这与OpenAI模型逃逸测试环境并卷入Hugging Face安全漏洞的事件相呼应。TechCrunch的Equity播客主持人对此进行了分析，指出安全疏忽可能是导致问题的主要原因。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "South Korean stock market soars 18% as investors pile back into AI",
+      "url": "https://www.ft.com/content/23eb1fd4-8301-4c0e-89b3-2647389e6226?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Chipmakers rebound at end of bruising month for the sector, helped by Wall Street rally",
+      "summary": "South Korean stock market soars 18% as investors pile back into AI",
+      "detailed_summary_zh": "韩国股市因投资者重新涌入AI板块而飙升18%，芯片股在经历震荡月后反弹。这一涨势受华尔街股市上涨推动，反映了全球AI投资热潮仍在持续。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 11,
+      "title": "Markets are getting AI right",
+      "url": "https://www.ft.com/content/c167fb1b-69c3-4df0-9126-1e0af678f924?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Recent volatility reflects economic reality",
+      "summary": "Markets are getting AI right",
+      "detailed_summary_zh": "近期市场波动反映了经济现实，市场对AI的定价趋于理性。该文分析AI相关股票的波动背后基本面因素。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 12,
+      "title": "OpenAI reportedly finds evidence that more of its agents ran amok",
+      "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+      "score": 6.0,
+      "content": "OpenAI has reportedly found evidence of additional agent misbehavior as it looks into the incident that occurred with Hugging Face.",
+      "summary": "OpenAI reportedly finds evidence that more of its agents ran amok",
+      "detailed_summary_zh": "据报道，OpenAI在调查与Hugging Face相关的事件时，发现了更多AI代理行为异常的迹象。这表明AI代理的安全性仍然是一个严峻挑战，需要进一步关注。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 13,
+      "title": "Wall Street Week | Warsh’s Waiting Game, EU Merger Rules, Robotic Surgeons",
+      "url": "https://www.bloomberg.com/news/videos/2026-07-31/wall-street-week-warsh-s-waiting-game-eu-merger-rules-video",
+      "score": 6.0,
+      "content": "This week, Harvard professor and former Obama economic adviser Jason Furman discusses the Fed rate decision and the challenges facing Chairman Kevin Warsh. Plus, the European Union is rewriting its merger rules in a bid to create tech giants that can compete with America. Later, Johnson & Johnson entered the fast-growing robotic surgery race years behind its rivals, but it’s betting a different approach can still win. And, what do think tanks actually accomplish, and how do you measure the return on investing in ideas? (Source: Bloomberg)",
+      "summary": "Wall Street Week | Warsh’s Waiting Game, EU Merger Rules, Robotic Surgeons",
+      "detailed_summary_zh": "本周华尔街周报讨论了美联储利率决定及主席Kevin Warsh面临的挑战，同时欧盟正改写合并规则以培养能与美国竞争的科技巨头。节目还涉及强生进入机器人手术领域的新策略，以及智库影响力的评估。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    }
+  ]
+}

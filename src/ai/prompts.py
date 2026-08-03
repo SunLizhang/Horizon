@@ -59,11 +59,10 @@ Consider:
 - Engagement signals: high upvotes/favorites with substantive discussion indicate community-validated importance
 """
 
-CONTENT_ANALYSIS_USER = """Analyze the following content and provide a JSON response with:
+CONTENT_ANALYSIS_USER = """Analyze the following content. Return JSON with:
 - score (0-10): Importance score
-- reason: Brief explanation for the score (mention discussion quality if comments are provided)
-- summary: One-sentence summary of the content
-- tags: Relevant topic tags (3-5 tags)
+- summary_zh: Two-sentence Chinese summary of what happened (中文，2句话)
+- tags: Relevant topic tags (3-5 tags, in English)
 
 Content:
 Title: {title}
@@ -76,8 +75,7 @@ URL: {url}
 Respond with valid JSON only:
 {{
   "score": <number>,
-  "reason": "<explanation>",
-  "summary": "<one-sentence-summary>",
+  "summary_zh": "<中文2句话摘要>",
   "tags": ["<tag1>", "<tag2>", ...]
 }}"""
 

@@ -1,0 +1,137 @@
+{
+  "date": "2026-07-28",
+  "items": [
+    {
+      "index": 1,
+      "title": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google",
+      "url": "https://www.coindesk.com/tech/2026/07/27/nvidia-forms-37-member-ai-security-alliance-without-openai-anthropic-or-google",
+      "score": 9.0,
+      "content": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google\nThe chipmaker and 36 other companies say defenders need AI they can run themselves. Major AI players OpenAI, Anthropic and Google are not among them.\n- Nvidia and 36 other technology firms have formed the Open Secure AI Alliance to develop open-source security tools for AI, arguing that closed models can hinder incident response.\n- The group, which includes Microsoft, IBM, Red Hat, Cloudflare, CrowdStrike, Palantir, Databricks, Hugging Face, SpaceXAI and the Linux Foundation, was galvanized by a Hugging Face breach in which OpenAI test models escaped a sandbox and closed AI tools blocked forensic analysis.\n- Members are open-sourcing systems such as Nvidia’s NOOA, Microsoft’s MDASH and SpaceXAI’s Grok Build as crypto networks face escalating, irreversible attacks that exploit trusted controls rather than breaking cryptography.\nAmerican chipmaker Nvidia and 36 other major technology companies launched an alliance on Monday to build open-source security tools for AI systems, citing an incident this month in which closed AI models obstructed a company's attempt to investigate a breach of its own servers.\nThe Open Secure AI Alliance includes Microsoft, IBM, Red Hat, Cloudflare, CrowdStrike, Palantir, Databricks, Hugging Face, SpaceXAI and the Linux Foundation, and builds on the foundation's existing Akrites initiative and OpenSSF work. OpenAI, Anthropic and Google, which develop the industry's most capable closed models, are not listed among the inaugural partners.\nThe founding argument rests on the Hugging Face breach disclosed last week, as CoinDesk reported.\nOpenAI said models it was testing on an internal hacking benchmark, running with cyber safety refusals deliberately lowered, escaped their test environment and gained the ability to run commands on Hugging Face's production servers.\nAccording to Nvidia, the cleanup then ran into a problem of its own. Closed AI tools, \"unable to distinguish attackers from defenders,\" blocked the forensic analysis. Hugging Face instead ran GLM 5.2, an open-weight model from Chinese developer Z.ai, on its own infrastructure to review more than 17,000 actions and contain the intrusion.\n\"When defenders cannot inspect, adapt and run advanced AI on their own infrastructure, their ability to respond is constrained at exactly the moment speed matters most,\" Nvidia said.\nMembers are contributing specific tools. NVIDIA released NOOA, a framework for making AI agent behavior easier to test and audit, on GitHub. Microsoft contributed MDASH, a system that runs multiple AI agents to find exploitable bugs, while SpaceXAI open-sourced its Grok Build coding agent and said it plans to release the weights of its Grok models.\nThe alliance arrives with cybersecurity teams on heightened alert globally, and crypto networks and wallets remain a favored target, since a single successful exploit can pay out enormously and cannot be reversed.\nFour protocols were drained of more than $35 million in a single stretch last week, including AFX, Verus and Bitcoin scaling network B², and none of the attacks broke any cryptography. Each abused a trusted control, the same class of long-horizon, multi-step work that AI systems are getting measurably better at. Unlike a corporate breach, a drained contract cannot be undone.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Nvidia forms 37-member AI security alliance without OpenAI, Anthropic or Google",
+      "detailed_summary_zh": "英伟达联合36家科技公司成立开放安全AI联盟，旨在开发开源AI安全工具，但OpenAI、Anthropic和谷歌未参与。该联盟由Hugging Face的安全漏洞事件推动，成员包括微软、IBM、红帽等，并开源了多项安全系统。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "Circle buys nearly 1,000 blockchain patents from IBM",
+      "url": "https://www.coindesk.com/business/2026/07/27/circle-buys-nearly-1-000-blockchain-patents-from-ibm",
+      "score": 8.0,
+      "content": "Circle buys nearly 1,000 blockchain patents from IBM\nThe portfolio covers blockchain technology, banking, insurance, and cloud security, though the financial terms of the deal were not disclosed.\n- Circle acquired nearly 1,000 blockchain-anchored patents from IBM, becoming the largest holder of such patents in the United States.\n- The portfolio covers blockchain technology, banking, insurance, and cloud security, though the financial terms of the deal were not disclosed.\n- Circle plans to use these patents to support USDC, its Arc blockchain, and financial tools for AI agents, while exploring future IBM partnerships.\nStablecoin issuer Circle (CRCL) has acquired nearly 1,000 issued blockchain-anchored patents from IBM, a deal the firm said makes it the largest holder of blockchain patents in the United States.\nThe portfolio spans more than 680 patent families covering blockchain technology, banking, financial services, insurance, enterprise infrastructure, supply-chain verification and cloud security, according to a press release.\nThe deal’s financial terms weren’t disclosed.\nIBM was already among the largest U.S. blockchain patent holders before the sale. A December 2025 analysis by patent analytics firm PatSnap credited it with 790 patents, alongside Advanced New Technologies and Bank of America.\nCircle said the portfolio would support USDC, Circle Payments Network, its Arc blockchain and financial tools designed for AI agents. Circle and IBM also plan to explore further commercial opportunities, the document adds.\n“Intellectual property is critical to advancing our mission and expanding adoption of onchain infrastructure,” said Sarah Wilson, Circle’s general counsel and corporate secretary.\nCircle received its first patent, covering parallel blockchain data processing, in December 2023. It had earlier joined the LOT Network to protect its products from patent-assertion firms.\nThe company did not disclose how many acquired patents were issued in the U.S., whether IBM retained licensing rights or whether it plans to license or enforce the portfolio.\nCoinDesk has reached out to Circle for comment but hasn’t heard back at the time of writing. CRCL shares are up 2.5% in premarket trading.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Circle buys nearly 1,000 blockchain patents from IBM",
+      "detailed_summary_zh": "Circle从IBM收购了近1000项区块链锚定专利，成为美国最大的区块链专利持有者。这些专利将用于支持其USDC稳定币、Arc区块链及面向AI代理的金融工具，并探索与IBM的未来合作。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Anthropic’s Dario Amodei responds: doesn’t oppose open-weight models, but fears Chinese AI",
+      "url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
+      "score": 8.0,
+      "content": "Anthropic founder and CEO Dario Amodei made his views clear about open-weight models and China's growing AI capabilities.",
+      "summary": "Anthropic’s Dario Amodei responds: doesn’t oppose open-weight models, but fears Chinese AI",
+      "detailed_summary_zh": "Anthropic创始人兼CEO Dario Amodei回应了关于开源权重模型的争议，明确表示自己并不反对开源，但对中国AI能力的快速崛起感到担忧。他强调，必须谨慎管理开源模型以防被恶意使用，并呼吁美国加强AI领域的竞争力。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 4,
+      "title": "Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research",
+      "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+      "score": 8.0,
+      "content": "After two years in stealth, Safe Superintelligence has announced a long-term partnership with Nvidia as it prepares to scale to its next phase.",
+      "summary": "Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research",
+      "detailed_summary_zh": "Safe Superintelligence公司结束了两年秘密研发，宣布与英伟达建立长期合作伙伴关系，以扩展其AI研究规模。这一合作由OpenAI联合创始人Ilya Sutskever领导，旨在推进安全超级智能的发展。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 5,
+      "title": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
+      "url": "https://www.coindesk.com/policy/2026/07/27/thailand-s-sec-alleges-bitkub-concealed-cyberattack-that-led-to-usd50-million-hack",
+      "score": 7.0,
+      "content": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack\nBitkub was the victim of a cyberattack in May 2021, which led to hacks stealing 1.7 billion baht across 16 different digital assets.\n- Thailand’s SEC alleged that cryptocurrency exchange Bitkub and two of its former directors concealed a cyberattack that led to the theft of around 1.7 billion baht ($50 million) in May 2021.\n- The SEC alleged that Sakolkorn Sakavee and Thaweesap Rawan made false statements in company documents to deceive the regulator.\n- While the SEC and Bitkub made good the losses by the end of October that year, the regulator said it discovered that Bitkub did not disclose the incident accurately in relevant reports from that period.\nThailand’s Securities and Exchange Commission (SEC) alleged that cryptocurrency exchange Bitkub and two former directors concealed a cyberattack that led to the theft of around 1.7 billion baht ($50 million), according to reports in local media on Thursday.\nThe SEC filed a criminal complaint against Bitkub with the Economic Crime Suppression Division (ECD), accusing the exchange of providing false information and alleging that former directors Sakolkorn Sakavee and Thaweesap Rawan made false statements in company documents to deceive the regulator, the reports said.\nBitkub was the victim of a cyberattack in May 2021, and 16 different digital assets were subsequently stolen, according to SEC’s investigation.\nThe SEC and Bitkub made good the losses by the end of October that year. The regulator said it discovered Bitkub did not disclose the incident accurately in relevant reports from that period.\nThe SEC’s case will now proceed to a police investigation followed by possible public prosecution, the reports said.\nBitkub is Thailand’s biggest crypto exchange, with 24-hour trading volume of more than $500 million. It did not immediately respond to CoinDesk’s request for comment.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Thailand's SEC alleges Bitkub concealed cyberattack that led to $50 million hack",
+      "detailed_summary_zh": "泰国 SEC 指控加密货币交易所 Bitkub 及其前董事隐瞒了一起导致约 5000 万美元被盗的网络攻击事件。该攻击发生在 2021 年 5 月，涉及 16 种数字资产，损失约 17 亿泰铢。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Cloud data firm Storj files for Chapter 11, extending a week of crypto failures. Token slides 16%",
+      "url": "https://www.coindesk.com/business/2026/07/27/cloud-data-firm-storj-files-for-chapter-11-extending-a-week-of-crypto-failures-token-slides-16",
+      "score": 7.0,
+      "content": "Cloud data firm Storj files for Chapter 11, extending a week of crypto failures. Token slides 16%\nThe decentralized data storage company says operations continue and proposes that token holders take equity in the restructured business — an unusual arrangement in bankruptcy.\n- Decentralized cloud storage firm Storj Labs filed for Chapter 11 bankruptcy in West Virginia to address legacy obligations while pledging to keep services running.\n- The restructuring plan proposes sharing ownership of the reorganized company among management, investors and token holders, who typically receive nothing in a Chapter 11 process.\n- The filing caps a week that saw BitMEX and BitMart announce solvent wind-downs and Movement Labs seek Chapter 11 protection as capital and attention continue to shift from crypto to artificial intelligence.\nDecentralized cloud network Storj Labs said it filed for Chapter 11 bankruptcy, becoming the fourth crypto company in seven days to announce a failure or wind-down as investor interest switches to AI.\nThe filing, lodged in the U.S. Bankruptcy Court for the Northern District of West Virginia, is intended to resolve what the company called legacy obligations from an earlier period while keeping the business running. Storj said it does not expect service interruptions and will continue operating.\nOf the other firms, Movement Labs, the developer behind the Movement blockchain, also filed for bankruptcy protection. Crypto exchanges BitMEX and BitMart both announced closures.\nStorj runs a decentralized cloud storage network, paying individuals and businesses to rent out unused disk space rather than operating its own data centers. Last year, it was acquired by Inveniam, which the company said endorses the reorganization and continues to support it. Storj said it is disposing of previous acquisitions and non-essential operations.\n\"The business underneath is strong and right-sized,\" said Kaloyan Raev, the company's director of software engineering, said in a statement. \"What holds it back are legacy obligations from an earlier chapter.\"\nThe company’s STORJ token fell 16% to about 6 cents. Almost $20 million worth of the token changed hands against a market value of about $27 million, meaning close to the entire supply turned over in a day. The token is down 79% over the past year and 98% from its March 2021 peak of $3.81.\nThe restructuring proposal contains a provision rarely seen in bankruptcy: Storj said it plans to share ownership of the reorganized company among management, token holders and investors.\nToken holders normally have no legal claim on an issuer and receive nothing in a Chapter 11 process.\nThe filing extends an unusually heavy week. BitMEX, the exchange that invented the perpetual swap, said on July 23 it would shut down after 11 years, with daily volume down to roughly $400,000 and its BMEX token falling more than 90%.\nIts parent, HDR Global Trading, said the platform was not insolvent and that assets exceeded liabilities, pointing instead to a strategic review that followed some $200 million in regulatory fines and a sale process that found no buyer.\nBitMart announced its own wind-down on Sunday, halting new deposits and trading orders immediately, ending all trading on Aug. 26 and setting a January 2027 closure, with its BMX token down 58% on the news.\nMovement Labs filed for Chapter 11 on July 21 after a year of turmoil. The Ethereum layer-2, built on the Move programming language originally developed at Meta, unravelled following the December launch of its MOVE token.\nThe filings land in a market where investor capital and attention have moved decisively toward artificial intelligence, leaving marginal crypto businesses with fewer places to raise money and fewer buyers if they need an exit.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.\nWhy it matters:\nMarkets repositioned since June, but Binance held share (~55% user funds, ~24% spot) and drew net inflows in early July while the tracked market saw outflows.",
+      "summary": "Cloud data firm Storj files for Chapter 11, extending a week of crypto failures. Token slides 16%",
+      "detailed_summary_zh": "去中心化云存储公司Storj Labs申请第11章破产保护，成为一周内第四家倒闭的加密公司。公司计划用股权补偿代币持有者，这在破产案中极为罕见。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "Satya Nadella says companies that trust one AI for everything may not survive",
+      "url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+      "score": 7.0,
+      "content": "Companies without their own models — or without a layer of AI infrastructure known as AI gateways to separate their prompts from the model itself — will be in trouble, Nadella says.",
+      "summary": "Satya Nadella says companies that trust one AI for everything may not survive",
+      "detailed_summary_zh": "微软CEO萨提亚·纳德拉警告企业不要依赖单一AI模型，应拥有自己的模型或通过AI网关将提示与模型分离。他认为缺乏这种多样化AI策略的公司可能难以生存。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "OpenAI’s Hugging Face breach has reignited the debate over alignment and control",
+      "url": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/",
+      "score": 7.0,
+      "content": "OpenAI's Hugging Face breach has reignited debate over AI alignment and control, exposing competing views on whether increasingly capable AI should be better aligned, better contained, or both.",
+      "summary": "OpenAI’s Hugging Face breach has reignited the debate over alignment and control",
+      "detailed_summary_zh": "OpenAI在Hugging Face上的数据泄露重新引发了关于AI对齐和控制的激烈辩论。此次事件暴露了研究人员在如何安全发展强大AI方面的深刻分歧。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Big Tech credit risks rise sharply as AI spending soars",
+      "url": "https://www.ft.com/content/ac136522-ecc7-4262-8702-e0d636ea3099?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Investors are increasingly concerned over rush of borrowing to fund huge investments in data centres",
+      "summary": "Big Tech credit risks rise sharply as AI spending soars",
+      "detailed_summary_zh": "科技巨头为投资AI数据中心大量借贷，导致投资者对其信用风险日益担忧。大规模基建支出正加剧市场对金融稳定的关注。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 10,
+      "title": "BlackRock Raises $12.5 Billion of Debt for Meta Data Center",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-27/blackrock-raises-12-5-billion-of-debt-for-meta-data-center",
+      "score": 5.0,
+      "content": "BlackRock Inc. wrapped up a $12.5 billion bond sale tied to a Meta Platforms Inc. data center project in Texas after a nearly week-long marketing process and a selloff in big tech debt.",
+      "summary": "BlackRock Raises $12.5 Billion of Debt for Meta Data Center",
+      "detailed_summary_zh": "BlackRock为Meta在德克萨斯州的数据中心项目完成了125亿美元的债券销售。这笔融资体现了大型科技公司在AI基础设施上的巨额投入。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 11,
+      "title": "Asian Stocks Fall on AI Jitters, Oil Extends Drop: Markets Wrap",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-27/stock-market-today-dow-s-p-live-updates",
+      "score": 3.0,
+      "content": "Asian equities dropped as renewed concerns over artificial-intelligence spending fueled another selloff in chipmakers. Crude oil extended its decline.",
+      "summary": "Asian Stocks Fall on AI Jitters, Oil Extends Drop: Markets Wrap",
+      "detailed_summary_zh": "亚洲股市因人工智能支出担忧导致芯片股抛售而下跌，原油价格延续跌势。市场对AI行业投资回报的疑虑引发避险情绪。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    }
+  ]
+}
