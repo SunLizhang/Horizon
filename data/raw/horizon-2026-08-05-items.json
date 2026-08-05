@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-05",
+  "items": [
+    {
+      "index": 1,
+      "title": "Coldcard urges users to move bitcoin as exploit is still in progress",
+      "url": "https://www.coindesk.com/tech/2026/08/04/coldcard-urges-users-to-move-bitcoin-as-active-wallet-exploit-continues",
+      "score": 8.0,
+      "content": "",
+      "summary": "Coldcard urges users to move bitcoin as exploit is still in progress",
+      "detailed_summary_zh": "Coldcard 硬件钱包正在遭受一个正在进行的漏洞利用，官方敦促用户立即转移比特币以保护资金安全。该漏洞可能导致用户资产面临风险，但具体技术细节尚未完全公开。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 2,
+      "title": "Inside Google’s $200bn Wall Street finance machine for Anthropic",
+      "url": "https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Private credit, chip leases and data centre guarantees underpin a vast new model for AI spending",
+      "summary": "Inside Google’s $200bn Wall Street finance machine for Anthropic",
+      "detailed_summary_zh": "谷歌通过华尔街融资机制为Anthropic提供高达2000亿美元的资金支持，涉及私人信贷、芯片租赁和数据中心担保等创新金融工具。这标志着AI基础设施融资新模式的出现，可能对科技行业和金融市场产生深远影响。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+      "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+      "score": 8.0,
+      "content": "A new SaferAI report finds Z.ai's open-weight GLM-5.2 approaches frontier AI capabilities while lacking key safety mitigations, renewing concerns that powerful open models could outpace governance and safeguards.",
+      "summary": "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+      "detailed_summary_zh": "SaferAI的一份新报告指出，Z.ai的开源模型GLM-5.2已接近前沿AI能力，但缺乏关键的安全缓解措施。这再次引发了人们对强大的开放模型可能超越治理和保障措施步伐的担忧。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 4,
+      "title": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
+      "url": "https://www.coindesk.com/business/2026/08/04/wells-fargo-to-offer-tokenized-deposits-for-24-7-corporate-payments",
+      "score": 7.0,
+      "content": "",
+      "summary": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
+      "detailed_summary_zh": "富国银行宣布加入摩根大通和花旗的行列，推出代币化存款服务，以实现24/7全天候企业支付。此举标志着华尔街结算基础设施向区块链代币化加速转型的重要趋势。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 5,
+      "title": "BNY to add crypto staking to digital asset custody platform",
+      "url": "https://www.coindesk.com/business/2026/08/04/bny-to-add-crypto-staking-to-digital-asset-custody-platform",
+      "score": 7.0,
+      "content": "",
+      "summary": "BNY to add crypto staking to digital asset custody platform",
+      "detailed_summary_zh": "BNY Mellon宣布计划在其数字资产托管平台中增加加密货币质押功能，这是传统大型银行进一步拥抱加密资产的重要举措。此举有望吸引更多机构客户，推动质押服务在受监管金融体系中的普及。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Anthropic signs $10B deal with AI cloud startup Volta",
+      "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+      "score": 7.0,
+      "content": "Anthropic has been on a cloud partnership spree in recent months, and its latest move is reportedly a $10 billion deal with AI cloud startup Volta.",
+      "summary": "Anthropic signs $10B deal with AI cloud startup Volta",
+      "detailed_summary_zh": "Anthropic近期在云合作伙伴方面动作频频，据报将以100亿美元与AI云初创公司Volta达成合作。这一大规模交易凸显了AI基础设施领域的激烈竞争，也可能影响未来AI算力市场的格局。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 7,
+      "title": "Nvidia doesn’t mess around: A week after open AI industry group formed, it’s already showing progress",
+      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+      "score": 7.0,
+      "content": "The week-old Open Secure AI Alliance, spearheaded by Nvidia and grown to over 120 companies, already has proposals out for defending against AI agents.",
+      "summary": "Nvidia doesn’t mess around: A week after open AI industry group formed, it’s already showing progress",
+      "detailed_summary_zh": "英伟达牵头的开放安全AI联盟在成立一周内已吸引超过120家公司，并迅速提出针对AI代理的防御提案。这表明业界对AI安全问题的重视和快速行动。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "Spotify expands AI remix and covers project with Merlin partnership",
+      "url": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
+      "score": 7.0,
+      "content": "Spotify says Merlin, which represents more than 30,000 independent labels and distributors, has joined Universal Music Group in backing its upcoming AI-powered remix and covers product. The paid tool will let fans create AI-generated covers and remixes of participating artists’ music while ensuring artists opt in, receive credit, and are compensated.",
+      "summary": "Spotify expands AI remix and covers project with Merlin partnership",
+      "detailed_summary_zh": "Spotify宣布与代表超过3万家独立厂牌和发行商的Merlin达成合作，扩展其AI驱动的混音和翻唱产品。该付费工具允许粉丝生成AI翻唱和混音，同时确保艺术家可以选择参与并获得报酬。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Samsung is poised to become a dominant stablecoin distributor, analysts say",
+      "url": "https://www.coindesk.com/business/2026/08/04/samsung-is-poised-to-become-a-dominant-stablecoin-distributor-analysts-say",
+      "score": 6.0,
+      "content": "",
+      "summary": "Samsung is poised to become a dominant stablecoin distributor, analysts say",
+      "detailed_summary_zh": "分析师指出三星有望成为稳定币分发领域的主导者，这将扩大加密资产的普及范围。该消息反映了大型科技公司在数字资产领域日益增长的影响力。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 10,
+      "title": "SpaceX exceeds revenue estimates in first earnings report since IPO",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-04/spacex-exceeds-revenue-estimates-in-post-ipo-earnings-video",
+      "score": 3.0,
+      "content": "SpaceX’s revenue exceeded Wall Street’s expectations in the company’s first quarterly financial report following its blockbuster IPO in June. Ed Ludlow has the info on Elon Musk's rocket, satellite and AI conglomerate. (Source: Bloomberg)",
+      "summary": "SpaceX exceeds revenue estimates in first earnings report since IPO",
+      "detailed_summary_zh": "SpaceX在六月份IPO后的首份季度财报中，营收超出华尔街预期。这是马斯克旗下火箭、卫星和AI综合企业的重要财务里程碑。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    }
+  ]
+}

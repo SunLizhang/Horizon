@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-04",
+  "items": [
+    {
+      "index": 1,
+      "title": "LLMs reward expertise",
+      "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+      "score": 8.0,
+      "content": "\n--- Top Comments ---\n\n[dbalatero]: &gt; Of course both are useful, but I’d rather have familiarity with the codebase than a deep general understanding of software systems. In my experience, getting that familiarity with a particular codebase in a way that isn&#x27;t surface-level has always been a hands-on process. E.g. just because I know many general things about software, I need to know the particulars of the current codebase I&#x27;m in to know what is reasonable to actually apply to it. This is a chicken and egg problem I...\n\n[abixb]: The amplifying mirror analogy works best here. LLMs are ultimately a reflection of your own interactions with its weights, the tone you use, the structure with which you construct your prompt, aspects of an issue you tend to focus on, your breadth of vocabulary and world knowledge and whatnot. People who (carefully) use it as an extension of their own mind and senses will very likely thrive, and those who use it as a  replacement  for their minds and their senses will struggle. One of the Cla...\n\n[Austiiiiii]: This is something that really needs to be formally studied. I&#x27;m inclined to say that this matches my own experience, but I can&#x27;t rule out confirmation bias on my part. As a meticulous person generally looking for a very specific code outcome, I prompt in a way intended to get exactly the thing I have in mind, and my results reflect that. But on the other hand, I have coworkers who type ten-word prompts with very limited specificity, and they seem to get results that way as well, and...\n\n[zeroq]: A good moment to remind everyone that if we took the promise for granted, that AI will in fact prevail and prompting is the one skill that will rule them all... we&#x27;ll lose all domain experts in one generation. It&#x27;s less of &quot;signaling expertise&quot; and more about actually having said &quot;expertise&quot;. In my experience with LLMs it&#x27;s not uncommon to be having a deep conversation about making pasta, only to be told, after asking for a sample recipe, to get a bucket of ...\n\n[sramsay]: I do find that &quot;signalling expertise&quot; is important. &quot;I have a significant background in biblical scholarship. You can assume I&#x27;ve read the most important works in NT studies in particular. Do not translate Greek, Latin, Hebrew, or Syriac. Now, I would like to know . . .&quot; That changes things significantly. So does telling it you have 20+ years of experience with C programming, that you have a robust understanding of machine organization, memory layouts, embedded system...",
+      "summary": "LLMs reward expertise",
+      "detailed_summary_zh": "这篇文章探讨了大型语言模型（LLM）如何放大使用者的专业知识，指出专家通过精确的提示和结构化的交互能获得更好的结果。社区讨论强调LLM是思维的延伸而非替代品，引发了对AI辅助编程实践方式的深入思考。",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
+      "url": "https://www.coindesk.com/business/2026/08/03/blackrock-expands-tokenized-cash-with-new-blockchain-based-money-market-offerings",
+      "score": 8.0,
+      "content": "BlackRock expands tokenized cash with new blockchain-based money market offerings\nBoth funds intend to qualify as eligible reserve assets for permitted U.S. payment stablecoin issuers under the GENIUS Act.\n- The BlackRock Select Treasury Based Liquidity Fund (BSTBL), a tokenized share class on Ethereum for an existing BlackRock money market fund.\n- A new BlackRock Daily Reinvestment Stablecoin Reserve Vehicle (BRSRV) has also been unveiled with daily dividend reinvestment and access across multiple blockchains.\nBlackRock, the world’s largest asset manager, has expanded its tokenized cash platform, introducing a couple of new tokenized money market products, the firm said on Monday.\nBack in May of this year, BlackRock filed for the new products with the U.S. Securities and Exchange Commission (SEC).\nBlackRock is offering onchain shares of the BlackRock Select Treasury Based Liquidity Fund (BSTBL), a tokenized share class on Ethereum for an existing BlackRock money market fund. In addition, a new BlackRock Daily Reinvestment Stablecoin Reserve Vehicle (BRSRV) has also been unveiled with daily dividend reinvestment and access across multiple blockchains, said BlackRock in a press release.\nBoth funds intend to qualify as eligible reserve assets for permitted U.S. payment stablecoin issuers under the GENIUS Act, the asset manager said. Securitize serves as BRSRV’s transfer agent and tokenization provider.\nThe move deepens BlackRock’s push into tokenized finance, blockchain-based representations of traditional financial assets such as funds, bonds or equities. Advocates say the technology can speed up settlement, enable round-the-clock trading and improve transparency.\nIn 2024, BlackRock launched its first tokenized money-market fund, BUIDL, with Securitize (SECZ). The fund has since grown to roughly $2.5 billion in assets and is increasingly used across crypto markets as collateral for borrowing and leveraged trading.\nBlackRock Chief Financial Officer Martin Small said during the recent Q2 2026 Earnings Call that the financial giant wants to be the stablecoin reserve manager of choice in the industry. “We already manage $60 billion of reserves for Circle, representing about a quarter of the $300 billion stablecoin market. We see lots of growth ahead in stablecoin and we want to be the reserve manager of choice,” Small said during the call.\nU.S. money market funds have grown to more than $8.4 trillion in assets. BlackRock's Cash Management Group oversees nearly $1.073 trillion in cash strategies for a range of corporations, banks, foundations, insurance companies, and public funds.\n“As demand grows for high-quality reserve assets to support stablecoins and other tokenized financial products, these funds provide clients with additional choice in how they access and use money market fund investment solutions across traditional and digital markets,” said Jon Steel, Global Head of Product and Platform for BlackRock's Cash Management business.\nBlackrock's latest move comes as tokenization gains momentum on Wall Street and BlackRock CEO Larry Fink has repeatedly championed the technology as a way to modernize financial markets. The tokenized real-world asset market has grown more than 200% over the past year to over $30 billion, according to rwa.xyz, while Citi projects tokenized securities could reach $5.5 trillion by 2030.\nUPDATE (August. 3rd, 14:45 UTC): Adds Securitize as BRSRV’s transfer agent and tokenization provider.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "BlackRock expands tokenized cash with new blockchain-based money market offerings",
+      "detailed_summary_zh": "贝莱德宣布扩展其代币化现金平台，推出两只新的代币化货币市场基金产品，包括以太坊上的代币化份额和跨链稳定币储备工具。这些产品旨在符合美国GENIUS法案下稳定币发行人的合格储备资产要求，标志着传统金融巨头进一步深入区块链资产代币化领域。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+      "url": "https://www.coindesk.com/markets/2026/08/03/bitcoin-ether-decline-as-coldcard-exploit-enters-a-fifth-day",
+      "score": 7.0,
+      "content": "Bitcoin, ether decline as Coldcard exploit enters a fifth day\nNevertheless, the drop in crypto prices seems restrained given the magnitude of losses in the wallet hack and the erosion of confidence in cold storage.\n- Bitcoin and ether fell as the $114 million Coldcard hardware wallet hack shook confidence in self-custody and pushed some holders back to exchanges.\n- Derivatives markets showed mixed signals, with BTC futures open interest at a one-month high, a slightly bearish long-short skew, and options volatility steady as call bets cluster around $68,000 and $70,000.\n- NEAR Protocol reported more than $24 billion in lifetime volume for its Intents system and rolled out quantum-safe cryptography, dynamic resharding and AI compute staking.\nBitcoin \nThe incident has rocked sentiment on crypto social media, with numerous small holders complaining of losing long-term holdings and reassessing their faith in crypto.\n\"Worse for sentiment, it [the hack] has spooked holders into sending coins back to exchanges, the opposite of the self-custody trend crypto is built on,” analysts at Marex said. “When the thing wobbling is cold storage itself, a cheaper barrel does not fix it.\"\nGiven the gravity of the situation and the $114 million of bitcoin stolen, the price reaction of the largest cryptocurrency appears relatively restrained. BTC was recently 1.5% lower over 24 hours to $62,595, a level it has visited several times in recent weeks, with ether down nearly 2% to $1,842. The CoinDesk DeFi Select Index has dropped 2.5%.\nBitcoin’s 200-week simple moving average, currently placed above $63,000, is back in focus after the Michael Saylor-led Strategy (MSTR) said it is tracking the long-term average and hinting at resuming purchases after a five-week pause, its longest, funded by preferred stock held at a steep 12%.\nGeopolitical news flow remains confusing. President Donald Trump said new talks with Iran will begin today, an assertion that Iran quickly rejected. Foreign Ministry spokesperson Esmaeil Baghaei said there are no plans to receive a delegation from the U.S. nor send an Iranian one.\nDerivatives Positioning\n- Long-short ratio skews bearish: The crypto long-short futures volume for takers is leaning more bearish than late last week, with over 52% in shorts. A taker is an entity that removes liquidity from an exchange’s order book by executing an order immediately against a resting order.\n- BTC OI rises: Activity has picked up slightly in BTC futures, with open interest (OI) rising to a one-month high of 772K BTC. Positioning is leaning bullish, with annualized funding rates moderately positive at 4%. However, the 24-hour cumulative volume delta is slightly negative, which means bears are being more aggressive and trading at market prices rather than passive limit orders.\n- Mixed action in altcoins: ADA, ETH, and BCH are other notable OI gainers, while open interest in SOL continues to slide. TRX, DOGE, CC, and GRAM stand out with negative funding rates, a sign of growing bias for bearish short positions. Still, rates aren’t deeply negative, meaning these markets do not look crowded with bearish bets.\n- Steady volatility index: Despite the Coldcard hack and rising Treasury yields, there are no signs of any stress or panic in the crypto options market. That’s evident from the BVIV, the 30-day implied volatility index, which is hovering near 37% for the fourth straight day. The IV is influenced by demand for options or hedging instruments offering protection from uncertainty and price swings.\n- Calls dominate trading: In Deribit-listed options, calls at $68,000 and $70,000 are the most traded bets. A call represents a bullish bet on the market.\nToken Talk\n- NEAR's Intents system has crossed $24 billion in lifetime volume, according to the protocol's monthly development recap. Intents are a way of transacting where a user states the outcome they want, like swapping one token for another across different blockchains, and the network figures out how to execute it, rather than the user manually routing each step.\n- The transactions came on the back of the network shipping protocol version 2.13 last month. Two features stand out. Quantum-safe signing upgrades the cryptography that secures transactions so it can withstand future quantum computers, a threat that is still years away but one a number of chains are now preparing for. Dynamic resharding lets the network split its workload across more lanes automatically as traffic grows, a way of scaling without manual intervention.\n- NEAR is leaning further into AI. It launched staking for AI compute, meaning holders can lock up NEAR tokens to help provision and earn from the computing power that AI applications run on, tying the token's use directly to AI demand.\n- NEAR recently traded around $1.72, CoinDesk data show.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Bitcoin, ether decline as Coldcard exploit enters a fifth day",
+      "detailed_summary_zh": "冷钱包厂商Coldcard遭到黑客攻击，损失1.14亿美元，导致比特币和以太坊价格下跌，打击了投资者对自我托管的信心。市场反应相对克制，同时NEAR Protocol报告了其Intents系统超240亿美元交易量并推出量子安全加密等功能。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 4,
+      "title": "Wall Street learns to love blockchain",
+      "url": "https://www.ft.com/content/7600731b-4f7f-4d38-a478-3196c565a880?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Financial companies hope to modernise markets with the technology but systemic risks remain",
+      "summary": "Wall Street learns to love blockchain",
+      "detailed_summary_zh": "华尔街金融机构正拥抱区块链技术，希望借此实现市场现代化。但该技术仍存在系统性风险，可能带来新的挑战。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 5,
+      "title": "Design Arena creators raise $7.9 million to bring taste to AI models",
+      "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/",
+      "score": 7.0,
+      "content": "Design Arena is used by 5.3 million people around the world, providing critical human evaluations to frontier labs.",
+      "summary": "Design Arena creators raise $7.9 million to bring taste to AI models",
+      "detailed_summary_zh": "Design Arena的创建者筹集了790万美元，旨在为AI模型引入品味的评价体系。该平台拥有530万用户，为前沿实验室提供关键的人类评估。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy",
+      "url": "https://www.coindesk.com/business/2026/08/03/trump-linked-american-bitcoin-president-matt-prusak-departs-for-giga-energy",
+      "score": 6.0,
+      "content": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy\nThe executive is leaving the Eric Trump-backed miner to join an AI power infrastructure firm, highlighting the shift toward energy and data center buildout.\n- Matt Prusak is leaving American Bitcoin as president and interim CFO to join Giga Energy.\n- He will become Giga's chief business officer and interim CFO starting Aug. 4.\n- The move underscores growing executive migration from bitcoin mining toward AI and power infrastructure.\nMatt Prusak, president and interim chief financial officer of Trump-linked bitcoin miner American Bitcoin (ABTC), is leaving the company to join AI and energy infrastructure developer Giga Energy, marking another senior executive move toward the power sector that is increasingly underpinning both bitcoin \nPrusak said he will step down from American Bitcoin effective Aug. 4 and join Giga Energy as chief business officer and interim CFO.\nHe said in emailed comments that after \"years building bitcoin businesses,\" he was shifting \"upstream to the power infrastructure now constraining both mining and AI compute.\"\nThe departure reflects a broader shift as bitcoin miners reposition around AI and power infrastructure. As mining becomes increasingly commoditized and margins come under pressure, a growing number of miners are pivoting toward artificial intelligence infrastructure, repurposing their power, land and data center expertise to serve the surging demand for AI compute.\nThe shift has accelerated as hyperscalers race to secure electricity and capacity, allowing mining companies to diversify revenue beyond bitcoin production and tap the higher valuations being awarded to AI infrastructure businesses.\nThe executive had served as president of American Bitcoin, the Nasdaq-listed mining company backed by Hut 8 (HUT) and co-founded by Eric Trump, while also acting as interim finance chief.\nHe was one of the public faces of the company's bitcoin accumulation strategy, regularly discussing its focus on expanding hashrate while increasing BTC holdings per share.\nHis new employer, Houston-based Giga Energy, is a developer and manufacturer of power equipment and AI data center infrastructure. The company says it has delivered more than 6.5 gigawatts (GW) of power infrastructure and is developing more than 500 megawatts (MW) of AI-ready data center capacity.\nThe move reflects a broader industry trend as executives and capital increasingly gravitate toward the energy infrastructure needed to support both large-scale AI computing and bitcoin mining. Access to reliable power has become one of the biggest constraints on expanding compute capacity, prompting infrastructure companies to attract talent with deep experience in digital assets.\nRead more: Digital asset trading platform Uphold cuts 17% of global headcount as crypto winter bites\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Trump-linked American Bitcoin president Matt Prusak departs for Giga Energy",
+      "detailed_summary_zh": "美国比特币公司总裁Matt Prusak离职，加入AI能源基础设施公司Giga Energy，担任首席商务官和临时CFO。此举反映了比特币挖矿高管向AI和数据中心能源基础设施领域转移的趋势。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
+      "url": "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/",
+      "score": 6.0,
+      "content": "After a quarter that delivered $1 billion in profit, Palantir CEO Alex Karp on Monday once again warned that AI frontier labs are too untrustworthy for enterprises.",
+      "summary": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
+      "detailed_summary_zh": "Palantir发布强劲季度财报，实现10亿美元利润。CEO Alex Karp再次抨击AI前沿实验室，称AI行业为“马克思主义者”，并警告企业对其缺乏信任。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "Congress’ favorite AI tool? ChatGPT",
+      "url": "https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/",
+      "score": 6.0,
+      "content": "House spending records show OpenAI's ChatGPT dominates paid AI use on Capitol Hill, with congressional offices relying on the chatbot to draft memos, summarize legislation, and assist constituent communications.",
+      "summary": "Congress’ favorite AI tool? ChatGPT",
+      "detailed_summary_zh": "美国国会支出记录显示，OpenAI的ChatGPT是国会山最常用的付费AI工具，办公室用它起草备忘录、总结立法和协助选民沟通。这标志着AI工具在政府机构中的实际应用日益普及。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
+      "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+      "score": 6.0,
+      "content": "June emerged from stealth today with a $20 million pre-seed round to make AI adoption simpler.",
+      "summary": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
+      "detailed_summary_zh": "一家名为June的初创公司获得2000万美元种子轮融资，旨在简化AI部署问题，由Marc Benioff支持。该公司从隐身模式中脱颖而出，目标是为企业提供更简单的AI采用路径。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "url": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+      "score": 5.0,
+      "content": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto\nThe agent, who had \"top secret\" clearance and worked in FBI headquarters, was accused of taking crypto from wallets the agency had investigated.\n- An FBI counterintelligence agent with “top secret” clearance allegedly admitted to colleagues that he’d taken about $1 million in crypto from the wallets of people investigated by the agency.\n- The agent, who’d worked in the agency’s headquarters in Washington, was fired and arrested, according to court filings.\nA supervising U.S. FBI agent who worked in intelligence at the national headquarters has been arrested and accused in a federal court filing of stealing more than $1 million in cryptocurrency.\nThe high-level special agent, identified as Patrick Steven Yarmoch, allegedly turned himself in to agency colleagues, reporting that he dug crypto keys from FBI systems to make as many as a dozen transfers to himself from accounts tied to foreign individuals he'd investigated, according to an August 1 account filed with the U.S. District Court for the Eastern District of Virginia.\nYarmoch — who held a \"top secret\" security clearance — had worked in counterintelligence, specifically with an investigative unit that focused on an unnamed \"adversary nation,\" according to the court filing, which noted he was suspended for a couple of days before being fired and arrested on July 31.\nThe resident of Ashburn, Virginia, had worked as a supervisory special agent at FBI headquarters in Washington, specifically in its counterintelligence and espionage division. He'd previously worked for years out of Boston, where he'd been in a national-security unit investigating the adversary nation referenced in the court filing.\nIn handling the digital assets, Yarmoch was said to use accounts with Kraken and also Suilend, the decentralized finance (DeFi) ecosystem for the Sui blockchain, via a Slush wallet.\nThe FBI searches of his computer and phone records revealed some of his recent questions to AI apps, including, \"If you had a bucket of money (around $1 million) and you wanted to leave the USA and become a resident or citizen of an EU country, what would you do?” To which the app allegedly recommended Portugal as a favored destination.\nInvestigators also located travel plans for Yarmoch and his family to go to Portugal next month. He was also said to take recent trips to Germany, Portugal and Grenada that he hadn't reported internally, in violation of FBI rules.\nYarmoch was placed in detention in Alexandria, Virginia.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+      "detailed_summary_zh": "美国联邦调查局一名高级情报特工因涉嫌从调查账户中窃取约100万美元加密货币而被捕。该特工拥有最高机密权限，主动向同事承认后遭解雇并被起诉。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 11,
+      "title": "Trump Family-Linked Bitcoin Miner Posts Second-Quarter Loss",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-03/trump-family-linked-bitcoin-miner-posts-second-quarter-loss",
+      "score": 3.0,
+      "content": "American Bitcoin Corp., the Trump family-backed miner launched last year just before the cryptocurrency tumbled from record highs, posted a third consecutive quarterly loss after a decline in the value of its holdings.",
+      "summary": "Trump Family-Linked Bitcoin Miner Posts Second-Quarter Loss",
+      "detailed_summary_zh": "特朗普家族关联的比特币矿商美国比特币公司连续第三个季度亏损，原因是其持有的加密货币价值下跌。这一财务结果反映了加密货币行业的波动性及其对相关企业的影响。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    }
+  ]
+}
