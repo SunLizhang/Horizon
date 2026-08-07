@@ -1,0 +1,161 @@
+{
+  "date": "2026-08-07",
+  "items": [
+    {
+      "index": 1,
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "score": 8.0,
+      "content": "<a href=\"https:&#x2F;&#x2F;ir.amd.com&#x2F;news-events&#x2F;press-releases&#x2F;detail&#x2F;1296&#x2F;amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market\" rel=\"nofollow\">https:&#x2F;&#x2F;ir.amd.com&#x2F;news-events&#x2F;press-releases&#x2F;detail&#x2F;1296&#x2F;am...</a><p><a href=\"https:&#x2F;&#x2F;chatjimmy.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;chatjimmy.ai&#x2F;</a>\n\n\n--- Top Comments ---\n\n[LarsDu88]: I&#x27;m surprised neither OpenAI nor Anthropic made this move first. The Chinese open weight models are pulling ahead and commoditizing their value proposition. Baking models onto silicon would&#x27;ve been the next logical move to get a moat. Google is already doing this and has an experimental project on top of already having TPUs and cramming their quantized flash onto individual TPUs for inference.\n\n[sgc]: What does it take to go from here to a model on a pcie card or an m.2 card, so I can plug one into my workstation &#x2F; laptop? Will &#x27;intelligence&#x27; become much like a gpu, where most people just live with the performance of whatever they have installed, outside large companies that must have cutting edge, or prosumers that have a incrementally better version than the masses? Are we a couple years away, a decade away, or something else?\n\n[whythismatters]: The demo:  https:&#x2F;&#x2F;chatjimmy.ai&#x2F;\n\n[mNovak]: What I like about this, is that it significantly increases the probability of a sci-fi scenario where you&#x27;re picking up a hot chip on the black market; rumor has it, Mythos 9 weights baked in...\n\n[yumraj]: Given the fast churn of the models, how does it work out? Won’t the silicon etched model already be 1 or more versions behind by the time the silicon comes out. Though if it’s cheap enough, there certainly can be a market for cheaper model inferences.",
+      "summary": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "detailed_summary_zh": "AMD宣布收购AI芯片初创公司Taalas，旨在将机器学习模型直接蚀刻到硅片中，以大幅提升推理性能并降低延迟。此举标志着AI推理硬件竞争加剧，可能引发对模型定制芯片和边缘部署的新讨论。",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
+      "url": "https://www.coindesk.com/tech/2026/08/06/bitcoin-developers-flag-85-critical-bugs-in-an-extremely-bad-situation",
+      "score": 8.0,
+      "content": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation\nA volunteer group running AI models against bitcoin codebases says it is averaging roughly one critical bug per hour per person, at about $10,000 a day in compute.\n- Sixteen Bitcoin developers used AI tools to find 4,962 security vulnerabilities across 390 projects in 24 hours.\n- The findings include 85 critical and 635 high-severity bugs, which are currently overwhelming project maintainers.\n- This audit highlights how AI is rapidly transforming security research for both defenders and attackers.\nA volunteer team has flagged 85 critical bugs across 390 bitcoin \nSixteen Bitcoin developers have filed 4,962 findings in a coordinated security audit, including 85 critical and 635 high-severity issues, according to Calle, the pseudonymous developer behind the Cashu ecash protocol.\nThe findings come from a coordinated audit run by developers pointing AI models at bitcoin wallets, cryptographic libraries and infrastructure.\n\"Situation is extremely bad,\" Calle noted.\nWe're ramping up.\n— calle (@callebtc) August 5, 2026\nMuch of our work is still manual (hand holding the AI) but our automated harnesses are getting better at the same time.\nSo far, letting everyone use their own favorite review method has proven to be the most effective strategy.\nWe're getting a lot of… pic.twitter.com/EoS6Z9ubpr\nMost of the critical reports have been quickly verified by project owners, Calle said, and are being reproduced using a working proof of concept in a local test environment before being sent.\nBut he acknowledged the volume is creating problems of its own.\n\"There's a lot of chaos right now in the ecosystem,\" he wrote, apologizing to maintainers buried in reports and saying the group is still learning to sort out “the slop.”\nThe group publishes fast because maintainers can now verify findings almost for free using the same tools, Calle said, and because \"others who aren't on the red team will arrive at the same findings as we did.\"\nRob Hamilton, who is building the automated setup the group runs, said in an X post the bottleneck is not finding bugs but routing them to the right maintainers.\n\"The hardest part is coordinating to get things to the right people,\" Hamilton wrote. \"While it is powerful, having found critical issues, I would view this as only version one.\"\nThe audit lands in an ecosystem already absorbing the fallout when the other side finds a flaw first.\nThe Coldcard sweeps, which began July 30 and have taken as much as $114 million from wallets whose seeds were generated by faulty firmware, stemmed from a bug that had been dormant since 2021 and required no access to the physical device once the affected key space was known.\nAttackers already have the same tools, however.\nAnthropic said in April that one of its models, held back from public release and given only to vetted users, found a bug that had sat undiscovered in widely used software for 27 years, at a cost of less than $50. It found flaws in the encryption software that secures banking connections, exchange logins and the servers running most of the internet.\nSeparately, Google's threat intelligence team said in May it had caught a criminal group preparing an attack built on a flaw a model had found for them.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Bitcoin developers flag 85 critical bugs in an \"extremely bad\" situation",
+      "detailed_summary_zh": "比特币开发者利用AI工具在24小时内对390个项目进行安全审计，发现4982个漏洞，其中包括85个严重和635个高危问题，导致维护者不堪重负。此事凸显AI正迅速改变安全攻防研究格局。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+      "url": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/",
+      "score": 7.0,
+      "content": "Mirendil has signed a $100 million-plus Google Cloud partnership to expand its compute infrastructure, powering research into self-improving AI systems designed to accelerate scientific discovery and AI development.",
+      "summary": "Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+      "detailed_summary_zh": "Mirendil与Google Cloud签署了超过1亿美元的合作伙伴关系，以扩展其计算基础设施，用于自我改进AI系统的研究。此举旨在加速科学发现和AI开发，标志着AI领域的大规模投资。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 4,
+      "title": "ChatGPT brings unlimited text chats to free users",
+      "url": "https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/",
+      "score": 6.0,
+      "content": "OpenAI said that ChatGPT free and Go users are also getting a new think button for complex queries.",
+      "summary": "ChatGPT brings unlimited text chats to free users",
+      "detailed_summary_zh": "OpenAI宣布向免费和Go用户提供无限制的ChatGPT文本聊天，并新增“思考”按钮用于复杂查询。这一更新降低了高级功能的使用门槛，但并非技术突破。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 5,
+      "title": "OpenAI says Apple’s own security practices undermine its trade secrets case",
+      "url": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/",
+      "score": 6.0,
+      "content": "Newly filed court exhibits show OpenAI’s legal strategy in Apple’s trade secrets lawsuit: argue that Apple’s own security and offboarding practices — including allowing an Apple manager to access a former engineer’s iCloud account after he left the company —undermine its claims that the allegedly stolen information was properly protected.",
+      "summary": "OpenAI says Apple’s own security practices undermine its trade secrets case",
+      "detailed_summary_zh": "OpenAI在苹果的商业机密诉讼中提交新的法庭证据，指称苹果自身的安全和离职管理实践（例如允许经理访问离职工程师的iCloud账户）削弱了其商业机密保护主张。该案涉及科技巨头间的知识产权纠纷，对行业安全实践具有潜在影响。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
+      "score": 6.0,
+      "content": "The startup's platform predicts which product a shopper wants next, learns their general taste, and fine-tunes continuously based on what they do in real time.",
+      "summary": "Ex-Spotify employees raise $10M to bring the AI behind its recommendations to e-commerce",
+      "detailed_summary_zh": "前Spotify员工创办的初创公司获1000万美元融资，旨在将Spotify的AI推荐技术应用于电商领域。该平台能预测用户下一步想购买的产品，学习用户品味并实时优化推荐。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 7,
+      "title": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
+      "url": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
+      "score": 5.0,
+      "content": "Bitcoin’s low volatility doesn’t necessarily mean low risk\nYour day-ahead look for Aug. 6, 2026\nThis is an excerpt from CoinDesk newsletter 'Daybook.' Sign up here, if you haven't already.\nA key theme this month is not just that bitcoin \nMore often than not, low volatility is taken as a sign of low risk. After all, if an asset isn’t swinging wildly, it must be safer, more predictable than one that is gyrating rapidly. In recent weeks, BTC has looked far steadier than South Korea’s Kospi index, for example.\nBut that only tells us what is, not what could be. In other words, low volatility is no reason to let your guard down. When volatility is cheap, trading becomes cheap, encouraging punters to build large directional bets and hedging positions. That leaves the other side, the market makers, with a lot of exposure too.\nIf the market then starts moving, both sides end up doing more and more position management, adding to price swings. This explains why volatility is said to increase, or revert toward the mean, after a period of persistent decline.\n“When volatility is cheap, traders can build directional positions and hedges at relatively low cost. If the market then moves through a level with concentrated positioning, dealer hedging can accelerate the move,” Adam Haeems, head of asset management at Tesseract Group, which manages $500 million in client assets, said in an email.\n“The practical implication is that low volatility should not be mistaken for low risk. It is a reason to be careful with leverage, particularly when trading volumes and market depth are subdued.”\nFor now, BTC remains choppy below $65,000 with some green shoots.\nAccording to Paul Howard, a senior director at market-making firm Wincent, demand for puts, or downside protection, has weakened. At the same time, there is a lack of strong bids for upside exposure.\n“It indicates that the bear market is close to trading at its lowest price range for this cycle, arguably over the coming weeks,” he said in an email.\n“The asymmetry is not a bid for puts; it is the disappearance of the call bid. Nobody is paying for upside, and nobody is paying much for downside,” Glassnode said.\nAccording to Howard, the next big catalyst would be “some positive regulatory news such as with the Clarity Act, which would likely manifest as institutional ETF inflows.”\nA negative catalyst, meanwhile, could be a potential breakdown in the Hormuz talks and an inflation shock. Stay alert!\nRead more: For analysis of today's activity in altcoins and derivatives, see Crypto Markets Today . For a comprehensive list of events this week, see CoinDesk's \"Crypto Week Ahead.\"\nWhat’s trending\n- Here are the possible outcomes for Clarity right now (CoinDesk): The fate of the crypto market-structure legislation is precarious, with only two days before the Senate goes on recess. Senators have not indicated whether they will work on the Clarity Act or vote on the bill.\n- Bitcoin steadies above $64,000 as traders watch $100 billion SpaceX unlock (CoinDesk): Bitcoin held above $64,600 while the rest of the major coins offered little by way of direction. Attention is on SpaceX, where roughly $101 billion of stock becomes tradable as the first lockup expires.\n- Yen and dollar drift as markets await Iran deal news, look towards payrolls (Reuters): Currency markets drifted, with the yen retracing some intervention-led gains and the dollar pinned near a six-week low as investors awaited details on a proposed U.S.-Iran deal and looked ahead to Friday's U.S. jobs report.\n- World shares are mixed and Kospi falls 4.6% after tech giants decline on Wall Street (AP): Shares were mixed in Europe and Asia, with and South Korea’s Kospi index dropping more than 4%. Oil prices held steady, with uncertainty about the Iran war overhanging markets despite hopes for a reopening of the Strait of Hormuz.\nToday’s signal\nThe chart compares bitcoin’s price swings with dogecoin \nSince early July, DOGE has remained under pressure, decoupling from the recovery in BTC’s price.\nThe divergence shows that speculative interest remains absent, and traders are not chasing high-beta, meme-driven exposure even as bitcoin stabilizes. This is usually the first sign of a market bottom.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
+      "detailed_summary_zh": "文章指出比特币的低波动性并不等同于低风险，因为低波动性会鼓励交易者建立大量头寸，可能导致市场突然剧烈波动。这是对常见风险认知的提醒，但内容本身并非重大突破或发现。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
+      "url": "https://www.coindesk.com/business/2026/08/06/jpyc-raises-usd38-million-series-b-led-by-major-japanese-logistics-firm-az-com-maruwa",
+      "score": 5.0,
+      "content": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa\nThe investment brings the company’s total raised to $106 million across seven funding rounds since November 2021.\n- JPYC Inc. raised 6 billion yen ($38 million) in an extension of its Series B funding round to accelerate the expansion of its yen-pegged stablecoin.\n- New investors in the latest round include AZ-COM Maruwa Holdings, a major Japanese logistics company.\n- AZ-COM has plans to settle payments in JPYC with its clients, which included Amazon Japan.\nJPYC Inc. raised 6 billion yen ($38 million) in an extension of its Series B funding round to accelerate the expansion of its yen-pegged stablecoin.\nThe investment brings the company’s total raised to $106 million across seven funding rounds since November 2021, according to venture capital data site Tracxn.\nNew investors in the latest round include AZ-COM Maruwa Holdings (9090), a major Japanese logistics company.\nAZ-COM plans to settle payments in JPYC with its clients, including Amazon Japan. Its network of around 2,300 partners is made up of subcontractors, drivers and so on. The move marked the first large-scale corporate use of a stablecoin for daily business operations in Japan.\nJPYC is one of the most prominent stablecoins pegged to the Japanese yen with a market cap of $55.5 million, according to data tracked by CoinGecko.\nStablecoins are digital tokens pegged to the value of a traditional financial asset, usually a fiat currency. The market is overwhelmingly dominated by tokens pegged to the U.S. dollar. The yen stablecoin sector is growing, helped by adoption among some of Japan’s largest financial institutions, but remains negligible in the context of the USD-dominated market.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "JPYC raises $38 million Series B led by major Japanese logistics firm AZ-COM Maruwa",
+      "detailed_summary_zh": "日本稳定币发行商JPYC完成3800万美元B轮扩展融资，由物流巨头AZ-COM Maruwa领投，累计融资达1.06亿美元。AZ-COM计划使用JPYC推进支付结算，包括与亚马逊日本等客户的交易。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 9,
+      "title": "S&P 500 added all of crypto's $2 trillion market cap in a month while bitcoin barely moved. Here's why",
+      "url": "https://www.coindesk.com/markets/2026/08/06/s-and-p-500-has-added-crypto-s-usd2-trillion-market-cap-this-month-bitcoin-is-not-impressed-here-s-why",
+      "score": 5.0,
+      "content": "S&P 500 added all of crypto's $2 trillion market cap in a month while bitcoin barely moved. Here's why\nThe S&P 500 just added roughly the entire crypto market's value this month. Bitcoin has barely moved, and the reasons go beyond the obvious.\n- The S&P 500 has gained 3.12% this month, adding roughly $2.1 trillion in market cap – close to the entire crypto market's total value.\n- Bitcoin is up just 2% over the same stretch, trading around $64,600, a level it already touched back in July.\n- Analysts point to a mix of reasons: an AI-concentrated stock rally, Bitcoin-specific headwinds like the Coldcard hack, and traders sitting out ahead of an expected October cycle bottom.\nU.S. stocks are having their moment again, and bitcoin, as it has all year, is sitting this one out. The reasons why go beyond the obvious.\nThe S&P 500 index has gained 3.12% this month, adding roughly $2.1 trillion in market cap and pushing its total value to a record $70.5 trillion, with its price at 7,723 points. The Nasdaq 100 and Dow Jones Industrial Average are buoyant too. Wall Street, by every measure, is in full risk-on mode.\nBitcoin isn't following suit, even though, since the Covid crash of early 2020, it has tended to track stocks more often than not. The token is up just 2% this month, trading around $64,600, sitting exactly where it's been gyrating for weeks.\nPart of bitcoin’s underperformance stems from the fact that the equity rally is driven primarily by stock-specific narrative, particularly tied to AI, rather than by a broad macro risk-on impulse that would lift beta assets like BTC in tandem.\n\"Partly because the equity rally is being driven by areas to which bitcoin has little direct exposure, particularly AI and semiconductor stocks,\" said Adam Haeems, head of asset management at Tesseract Group, which manages more than $500 million in client assets.\nOf course, some aspects of macro, such as the renewed drop in oil and hopes for a return to normal flows via the Strait of Hormuz, which had been disrupted by the Iran war, are positive for all risk assets. But they benefit stocks first.\n\"Lower oil prices resulting from a reopening of the Strait of Hormuz could benefit both markets, but through different channels. Equities receive a relatively immediate benefit through lower business costs. For bitcoin, the effect runs through inflation expectations and then Federal Reserve policy. That takes longer, and the outlook for September remains uncertain,\" Haeems explained.\nPaul Howard, senior director at market making firm Wincent, made a similar point.\n\"The stock rally is biased towards AI and mega-caps which doesn't necessarily translate into crypto flows,\" Howard said. \"The crypto market rally driven previously by ETF demand the last 2y has been subdued as it now seeks its own catalyst independent of US equities. This likely will come in Q4 when the market expects regulatory clarity and continued stablecoin growth.\"\nCrypto-specific troubles\nCrypto has also been fighting its own battles that may be capping the upside. To name a few: the $120 million Coldcard exploit, uncertainty around the Clarity Act, and reports of Strategy liquidating its BTC.\n\"Crypto has also faced its own pressures. The Coldcard exploit has damaged sentiment, while Strategy has sold bitcoin in three consecutive months. Neither event has triggered a broader credit event or forced liquidation cycle,\" Haeems said.\nHe added that rising bond yields are creating an additional headwind for crypto, leading to an outflow of capital via stablecoins. Leading dollar-pegged stablecoin USDT's supply has dropped to its lowest since 2025.\n\"I would also watch stablecoin supply. USDT has fallen from about $190 billion in April to $183 billion, while USDC has declined from $79.5 billion to $72 billion. With real Treasury returns at their highest since 2008, capital is being paid to remain outside crypto,\" Haeems added.\nHalving cycle and ETF flows\nThere's also a four-year halving-cycle-related positioning story underneath all of this, and it may be the most counterintuitive piece.\nAccording to Markus Thielen, founder of 10x Research, the lack of bullish impetus is likely the result of a self-fulfilling prophecy about the halving cycle's track record, which suggests a bottom may happen in October. Because most traders have come to believe this, they are simply sitting on the fence, awaiting October.\n\"Bitcoin traders have shown little urgency to position for a move higher, even as US stocks rally. A key reason: bitcoiners have suddenly, collectively bought into the four-year cycle thesis, which points to a bottom in early October, so they're waiting on the sidelines. This is a notable reversal from last October, when most of these same traders dismissed the four-year cycle outright,\" Thielen told CoinDesk.\nAccording to Thielen, traders are missing the key point that BTC’s failure to move lower despite the hawkish Fed is itself a bullish signal.\n\"Traders are underestimating the upside risk from a less hawkish Fed, and overlooking the possibility that the four-year cycle has already bottomed,\" he noted.\nOther market watchers point to erratic demand for ETFs, a preferred vehicle of institutional investors, as the reason for BTC's underperformance. These U.S.-listed funds registered an outflow of $61.53 million, snapping an equally anemic three-week streak of inflows, according to data source SoSoValue. This week, they have pulled in $626 million in investor money, the highest tally since early May, but that trend needs to hold.\n\"Several consecutive days of inflows will be needed to confirm a sustained recovery in institutional demand,\" Vikram Subburaj, CEO of India-based FIU-registered Giottus.com, said in an email. For now, he's watching a tight range, with support near $63,000-$63,400 and resistance between $64,500 and $66,000.\nThe other problem, according to leading market maker Wintermute, is that whatever ETF flow there has been may not be directionally bullish, but could instead be arbitrage.\n\"That ETF bid getting absorbed without moving price says the marginal buyer in spot isn't outright long,\" Wintermute noted. \"Risk appetite went single-name instead, with ZEC up 10.9% on the week on DCG's Fortitude expanding its Zcash mining footprint and HYPE adding 5% on a dead beta day. For breadth to expand, we likely need to see BTC vol off this floor first.\"\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.\nWhy it matters:\nBinance remains crypto’s leading exchange, expanding from spot and derivatives into RWAs, payments, savings, yield, and broader financial services.",
+      "summary": "S&P 500 added all of crypto's $2 trillion market cap in a month while bitcoin barely moved. Here's why",
+      "detailed_summary_zh": "标普500指数本月上涨3.12%，市值增加约2.1万亿美元，接近整个加密货币市场的总市值，而比特币仅上涨2%，交易在64,600美元附近。分析师指出，原因包括AI驱动的股票涨势以及比特币面临的黑客攻击等特定逆风因素。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 10,
+      "title": "Is the AI trade back?",
+      "url": "https://www.ft.com/content/b3a21bd2-e92f-428f-a81e-8299f5502dea?syn-25a6b1a6=1",
+      "score": 4.0,
+      "content": "Plus, looking ahead to the jobs report",
+      "summary": "Is the AI trade back?",
+      "detailed_summary_zh": "这是FT市场专栏的一篇简讯，讨论AI交易是否重新升温，并预告即将发布的就业报告。内容属于金融市场的日常动态，而非技术深度分析。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 11,
+      "title": "Singapore's DBS CEO Sees AI Costs Falling in ‘Token Paradox’",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-06/singapore-s-dbs-ceo-sees-ai-costs-falling-video",
+      "score": 4.0,
+      "content": "DBS Group CEO Tan Su Shan sees AI costs trending down with more use of tokens, driven by what she calls the 'paradox of token spend.' She emphasizes that the bank maintains an open architecture, staying open-minded and avoiding being 'too wedded' to a model or any one provider. In a wide-ranging interview with Bloomberg's Haslinda Amin, Tan also outlines key growth areas, highlighting Taiwan as the bank's most exciting market opportunity in the next two to three years. (Source: Bloomberg)",
+      "summary": "Singapore's DBS CEO Sees AI Costs Falling in ‘Token Paradox’",
+      "detailed_summary_zh": "星展集团CEO谭素珊表示，随着代币使用增加，AI成本将下降，她称之为“代币悖论”。她还强调银行保持开放架构，不依赖单一模型或供应商，并认为台湾是未来两到三年最令人兴奋的市场机会。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 12,
+      "title": "Scammers pose as watchdogs to exploit EU crypto rule changes",
+      "url": "https://www.ft.com/content/b0b7db1d-5c9e-42d7-8aed-176e0acd00a9?syn-25a6b1a6=1",
+      "score": 3.0,
+      "content": "Customers at hundreds of unlicensed exchanges told to withdraw funds, creating openings for fraudsters",
+      "summary": "Scammers pose as watchdogs to exploit EU crypto rule changes",
+      "detailed_summary_zh": "诈骗分子冒充监管机构，利用欧盟加密货币规则变更的机会，诱骗数百家无牌交易所的客户提取资金。这一事件凸显了加密货币市场监管变化中可能出现的欺诈风险。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 13,
+      "title": "Chinese Banks Expand Direct Settlement to Aid Yuan’s Global Role",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-06/chinese-banks-expand-direct-settlement-to-aid-yuan-s-global-role",
+      "score": 3.0,
+      "content": "China is accelerating its push to internationalize the yuan as domestic banks add new foreign currencies available for direct settlement to bypass the dollar in cross-border trade.",
+      "summary": "Chinese Banks Expand Direct Settlement to Aid Yuan’s Global Role",
+      "detailed_summary_zh": "中国正加速推进人民币国际化，国内银行新增可直兑外币种类以绕开美元进行跨境贸易结算。此举旨在增强人民币在全球贸易中的使用。",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    }
+  ]
+}
