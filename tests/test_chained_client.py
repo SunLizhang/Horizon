@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 import pytest
 
 from src.ai.client import ChainedAIClient, _create_chained_client
-from src.models import AIConfig, AIProvider, ContentItem, SourceType
+from src.models import AIConfig, AIProvider, AI_PROVIDER_DEFAULTS
 
 
 class _DummyClient:
@@ -173,6 +173,90 @@ def test_create_chained_client_parses_chain():
     assert chained.configs[1].provider == AIProvider.OLLAMA
     assert chained.configs[1].model == "llama3.1"
     assert chained.configs[1].api_key_env == ""
+
+
+def test_create_chained_client_uses_provider_defaults_without_leaking_base_url():
+    """Every heterogeneous entry gets its own connection defaults."""
+    providers = list(AIProvider)
+    config = AIConfig(
+        provider=AIProvider.OPENAI,
+        provider_chain=",".join(provider.value for provider in providers),
+        model="custom-primary-model",
+        api_key_env="CUSTOM_PRIMARY_API_KEY",
+        base_url="https://primary.example/v1",
+        temperature=0.17,
+        max_tokens=1234,
+        throttle_sec=0.75,
+        analysis_concurrency=3,
+        enrichment_concurrency=5,
+        languages=["en", "zh-CN"],
+    )
+
+    chained = _create_chained_client(config)
+
+    assert [entry.provider for entry in chained.configs] == providers
+    for entry in chained.configs:
+        defaults = AI_PROVIDER_DEFAULTS[entry.provider]
+        assert entry.model == defaults["model"]
+        assert entry.api_key_env == defaults["api_key_env"]
+        expected_base_url = (
+            config.base_url
+            if entry.provider == config.provider
+            else defaults["base_url"]
+        )
+        assert entry.base_url == expected_base_url
+        assert entry.temperature == config.temperature
+        assert entry.max_tokens == config.max_tokens
+        assert entry.throttle_sec == config.throttle_sec
+        assert entry.analysis_concurrency == config.analysis_concurrency
+        assert entry.enrichment_concurrency == config.enrichment_concurrency
+        assert entry.languages == config.languages
+
+
+def test_create_chained_client_preserves_custom_azure_and_common_settings():
+    config = AIConfig(
+        provider=AIProvider.AZURE,
+        provider_chain="azure,openai",
+        model="custom-deployment",
+        api_key_env="CUSTOM_AZURE_API_KEY",
+        base_url="https://unused-azure-base.example",
+        azure_endpoint_env="CUSTOM_AZURE_ENDPOINT",
+        api_version="2025-01-01-preview",
+        temperature=0.42,
+        max_tokens=2048,
+        throttle_sec=1.25,
+        analysis_concurrency=4,
+        enrichment_concurrency=6,
+        languages=["ja", "en-US"],
+    )
+
+    azure, openai = _create_chained_client(config).configs
+
+    assert azure.azure_endpoint_env == "CUSTOM_AZURE_ENDPOINT"
+    assert azure.api_version == "2025-01-01-preview"
+    assert openai.azure_endpoint_env is None
+    assert openai.api_version is None
+    for entry in (azure, openai):
+        assert entry.temperature == 0.42
+        assert entry.max_tokens == 2048
+        assert entry.throttle_sec == 1.25
+        assert entry.analysis_concurrency == 4
+        assert entry.enrichment_concurrency == 6
+        assert entry.languages == ["ja", "en-US"]
+
+
+def test_create_chained_client_applies_azure_connection_defaults():
+    config = AIConfig(
+        provider=AIProvider.OPENAI,
+        provider_chain="openai,azure",
+        model="m1",
+        api_key_env="K1",
+    )
+
+    azure = _create_chained_client(config).configs[1]
+
+    assert azure.azure_endpoint_env == "AZURE_OPENAI_ENDPOINT"
+    assert azure.api_version == "2024-10-21"
 
 
 def test_create_chained_client_rejects_unknown_provider():

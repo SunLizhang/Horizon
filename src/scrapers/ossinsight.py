@@ -115,6 +115,7 @@ class OSSInsightScraper(BaseScraper):
             content="\n".join(content_lines),
             author=repo_name.split("/")[0] if "/" in repo_name else None,
             published_at=datetime.now(timezone.utc),
+            profile=self.cfg.profile,
             metadata={
                 "repo": repo_name,
                 "stars_gained": stars_gained,
@@ -125,6 +126,7 @@ class OSSInsightScraper(BaseScraper):
                 "period": self.cfg.period,
                 "collection_names": collections,
                 "description": description,
+                "category": self.cfg.category,
             },
         )
 

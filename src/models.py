@@ -2,8 +2,9 @@
 
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Optional, List, Dict, Any, Union
-from pydantic import BaseModel, HttpUrl, Field, field_validator
+import re
+from typing import Annotated, Literal, Optional, List, Dict, Any, NamedTuple, Union
+from pydantic import BaseModel, ConfigDict, HttpUrl, Field, field_validator
 
 
 class SourceType(str, Enum):
@@ -17,10 +18,92 @@ class SourceType(str, Enum):
     TWITTER = "twitter"
     OPENBB = "openbb"
     OSSINSIGHT = "ossinsight"
+    GDELT = "gdelt"
+    GOOGLE_NEWS = "google_news"
+
+
+class SourceDefinition(NamedTuple):
+    """How a top-level source is represented in SourcesConfig."""
+
+    config_field: str
+    config_is_list: bool = False
+    item_fields: tuple[str, ...] = ()
+
+
+SOURCE_REGISTRY = {
+    SourceType.GITHUB.value: SourceDefinition("github", config_is_list=True),
+    SourceType.HACKERNEWS.value: SourceDefinition("hackernews"),
+    SourceType.RSS.value: SourceDefinition("rss", config_is_list=True),
+    SourceType.REDDIT.value: SourceDefinition("reddit", item_fields=("subreddits", "users")),
+    SourceType.TELEGRAM.value: SourceDefinition("telegram", item_fields=("channels",)),
+    SourceType.TWITTER.value: SourceDefinition("twitter", item_fields=("users",)),
+    SourceType.OPENBB.value: SourceDefinition("openbb", item_fields=("watchlists",)),
+    SourceType.OSSINSIGHT.value: SourceDefinition("ossinsight"),
+    SourceType.GDELT.value: SourceDefinition("gdelt"),
+    SourceType.GOOGLE_NEWS.value: SourceDefinition("google_news"),
+}
+
+ProfileRoute = Optional[Union[str, List[str]]]
+
+
+class ClassificationResult(BaseModel):
+    """Resolved processing profile for a content item."""
+
+    profile: str
+    method: Literal["source_override", "ai_match"]
+    confidence: Optional[float] = Field(default=None, ge=0, le=1)
+    reason: Optional[str] = None
+
+
+class ContentAnalysis(BaseModel):
+    """Profile-driven first-pass analysis."""
+
+    score: Optional[float] = Field(default=None, ge=0, le=10, allow_inf_nan=False)
+    reason: str
+    summary: str
+    tags: List[str] = Field(default_factory=list)
+
+
+class ArtifactSource(BaseModel):
+    """External source used while producing an artifact."""
+
+    id: str
+    title: str
+    url: str
+
+
+class ContentBlock(BaseModel):
+    """A renderable section produced by an enrichment profile."""
+
+    id: str
+    type: Literal["section"] = "section"
+    title: str
+    content: str
+    source_refs: List[str] = Field(default_factory=list)
+    primary: bool = False
+
+
+class ContentArtifact(BaseModel):
+    """Localized, profile-defined enriched content."""
+
+    language: str
+    title: str
+    blocks: List[ContentBlock] = Field(default_factory=list)
+    sources: List[ArtifactSource] = Field(default_factory=list)
+
+
+class ProcessingResult(BaseModel):
+    """All AI processing state for a content item."""
+
+    classification: ClassificationResult
+    analysis: Optional[ContentAnalysis] = None
+    artifacts: Dict[str, ContentArtifact] = Field(default_factory=dict)
 
 
 class ContentItem(BaseModel):
     """Unified content item model from any source."""
+
+    model_config = ConfigDict(extra="forbid")
 
     id: str  # Format: {source}:{subtype}:{native_id}
     source_type: SourceType
@@ -31,12 +114,8 @@ class ContentItem(BaseModel):
     published_at: datetime
     fetched_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     metadata: Dict[str, Any] = Field(default_factory=dict)
-
-    # AI analysis results
-    ai_score: Optional[float] = None  # 0-10 importance score
-    ai_reason: Optional[str] = None
-    ai_summary: Optional[str] = None
-    ai_tags: List[str] = Field(default_factory=list)
+    profile: ProfileRoute = None
+    processing: Optional[ProcessingResult] = None
 
 
 class AIProvider(str, Enum):
@@ -53,43 +132,54 @@ class AIProvider(str, Enum):
     OLLAMA = "ollama"
 
 
-# Default models and API key env vars for each provider
+# Provider-specific defaults used by setup and provider-chain expansion.
 AI_PROVIDER_DEFAULTS = {
     AIProvider.ANTHROPIC: {
         "model": "claude-3-5-sonnet-20241022",
         "api_key_env": "ANTHROPIC_API_KEY",
+        "base_url": None,
     },
     AIProvider.OPENAI: {
         "model": "gpt-4",
         "api_key_env": "OPENAI_API_KEY",
+        "base_url": None,
     },
     AIProvider.AZURE: {
         "model": "gpt-4",
         "api_key_env": "AZURE_OPENAI_API_KEY",
+        "base_url": None,
+        "azure_endpoint_env": "AZURE_OPENAI_ENDPOINT",
+        "api_version": "2024-10-21",
     },
     AIProvider.ALI: {
         "model": "qwen-plus",
         "api_key_env": "DASHSCOPE_API_KEY",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
     },
     AIProvider.GEMINI: {
         "model": "gemini-1.5-flash",
         "api_key_env": "GOOGLE_API_KEY",
+        "base_url": None,
     },
     AIProvider.DOUBAO: {
         "model": "doubao-pro-32k",
         "api_key_env": "DOUBAO_API_KEY",
+        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
     },
     AIProvider.MINIMAX: {
-        "model": "MiniMax-Text-01",
+        "model": "MiniMax-M3",
         "api_key_env": "MINIMAX_API_KEY",
+        "base_url": "https://api.minimax.io/v1",
     },
     AIProvider.DEEPSEEK: {
         "model": "deepseek-chat",
         "api_key_env": "DEEPSEEK_API_KEY",
+        "base_url": "https://api.deepseek.com",
     },
     AIProvider.OLLAMA: {
         "model": "llama3.1",
         "api_key_env": "",
+        "base_url": "http://localhost:11434/v1",
     },
 }
 
@@ -112,6 +202,16 @@ class AIConfig(BaseModel):
     azure_endpoint_env: Optional[str] = None
     api_version: Optional[str] = None
 
+    @field_validator("languages")
+    @classmethod
+    def validate_languages(cls, languages: List[str]) -> List[str]:
+        """Allow conventional language tags while excluding path syntax."""
+        language_tag = re.compile(r"^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$")
+        invalid = [language for language in languages if not language_tag.fullmatch(language)]
+        if invalid:
+            raise ValueError(f"invalid language code: {invalid[0]!r}")
+        return languages
+
 
 class GitHubSourceConfig(BaseModel):
     """GitHub source configuration."""
@@ -121,6 +221,8 @@ class GitHubSourceConfig(BaseModel):
     owner: Optional[str] = None
     repo: Optional[str] = None
     enabled: bool = True
+    category: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class HackerNewsConfig(BaseModel):
@@ -129,6 +231,24 @@ class HackerNewsConfig(BaseModel):
     enabled: bool = True
     fetch_top_stories: int = 30
     min_score: int = 100
+    category: Optional[str] = None
+    profile: ProfileRoute = None
+
+
+class ExtractorType(str, Enum):
+    TRAFILATURA = "trafilatura"
+
+
+class TrafilaturaExtractorConfig(BaseModel):
+    type: Literal[ExtractorType.TRAFILATURA] = ExtractorType.TRAFILATURA
+    favor_precision: bool = False
+    favor_recall: bool = False
+
+
+ExtractorConfig = Annotated[
+    Union[TrafilaturaExtractorConfig],
+    Field(discriminator="type"),
+]
 
 
 class RSSSourceConfig(BaseModel):
@@ -138,6 +258,8 @@ class RSSSourceConfig(BaseModel):
     url: HttpUrl
     enabled: bool = True
     category: Optional[str] = None
+    content_extractor: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class RedditSubredditConfig(BaseModel):
@@ -151,6 +273,8 @@ class RedditSubredditConfig(BaseModel):
     )
     fetch_limit: int = 25
     min_score: int = 10
+    category: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class RedditUserConfig(BaseModel):
@@ -160,6 +284,8 @@ class RedditUserConfig(BaseModel):
     enabled: bool = True
     sort: str = "new"
     fetch_limit: int = 10
+    category: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class RedditConfig(BaseModel):
@@ -177,6 +303,8 @@ class TelegramChannelConfig(BaseModel):
     channel: str  # channel username, e.g. "zaihuapd"
     enabled: bool = True
     fetch_limit: int = 20
+    category: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class TelegramConfig(BaseModel):
@@ -198,6 +326,8 @@ class TwitterConfig(BaseModel):
     mode: str = "apify"  # "apify" or "playwright"
     users: List[str] = Field(default_factory=list)
     fetch_limit: int = 10
+    category: Optional[str] = None
+    profile: ProfileRoute = None
     fetch_reply_text: bool = False
     max_replies_per_tweet: int = 3
     max_tweets_to_expand: int = 10
@@ -223,6 +353,7 @@ class OpenBBWatchlist(BaseModel):
     provider: str = "yfinance"
     fetch_limit: int = 20
     category: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class OpenBBConfig(BaseModel):
@@ -262,6 +393,47 @@ class OSSInsightConfig(BaseModel):
     keywords: List[str] = Field(default_factory=list)
     min_stars: int = 5
     max_items: int = 30
+    category: Optional[str] = None
+    profile: ProfileRoute = None
+
+
+class GDELTConfig(BaseModel):
+    """GDELT 2.0 DOC API source configuration.
+
+    Queries the key-less GDELT DOC API
+    (https://api.gdeltproject.org/api/v2/doc/doc) for recent news articles
+    matching a search query and emits them as ContentItems. No API key is
+    required. The DOC API caps results at 250 records per request, so keep
+    `max_records` modest.
+    """
+
+    enabled: bool = False
+    query: str = "artificial intelligence"
+    mode: str = "ArtList"
+    max_records: int = 75  # GDELT DOC API caps at 250; keep modest
+    timespan: Optional[str] = None  # e.g. "24h"; overrides since-derived window
+    language: Optional[str] = None  # sourcelang filter, e.g. "english"; None = no filter
+    country: Optional[str] = None  # sourcecountry filter; None = no filter
+    category: Optional[str] = None  # Horizon category label for downstream grouping
+    profile: ProfileRoute = None
+
+
+class GoogleNewsConfig(BaseModel):
+    """Google News RSS search source configuration.
+
+    Builds Google News RSS search URLs
+    (https://news.google.com/rss/search) for a query and parses the
+    resulting feed via feedparser. No API key is required.
+    """
+
+    enabled: bool = False
+    query: str = "artificial intelligence"
+    language: str = "en"  # hl
+    country: str = "US"  # gl
+    ceid: Optional[str] = None  # when None scraper derives it as "{country}:{language}"
+    max_results: int = 100  # cap ~100
+    category: Optional[str] = None
+    profile: ProfileRoute = None
 
 
 class SourcesConfig(BaseModel):
@@ -275,6 +447,8 @@ class SourcesConfig(BaseModel):
     twitter: Optional[TwitterConfig] = None
     openbb: Optional[OpenBBConfig] = None
     ossinsight: OSSInsightConfig = Field(default_factory=OSSInsightConfig)
+    gdelt: Optional[GDELTConfig] = None
+    google_news: Optional[GoogleNewsConfig] = None
 
 
 class WebhookConfig(BaseModel):
@@ -375,31 +549,73 @@ class CategoryGroupConfig(BaseModel):
     categories: List[str] = Field(min_length=1)
 
 
-class FilteringConfig(BaseModel):
-    """Content filtering configuration."""
+class ProfileSettingsConfig(BaseModel):
+    """User preferences applied to a processing profile at runtime."""
 
-    ai_score_threshold: float = 7.0
+    model_config = ConfigDict(extra="forbid")
+
+    threshold: Optional[float] = Field(default=None, ge=0, le=10)
+    topic_dedup: bool = True
+
+
+class ProcessingConfig(BaseModel):
+    """Profile discovery and fallback settings."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    profiles_dir: str = "profiles"
+    default_profile: str = "tech-news"
+    profile_settings: Dict[str, ProfileSettingsConfig] = Field(default_factory=dict)
+
+
+class DisplayConfig(BaseModel):
+    """Controls terminal output presentation."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    icon_style: Literal["emoji", "nerd", "ascii"] = "emoji"
+
+
+class CollectionConfig(BaseModel):
+    """Controls which source items are fetched."""
+
+    model_config = ConfigDict(extra="forbid")
+
     time_window_hours: int = 24
+
+
+class DigestConfig(BaseModel):
+    """Controls grouping and limits in the final digest."""
+
+    model_config = ConfigDict(extra="forbid")
+
     max_items: Optional[int] = Field(default=None, gt=0)
     category_groups: Dict[str, CategoryGroupConfig] = Field(default_factory=dict)
     default_group: str = "other"
     default_group_limit: Optional[int] = Field(default=None, gt=0)
-    keyword_filters: Optional[List[str]] = Field(
-        default=None,
-        description="If set, only items whose title contains at least one of these "
-        "keywords (case-insensitive) will be sent to AI for scoring. "
-        "Items not matching any keyword get a default low score, "
-        "skipping the AI analysis call entirely to save tokens. "
-        "Example: ['AI', 'GPT', 'OpenAI', '芯片', '融资']"
-    )
+    profile_order: List[str] = Field(default_factory=list)
+
+    @field_validator("profile_order")
+    @classmethod
+    def validate_profile_order(cls, value: List[str]) -> List[str]:
+        if any(not profile_id.strip() for profile_id in value):
+            raise ValueError("digest.profile_order entries must be non-empty strings")
+        if len(value) != len(set(value)):
+            raise ValueError("digest.profile_order entries must be unique")
+        return value
 
 
 class Config(BaseModel):
     """Main configuration model."""
 
-    version: str = "1.0"
+    model_config = ConfigDict(extra="forbid")
+
     ai: AIConfig
     sources: SourcesConfig
-    filtering: FilteringConfig
+    collection: CollectionConfig = Field(default_factory=CollectionConfig)
+    digest: DigestConfig = Field(default_factory=DigestConfig)
+    processing: ProcessingConfig = Field(default_factory=ProcessingConfig)
+    display: DisplayConfig = Field(default_factory=DisplayConfig)
+    extractors: Dict[str, ExtractorConfig] = Field(default_factory=dict)
     email: Optional[EmailConfig] = None
     webhook: Optional[WebhookConfig] = None

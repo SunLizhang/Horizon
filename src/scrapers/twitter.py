@@ -296,6 +296,7 @@ class TwitterScraper(BaseScraper):
                 content=text,
                 author=author,
                 published_at=published_at,
+                profile=self.config.profile,
                 metadata={
                     "tweet_id": numeric_id,
                     "conversation_id": conversation_id,
@@ -306,6 +307,7 @@ class TwitterScraper(BaseScraper):
                     "is_reply": item.get("is_reply", False),
                     "in_reply_to_status_id": item.get("in_reply_to_status_id"),
                     "in_reply_to_screen_name": item.get("in_reply_to_screen_name"),
+                    "category": self.config.category,
                 },
             )
         except Exception as exc:

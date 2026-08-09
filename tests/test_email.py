@@ -1,5 +1,7 @@
 from email.mime.multipart import MIMEMultipart
 
+import pytest
+
 from src.models import EmailConfig
 from src.services.email import EmailManager
 
@@ -7,11 +9,15 @@ from src.services.email import EmailManager
 class FakeSMTP:
     instances = []
 
-    def __init__(self, server, port):
+    def __init__(self, server, port, **kwargs):
         self.server = server
         self.port = port
+        self.kwargs = kwargs
         self.login_calls = []
         self.messages = []
+        self.ehlo_calls = 0
+        self.starttls_calls = []
+        self.closed = False
         FakeSMTP.instances.append(self)
 
     def __enter__(self):
@@ -25,6 +31,15 @@ class FakeSMTP:
 
     def send_message(self, message):
         self.messages.append(message)
+
+    def ehlo(self):
+        self.ehlo_calls += 1
+
+    def starttls(self, **kwargs):
+        self.starttls_calls.append(kwargs)
+
+    def close(self):
+        self.closed = True
 
 
 class FakeIMAP:
@@ -77,6 +92,34 @@ def test_send_daily_summary_falls_back_to_email_address_for_smtp_login(monkeypat
     manager.send_daily_summary("# Hello", "Daily", ["user@example.com"])
 
     assert FakeSMTP.instances[0].login_calls == [("noreply@example.com", "secret")]
+
+
+def test_open_smtp_uses_starttls_outside_implicit_tls_port(monkeypatch):
+    monkeypatch.setenv("EMAIL_PASSWORD", "secret")
+    monkeypatch.setattr("src.services.email.smtplib.SMTP", FakeSMTP)
+    FakeSMTP.instances = []
+
+    server = EmailManager(_email_config(smtp_port=587))._open_smtp()
+
+    assert server is FakeSMTP.instances[0]
+    assert server.ehlo_calls == 2
+    assert len(server.starttls_calls) == 1
+    assert "context" in server.starttls_calls[0]
+
+
+def test_open_smtp_closes_connection_when_starttls_fails(monkeypatch):
+    class FailingStartTLS(FakeSMTP):
+        def starttls(self, **kwargs):
+            raise RuntimeError("TLS unavailable")
+
+    monkeypatch.setenv("EMAIL_PASSWORD", "secret")
+    monkeypatch.setattr("src.services.email.smtplib.SMTP", FailingStartTLS)
+    FakeSMTP.instances = []
+
+    with pytest.raises(RuntimeError, match="TLS unavailable"):
+        EmailManager(_email_config(smtp_port=587))._open_smtp()
+
+    assert FakeSMTP.instances[0].closed is True
 
 
 def test_send_daily_summary_escapes_raw_html(monkeypatch):

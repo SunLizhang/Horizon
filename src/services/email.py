@@ -6,6 +6,7 @@ import imaplib
 import logging
 import os
 import smtplib
+import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import parseaddr
@@ -15,6 +16,8 @@ try:
     import markdown
 except ImportError:
     markdown = None
+
+from rich.console import Console
 
 from ..ai.markdown_utils import clean_app_summary_markdown
 from ..models import EmailConfig
@@ -28,20 +31,7 @@ class EmailManager:
     def __init__(self, config: EmailConfig, console=None):
         self.config = config
         self.pwd = os.getenv(self.config.password_env)
-        if console is None:
-            try:
-                from rich.console import Console
-
-                self.console = Console()
-            except ImportError:
-
-                class DummyConsole:
-                    def print(self, *args, **kwargs):
-                        print(*args, **kwargs)
-
-                self.console = DummyConsole()
-        else:
-            self.console = console
+        self.console = console if console is not None else Console(stderr=True)
 
         if not self.pwd and self.config.enabled:
             logger.warning(
@@ -151,6 +141,24 @@ class EmailManager:
         except Exception as e:
             logger.error(f"Error checking subscriptions: {e}")
 
+    def _open_smtp(self) -> smtplib.SMTP:
+        """Open an implicit TLS or STARTTLS SMTP connection."""
+        context = ssl.create_default_context()
+        if self.config.smtp_port == 465:
+            return smtplib.SMTP_SSL(
+                self.config.smtp_server, self.config.smtp_port, context=context
+            )
+
+        server = smtplib.SMTP(self.config.smtp_server, self.config.smtp_port)
+        try:
+            server.ehlo()
+            server.starttls(context=context)
+            server.ehlo()
+        except Exception:
+            server.close()
+            raise
+        return server
+
     def send_daily_summary(self, summary_md: str, subject: str, subscribers: List[str]):
         """Sends the daily summary to all subscribers."""
         if not self.config.enabled or not subscribers:
@@ -189,9 +197,7 @@ class EmailManager:
         """
 
         try:
-            with smtplib.SMTP_SSL(
-                self.config.smtp_server, self.config.smtp_port
-            ) as server:
+            with self._open_smtp() as server:
                 server.login(
                     self.config.smtp_username or self.config.email_address, self.pwd
                 )
@@ -222,9 +228,7 @@ class EmailManager:
     def _send_reply(self, to_email: str, subject: str, body: str):
         """Helper to send a simple reply."""
         try:
-            with smtplib.SMTP_SSL(
-                self.config.smtp_server, self.config.smtp_port
-            ) as server:
+            with self._open_smtp() as server:
                 server.login(
                     self.config.smtp_username or self.config.email_address, self.pwd
                 )

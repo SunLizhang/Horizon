@@ -57,31 +57,29 @@ class GitHubScraper(BaseScraper):
                 continue
 
             if source.type == "user_events" and source.username:
-                user_items = await self._fetch_user_events(source.username, since)
+                user_items = await self._fetch_user_events(source, since)
                 items.extend(user_items)
             elif source.type == "repo_releases" and source.owner and source.repo:
-                release_items = await self._fetch_repo_releases(
-                    source.owner, source.repo, since
-                )
+                release_items = await self._fetch_repo_releases(source, since)
                 items.extend(release_items)
 
         return items
 
     async def _fetch_user_events(
         self,
-        username: str,
-        since: datetime
+        source: GitHubSourceConfig,
+        since: datetime,
     ) -> List[ContentItem]:
         """Fetch public events for a user.
 
         Args:
-            username: GitHub username
+            source: GitHub source configuration
             since: Only fetch events after this time
 
         Returns:
             List[ContentItem]: Event content items
         """
-        url = f"{self.base_url}/users/{username}/events/public"
+        url = f"{self.base_url}/users/{source.username}/events/public"
         items = []
 
         try:
@@ -105,16 +103,16 @@ class GitHubScraper(BaseScraper):
                 ]:
                     continue
 
-                item = self._parse_event(event, username)
+                item = self._parse_event(event, source)
                 if item:
                     items.append(item)
 
         except httpx.HTTPError as e:
-            logger.warning("Error fetching GitHub events for %s: %s", username, e)
+            logger.warning("Error fetching GitHub events for %s: %s", source.username, e)
 
         return items
 
-    def _parse_event(self, event: dict, username: str) -> Optional[ContentItem]:
+    def _parse_event(self, event: dict, source: GitHubSourceConfig) -> Optional[ContentItem]:
         """Parse GitHub event into ContentItem.
 
         Args:
@@ -127,6 +125,7 @@ class GitHubScraper(BaseScraper):
         event_type = event["type"]
         event_id = event["id"]
         created_at = datetime.fromisoformat(event["created_at"].replace("Z", "+00:00"))
+        username = source.username
 
         repo_name = event["repo"]["name"]
         repo_url = f"https://github.com/{repo_name}"
@@ -162,28 +161,29 @@ class GitHubScraper(BaseScraper):
             content=content,
             author=username,
             published_at=created_at,
+            profile=source.profile,
             metadata={
                 "event_type": event_type,
                 "repo": repo_name,
+                "category": source.category,
             }
         )
 
     async def _fetch_repo_releases(
         self,
-        owner: str,
-        repo: str,
-        since: datetime
+        source: GitHubSourceConfig,
+        since: datetime,
     ) -> List[ContentItem]:
         """Fetch releases for a repository.
 
         Args:
-            owner: Repository owner
-            repo: Repository name
+            source: GitHub source configuration
             since: Only fetch releases after this time
 
         Returns:
             List[ContentItem]: Release content items
         """
+        owner, repo = source.owner, source.repo
         url = f"{self.base_url}/repos/{owner}/{repo}/releases"
         items = []
 
@@ -208,10 +208,12 @@ class GitHubScraper(BaseScraper):
                     content=release.get("body", ""),
                     author=release["author"]["login"],
                     published_at=published_at,
+                    profile=source.profile,
                     metadata={
                         "repo": f"{owner}/{repo}",
                         "tag": release["tag_name"],
                         "prerelease": release.get("prerelease", False),
+                        "category": source.category,
                     }
                 )
                 items.append(item)

@@ -1,5 +1,6 @@
 import asyncio
 from datetime import datetime, timezone
+from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
@@ -9,13 +10,19 @@ from rich.console import Console
 from src.models import (
     AIConfig,
     CategoryGroupConfig,
+    ClassificationResult,
     Config,
+    ContentAnalysis,
     ContentItem,
-    FilteringConfig,
+    DigestConfig,
+    ProcessingConfig,
+    ProcessingResult,
+    ProfileSettingsConfig,
     SourceType,
     SourcesConfig,
 )
 from src.orchestrator import HorizonOrchestrator
+from src.processing import ProfileRegistry
 
 
 def make_item(item_id: str, score: float, category: str | None) -> ContentItem:
@@ -26,28 +33,47 @@ def make_item(item_id: str, score: float, category: str | None) -> ContentItem:
         title=item_id,
         url=f"https://example.com/{item_id}",
         published_at=datetime.now(timezone.utc),
-        ai_score=score,
         metadata=metadata,
+        profile="tech-news",
+        processing=ProcessingResult(
+            classification=ClassificationResult(
+                profile="tech-news", method="source_override"
+            ),
+            analysis=ContentAnalysis(
+                score=score, reason="test", summary=item_id
+            ),
+        ),
     )
 
 
-def make_orchestrator(filtering: FilteringConfig) -> HorizonOrchestrator:
+def make_orchestrator(digest: DigestConfig) -> HorizonOrchestrator:
     orchestrator = HorizonOrchestrator.__new__(HorizonOrchestrator)
-    orchestrator.config = SimpleNamespace(filtering=filtering)
+    orchestrator.config = SimpleNamespace(
+        digest=digest,
+        processing=ProcessingConfig(
+            profile_settings={
+                "tech-news": ProfileSettingsConfig(threshold=7.0),
+                "tech-blog": ProfileSettingsConfig(
+                    threshold=4.0, topic_dedup=False
+                ),
+                "finance-news": ProfileSettingsConfig(threshold=7.0),
+            }
+        ),
+    )
     orchestrator.console = Console(record=True)
     return orchestrator
 
 
 def test_unconfigured_balanced_digest_preserves_old_behavior() -> None:
     items = [make_item("lower", 7.0, "ai"), make_item("higher", 9.0, "finance")]
-    result = make_orchestrator(FilteringConfig()).apply_balanced_digest(items)
+    result = make_orchestrator(DigestConfig()).apply_balanced_digest(items)
 
     assert result.enabled is False
     assert result.items is items
 
 
 def test_category_groups_apply_limits_and_default_group_limit() -> None:
-    filtering = FilteringConfig(
+    filtering = DigestConfig(
         category_groups={
             "ai": CategoryGroupConfig(limit=2, categories=["ai", "ml"]),
             "finance": CategoryGroupConfig(limit=1, categories=["finance"]),
@@ -76,7 +102,7 @@ def test_category_groups_apply_limits_and_default_group_limit() -> None:
 
 
 def test_max_items_applies_after_group_limits() -> None:
-    filtering = FilteringConfig(
+    filtering = DigestConfig(
         max_items=2,
         category_groups={
             "ai": CategoryGroupConfig(limit=2, categories=["ai"]),
@@ -96,7 +122,7 @@ def test_max_items_applies_after_group_limits() -> None:
 
 
 def test_max_items_works_without_category_groups() -> None:
-    filtering = FilteringConfig(max_items=1)
+    filtering = DigestConfig(max_items=1)
     items = [make_item("lower", 7.0, None), make_item("higher", 9.0, None)]
 
     result = make_orchestrator(filtering).apply_balanced_digest(items)
@@ -104,8 +130,86 @@ def test_max_items_works_without_category_groups() -> None:
     assert [item.id for item in result.items] == ["higher"]
 
 
+def test_filter_items_skips_ai_topic_dedup_for_disabled_profile(monkeypatch) -> None:
+    orchestrator = make_orchestrator(DigestConfig())
+    orchestrator.profiles = ProfileRegistry.load(
+        Path(__file__).resolve().parents[1] / "profiles", "tech-news"
+    )
+    items = [make_item("first", 9.0, "blog"), make_item("second", 8.0, "blog")]
+    for item in items:
+        item.profile = "tech-blog"
+        item.processing.classification.profile = "tech-blog"
+
+    async def unexpected_dedup(input_items, *, log=True):  # type: ignore[no-untyped-def]
+        raise AssertionError("AI topic dedup must be skipped for tech-blog")
+
+    monkeypatch.setattr(orchestrator, "merge_topic_duplicates", unexpected_dedup)
+
+    result = asyncio.run(
+        orchestrator.filter_items(items, topic_dedup=True, apply_balance=False, log=False)
+    )
+
+    assert [item.id for item in result.items] == ["first", "second"]
+
+
+def test_runtime_threshold_override_takes_priority() -> None:
+    orchestrator = make_orchestrator(DigestConfig())
+    item = make_item("item", 7.5, "ai")
+
+    assert orchestrator.passes_profile_filter(item)
+    assert not orchestrator.passes_profile_filter(item, threshold=8.0)
+
+
+def test_profile_without_threshold_bypasses_score_filter() -> None:
+    orchestrator = make_orchestrator(DigestConfig())
+    orchestrator.config.processing.profile_settings = {}
+
+    assert orchestrator.passes_profile_filter(make_item("item", 1.0, "ai"))
+
+
+def test_rejects_settings_for_unknown_profile() -> None:
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+        ),
+        sources=SourcesConfig(),
+        processing=ProcessingConfig(
+            profile_settings={
+                "missing": ProfileSettingsConfig(threshold=7.0)
+            }
+        ),
+    )
+
+    with pytest.raises(ValueError, match="Unknown processing profile: missing"):
+        HorizonOrchestrator(config, SimpleNamespace())
+
+
+@pytest.mark.parametrize(
+    "profile_order",
+    [
+        ["tech-news", "tech-blog"],
+        ["tech-news", "tech-blog", "finance-news", "missing"],
+    ],
+)
+def test_rejects_incomplete_or_unknown_profile_order(profile_order) -> None:
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+        ),
+        sources=SourcesConfig(),
+        digest=DigestConfig(profile_order=profile_order),
+    )
+
+    with pytest.raises(ValueError, match="must list every loaded profile"):
+        HorizonOrchestrator(config, SimpleNamespace())
+
+
 def test_duplicate_category_warns_and_first_group_wins() -> None:
-    filtering = FilteringConfig(
+    filtering = DigestConfig(
         category_groups={
             "first": CategoryGroupConfig(limit=1, categories=["shared"]),
             "second": CategoryGroupConfig(limit=2, categories=["shared"]),
@@ -129,11 +233,13 @@ def test_duplicate_category_warns_and_first_group_wins() -> None:
         {"default_group_limit": 0},
         {"category_groups": {"ai": {"limit": 0, "categories": ["ai"]}}},
         {"category_groups": {"ai": {"limit": 1, "categories": []}}},
+        {"profile_order": ["tech-news", "tech-news"]},
+        {"profile_order": ["tech-news", ""]},
     ],
 )
-def test_balanced_digest_config_rejects_non_positive_or_empty_limits(kwargs) -> None:
+def test_digest_config_rejects_invalid_values(kwargs) -> None:
     with pytest.raises(ValidationError):
-        FilteringConfig(**kwargs)
+        DigestConfig(**kwargs)
 
 
 def test_run_applies_balanced_digest_before_enrichment(tmp_path, monkeypatch) -> None:
@@ -145,8 +251,12 @@ def test_run_applies_balanced_digest_before_enrichment(tmp_path, monkeypatch) ->
             languages=[],
         ),
         sources=SourcesConfig(),
-        filtering=FilteringConfig(
-            ai_score_threshold=7.0,
+        processing=ProcessingConfig(
+            profile_settings={
+                "tech-news": ProfileSettingsConfig(threshold=7.0)
+            }
+        ),
+        digest=DigestConfig(
             max_items=1,
             category_groups={
                 "ai": CategoryGroupConfig(limit=1, categories=["ai"]),
@@ -169,7 +279,7 @@ def test_run_applies_balanced_digest_before_enrichment(tmp_path, monkeypatch) ->
     async def analyze_content(input_items):  # type: ignore[no-untyped-def]
         return input_items
 
-    async def merge_topic_duplicates(input_items):  # type: ignore[no-untyped-def]
+    async def merge_topic_duplicates(input_items, *, log=True):  # type: ignore[no-untyped-def]
         return input_items
 
     async def expand_twitter_discussion(input_items):  # type: ignore[no-untyped-def]
@@ -179,12 +289,59 @@ def test_run_applies_balanced_digest_before_enrichment(tmp_path, monkeypatch) ->
         enriched_ids.extend(item.id for item in input_items)
 
     monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
-    monkeypatch.setattr(orchestrator, "_analyze_content", analyze_content)
+    monkeypatch.setattr(orchestrator, "analyze_items", analyze_content)
     monkeypatch.setattr(orchestrator, "merge_topic_duplicates", merge_topic_duplicates)
     monkeypatch.setattr(orchestrator, "_expand_twitter_discussion", expand_twitter_discussion)
-    monkeypatch.setattr(orchestrator, "_enrich_important_items", enrich_important_items)
+    monkeypatch.setattr(orchestrator, "enrich_items", enrich_important_items)
     monkeypatch.chdir(tmp_path)
 
     asyncio.run(orchestrator.run())
 
     assert enriched_ids == ["ai"]
+
+
+def test_run_balances_after_twitter_reanalysis(tmp_path, monkeypatch) -> None:
+    config = Config(
+        ai=AIConfig(
+            provider="openai",
+            model="test",
+            api_key_env="TEST_API_KEY",
+            languages=[],
+        ),
+        sources=SourcesConfig(),
+        digest=DigestConfig(max_items=1),
+    )
+    orchestrator = HorizonOrchestrator(config, SimpleNamespace())
+    items = [make_item("first", 9.0, "ai"), make_item("second", 8.0, "ai")]
+    enriched_ids: list[str] = []
+
+    async def fetch_all_sources(since):  # type: ignore[no-untyped-def]
+        return items
+
+    async def analyze_content(input_items):  # type: ignore[no-untyped-def]
+        return input_items
+
+    async def merge_topic_duplicates(input_items, *, log=True):  # type: ignore[no-untyped-def]
+        return input_items
+
+    async def expand_twitter_discussion(input_items):  # type: ignore[no-untyped-def]
+        input_items[0].processing.analysis.score = 7.0
+        input_items[1].processing.analysis.score = 10.0
+        input_items.sort(
+            key=lambda item: item.processing.analysis.score or 0,
+            reverse=True,
+        )
+
+    async def enrich_important_items(input_items):  # type: ignore[no-untyped-def]
+        enriched_ids.extend(item.id for item in input_items)
+
+    monkeypatch.setattr(orchestrator, "fetch_all_sources", fetch_all_sources)
+    monkeypatch.setattr(orchestrator, "analyze_items", analyze_content)
+    monkeypatch.setattr(orchestrator, "merge_topic_duplicates", merge_topic_duplicates)
+    monkeypatch.setattr(orchestrator, "_expand_twitter_discussion", expand_twitter_discussion)
+    monkeypatch.setattr(orchestrator, "enrich_items", enrich_important_items)
+    monkeypatch.chdir(tmp_path)
+
+    asyncio.run(orchestrator.run())
+
+    assert enriched_ids == ["second"]

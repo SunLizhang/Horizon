@@ -179,6 +179,7 @@ class OpenBBScraper(BaseScraper):
             content=body,
             author=author or (symbols[0] if symbols else None),
             published_at=published,
+            profile=watchlist.profile,
             metadata={k: v for k, v in meta.items() if v is not None},
         )
 

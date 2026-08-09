@@ -10,9 +10,12 @@ from google import genai
 from google.genai import types
 
 
-from ..models import AIConfig, AIProvider
-from rich import print as rich_print
+import logging
+
+from ..models import AIConfig, AIProvider, AI_PROVIDER_DEFAULTS
 from .tokens import record_usage
+
+logger = logging.getLogger(__name__)
 
 
 _ENV_VAR_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
@@ -112,7 +115,7 @@ class AIClient(ABC):
 
 
 class AnthropicClient(AIClient):
-    """Client for Anthropic Claude models."""
+    """Client for Anthropic-compatible models."""
 
     def __init__(self, config: AIConfig):
         """Initialize Anthropic client.
@@ -164,7 +167,7 @@ class AnthropicClient(AIClient):
         usage = getattr(message, "usage", None)
         if usage is not None:
             record_usage(
-                "anthropic",
+                self.config.provider.value,
                 input_tokens=getattr(usage, "input_tokens", 0),
                 output_tokens=getattr(usage, "output_tokens", 0),
             )
@@ -173,15 +176,6 @@ class AnthropicClient(AIClient):
 
 class OpenAIClient(AIClient):
     """Client for OpenAI-compatible APIs."""
-
-    # Default base URLs per provider
-    _DEFAULT_BASE_URLS = {
-        "ali": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "deepseek": "https://api.deepseek.com",
-        "doubao": "https://ark.cn-beijing.volces.com/api/v3",
-        "minimax": "https://api.minimax.io/v1",
-        "ollama": "http://localhost:11434/v1",
-    }
 
     _BASE_URL_ENVS = {
         "ollama": (
@@ -196,6 +190,10 @@ class OpenAIClient(AIClient):
 
     # Providers that need temperature clamped to (0, 1]
     _TEMP_CLAMP = {"minimax"}
+
+    # Newer reasoning-series / GPT-5 family models reject legacy `max_tokens`
+    # and require `max_completion_tokens` instead.
+    _MODELS_REQUIRING_MAX_COMPLETION_TOKENS = ("o1", "o3", "o4", "gpt-5")
 
     def __init__(self, config: AIConfig):
         """Initialize OpenAI-compatible client.
@@ -221,6 +219,10 @@ class OpenAIClient(AIClient):
         # Some newer models (e.g. Claude Opus 4.7 on Bedrock Converse) reject
         # `temperature`. We learn this on first 400 and stop sending it.
         self._supports_temperature = True
+        self._use_max_completion_tokens = any(
+            config.model.startswith(prefix)
+            for prefix in self._MODELS_REQUIRING_MAX_COMPLETION_TOKENS
+        )
 
     @classmethod
     def _resolve_base_url(cls, config: AIConfig) -> Optional[str]:
@@ -231,7 +233,7 @@ class OpenAIClient(AIClient):
                 if base_url:
                     break
         if not base_url:
-            base_url = cls._DEFAULT_BASE_URLS.get(config.provider.value, "")
+            base_url = AI_PROVIDER_DEFAULTS.get(config.provider, {}).get("base_url") or ""
 
         if config.provider == AIProvider.OLLAMA and base_url:
             return _normalize_ollama_base_url(base_url)
@@ -269,11 +271,10 @@ class OpenAIClient(AIClient):
                 temperature=temperature,
                 max_tokens=max_tokens,
                 include_temperature=self._supports_temperature,
+                use_max_completion_tokens=self._use_max_completion_tokens,
             )
         except Exception as exc:
-            if self._supports_temperature and self._is_temperature_unsupported(
-                str(exc)
-            ):
+            if self._supports_temperature and self._is_temperature_unsupported(str(exc)):
                 self._supports_temperature = False
                 response = await self._do_request(
                     system=system,
@@ -281,6 +282,17 @@ class OpenAIClient(AIClient):
                     temperature=temperature,
                     max_tokens=max_tokens,
                     include_temperature=False,
+                    use_max_completion_tokens=self._use_max_completion_tokens,
+                )
+            elif not self._use_max_completion_tokens and self._is_max_tokens_unsupported(str(exc)):
+                self._use_max_completion_tokens = True
+                response = await self._do_request(
+                    system=system,
+                    user=user,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    include_temperature=self._supports_temperature,
+                    use_max_completion_tokens=True,
                 )
             else:
                 raise
@@ -301,6 +313,7 @@ class OpenAIClient(AIClient):
         temperature: float,
         max_tokens: int,
         include_temperature: bool,
+        use_max_completion_tokens: bool,
     ):
         request_kwargs = {
             "model": self.model,
@@ -308,8 +321,9 @@ class OpenAIClient(AIClient):
                 {"role": "system", "content": system},
                 {"role": "user", "content": user},
             ],
-            "max_tokens": max_tokens,
         }
+        token_param = "max_completion_tokens" if use_max_completion_tokens else "max_tokens"
+        request_kwargs[token_param] = max_tokens
         if include_temperature:
             request_kwargs["temperature"] = temperature
         if self.provider not in self._NO_RESPONSE_FORMAT:
@@ -324,6 +338,11 @@ class OpenAIClient(AIClient):
             or "not support" in lowered
             or "unsupported" in lowered
         )
+
+    @staticmethod
+    def _is_max_tokens_unsupported(message: str) -> bool:
+        lowered = message.lower()
+        return "max_tokens" in lowered and "max_completion_tokens" in lowered
 
 
 class AzureOpenAIClient(AIClient):
@@ -514,9 +533,18 @@ class GeminiClient(AIClient):
         return response.text
 
 
+def _uses_anthropic_compatible_api(config: AIConfig) -> bool:
+    """Return whether MiniMax is configured for its Anthropic-compatible API."""
+    base_url = (config.base_url or "").rstrip("/")
+    return config.provider == AIProvider.MINIMAX and base_url.endswith("/anthropic")
+
+
 def _create_single_client(config: AIConfig) -> AIClient:
     """Create a single AI client instance."""
-    if config.provider == AIProvider.ANTHROPIC:
+    if (
+        config.provider == AIProvider.ANTHROPIC
+        or _uses_anthropic_compatible_api(config)
+    ):
         return AnthropicClient(config)
     elif config.provider == AIProvider.AZURE:
         return AzureOpenAIClient(config)
@@ -585,9 +613,9 @@ class ChainedAIClient(AIClient):
                     raise
                 last_error = exc
                 if i < len(self.configs) - 1:
-                    rich_print(
-                        f"\n[yellow]Provider {self.configs[i].provider.value} failed ({exc}), "
-                        f"falling back to {self.configs[i + 1].provider.value}...[/yellow]"
+                    logger.warning(
+                        "Provider %s failed (%s), falling back to %s...",
+                        self.configs[i].provider.value, exc, self.configs[i + 1].provider.value,
                     )
         raise RuntimeError(f"All providers failed. Last error: {last_error}")
 
@@ -608,9 +636,8 @@ class ChainedAIClient(AIClient):
 
 def _create_chained_client(config: AIConfig) -> ChainedAIClient:
     """Build a ChainedAIClient from a comma-separated provider chain."""
-    from ..models import AI_PROVIDER_DEFAULTS
-
-    provider_names = [p.strip() for p in config.provider_chain.split(",") if p.strip()]
+    provider_chain = config.provider_chain or ""
+    provider_names = [p.strip() for p in provider_chain.split(",") if p.strip()]
     if not provider_names:
         raise ValueError("provider_chain is empty")
 
@@ -622,14 +649,28 @@ def _create_chained_client(config: AIConfig) -> ChainedAIClient:
             raise ValueError(f"Unsupported AI provider in chain: {name}")
 
         defaults = AI_PROVIDER_DEFAULTS.get(provider, {})
+        base_url = config.base_url if provider == config.provider else defaults.get("base_url")
         cfg = AIConfig(
             provider=provider,
             model=defaults.get("model", config.model),
             api_key_env=defaults.get("api_key_env", config.api_key_env),
-            base_url=config.base_url,
+            base_url=base_url,
             temperature=config.temperature,
             max_tokens=config.max_tokens,
+            throttle_sec=config.throttle_sec,
+            analysis_concurrency=config.analysis_concurrency,
+            enrichment_concurrency=config.enrichment_concurrency,
             languages=config.languages,
+            azure_endpoint_env=(
+                config.azure_endpoint_env or defaults.get("azure_endpoint_env")
+                if provider == AIProvider.AZURE
+                else None
+            ),
+            api_version=(
+                config.api_version or defaults.get("api_version")
+                if provider == AIProvider.AZURE
+                else None
+            ),
         )
         chain_configs.append(cfg)
 

@@ -10,10 +10,12 @@ from typing import Any, List, Optional, cast
 
 import feedparser
 import httpx
+from bs4 import BeautifulSoup
 
 from .base import BaseScraper
 from ..models import (
     ContentItem,
+    ProfileRoute,
     RedditConfig,
     RedditSubredditConfig,
     RedditUserConfig,
@@ -23,6 +25,7 @@ from ..models import (
 logger = logging.getLogger(__name__)
 
 REDDIT_BASE = "https://www.reddit.com"
+OLD_REDDIT_BASE = "https://old.reddit.com"
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -53,29 +56,34 @@ class RedditScraper(BaseScraper):
         if not self.config.get("enabled", True):
             return []
 
-        tasks = []
+        items = []
         for sub_cfg in self.reddit_config.subreddits:
             if sub_cfg.enabled:
-                tasks.append(self._fetch_subreddit(sub_cfg, since))
+                try:
+                    items.extend(await self._fetch_subreddit(sub_cfg, since))
+                except Exception as e:
+                    logger.warning("Error fetching Reddit source: %s", e)
+
         for user_cfg in self.reddit_config.users:
             if user_cfg.enabled:
-                tasks.append(self._fetch_user(user_cfg, since))
+                try:
+                    items.extend(await self._fetch_user(user_cfg, since))
+                except Exception as e:
+                    logger.warning("Error fetching Reddit source: %s", e)
 
-        if not tasks:
-            return []
-
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        items = []
-        for result in results:
-            if isinstance(result, Exception):
-                logger.warning("Error fetching Reddit source: %s", result)
-            elif isinstance(result, list):
-                items.extend(result)
         return items
 
     async def _fetch_subreddit(
         self, cfg: RedditSubredditConfig, since: datetime
     ) -> List[ContentItem]:
+        html_items = await self._fetch_subreddit_html(cfg, since)
+        if html_items:
+            return html_items
+
+        logger.warning(
+            "Reddit old HTML returned no posts for r/%s; falling back to JSON",
+            cfg.subreddit,
+        )
         params: dict[str, Any] = {"limit": min(cfg.fetch_limit, 100), "raw_json": 1}
         if cfg.sort in ("top", "controversial"):
             params["t"] = cfg.time_filter
@@ -98,7 +106,13 @@ class RedditScraper(BaseScraper):
             if child.get("kind") == "t3"
         ]
         return await self._process_posts(
-            posts, since, "subreddit", cfg.subreddit, cfg.min_score
+            posts,
+            since,
+            "subreddit",
+            cfg.subreddit,
+            cfg.min_score,
+            cfg.category,
+            cfg.profile,
         )
 
     async def _fetch_subreddit_rss(
@@ -143,6 +157,7 @@ class RedditScraper(BaseScraper):
                     content=content,
                     author=str(entry.get("author") or "unknown"),
                     published_at=published_at,
+                    profile=cfg.profile,
                     metadata={
                         "score": None,
                         "upvote_ratio": None,
@@ -152,10 +167,134 @@ class RedditScraper(BaseScraper):
                         "flair": None,
                         "discussion_url": link,
                         "fallback": "rss",
+                        "category": cfg.category,
                     },
                 )
             )
         return items
+
+    async def _fetch_subreddit_html(
+        self, cfg: RedditSubredditConfig, since: datetime
+    ) -> List[ContentItem]:
+        url = f"{OLD_REDDIT_BASE}/r/{cfg.subreddit}/{cfg.sort}/"
+        params: dict[str, Any] = {"limit": min(cfg.fetch_limit, 100)}
+        if cfg.sort in ("top", "controversial"):
+            params["t"] = cfg.time_filter
+
+        try:
+            response = await self.client.get(
+                url,
+                params=params,
+                headers={
+                    **REDDIT_HEADERS,
+                    "Accept": "text/html,application/xhtml+xml,*/*",
+                },
+                follow_redirects=True,
+            )
+            response.raise_for_status()
+        except httpx.HTTPError as e:
+            logger.warning(
+                "Reddit old HTML request failed for r/%s: %s", cfg.subreddit, e
+            )
+            return []
+
+        posts = self._parse_old_reddit_posts(response.text, cfg)
+        return await self._process_posts(
+            posts,
+            since,
+            "subreddit-html",
+            cfg.subreddit,
+            cfg.min_score,
+            cfg.category,
+            cfg.profile,
+        )
+
+    def _parse_old_reddit_posts(
+        self, html: str, cfg: RedditSubredditConfig
+    ) -> List[dict]:
+        soup = BeautifulSoup(html, "html.parser")
+        posts = []
+        for thing in soup.select("div.thing.link[data-fullname]")[: cfg.fetch_limit]:
+            fullname = str(thing.get("data-fullname") or "")
+            post_id = fullname.removeprefix("t3_")
+            title_el = thing.select_one("a.title")
+            if not post_id or not title_el:
+                continue
+
+            permalink = str(thing.get("data-permalink") or "")
+            if permalink.startswith(REDDIT_BASE):
+                permalink = permalink.removeprefix(REDDIT_BASE)
+            if not permalink.startswith("/"):
+                permalink = f"/r/{cfg.subreddit}/comments/{post_id}/"
+
+            url = str(thing.get("data-url") or "")
+            classes = thing.get("class") or []
+            is_self = isinstance(classes, list) and "self" in classes or not url
+            selftext = ""
+            body_el = thing.select_one("div.expando div.usertext-body div.md")
+            if body_el:
+                selftext = body_el.get_text("\n", strip=True)
+
+            posts.append(
+                {
+                    "id": post_id,
+                    "title": title_el.get_text(" ", strip=True),
+                    "is_self": is_self,
+                    "subreddit": str(thing.get("data-subreddit") or cfg.subreddit),
+                    "permalink": permalink,
+                    "author": str(thing.get("data-author") or "unknown"),
+                    "created_utc": self._parse_old_reddit_timestamp(thing),
+                    "score": self._parse_int(thing.get("data-score"), default=0),
+                    "upvote_ratio": None,
+                    "num_comments": self._parse_comment_count(thing),
+                    "selftext": selftext,
+                    "url": url or f"{REDDIT_BASE}{permalink}",
+                    "link_flair_text": self._parse_flair(thing),
+                }
+            )
+        return posts
+
+    @staticmethod
+    def _parse_old_reddit_timestamp(thing: Any) -> float:
+        timestamp = thing.get("data-timestamp")
+        try:
+            return int(str(timestamp)) / 1000
+        except (TypeError, ValueError):
+            pass
+
+        time_el = thing.select_one("time[datetime]")
+        if time_el and time_el.get("datetime"):
+            try:
+                parsed = datetime.fromisoformat(
+                    str(time_el["datetime"]).replace("Z", "+00:00")
+                )
+                return parsed.timestamp()
+            except ValueError:
+                pass
+        return 0
+
+    @staticmethod
+    def _parse_int(value: Any, default: int = 0) -> int:
+        try:
+            return int(str(value).replace(",", ""))
+        except (TypeError, ValueError):
+            return default
+
+    @classmethod
+    def _parse_comment_count(cls, thing: Any) -> int:
+        comments_el = thing.select_one("a.comments")
+        if not comments_el:
+            return 0
+        match = re.search(r"[\d,]+", comments_el.get_text(" ", strip=True))
+        return cls._parse_int(match.group(0), default=0) if match else 0
+
+    @staticmethod
+    def _parse_flair(thing: Any) -> Optional[str]:
+        flair_el = thing.select_one("span.linkflairlabel")
+        if not flair_el:
+            return None
+        flair = flair_el.get_text(" ", strip=True)
+        return flair or None
 
     async def _fetch_user(
         self, cfg: RedditUserConfig, since: datetime
@@ -176,7 +315,13 @@ class RedditScraper(BaseScraper):
             if child.get("kind") == "t3"
         ]
         return await self._process_posts(
-            posts, since, "user", cfg.username, min_score=0
+            posts,
+            since,
+            "user",
+            cfg.username,
+            min_score=0,
+            category=cfg.category,
+            profile=cfg.profile,
         )
 
     async def _process_posts(
@@ -186,6 +331,8 @@ class RedditScraper(BaseScraper):
         subtype: str,
         source_name: str,
         min_score: int,
+        category: Optional[str] = None,
+        profile: ProfileRoute = None,
     ) -> List[ContentItem]:
         valid_posts = []
         comment_tasks = []
@@ -216,7 +363,9 @@ class RedditScraper(BaseScraper):
         for post, comments in zip(valid_posts, all_comments):
             if isinstance(comments, Exception):
                 comments = []
-            item = self._parse_post(post, cast(List[dict], comments), subtype)
+            item = self._parse_post(
+                post, cast(List[dict], comments), subtype, category, profile
+            )
             if item:
                 items.append(item)
         return items
@@ -250,6 +399,10 @@ class RedditScraper(BaseScraper):
 
     async def _fetch_comments(self, subreddit: str, post_id: str) -> List[dict]:
         fetch_limit = self.reddit_config.fetch_comments
+        html_comments = await self._fetch_comments_html(subreddit, post_id, fetch_limit)
+        if html_comments:
+            return html_comments
+
         url = f"{REDDIT_BASE}/r/{subreddit}/comments/{post_id}.json"
         params = {"limit": fetch_limit, "depth": 1, "sort": "top", "raw_json": 1}
 
@@ -269,8 +422,57 @@ class RedditScraper(BaseScraper):
         comments.sort(key=lambda c: c.get("score", 0), reverse=True)
         return comments[:fetch_limit]
 
+    async def _fetch_comments_html(
+        self, subreddit: str, post_id: str, fetch_limit: int
+    ) -> List[dict]:
+        url = f"{OLD_REDDIT_BASE}/r/{subreddit}/comments/{post_id}/"
+        params = {"limit": fetch_limit, "sort": "top"}
+
+        try:
+            response = await self.client.get(
+                url,
+                params=params,
+                headers={
+                    **REDDIT_HEADERS,
+                    "Accept": "text/html,application/xhtml+xml,*/*",
+                },
+                follow_redirects=True,
+            )
+            response.raise_for_status()
+        except httpx.HTTPError as e:
+            logger.info("Reddit old HTML comments failed for %s: %s", post_id, e)
+            return []
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        comments = []
+        for comment_el in soup.select("div.comment[data-fullname]"):
+            classes = comment_el.get("class") or []
+            if isinstance(classes, list) and "deleted" in classes:
+                continue
+            body_el = comment_el.select_one("div.usertext-body div.md")
+            if not body_el:
+                continue
+            body = body_el.get_text("\n", strip=True)
+            if not body:
+                continue
+            comments.append(
+                {
+                    "author": str(comment_el.get("data-author") or "anon"),
+                    "body": body,
+                    "score": self._parse_int(comment_el.get("data-score"), default=0),
+                }
+            )
+
+        comments.sort(key=lambda c: c.get("score", 0), reverse=True)
+        return comments[:fetch_limit]
+
     def _parse_post(
-        self, post: dict, comments: List[dict], subtype: str
+        self,
+        post: dict,
+        comments: List[dict],
+        subtype: str,
+        category: Optional[str] = None,
+        profile: ProfileRoute = None,
     ) -> Optional[ContentItem]:
         post_id = post["id"]
         title = post.get("title", "")
@@ -313,6 +515,7 @@ class RedditScraper(BaseScraper):
             content=content,
             author=author,
             published_at=created,
+            profile=profile,
             metadata={
                 "score": post.get("score", 0),
                 "upvote_ratio": post.get("upvote_ratio"),
@@ -321,6 +524,7 @@ class RedditScraper(BaseScraper):
                 "is_self": is_self,
                 "flair": post.get("link_flair_text"),
                 "discussion_url": discussion_url,
+                "category": category,
             },
         )
 

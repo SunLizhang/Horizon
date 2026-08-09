@@ -5,18 +5,29 @@ import asyncio
 import json
 import sys
 from datetime import datetime, timezone
-from pathlib import Path
 
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.panel import Panel
 
+from .._cli import add_data_dir_arguments, add_log_level_argument
+from ..logging_config import configure_logging
+
 from ..ai.summarizer import DailySummarizer
-from ..models import ContentItem, SourceType
+from ..console_icons import IconStyle, get_icons
+from ..models import (
+    ClassificationResult,
+    ContentAnalysis,
+    ContentArtifact,
+    ContentBlock,
+    ContentItem,
+    ProcessingResult,
+    SourceType,
+)
 from ..storage.manager import ConfigError, StorageManager
 from .webhook import WebhookNotifier
 
-console = Console()
+console = Console(stderr=True)
 
 
 def _make_test_items() -> list[ContentItem]:
@@ -31,13 +42,14 @@ def _make_test_items() -> list[ContentItem]:
             author="openai",
             published_at=datetime(2026, 4, 24, 10, 0, tzinfo=timezone.utc),
             fetched_at=datetime(2026, 4, 24, 12, 0, tzinfo=timezone.utc),
-            ai_score=9.0,
-            ai_summary="OpenAI released GPT-5 featuring multimodal capabilities and improved reasoning.",
-            ai_tags=["ai", "llm", "openai"],
-            metadata={
-                "title_zh": "GPT-5 发布：多模态能力大幅提升",
-                "detailed_summary_zh": "OpenAI 发布了 GPT-5，具备多模态能力和更强的推理能力。",
-            },
+            profile="tech-news",
+            processing=_sample_processing(
+                score=9.0,
+                summary="OpenAI released GPT-5 featuring multimodal capabilities and improved reasoning.",
+                tags=["ai", "llm", "openai"],
+                title_zh="GPT-5 发布：多模态能力大幅提升",
+                summary_zh="OpenAI 发布了 GPT-5，具备多模态能力和更强的推理能力。",
+            ),
         ),
         ContentItem(
             id="hackernews:test:2",
@@ -48,15 +60,47 @@ def _make_test_items() -> list[ContentItem]:
             author="torvalds",
             published_at=datetime(2026, 4, 24, 8, 0, tzinfo=timezone.utc),
             fetched_at=datetime(2026, 4, 24, 12, 0, tzinfo=timezone.utc),
-            ai_score=7.5,
-            ai_summary="Linux kernel 7.0 released with performance gains and new hardware support.",
-            ai_tags=["linux", "kernel", "performance"],
-            metadata={
-                "title_zh": "Linux 内核 7.0 发布",
-                "detailed_summary_zh": "Linux 内核 7.0 发布，带来显著性能提升和新硬件支持。",
-            },
+            profile="tech-news",
+            processing=_sample_processing(
+                score=7.5,
+                summary="Linux kernel 7.0 released with performance gains and new hardware support.",
+                tags=["linux", "kernel", "performance"],
+                title_zh="Linux 内核 7.0 发布",
+                summary_zh="Linux 内核 7.0 发布，带来显著性能提升和新硬件支持。",
+            ),
         ),
     ]
+
+
+def _sample_processing(
+    score: float,
+    summary: str,
+    tags: list[str],
+    title_zh: str,
+    summary_zh: str,
+) -> ProcessingResult:
+    return ProcessingResult(
+        classification=ClassificationResult(
+            profile="tech-news", method="source_override"
+        ),
+        analysis=ContentAnalysis(
+            score=score, reason="Sample item", summary=summary, tags=tags
+        ),
+        artifacts={
+            "zh": ContentArtifact(
+                language="zh",
+                title=title_zh,
+                blocks=[
+                    ContentBlock(
+                        id="summary",
+                        title="摘要",
+                        content=summary_zh,
+                        primary=True,
+                    )
+                ],
+            )
+        },
+    )
 
 
 def _preview_message(
@@ -85,7 +129,11 @@ def _preview_message(
 
 
 async def _run_test(
-    webhook_config, lang: str, dry_run: bool, delivery_override: str | None = None
+    webhook_config,
+    lang: str,
+    dry_run: bool,
+    delivery_override: str | None = None,
+    icon_style: IconStyle = "emoji",
 ) -> None:
     """Execute the webhook test."""
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -99,7 +147,11 @@ async def _run_test(
             update={"delivery": delivery_override}
         )
 
-    notifier = WebhookNotifier(effective_config, console=console)
+    notifier = WebhookNotifier(
+        effective_config,
+        console=console,
+        icons=get_icons(icon_style),
+    )
 
     if dry_run:
         console.print(f"\n[bold yellow]── Dry Run (lang={lang}) ──[/bold yellow]")
@@ -175,12 +227,16 @@ def main() -> None:
         choices=["summary", "summary_and_items"],
         help="Override the delivery mode from config for this test.",
     )
+    add_data_dir_arguments(parser)
+    add_log_level_argument(parser)
     args = parser.parse_args()
+
+    configure_logging(console, level=args.log_level)
 
     try:
         load_dotenv()
 
-        storage = StorageManager(data_dir=str(Path("data")))
+        storage = StorageManager(data_dir=args.data_dir, config_path=args.config)
         try:
             config = storage.load_config()
         except FileNotFoundError:
@@ -201,16 +257,22 @@ def main() -> None:
             sys.exit(1)
 
         lang = args.lang or (config.ai.languages[0] if config.ai.languages else "en")
-        asyncio.run(_run_test(config.webhook, lang, args.dry_run, args.delivery))
+        asyncio.run(
+            _run_test(
+                config.webhook,
+                lang,
+                args.dry_run,
+                args.delivery,
+                config.display.icon_style,
+            )
+        )
 
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted by user[/yellow]")
         sys.exit(0)
     except Exception as e:
         console.print(f"\n[bold red]Error: {e}[/bold red]")
-        import traceback
-
-        traceback.print_exc()
+        console.print_exception()
         sys.exit(1)
 
 

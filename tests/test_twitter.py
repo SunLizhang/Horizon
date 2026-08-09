@@ -7,6 +7,7 @@ import httpx
 
 from src.models import TwitterConfig
 from src.scrapers.twitter import TwitterScraper
+from src.scrapers.twitter_playwright import TwitterPlaywrightScraper
 
 
 def _make_config(**kwargs) -> TwitterConfig:
@@ -126,12 +127,32 @@ def test_successful_fetch_returns_items(monkeypatch):
 
     transport = httpx.MockTransport(handler)
     client = httpx.AsyncClient(transport=transport)
-    result = asyncio.run(TwitterScraper(_make_config(), client).fetch(since))
+    result = asyncio.run(
+        TwitterScraper(_make_config(profile="twitter-profile"), client).fetch(since)
+    )
     asyncio.run(client.aclose())
 
     assert len(result) == 2
     assert result[0].source_type.value == "twitter"
     assert result[0].metadata["favorite_count"] == 10
+    assert result[0].profile == "twitter-profile"
+
+
+def test_playwright_parse_tweet_propagates_profile():
+    scraper = TwitterPlaywrightScraper(
+        _make_config(profile="playwright-profile"), http_client=None
+    )
+    item = scraper._parse_tweet(
+        {
+            "tweet_id": "123",
+            "text": "Hello from Playwright",
+            "datetime": datetime.now(timezone.utc).isoformat(),
+        },
+        "karpathy",
+    )
+
+    assert item is not None
+    assert item.profile == "playwright-profile"
 
 
 def test_metadata_keys_aligned_for_analyzer(monkeypatch):
@@ -415,6 +436,5 @@ def test_fetch_replies_no_conversation_id_returns_empty(monkeypatch):
     result = asyncio.run(scraper.fetch_replies_for_item(item))
     asyncio.run(client.aclose())
     assert result == []
-
 
 

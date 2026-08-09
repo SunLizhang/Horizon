@@ -13,18 +13,11 @@ from typing import Any
 
 from dotenv import load_dotenv
 
+from ..models import SOURCE_REGISTRY
 from .errors import HorizonMcpError
 
 
-VALID_SOURCES = {
-    "github",
-    "hackernews",
-    "rss",
-    "reddit",
-    "telegram",
-    "twitter",
-    "openbb",
-}
+VALID_SOURCES = frozenset(SOURCE_REGISTRY)
 ENV_KEY_RE = re.compile(r"^[A-Z_][A-Z0-9_]*$")
 
 
@@ -175,10 +168,18 @@ def make_storage(runtime: HorizonRuntime, config_path: Path) -> Any:
     return runtime.StorageManager(data_dir=data_dir)
 
 
-def make_orchestrator(runtime: HorizonRuntime, config: Any, storage: Any) -> Any:
+def make_orchestrator(
+    runtime: HorizonRuntime,
+    config: Any,
+    storage: Any,
+    console: Any = None,
+    profiles: Any = None,
+) -> Any:
     """Build native Horizon orchestrator."""
 
-    return runtime.HorizonOrchestrator(config, storage)
+    return runtime.HorizonOrchestrator(
+        config, storage, console=console, profiles=profiles
+    )
 
 
 def apply_source_filter(
@@ -196,25 +197,16 @@ def apply_source_filter(
 
     clone = config.model_copy(deep=True)
 
-    if "github" not in wanted:
-        clone.sources.github = []
-    if "hackernews" not in wanted:
-        clone.sources.hackernews.enabled = False
-    if "rss" not in wanted:
-        clone.sources.rss = []
-    if "reddit" not in wanted:
-        clone.sources.reddit.enabled = False
-        clone.sources.reddit.subreddits = []
-        clone.sources.reddit.users = []
-    if "telegram" not in wanted:
-        clone.sources.telegram.enabled = False
-        clone.sources.telegram.channels = []
-    if "twitter" not in wanted and getattr(clone.sources, "twitter", None):
-        clone.sources.twitter.enabled = False
-        clone.sources.twitter.users = []
-    if "openbb" not in wanted and getattr(clone.sources, "openbb", None):
-        clone.sources.openbb.enabled = False
-        clone.sources.openbb.watchlists = []
+    for source_name, definition in SOURCE_REGISTRY.items():
+        if source_name in wanted:
+            continue
+        source_config = getattr(clone.sources, definition.config_field, None)
+        if definition.config_is_list:
+            setattr(clone.sources, definition.config_field, [])
+        elif source_config is not None:
+            source_config.enabled = False
+            for item_field in definition.item_fields:
+                setattr(source_config, item_field, [])
 
     return clone, chosen, unknown
 
@@ -223,20 +215,16 @@ def get_enabled_sources(config: Any) -> list[str]:
     """List enabled top-level source types in effective config."""
 
     enabled: list[str] = []
-    if getattr(config.sources, "github", None):
-        enabled.append("github")
-    if getattr(config.sources.hackernews, "enabled", False):
-        enabled.append("hackernews")
-    if getattr(config.sources, "rss", None):
-        enabled.append("rss")
-    if getattr(config.sources.reddit, "enabled", False):
-        enabled.append("reddit")
-    if getattr(config.sources.telegram, "enabled", False):
-        enabled.append("telegram")
-    if getattr(getattr(config.sources, "twitter", None), "enabled", False):
-        enabled.append("twitter")
-    if getattr(getattr(config.sources, "openbb", None), "enabled", False):
-        enabled.append("openbb")
+    for source_name, definition in SOURCE_REGISTRY.items():
+        source_config = getattr(config.sources, definition.config_field, None)
+        if definition.config_is_list:
+            is_enabled = any(
+                getattr(item, "enabled", True) for item in source_config or []
+            )
+        else:
+            is_enabled = getattr(source_config, "enabled", False)
+        if is_enabled:
+            enabled.append(source_name)
     return enabled
 
 

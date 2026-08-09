@@ -1,5 +1,6 @@
 """Interactive setup wizard for Horizon configuration."""
 
+import argparse
 import json
 import os
 import sys
@@ -12,17 +13,33 @@ from rich.prompt import Prompt, Confirm
 from rich.table import Table
 from rich.panel import Panel
 
+from .._cli import add_data_dir_arguments, add_log_level_argument
+from ..logging_config import configure_logging
+
 from ..models import (
-    AIConfig, AIProvider, AI_PROVIDER_DEFAULTS, Config, FilteringConfig, SourcesConfig,
-    GitHubSourceConfig, HackerNewsConfig, RSSSourceConfig,
-    RedditConfig, RedditSubredditConfig, RedditUserConfig,
-    TelegramConfig, TelegramChannelConfig,
+    AIConfig,
+    AIProvider,
+    AI_PROVIDER_DEFAULTS,
+    CollectionConfig,
+    Config,
+    DigestConfig,
+    GitHubSourceConfig,
+    HackerNewsConfig,
+    ProcessingConfig,
+    ProfileSettingsConfig,
+    RSSSourceConfig,
+    RedditConfig,
+    RedditSubredditConfig,
+    RedditUserConfig,
+    SourcesConfig,
+    TelegramChannelConfig,
+    TelegramConfig,
 )
 from ..storage.manager import StorageManager
 from .presets import load_presets, match_sources
 
 
-console = Console()
+console = Console(stderr=True)
 
 
 def print_banner():
@@ -58,24 +75,31 @@ def configure_ai() -> Optional[AIConfig]:
         "AI provider",
         choices=providers,
         default="openai",
+        console=console,
     )
     provider_enum = AIProvider(provider)
 
     provider_defaults = AI_PROVIDER_DEFAULTS.get(provider_enum, {})
-    model = Prompt.ask("Model name", default=provider_defaults.get("model", ""))
+    model = Prompt.ask(
+        "Model name", default=provider_defaults.get("model", ""), console=console
+    )
 
     if provider_enum == AIProvider.OLLAMA:
         base_url = Prompt.ask(
             "Ollama base URL (leave empty for http://localhost:11434)",
             default="",
+            console=console,
         )
     else:
-        base_url = Prompt.ask("Base URL (leave empty for default)", default="")
+        base_url = Prompt.ask(
+            "Base URL (leave empty for default)", default="", console=console
+        )
 
     # Determine default env var name
     api_key_env = Prompt.ask(
         "API key environment variable name",
         default=provider_defaults.get("api_key_env", "API_KEY"),
+        console=console,
     )
 
     # Check if the key is actually set
@@ -89,6 +113,7 @@ def configure_ai() -> Optional[AIConfig]:
     languages = Prompt.ask(
         "Output languages (comma-separated)",
         default="zh,en",
+        console=console,
     )
     lang_list = [l.strip() for l in languages.split(",") if l.strip()]
 
@@ -122,7 +147,7 @@ def get_interests() -> str:
         "[dim]Examples: \"LLM inference\", \"具身智能\", \"Rust systems programming\", "
         "\"web security\", \"开源工具\"[/dim]\n"
     )
-    interests = Prompt.ask("Your interests")
+    interests = Prompt.ask("Your interests", console=console)
     return interests
 
 
@@ -172,7 +197,7 @@ def select_sources(
     console.print(
         "\n[dim]Enter numbers to toggle off/on (e.g. '3 5 7'), or press Enter to accept all:[/dim]"
     )
-    toggle_input = Prompt.ask("Toggle", default="").strip()
+    toggle_input = Prompt.ask("Toggle", default="", console=console).strip()
 
     if toggle_input:
         for num_str in toggle_input.split():
@@ -251,9 +276,9 @@ def build_config(
         elif src_type == "hackernews":
             hn_enabled = True
 
-    # Always include HackerNews as a universal source
+    # Keep HackerNews as the fallback when no recommendation was selected.
     hn_config = HackerNewsConfig(
-        enabled=True,
+        enabled=hn_enabled or not selected_sources,
         fetch_top_stories=30,
         min_score=100,
     )
@@ -278,16 +303,24 @@ def build_config(
         telegram=telegram_config,
     )
 
-    filtering = FilteringConfig(
-        ai_score_threshold=7.0,
-        time_window_hours=24,
-    )
+    collection = CollectionConfig(time_window_hours=24)
 
     return Config(
-        version="1.0",
         ai=ai_config,
         sources=sources,
-        filtering=filtering,
+        collection=collection,
+        digest=DigestConfig(
+            profile_order=["tech-news", "tech-blog", "finance-news"]
+        ),
+        processing=ProcessingConfig(
+            profile_settings={
+                "tech-news": ProfileSettingsConfig(threshold=7.0),
+                "tech-blog": ProfileSettingsConfig(
+                    threshold=4.0, topic_dedup=False
+                ),
+                "finance-news": ProfileSettingsConfig(threshold=7.0),
+            }
+        ),
     )
 
 
@@ -295,7 +328,8 @@ def merge_configs(new_config: Config, existing_config: Config) -> Config:
     """Merge new config into existing config, deduplicating sources.
 
     Rules:
-    - ai / filtering: use new values (full replacement)
+    - ai: use the newly selected provider settings
+    - collection / digest: preserve existing values because the wizard does not prompt for them
     - sources: deduplicate by unique key, append new ones
     - existing enabled=false sources are preserved
 
@@ -306,42 +340,44 @@ def merge_configs(new_config: Config, existing_config: Config) -> Config:
     Returns:
         Merged Config object.
     """
-    merged = new_config.model_copy(deep=True)
+    merged = existing_config.model_copy(deep=True)
+    merged.ai = new_config.ai.model_copy(deep=True)
 
-    # Merge GitHub sources by unique key
-    existing_gh = {_gh_key(s): s for s in existing_config.sources.github}
-    for src in merged.sources.github:
-        key = _gh_key(src)
-        if key in existing_gh:
-            # Keep existing enabled state
-            src.enabled = existing_gh[key].enabled
-            del existing_gh[key]
-    # Append remaining existing sources
-    merged.sources.github.extend(existing_gh.values())
-
-    # Merge RSS sources by URL
-    existing_rss = {s.url: s for s in existing_config.sources.rss}
-    for src in merged.sources.rss:
-        if src.url in existing_rss:
-            src.enabled = existing_rss[src.url].enabled
-            del existing_rss[src.url]
-    merged.sources.rss.extend(existing_rss.values())
-
-    # Merge Reddit subreddits
-    existing_subs = {
-        s.subreddit: s
-        for s in (existing_config.sources.reddit.subreddits or [])
-    }
-    new_subs = []
-    for sub in (merged.sources.reddit.subreddits or []):
-        name = sub.subreddit
-        if name in existing_subs:
-            del existing_subs[name]
-        new_subs.append(sub)
-    new_subs.extend(existing_subs.values())
-    merged.sources.reddit.subreddits = new_subs
+    merged.sources.github = _merge_source_list(
+        new_config.sources.github, existing_config.sources.github, _gh_key
+    )
+    merged.sources.rss = _merge_source_list(
+        new_config.sources.rss, existing_config.sources.rss, lambda source: str(source.url)
+    )
+    merged.sources.reddit.subreddits = _merge_source_list(
+        new_config.sources.reddit.subreddits,
+        existing_config.sources.reddit.subreddits,
+        lambda source: source.subreddit,
+    )
+    merged.sources.reddit.users = _merge_source_list(
+        new_config.sources.reddit.users,
+        existing_config.sources.reddit.users,
+        lambda source: source.username,
+    )
+    merged.sources.telegram.channels = _merge_source_list(
+        new_config.sources.telegram.channels,
+        existing_config.sources.telegram.channels,
+        lambda source: source.channel,
+    )
 
     return merged
+
+
+def _merge_source_list(new_sources, existing_sources, key):
+    """Merge and deduplicate sources without replacing existing settings."""
+    merged_by_key = {}
+    for source in existing_sources or []:
+        source_key = key(source)
+        merged_by_key.setdefault(source_key, source.model_copy(deep=True))
+    for source in new_sources or []:
+        source_key = key(source)
+        merged_by_key.setdefault(source_key, source.model_copy(deep=True))
+    return list(merged_by_key.values())
 
 
 def _gh_key(src: GitHubSourceConfig) -> str:
@@ -353,9 +389,16 @@ def _gh_key(src: GitHubSourceConfig) -> str:
 
 def main():
     """Main entry point for the setup wizard."""
+    parser = argparse.ArgumentParser(description="Horizon setup wizard")
+    add_data_dir_arguments(parser)
+    add_log_level_argument(parser)
+    args = parser.parse_args()
+
+    configure_logging(console, level=args.log_level)
+
     print_banner()
 
-    storage = StorageManager(data_dir="data")
+    storage = StorageManager(data_dir=args.data_dir, config_path=args.config)
 
     # Step 1: AI configuration
     ai_config = configure_ai()
@@ -369,7 +412,10 @@ def main():
     # Step 3: Preset library matching
     console.print("\n[dim]Fetching preset source library...[/dim]")
     try:
-        presets = load_presets(prefer_api=True)
+        presets_path = Path(args.data_dir) / "presets.json"
+        if not presets_path.exists():
+            presets_path = Path("data/presets.json")
+        presets = load_presets(presets_path=str(presets_path), prefer_api=True)
         offline = os.environ.get("HORIZON_OFFLINE", "").lower() in ("1", "true", "yes")
         if offline:
             console.print("[dim]Using local presets (offline mode)[/dim]")
@@ -393,7 +439,11 @@ def main():
     ai_available = _ai_recommendations_available(ai_config)
 
     if ai_available:
-        if Confirm.ask("\nAsk AI for additional source recommendations?", default=True):
+        if Confirm.ask(
+            "\nAsk AI for additional source recommendations?",
+            default=True,
+            console=console,
+        ):
             console.print("[dim]Asking AI for recommendations...[/dim]")
             from .ai_recommend import get_ai_recommendations_sync
 
@@ -419,7 +469,11 @@ def main():
     # Merge with existing config if present
     try:
         existing = storage.load_config()
-        if Confirm.ask("\nExisting config.json found. Merge new sources into it?", default=True):
+        if Confirm.ask(
+            "\nExisting config.json found. Merge new sources into it?",
+            default=True,
+            console=console,
+        ):
             config = merge_configs(config, existing)
     except FileNotFoundError:
         pass
@@ -432,7 +486,7 @@ def main():
         f"[green]✓ Configuration saved to {path}[/green]\n\n"
         f"  AI:      {ai_config.provider.value} / {ai_config.model}\n"
         f"  Sources: {_count_sources(config)} total\n"
-        f"  Threshold: {config.filtering.ai_score_threshold}\n\n"
+        f"  Profile: {config.processing.default_profile}\n\n"
         f"Run [bold cyan]horizon[/bold cyan] to start aggregating!",
         title="Setup Complete",
         border_style="green",
@@ -447,8 +501,18 @@ def _count_sources(config: Config) -> int:
         count += 1
     count += len([s for s in config.sources.rss if s.enabled])
     if config.sources.reddit.enabled:
-        count += len(config.sources.reddit.subreddits or [])
-        count += len(config.sources.reddit.users or [])
+        count += len([s for s in config.sources.reddit.subreddits if s.enabled])
+        count += len([s for s in config.sources.reddit.users if s.enabled])
     if config.sources.telegram.enabled:
-        count += len(config.sources.telegram.channels or [])
+        count += len([s for s in config.sources.telegram.channels if s.enabled])
+    if config.sources.twitter and config.sources.twitter.enabled:
+        count += len(config.sources.twitter.users)
+    if config.sources.openbb and config.sources.openbb.enabled:
+        count += len([s for s in config.sources.openbb.watchlists if s.enabled])
+    if config.sources.ossinsight.enabled:
+        count += 1
+    if config.sources.gdelt and config.sources.gdelt.enabled:
+        count += 1
+    if config.sources.google_news and config.sources.google_news.enabled:
+        count += 1
     return count

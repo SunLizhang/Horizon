@@ -9,12 +9,22 @@ from typing import Any
 
 from pydantic import ValidationError
 
+from .._file_utils import _atomic_write_text
 from ..models import Config
 
 
 # Matches ${VAR_NAME} in string config values. Names follow env-var rules
 # (ASCII letters, digits, underscore; must not start with a digit).
 _ENV_VAR_PATTERN = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)\}")
+
+
+def safe_output_path(root: Path, filename: str) -> Path:
+    """Return an output path only when it resolves below root."""
+    resolved_root = root.resolve()
+    candidate = (resolved_root / filename).resolve()
+    if candidate.parent != resolved_root:
+        raise ValueError(f"Output path escapes intended root: {candidate}")
+    return candidate
 
 
 def _expand_env_vars(value: Any) -> Any:
@@ -53,9 +63,9 @@ class ConfigError(ValueError):
 class StorageManager:
     """Manages file-based storage for configuration and state."""
 
-    def __init__(self, data_dir: str = "data"):
+    def __init__(self, data_dir: str = "data", config_path: str | None = None):
         self.data_dir = Path(data_dir)
-        self.config_path = self.data_dir / "config.json"
+        self.config_path = Path(config_path) if config_path is not None else self.data_dir / "config.json"
         self.summaries_dir = self.data_dir / "summaries"
 
         self.data_dir.mkdir(parents=True, exist_ok=True)
@@ -99,21 +109,23 @@ class StorageManager:
         Returns:
             Path to the saved config file.
         """
+        self.config_path.parent.mkdir(parents=True, exist_ok=True)
+
         if backup and self.config_path.exists():
             shutil.copy2(self.config_path, self.config_path.with_suffix(".json.bak"))
 
-        with open(self.config_path, "w", encoding="utf-8") as f:
-            json.dump(config.model_dump(mode="json"), f, indent=2, ensure_ascii=False)
-            f.write("\n")
+        content = json.dumps(
+            config.model_dump(mode="json"), indent=2, ensure_ascii=False
+        )
+        _atomic_write_text(self.config_path, f"{content}\n")
 
         return self.config_path
 
     def save_daily_summary(self, date: str, markdown: str, language: str = "en") -> Path:
         filename = f"horizon-{date}-{language}.md"
-        filepath = self.summaries_dir / filename
+        filepath = safe_output_path(self.summaries_dir, filename)
 
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(markdown)
+        _atomic_write_text(filepath, markdown)
 
         return filepath
 
@@ -146,5 +158,4 @@ class StorageManager:
     def _save_subscribers(self, subscribers: list):
         """Helper to save subscribers list."""
         subscribers_path = self.data_dir / "subscribers.json"
-        with open(subscribers_path, "w", encoding="utf-8") as f:
-            json.dump(subscribers, f, indent=2)
+        _atomic_write_text(subscribers_path, json.dumps(subscribers, indent=2))

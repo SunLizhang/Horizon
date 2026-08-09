@@ -6,12 +6,13 @@ import logging
 import os
 import re
 from datetime import datetime, timezone
-from typing import List
+from typing import List, Optional
 from email.utils import parsedate_to_datetime
 import httpx
 import feedparser
 
 from .base import BaseScraper
+from ..extractors import ExtractorRegistry
 from ..models import ContentItem, SourceType, RSSSourceConfig
 
 logger = logging.getLogger(__name__)
@@ -20,14 +21,21 @@ logger = logging.getLogger(__name__)
 class RSSScraper(BaseScraper):
     """Scraper for RSS/Atom feeds."""
 
-    def __init__(self, sources: List[RSSSourceConfig], http_client: httpx.AsyncClient):
+    def __init__(
+        self,
+        sources: List[RSSSourceConfig],
+        http_client: httpx.AsyncClient,
+        extractors: Optional[ExtractorRegistry] = None,
+    ):
         """Initialize RSS scraper.
 
         Args:
             sources: List of RSS feed configurations
             http_client: Shared async HTTP client
+            extractors: Optional registry of content extractors for full article fetching
         """
         super().__init__({"sources": sources}, http_client)
+        self._extractors = extractors
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         """Fetch RSS feed items.
@@ -95,6 +103,15 @@ class RSSScraper(BaseScraper):
                 # Extract content
                 content = self._extract_content(entry)
 
+                if source.content_extractor and self._extractors:
+                    extractor = self._extractors.get(source.content_extractor)
+                    if extractor:
+                        url = entry.get("link", "")
+                        if url:
+                            full = await extractor.extract(url, self.client)
+                            if full:
+                                content = full
+
                 item = ContentItem(
                     id=self._generate_id("rss", feed_id, entry_hash),
                     source_type=SourceType.RSS,
@@ -103,6 +120,7 @@ class RSSScraper(BaseScraper):
                     content=content,
                     author=entry.get("author", source.name),
                     published_at=published_at,
+                    profile=source.profile,
                     metadata={
                         "feed_name": source.name,
                         "category": source.category,

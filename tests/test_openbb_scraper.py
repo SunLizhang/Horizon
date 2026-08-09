@@ -34,6 +34,7 @@ def _cfg(**overrides) -> OpenBBConfig:
                 symbols=["AAPL", "NVDA"],
                 provider="yfinance",
                 fetch_limit=5,
+                profile="openbb-profile",
             )
         ],
     }
@@ -134,6 +135,7 @@ class TestMapping:
         assert item.metadata["provider"] == "yfinance"
         assert item.metadata["symbols"] == ["NVDA", "AAPL"]
         assert item.id.startswith("openbb:news:")
+        assert item.profile == "openbb-profile"
 
     def test_passes_comma_joined_symbols_to_openbb(self):
         now = datetime.now(timezone.utc)

@@ -7,12 +7,13 @@ from pathlib import Path
 from src.mcp.horizon_adapter import (
     _load_mcp_secrets,
     apply_source_filter,
+    get_enabled_sources,
     load_config,
     load_runtime,
     resolve_config_path,
     resolve_horizon_path,
 )
-from src.models import AIProvider, Config
+from src.models import AIProvider, Config, SOURCE_REGISTRY, SourceType
 
 
 def test_resolve_horizon_path_accepts_explicit_repo() -> None:
@@ -69,7 +70,8 @@ def test_load_config_expands_env_vars(tmp_path: Path, monkeypatch) -> None:
                     "base_url": "${TEST_BASE_URL}/v1",
                 },
                 "sources": {},
-                "filtering": {},
+                "collection": {},
+                "digest": {},
             }
         ),
         encoding="utf-8",
@@ -97,7 +99,8 @@ def test_apply_source_filter_handles_twitter_and_openbb() -> None:
                     "watchlists": [{"name": "ai", "symbols": ["NVDA"]}],
                 },
             },
-            "filtering": {},
+            "collection": {},
+            "digest": {},
         }
     )
 
@@ -108,3 +111,40 @@ def test_apply_source_filter_handles_twitter_and_openbb() -> None:
     assert filtered.sources.twitter.enabled is True
     assert filtered.sources.openbb.enabled is False
     assert filtered.sources.openbb.watchlists == []
+
+
+def test_mcp_source_registry_covers_model_source_types() -> None:
+    assert set(SOURCE_REGISTRY) == {source.value for source in SourceType}
+
+
+def test_mcp_filter_and_reporting_support_every_registered_source() -> None:
+    config = Config.model_validate(
+        {
+            "ai": {"provider": "openai", "model": "test", "api_key_env": "KEY"},
+            "collection": {},
+            "digest": {},
+            "sources": {
+                "github": [{"type": "user_events", "username": "alice"}],
+                "hackernews": {"enabled": True},
+                "rss": [{"name": "Feed", "url": "https://example.com/feed"}],
+                "reddit": {"enabled": True, "subreddits": [{"subreddit": "python"}]},
+                "telegram": {"enabled": True, "channels": [{"channel": "updates"}]},
+                "twitter": {"enabled": True, "users": ["openai"]},
+                "openbb": {"enabled": True, "watchlists": [{"name": "tech", "symbols": ["NVDA"]}]},
+                "ossinsight": {"enabled": True},
+                "gdelt": {"enabled": True},
+                "google_news": {"enabled": True},
+            },
+        }
+    )
+
+    assert set(get_enabled_sources(config)) == set(SOURCE_REGISTRY)
+    for source_name in SOURCE_REGISTRY:
+        filtered, chosen, unknown = apply_source_filter(config, [source_name])
+        assert chosen == [source_name]
+        assert unknown == []
+        assert get_enabled_sources(filtered) == [source_name]
+
+    _, chosen, unknown = apply_source_filter(config, ["google_news", "invalid"])
+    assert chosen == ["google_news"]
+    assert unknown == ["invalid"]

@@ -8,6 +8,7 @@ You can contribute in more than one way:
 
 - Report bugs or suggest features by opening an issue
 - Improve code, documentation, or examples through pull requests
+- Contribute reusable processing profiles for new content domains
 - Share valuable news sources with the community through the website
 
 ## Code Contributions
@@ -20,6 +21,29 @@ If you want to contribute code or docs:
 4. Open a pull request with a clear description
 
 Please keep pull requests focused and easy to review.
+
+## Contribute a Processing Profile
+
+A processing profile is a reusable editorial policy for one content domain. It
+defines what content belongs to the domain, how Horizon scores it, and which
+content blocks Horizon generates. Profiles are prompt and JSON files, so adding
+one does not require changing Python code.
+
+Add a new directory under `profiles/<id>/` containing:
+
+- `profile.json` for the profile contract and output blocks
+- `match.md` for content routing rules
+- `analysis.md` for the scoring rubric
+- `enrichment.md` for output instructions
+
+Built-in profiles participate in automatic routing. Contributions should
+therefore describe a clear content domain, be useful beyond one person's source
+list, and avoid overlapping an existing profile without a meaningful difference
+in evaluation or output. Keep personal thresholds and topic-deduplication
+preferences in runtime configuration rather than the profile.
+
+See [Processing Profiles](docs/profiles.md#contributing-a-profile) for the full
+format and submission checklist.
 
 ## Share Sources
 
