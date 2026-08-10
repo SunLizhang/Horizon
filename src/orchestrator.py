@@ -1074,7 +1074,8 @@ class HorizonOrchestrator:
         analyzer = ContentAnalyzer(ai_client, self.profiles, console=self.console)
 
         # Keyword pre-filter: skip AI for items whose title doesn't match
-        keywords = self.config.filtering.keyword_filters
+        keywords = getattr(self.config, 'filtering', None)
+        keywords = keywords.keyword_filters if keywords else []
         if keywords:
             matched = []
             skipped = []
@@ -1085,9 +1086,11 @@ class HorizonOrchestrator:
                 else:
                     # Give a default low score so they still appear in the pipeline
                     # but won't pass the ai_score_threshold without real analysis
-                    item.ai_score = 2.0
-                    item.ai_summary = item.title
-                    item.ai_tags = []
+                    from src.models import ProcessingResult, ContentAnalysis, ClassificationResult
+                    item.processing = ProcessingResult(
+                        classification=ClassificationResult(profile="tech-news", method="ai_match"),
+                        analysis=ContentAnalysis(score=2.0, reason="keyword filter skip", summary=item.title or "", tags=[])
+                    )
                     skipped.append(item)
             if skipped:
                 self.console.print(
@@ -1122,9 +1125,9 @@ class HorizonOrchestrator:
                 "index": i + 1,
                 "title": item.title,
                 "url": str(item.url),
-                "score": item.ai_score,
+                "score": item.processing.analysis.score if item.processing and item.processing.analysis else None,
                 "content": item.content or "",
-                "summary": item.ai_summary or "",
+                "summary": item.processing.analysis.summary if item.processing and item.processing.analysis else "",
                 "detailed_summary_zh": item.metadata.get("detailed_summary_zh", ""),
                 "background_zh": item.metadata.get("background_zh", ""),
                 "source_type": item.source_type.value,
