@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-11",
+  "items": [
+    {
+      "index": 1,
+      "title": "Oil Holds Gains, Yen in Focus After Weakening: Markets Wrap",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-10/stock-market-today-dow-s-p-live-updates",
+      "score": 7.0,
+      "content": "Oil held onto gains as fading hopes for a deal to reopen the Strait of Hormuz revived inflation concerns before key US data this week.",
+      "summary": "Oil holds gains as fading Strait of Hormuz deal hopes stoke inflation concerns ahead of US data.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 2,
+      "title": "Traders Are Piling Into Taiwan Dollar Options to Bet on Rebound",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-10/traders-are-piling-into-taiwan-dollar-options-to-bet-on-rebound",
+      "score": 6.0,
+      "content": "Currency traders are stepping up bullish options bets on the Taiwan dollar, signaling a shift in sentiment after the currency suffered its worst July since 2015.",
+      "summary": "Currency traders are increasing bullish bets on the Taiwan dollar via options after a poor July, signaling a potential rebound.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 3,
+      "title": "JBS heir to become CEO of world’s largest meatpacker",
+      "url": "https://www.ft.com/content/fed04150-be6f-4dfb-8e51-102b15755611?syn-25a6b1a6=1",
+      "score": null,
+      "content": "Wesley Batista Filho’s move to the top role will restore control of the company to its founding family",
+      "summary": "JBS heir to become CEO of world’s largest meatpacker",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 4,
+      "title": "The renminbi’s hardest mile is only now beginning",
+      "url": "https://www.ft.com/content/5fbd8dad-7e3d-418b-91dc-b61af9436ca6",
+      "score": null,
+      "content": "Turning currency into an asset the world wants to hold will be hard",
+      "summary": "The renminbi’s hardest mile is only now beginning",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 5,
+      "title": "OpenAI reportedly completed a $7 billion employee tender offer",
+      "url": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
+      "score": null,
+      "content": "San Francisco's housing market is in trouble again.",
+      "summary": "OpenAI reportedly completed a $7 billion employee tender offer",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    }
+  ]
+}
