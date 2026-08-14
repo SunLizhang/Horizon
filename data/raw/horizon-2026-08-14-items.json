@@ -1,0 +1,161 @@
+{
+  "date": "2026-08-14",
+  "items": [
+    {
+      "index": 1,
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "score": 8.0,
+      "content": "<a href=\"https:&#x2F;&#x2F;ai.google.dev&#x2F;gemini-api&#x2F;docs&#x2F;models&#x2F;gemini-3.7-flash\" rel=\"nofollow\">https:&#x2F;&#x2F;ai.google.dev&#x2F;gemini-api&#x2F;docs&#x2F;models&#x2F;gemini-3.7-flas...</a>\n\n\n--- Top Comments ---\n\n[jjcm]: Here&#x27;s a image-&gt;html test. Gemini has always swung above its weight class for vision work, so I&#x27;m always eager to try it with this. Original images:  https:&#x2F;&#x2F;image.non.io&#x2F;neonRamenDesigns.webp  Gemini 3.7 build:  https:&#x2F;&#x2F;html.non.io&#x2F;neonRamenGemini3.7  Opus 5 build for comparison:  https:&#x2F;&#x2F;html.non.io&#x2F;neonRamen  Opus is still best in class for this, but it&#x27;s worth noting how well Gemini 3.7 does vs a more comparable LLM price wise...\n\n[simonw]: The &quot;introductory pricing&quot; for this 3.7 Flash model is really weird. It&#x27;s scheduled to double in price on December 31, 2026, but who would anticipate still using this model five months from now? Especially since 3.6 Flash came out just three weeks ago! My first effort with default thinking level produced an ambitious pelican, let down by a flawed bicycle:  https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer#url=ht...  Then I ran it on high, medium and low think...\n\n[Alifatisk]: Ever since the insane discount with GPT-5.6 Luna, not much excites me anymore. I mean just look at the benchmarks, even though Gemini 3.7 Flash performs well on the DeepSWE 1.1, Luna (Max) still performs way better. I personally have stuck to Luna (Xhigh) because its been more than enough and does not bloat up the context window too fast with reasoning tokens.  https:&#x2F;&#x2F;deepswe.datacurve.ai  &gt; Starting January 1, 2027, $1.50&#x2F;1M input tokens and $7.50&#x2F;1M output tokens wil...\n\n[wxw]: They need to release benchmarks against Luna&#x2F;Terra. Luna is much cheaper which feels like it undercuts the need for Flash. I&#x27;ve always considered the Flash series of models to be for low-cost, high-volume, mostly text-based use cases (e.g. summarization, parsing, formatting), emphasis on low-cost. [edit: ah, benchmarks here:  https:&#x2F;&#x2F;blog.google&#x2F;innovation-and-ai&#x2F;models-and-research&#x2F;ge...  more of a Terra than Luna competitor which is an interesting position...\n\n[parasti]: Actual announcement:  https:&#x2F;&#x2F;blog.google&#x2F;innovation-and-ai&#x2F;models-and-research&#x2F;ge...  So it&#x27;s better than 3.6 Flash, at half the price. I&#x27;ve been pretty excited about Gemini models recently, they just feel so fast after spending most of the day at work waiting for Opus 5.",
+      "summary": "Google's launch of Gemini 3.7 Flash draws technical scrutiny and community benchmarks, marking a notable AI model release.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "Tether says it completed long-promised 'Big Four' audit of finances behind $180 billion USDT stablecoin",
+      "url": "https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin",
+      "score": 8.0,
+      "content": "Tether says it completed long-promised 'Big Four' audit of finances behind $180 billion USDT stablecoin\nKPMG U.S. examined Tether's books and even counted its gold bars as the $180 billion USDT issuer said it completed its long-promised financial audit.\n- Tether said it has completed its first full financial audit, a step it had promised for years amid scrutiny of the reserves backing its USDT stablecoin.\n- KPMG U.S. issued an unqualified opinion on firm’s 2025 financial statements, which showed reserves exceeding liabilities by $6.814 billion, the stablecoin issuer said.\n- The audit goes beyond Tether’s prior quarterly attestations, as KPMG tested transactions, systems and assets, including a physical inspection of the company’s gold bars, in response to longstanding concerns about USDT’s stability and systemic risk, the firm said.\nTether, the company behind the world's largest stablecoin USDT \nKPMG U.S., one of the “Big Four” accounting firms, audited Tether International's financial statements for the year ended Dec. 31, 2025 and issued an unqualified opinion, Tether said. That means the accounting firm found the statements fairly presented Tether's financial position, results and cash flows in all material respects under U.S. generally accepted accounting principles.\nThe statements showed Tether's reserves exceeded liabilities by $6.814 billion at the end of 2025, Tether said.\nA KPMG U.S. spokesperson confirmed that the firm issued an unqualified opinion on Tether International’s financial for 2025, but has no further comment due to “client confidentiality.” CoinDesk has asked Tether whether it will share KPMG’s findings and has yet to receive a response.\nThe audit is a step up from the quarterly attestations Tether has published for years after settling an investigation with the New York Attorney General’s office. An attestation checks specific information, such as the amount and composition of reserves at a given date. A financial audit takes a broader look at a company's books, testing transactions, assets, liabilities, income, cash flows and the evidence supporting them.\nTether said in March that it had hired a “Big Four” accounting firm to conduct its first full audit. KPMG is one of the Big Four, the group of accounting giants that also includes Deloitte, EY and PwC and audits many of the world's largest companies.\nKPMG examined Tether's transactions, systems, valuations, counterparties and ownership records, according to the company. Auditors also physically counted and inspected its gold bars.\nTether has repeatedly promised a full audit while relying on reserve attestations, leaving critics asking why a company of its size hadn't undergone the same level of scrutiny common among large financial firms.\nConcerns about the stability and backing of its USDT token, a key piece of infrastructure for crypto trading and markets, have surfaced from time to time as a potential systemic risk for digital assets. The recurring debate became so familiar in crypto circles that it earned its own shorthand as “Tether FUD.”\nThe stakes have only grown as USDT swelled to over $180 billion in market capitalization, while Tether has become a major buyer of U.S. government debt for reserve assets.\n“For years, some detractors said an audit of Tether could not be completed,” CEO Paolo Ardoino said in a statement.\nUPDATE (Aug. 14, 22:55 UTC): Adds confirmation and statement from KPMG U.S. spokesperson.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Tether announced its first full financial audit by KPMG U.S., which issued an unqualified opinion on 2025 statements showing $6.814B excess reserves behind the $180B USDT stablecoin.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "US sells 30-year bonds at highest borrowing costs since 2001",
+      "url": "https://www.ft.com/content/9c9c948f-dc8b-4385-a9b9-4b98dc1eadd9?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Yields have jumped amid concerns over mounting public debt and persistently high inflation",
+      "summary": "The US 30-year bond auction priced at the highest borrowing cost since 2001 on concerns over mounting public debt and persistent inflation.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 4,
+      "title": "Rio Tinto gets $1.8bn bailout for Australia’s biggest aluminium smelter",
+      "url": "https://www.ft.com/content/92f69c81-f15f-409f-877d-0cc61f4ef697?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Taxpayer funding follows similar deals by Anthony Albanese’s government to save vulnerable industrial operations",
+      "summary": "Rio Tinto receives a $1.8bn Australian government bailout to support the country's biggest aluminium smelter, following similar taxpayer-supported rescues of vulnerable industrial operations.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 5,
+      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+      "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
+      "score": 8.0,
+      "content": "AI is expensive, Ali Ghodsi tells TechCrunch. With so many investors wanting into his latest round, he said yes to more than planned.",
+      "summary": "Databricks raised $5B at a $190B valuation, exceeding its original $1B target due to overwhelming investor demand.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Nearly 14,000 crypto holders face security risk after data breach",
+      "url": "https://www.ft.com/content/a91356ef-67bd-4bd9-947b-b272423f1318?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Personal details of people with Trezor hardware wallets stolen by hackers in second ‘cold’ storage attack in two weeks\n\n--- From rss ---\nTrezor warns 14,000 customers after fulfilment partner suffers data breach\nThe incident marks the first time Trezor customers' shipping addresses were exposed.\n- Trezor said nearly 14,000 customers had personal data exposed after its fulfillment partner ShipMonk suffered an unauthorized access to its systems, though its own infrastructure and wallets remain secure.\n- The breach, the first in Trezor’s history to expose customer phone numbers and shipping addresses, increases the risk of phishing and other scams even though no misuse of the leaked data has yet been confirmed.\n- The incident underscores a broader rise in global data breaches and follows earlier third-party leaks affecting Trezor and rival hardware wallet maker Ledger, which have led to long-running phishing and extortion campaigns.\nShipMonk, Trezor’s fulfillment partner, suffered unauthorized access to its systems, affecting nearly 14,000 customers’ data, the cold storage crypto wallet firm reported Thursday.\nTrezor said the names, email addresses, phone numbers and shipping addresses of 11,742 customers had been compromised. It also said the names, cities and email addresses of another 1,947 customers were also breached, bringing the estimated number of victims to nearly 14,000 across the U.S., the UK, Sweden, Colombia, Brazil, Italy and Portugal.\n\"We have some difficult news to share,\" Trezor said Thursday on X. \"Unfortunately, one of our shipping providers has experienced a data breach that exposed sensitive order data.\"\nThe Trezor-related security hack comes as global data breaches are at an all-time high, according to SentinelOne, a U.S. cybersecurity firm. It said that this year, data breaches have increased by 17% compared with 2025, with an average of 2,090 attacks worldwide each week. It is also estimated that global data breaches have been rising by 3% month over month since January.\nThe cold storage wallet manufacturing firm said it notified all affected customers via email, adding that the data of those who did not receive the message was not compromised. Trezor told CoinDesk via email it has no confirmed cases of the exposed data being published, shared, or offered for sale yet. It also said it is unaware of any scam or hack attempt linked to the incident so far. Customers who purchased through Amazon are not affected, as those orders are fulfilled by a separate partner, it added.\nTrezor also said its own systems were not compromised, and crypto wallet devices remain secure. The risk is indirect, it added, saying affected customers are now more likely to be targeted by phishing attempts via email, phone, or post. Scammers could use the leaked data to impersonate banks, crypto exchanges, or Trezor itself.\nPeople whose data is stolen in a data breach remain at risk for years after the hacking event. Once stolen logistics records are sold or published online, cybercriminals continually repurpose the data for new scams. Extortionists have leveraged home addresses to demand $700 to $1,000 in ransom and mail counterfeit devices directly to victims. Managing the long-tail legal, remediation, and brand fallout from a major customer leak is estimated to cost hardware firms over $33 million.\nCrypto holders are also increasingly at risk of physical attacks. In-person coercion attacks have totalled $124 million in the first half of this year alone, although not all can be traced back to a data breach, according to Certik. Cybersecurity firm DeepStrike estimated the amount of money people lose to data breaches into the tens of billions of dollars yearly.\nTrezor said this was the first breach in its 13-year history to expose customer phone numbers and shipping addresses. However, Satoshi Labs, the company behind Trezor, reported that a third-party support portal’s security had been breached in January 2024, affecting 66,000 people. Another 106,856 Trezor customers’ data was compromised in April 2022. Trezor’s internal firmware and on-device cryptography have never been breached remotely to steal funds.\nLedger, the maker of one of the most popular hardware wallets in crypto, suffered a data breach in January. The security breach was linked to its third-party e-commerce partner, Global-e. In 2020, Ledger suffered another large-scale breach affecting nearly 300,000 users. A year later, scammers sent fake Ledger devices to victims of that breach in a follow-on phishing campaign.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "A data breach at Trezor exposed personal details of nearly 14,000 hardware wallet users in the second cold storage attack in two weeks.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 7,
+      "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+      "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
+      "score": 7.0,
+      "content": "OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.",
+      "summary": "OpenAI previews 'Ultrafast' mode, claiming a 14x speedup for GPT-5.6 Sol to attract enterprise users.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
+      "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
+      "score": 7.0,
+      "content": "Anthropic researchers found AI agents can clash, collude, and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.",
+      "summary": "Anthropic researchers observed AI agents engaging in unexpected clashes and coordination, highlighting potential gaps in current multi-agent safety tests.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Sun, sea and bombs in Odesa",
+      "url": "https://www.ft.com/content/d0464e03-c3fd-4e8b-9ffa-573762e97e16?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "In the port city known for its beaches and nightlife, Russian attacks are choking off an export lifeline",
+      "summary": "Russian attacks on Odesa are choking off a key export route, threatening trade and commodity supplies.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 10,
+      "title": "Bitcoin firms ask AI labs for same tools attackers already have",
+      "url": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
+      "score": 6.0,
+      "content": "Bitcoin firms ask AI labs for same tools attackers already have\nCoinbase, Block, BitGo and dozens of others signed a letter arguing that safety guardrails on frontier models are blocking legitimate security work while adversaries face no such limits.\n- More than three dozen bitcoin and crypto firms are urging major AI labs to give open-source security researchers early access to their most powerful models, arguing defenders are using weaker tools than attackers.\n- The letter, organized by the Bitcoin Policy Institute and signed by companies including Coinbase, Block and ARK Invest, says Bitcoin Core developers are locked out of trusted-partner programs and hampered by safety filters on public models.\n- Recent exploits against BTCPay Server and Lightning nodes, uncovered in part by an AI-powered volunteer “Bitcoin Red Team,” underscore the signatories’ call for early model access, compute resources, secure testing environments and direct channels to lab security teams.\nMore than three dozen bitcoin and crypto companies have asked the largest AI labs to give open-source security researchers early access to their most capable models, arguing that the people defending a trillion dollars of infrastructure are working with weaker tools than those attacking it.\nThe letter, organised by the Bitcoin Policy Institute and published earlier this week, is signed by Coinbase, Block, BitGo, Blockstream, Anchorage Digital, ARK Invest, Bitwise, Foundry, Casa, Exodus and others, alongside nonprofit developer funds including Brink, Chaincode and Btrust.\nIts central complaint is that Bitcoin Core developers, the small group maintaining the software that runs the network, cannot access the programs' labs run for trusted security partners.\nWhen they turn to publicly available models instead, the safety filters designed to stop people from writing malware also block efforts to find flaws before criminals do.\nThat leaves them on open-weight models, which can be freely downloaded and are generally less capable.\nAttackers face none of those constraints. The letter said the labs and a handful of partners can see new offensive capabilities months before anyone else. In contrast, those capabilities spread anyway through public models, stolen access to corporate systems and purpose-built hacking tools.\nThe signatories are asking for five things: Early access to the strongest cyber-capable models, including before public release, enough computing budget to run meaningful reviews, secure environments for examining private code, eligibility for small and independent maintainers rather than only large firms, and a direct line to lab security teams for reporting what they find.\nThe timing is not accidental. Two of the signatories have spent the past fortnight demonstrating both halves of the argument.\nBTCPay Server, which signed the letter, disclosed a critical flaw last week that attackers had already exploited to drain Lightning nodes belonging to merchants. Foundation, the hardware wallet maker, also signed, and lost its own node in that attack. BTCPay wrote afterwards that AI is changing the balance between attackers and defenders, and that models make it faster and cheaper to search large codebases for weaknesses.\nDefenders found the flaw itself. A volunteer group calling itself the Bitcoin Red Team began pointing AI models at bitcoin codebases this month and has filed thousands of findings across hundreds of projects, including the report that produced BTCPay's patch.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Bitcoin and crypto firms, including Coinbase and Block, are urging AI labs to give security researchers access to frontier models, arguing safety guardrails hinder defenders more than attackers.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 11,
+      "title": "Writer introduces new AI model and upgraded harness to contain token costs",
+      "url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+      "score": 6.0,
+      "content": "Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.",
+      "summary": "Writer releases a post-training variant of Z.ai's GLM-5.2 open-source model, aiming to offer deployment-ready AI at a lower price.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 12,
+      "title": "Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests",
+      "url": "https://www.coindesk.com/markets/2026/08/13/forecasts-for-usd1-million-bitcoin-price-likely-look-too-ambitious-key-ratio-suggests",
+      "score": 6.0,
+      "content": "Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests\nThe thesis is that high yields on long-term U.S. Treasuries make non-yielding assets like bitcoin less attractive.\n- Most lofty targets are based on the assumption that money will rotate out of gold and other assets and into bitcoin, but ignore opportunity cost. High yields on long-term U.S. Treasuries make non-yielding assets like bitcoin less attractive.\n- Bitcoin's price relative to the 30-year Treasury yield never made a new high in the 2025 bull run, unlike its dollar price.\n- That ratio has now broken down through a multi-year support line, completing a bearish head-and-shoulders pattern.\nThe $1 million bitcoin call is back, again.\nAsset manager Bitwise is the latest to predict that bitcoin could reach $1.3 million within a decade. This isn't new territory. Coinbase's Brian Armstrong, Block's Jack Dorsey, and Ark Invest's Cathie Wood have all said versions of it before.\nA closer look at bitcoin's current price trajectory, adjusted for the \"risk-free rate\" of traditional finance, suggests these targets may be a little too ambitious.\nThe million-dollar forecast comes down mostly to one assumption: if bitcoin captures some modest slice of gold’s market cap, or if some other multi-trillion-dollar pool of capital, such as global pension funds, allocates capital to the cryptocurrency, the price skyrockets.\nWhat most of these targets likely do not include is the opportunity cost.\nEvery dollar sitting in bitcoin is a dollar not earning the yield on U.S. Treasuries, the closest thing markets have to a risk-free return. And if Treasury yields offer attractive returns, as they are right now, will capital flow into bitcoin at a pace assumed by several analysts?\nThe 30-year Treasury yield cleared 5% this year and is sitting at its highest level since 2007. That means every dollar sitting in bitcoin or any non-yielding asset is a dollar not earning that 5%. Several analysts have pointed to these elevated bond yields as a direct drag on bitcoin's upside recently.\nThe elevated cost of capital already hurt bitcoin during the 2025 bull cycle.\nThe evidence sits in the divergence between BTC's dollar-denominated spot price and its price adjusted for the cost of long-duration capital, or the 30-year yield. Bitcoin's spot price rose to $126,000 in 2025, well above the previous cycle's high of nearly $70,000. But priced against the 30-year yield, it did something it had never done before: it fell well short of its 2021 high, breaking a pattern of setting a new peak, on this measure, every cycle since inception.\nAdditionally, that same ratio has now completed a head-and-shoulders breakdown, one of the more potent bearish patterns in technical analysis.\nThe pattern is defined by three peaks separated by pullbacks, with the middle peak the highest, loosely resembling the outline of a “head flanked by two shoulders.” A move below the line connecting the pullbacks between those peaks, the neckline, is what confirms the pattern. The BTC/30-year yield ratio has done exactly that.\nThis isn't some obscure signal.\nAccording to Thomas Bulkowski's study of thousands of historical chart patterns, one of the most widely cited bodies of empirical technical-analysis research in traditional markets, the “head-and-shoulders” (H&S) top ranks 9th out of 36 chart patterns for overall performance, carries a failure rate of just 19%, an average decline of 16% once confirmed, and meets its projected price target 51% of the time. Bulkoswki pulled these figures from more than 2,800 historically tracked trades in traditional markets.\nSo, the H&S breakdown on the BTC-to-30-year yield chart suggests more losses ahead for the cryptocurrency, at least against the long-term cost of capital.\nNone of this means bitcoin's dollar price won't rise sustainably again. But for seven-figure targets to materialize, the interest rate backdrop likely needs to turn as supportive as it was in 2020-21.\nRight now, it's moving the other way.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Bitcoin's price relative to the 30-year Treasury yield has broken down in a bearish head-and-shoulders pattern, suggesting that $1 million forecasts overlook the opportunity cost of high yields.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 13,
+      "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
+      "url": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
+      "score": 6.0,
+      "content": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam\nA South Korean court sentenced the head of centralized finance (CeFi) lender Delio to 15 years in prison for embezzling digital assets from more than 1,100 customers.\n- A South Korean court sentenced Delio CEO Mr. Jeong to 15 years in prison for defrauding more than 1,100 investors in a $50 million crypto scheme.\n- Delio, which went bankrupt in November 2024, took bitcoin and ether deposits with promises of high yields before abruptly blocking customer withdrawals in June 2023.\n- Prosecutors had sought a 20-year term and alleged 2,800 victims, but the court excluded some evidence on procedural grounds, and the case adds to a string of major crypto fraud prosecutions in South Korea.\nThe CEO of Delio, identified only as Mr. Jeong, received a 15-year prison sentence in South Korea after being found guilty in a $50 million fraud case that affected more than 1,100 people, local news outlet Newsis reported Thursday.\nDelio, which went bankrupt in November 2024, accepted bitcoin \n\"While operating Delio, the defendant falsely obtained a virtual asset trading license and defrauded victims of approximately 70 billion won in virtual assets,\" the Seoul Southern District Court said when handing down the sentence against Mr. Jeong.\nProsecutors initially sought a 20-year prison sentence for Mr. Jeong, but the court threw out a lot of the evidence due to procedural deficiencies, which were brought forward by Mr. Jeong’s lawyers. He was initially accused of defrauding 2,800 victims. The defense lawyers are expected to appeal the sentence.\nThe ruling against Delio is just one more in a series of crypto-related fraud cases in South Korea. Do Kwon, the South Korean co-founder of Terraform Labs behind the TerraUSD (UST) algorithmic stablecoin and Luna token, orchestrated one of the largest frauds in financial history when the ecosystem collapsed in May 2022, wiping out roughly $40 billion in investor funds. In 2022, seven executives of the crypto exchange V Global were sentenced to prison for a $1.7 billion fraud, with former CEO Lee Byung-gul receiving 22 years.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "South Korean court sentences Delio CEO to 15 years for embezzling $50 million in crypto from over 1,100 customers.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    }
+  ]
+}
