@@ -1,0 +1,173 @@
+{
+  "date": "2026-08-15",
+  "items": [
+    {
+      "index": 1,
+      "title": "Qwen 3.8 27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "score": 8.0,
+      "content": "\n--- Top Comments ---\n\n[CMay]: Credit where it&#x27;s due.  Qwen 3.8 27B is only the second local model after Gemma 4 that managed to correctly reason through one of my private benchmarks.  It took 5x as many tokens to do it and 12m30s with MTP enabled, but it did do it. Gemma 4 reasoned through it more implicitly, while Qwen 3.8 reasoned more explicitly.  Laguna and Muse Glimmer failed hard on it, though they&#x27;re useful for other tasks. The VRAM usage seems way less efficient than Gemma 4 or Glimmer though, with 32K o...\n\n[simonw]: Absolutely the best pelican I&#x27;ve seen from a model that runs on my laptop:  https:&#x2F;&#x2F;tools.simonwillison.net&#x2F;markdown-svg-renderer#url=ht...  Bicycle is the right shape. Pelican beak is excellent. Nice background. Most importantly, the pelican has one leg on each side of the bicycle - that&#x27;s very rare. (No chain on this bicycle though - in the reasoning trace it says &quot;already chainstay... skip chain detail; maybe a small chainring.&quot;) I ran that on an M5 Max M...\n\n[kimsey0]: If anyone else is running this on an RTX 5090,  https:&#x2F;&#x2F;github.com&#x2F;Neroued&#x2F;ninfer   as inference engine gets me ~138 tokens&#x2F;second, roughly double what I get with a naive llama.cpp setup.\n\n[dofm]: There&#x27;s a real change (compared to 3.6) in the way it writes in thinking — it drops words like &quot;to&quot; and &quot;we&quot; in &quot;We need to&quot;, talks generally in note form, drops the&#x2F;and all over the place, avoids &quot;for&quot;. &quot;Need be helpful concise&quot;, &quot;Need maybe not overdo&quot;, &quot;Need ask!&quot; Almost caveman. I have an (unsourced, vague) suspicion that this rather unique thinking trace pattern is actually hobbling the MTP predictions, which...\n\n[svdr]: Wow. This model is so good, and we have GLM 5.3 (seems great voor security related work) and Deepseek. In a few months we&#x27;ll have Fable&#x2F;Sol-like capabilities that are not coming from the big US companies. I feel as a programmer that that is more than enough. How wil OpenAI and Anthropic survive when frontier model intelligence becomes commoditized?",
+      "summary": "Qwen 3.8 27B is a new local LLM release generating significant community discussion around its reasoning, efficiency, and inference performance.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "Indonesia’s Prabowo retreats on commodities reform amid market pressure",
+      "url": "https://www.ft.com/content/c061415a-791d-42e5-9907-736563c7f938?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "State-owned agency had threatened to shake up trade of nickel, thermal coal and palm oil",
+      "summary": "Indonesia's government backs down from planned commodity trade reforms for nickel, thermal coal, and palm oil following market pressure.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "BP joins Big Oil return to post-Maduro Venezuela",
+      "url": "https://www.ft.com/content/7a9808c3-0d3f-4c85-a8d8-1156e4a6230e?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "British company among winners of offshore licence less than nine months after US toppled Caracas strongman",
+      "summary": "BP is among the winners of offshore licenses in Venezuela following the fall of Maduro, marking a notable return of Big Oil to the country.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 4,
+      "title": "Why does Opus 5 feel worse to work with?",
+      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "score": 7.0,
+      "content": "\n--- Top Comments ---\n\n[barrkel]: The single biggest annoyance with Opus 5 is that it writes too elliptically. Sentences that orbit a point, then jump to it like it&#x27;s a revealed insight. Unnecessarily abstract phraseology. Constantly using inanimate nouns as the subjects in sentences in order to unlock variety in verb choice, especially when it helps construct a sentence where the real action can &#x27;land&#x27; like a surprise at the end. It is definitely more capable, and yes, I&#x27;ve found it can make unwarranted d...\n\n[zmmmmm]: I&#x27;m with the author and others in this comment thread, speculating that effectively the balance has tipped to where humans are no longer the target audience of post training - other agents are. Whether it&#x27;s through the reasoning &#x2F; CoT, or whether it&#x27;s in handing off to subagents etc, the focus has moved to agents communicating in &quot;agent-speak&quot; to themselves or other agents. And human niceties are just kind of, noise in the way of getting work done. This will prob...\n\n[D13Fd]: I’ve been doing some heavy work on a personal project lately. I burned through the limits on Claude, the plus a few hundred dollars in credits, and ultimately decided to move to an OpenAI account just so I can keep going. I was surprised to find that OpenAI Sol is much much nicer to work with than Opus 5 or Fable at the moment. Especially on Opus 5, the way it communicates is just exhausting. It keeps “being honest” and “confessing” mistakes and just generally talking a lot. I felt like I had...\n\n[Paradigma11]: A gem Opus 5 gifted to me today:\n&quot;A devastating pair of findings, and the first is beautiful in a way worth naming: the anti-vacuity floor is what blinds the gate to a vacuous case.&quot;\n\n[sixdimensional]: Anthropic, if you&#x27;re listening - by the time this crops up on Reddit, the front page of HN, etc.... you should be expecting calls from CEOs of major corporations next threatening to abandon ship... We&#x27;ve seen this pattern before several times.. I hope they are listening and address this publicly. I&#x27;m not sure what is going on, some users report it works fine or great, others report the degradation.  I&#x27;ve experienced both at times, and it&#x27;s been such a different experi...",
+      "summary": "A developer argues that Opus 5's writing style feels worse due to elliptical phrasing and agent-oriented communication, sparking broad discussion about the shift from human-centric to agent-centric AI behavior.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 5,
+      "title": "Trump-backed World Liberty wins conditional bank charter from federal regulator",
+      "url": "https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator",
+      "score": 7.0,
+      "content": "Trump-backed World Liberty wins conditional bank charter from federal regulator\nThe Office of the Comptroller of the Currency said it granted \"preliminary conditional approval\" to World Liberty Trust Co. on Friday.\n- The U.S. Office of the Comptroller of the Currency has granted World Liberty Trust Company a federal charter, clearing the way for it to take over issuance of World Liberty Financial’s USD1 stablecoin.\n- Lawmakers had expressed concerns with World Liberty’s application due to its ties to President Donald Trump.\nA federal bank regulator has granted World Liberty Trust Co. a conditional bank charter, it announced Friday.\nThe Office of the Comptroller of the Currency, the U.S. banking agency that grants federal charters, said in a letter posted to its website that World Liberty could operate fiduciary and other trust company-related activities as a national trust bank.\n“This preliminary conditional approval is granted based on a thorough evaluation of all information available to the OCC, including the representations and commitments made in the application and by the Bank’s representatives,” the letter said.\nFinal approval won’t be granted until the company meets additional “preopening requirements,” the letter said.\nAccording to the letter, World Liberty Trust Company will focus on services tied to World Liberty Financial’s USD1 stablecoin.\n“The bank plans to issue USD1, a fiat currency-backed stablecoin, to institutional clients on a nationwide basis, assuming this role from BitGo Bank & Trust, National Association (BitGo), the current exclusive issuer and custodian for USD1,” the letter said. “The bank plans to provide its digital asset custody services as a fiduciary, primarily to USD1 customers and other institutional clients.”\nWorld Liberty applied for the charter in January of this year, spurring opposition from Democratic lawmakers concerned by the fact that the broader World Liberty entities are owned in part by President Donald Trump, who named the regulators overseeing agencies including the OCC.\nIn May, Senator Elizabeth Warren challenged Comptroller of the Currency Jonathan Gould, accusing him of approving unqualified crypto banks for trust charters in a wave of companies seeking abilities to issue U.S. stablecoins and access the banking system without intermediaries. She said such institutions \"want to evade the fundamental safeguards and obligations that come with being a bank.\"\nAfter Warren had specifically asked that the OCC put a stop to the application process for Trump-tied World Liberty, Gould had told her that the agency would act without considering politics and proceed with the application on its normal timeline.\nWorld Liberty and USD1 have specifically been under scrutiny after an Abu Dhabi investment firm bought a stake in World Liberty Financial early last year.\nThese issues were raised in public comments, according to Friday’s letter from the OCC, which went on to say that “career OCC staff reviewed the application for consistency” with the legal and regulatory requirements.\nStill, after the approval’s announcement, Warren and a number of other Democrats announced they would introduce the “Ending Presidential Corruption in Banking Act” which would, if passed into law, block senior government officials from owning or controlling a bank.\nSenators Angela Alsobrooks and Ruben Gallego signed off on the effort. The two are also two of the most prominent Democratic senators working on the Digital Asset Market Clarity Act. Negotiations on the bill are stalled in part due to an ethics provision; Democrats in the Senate want the president to agree to divest from his various crypto business ties.\nWorld Liberty Trust Company does not intend to become a federally insured depository institution or become a “bank” as defined by the Bank Holding Company Act, the letter said. It also does not intend to get access to a Federal Reserve master account.\nUPDATE (Aug. 14, 2026, 21:15 UTC): Adds additional detail.\nUPDATE (Aug. 14, 2026, 23:52 UTC): Adds additional detail.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "World Liberty Trust Co. received preliminary conditional approval for a national trust bank charter, enabling it to issue the USD1 stablecoin, amid political controversy and proposed legislation.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Trump family’s crypto venture granted conditional approval for bank licence",
+      "url": "https://www.ft.com/content/ace83fb4-a0cd-405a-a2c6-f6499a83e983?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Move by regulator to comes as president’s business interests in sector become a political flashpoint",
+      "summary": "The Trump family's crypto venture received conditional regulatory approval for a bank licence, raising political and regulatory questions.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 7,
+      "title": "Hyperscaler AI borrowing binge shakes up foreign credit markets",
+      "url": "https://www.ft.com/content/ff2742b0-2c71-471c-b725-fea8f8021f62?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Flood of bond issuance by likes of Amazon and Alphabet has pushed up costs in Canadian dollars, Swiss francs and sterling",
+      "summary": "Heavy AI-driven bond issuance by major tech companies is pushing up borrowing costs in Canadian dollars, Swiss francs, and sterling.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 8,
+      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+      "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+      "score": 6.0,
+      "content": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside&#160;a letter from Mark Zuckerberg&#160;arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s [&#8230;]",
+      "summary": "A TechCrunch video questioning whether Zuckerberg's 'AI for everyone' stance is backed by Meta's release of the open-weight Glimmer model versus the API-only Muse Spark.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
+      "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
+      "score": 6.0,
+      "content": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
+      "summary": "A forecast that U.S. natural gas prices could triple could significantly raise costs for hyperscalers powering AI data centers.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
+      "url": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+      "score": 6.0,
+      "content": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside&#160;a letter from Mark Zuckerberg&#160;arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s [&#8230;]",
+      "summary": "TechCrunch's Equity podcast discusses Meta's open-weight Glimmer AI model, Zuckerberg's 'AI for everyone' letter, and a $250M deal gone wrong.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 11,
+      "title": "Trump expected to attend White House meeting with crypto CEOs, sources say",
+      "url": "https://www.coindesk.com/policy/2026/08/14/trump-expected-to-attend-white-house-meeting-with-crypto-ceos-sources-say",
+      "score": 6.0,
+      "content": "Trump expected to attend White House meeting with crypto CEOs, sources say\nThose involved in a meeting of CEOs from the worlds of crypto, prediction markets and AI anticipate President Donald Trump will take part in next week's gathering.\n- People involved in a White House innovation meeting next week have been advised that President Donald Trump is planning to attend, alongside a number of crypto CEOs involved in a new Commodity Futures Trading Commission advisory committee.\n- The meeting is a prelude to the innovation committee’s Thursday inaugural event, at which the long list of CEOs from crypto, prediction markets and AI will discuss their industries.\nPresident Donald Trump is expected to be in attendance when the administration's new innovation committee — a crowd of crypto CEOs and leaders of prediction market and AI companies — sits for a White House meeting on Wednesday, said people briefed on the planning.\nThe chief executives of companies such as Coinbase, Ripple, Gemini, Robinhood, Polymarket and Kalshi are members of the new Innovation Advisory Committee at the Commodity Futures Trading Commission, but before they attend their first committee meeting on Thursday, the crypto CEOs will gather for the White House meeting, said the people, who asked not to be named, and participants have been told Trump is planning to attend.\nThe meeting, expected to be held at the Eisenhower Executive Office Building next door to the White House, is meant to get a policy dialogue started in some of the leading arenas for U.S. innovation. The roster at that meeting was also expected to include CFTC Chairman Mike Selig and other advisers, the people said. One of them added that Treasury Secretary Scott Bessent and Secretary of Commerce Howard Lutnick may attend.\nWhite House spokespeople didn't immediately respond to requests for comment on the plans.\nOn the industry side, the leading crypto CEOs will be joined by the chiefs of more traditional financial names, too. The committee's members include the leaders of CME Group, Nasdaq and Intercontinental Exchange, among many others. Frank La Salle, the head of the DTCC, is also a member.\nThe Thursday afternoon meeting at the CFTC will dig into the group's innovation agenda. The opening session is entitled, \"Crypto’s Regulatory Evolution: From Uncertainty to Clarity.\" One of the suggested topics is described as \"the remaining challenges to a durable federal market structure.\"\nThe White House and Trump have been mired in the contentious debate over advancing the Digital Asset Market Clarity Act through final votes in the U.S. Senate. Further action may be dependent on whether the president is willing to accept tighter ethics restrictions governing his personal involvement in the crypto industry.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "President Trump is expected to attend a White House meeting with crypto CEOs ahead of the CFTC innovation committee's inaugural gathering.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 12,
+      "title": "Tokenization stocks slip as SEC delay puts 'speed bump' in crypto’s Wall Street push",
+      "url": "https://www.coindesk.com/markets/2026/08/14/tokenization-stocks-slip-as-sec-delay-puts-speed-bump-in-crypto-s-wall-street-push",
+      "score": 6.0,
+      "content": "Tokenization stocks slip as SEC delay puts 'speed bump' in crypto’s Wall Street push\nBullish, Coinbase, and Circle were among the names lower on Friday after the regulatory setback.\n- Shares of tokenization-focused firms including Bullish (BLSH), Figure (FIGR), Coinbase (COIN) and Circle (CRCL) slipped Friday as the SEC delayed its planned “innovation exemption” for tokenized securities and canceled meeting on proposed crypto offering rules.\n- Uniswap’s UNI dropped 7% leading CoinDesk 20 index losses, as the exemption was expected to provide relief for trading securities on DeFi venues.\n- The regulatory setback is a “speed bump” for tokenization and may lengthen adoption, but does not derail momentum behind tokenized assets and 24/7 trading infrastructure, Clear Street managing director Owen Lau said.\nTokenization-related stocks slid Friday after another delay to a long-awaited U.S. regulatory initiative weighed on investor sentiment towards the industry's expansion into traditional securities.\nBullish \nCrypto exchange Coinbase \nSecuritize (SECZ), BlackRock's tokenization partner and issuer of the BUIDL tokenized Treasury fund, was down 5% earlier in the session before it reversed losses, stabilizing after Thursday’s 27% plunge on missing earnings estimates.\nThe moves followed CoinDesk's report late Thursday that the Securities and Exchange Commission (SEC) was set to further delay its anticipated “innovation exemption,” which is expected to make it easier for companies to offer trading in tokenized securities. Concerns from the White House and Wall Street over the proposal's legal footing and potential market impact have held up the plan.\nAdding to the uncertainty, the SEC canceled a meeting scheduled for Friday where commissioners planned to consider whether to propose new rules creating a tailored offering regime for certain investment contracts involving crypto assets.\nThe impact wasn't limited to stocks. The innovation exemption had also been expected to provide some regulatory relief for trading through decentralized finance venues, meaning the delay reaches beyond publicly traded tokenization companies. Uniswap's UNI (UNI), the native token of the decentralized exchange, fell 7% over the past 24 hours, making it the weakest performer in the CoinDesk 20 Index both Friday and this week.\nFor comparison, the Nasdaq 100, S&P 500 and bitcoin \nA ‘speed bump,’ not the end of the tokenization trade\nThe setback could stretch out the timeline for U.S. tokenization, but it doesn't necessarily change the longer-term story, according to Owen Lau, managing director and senior analyst at Clear Street.\n“The tokenization theme hits a speed bump, but it doesn't alter the underlying momentum,” Lau said.\nCoinbase and Bullish are already looking for ways to offer tokenized equities, while traditional exchanges including Nasdaq and the New York Stock Exchange are developing infrastructure for round-the-clock trading, Lau noted.\nThe bigger question is how quickly regulators allow those plans to move forward. The latest delay, particularly amid questions surrounding the CLARITY Act and the SEC's legal authority, could lengthen the adoption curve of tokenization, Lau added.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Tokenization-related stocks slipped after the SEC delayed its innovation exemption and canceled a meeting, slowing but not derailing the push into tokenized securities.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 13,
+      "title": "Israel’s largest bank to offer crypto trading with Galaxy",
+      "url": "https://www.coindesk.com/markets/2026/08/14/israel-s-largest-bank-partners-with-galaxy-for-crypto-trading",
+      "score": 6.0,
+      "content": "Israel’s largest bank to offer crypto trading with Galaxy\nBank Leumi customers will be able to trade bitcoin, ether and solana through the bank’s investment app from early 2027.\n- Bank Leumi customers will be able to buy, hold and sell bitcoin, ether and solana through the Leumi Trade app.\n- Galaxy will provide the trading and custody infrastructure, with the service expected to launch in early 2027.\n- The planned launch would make Bank Leumi the first bank in Israel to offer digital asset trading directly to its customers.\nBank Leumi, Israel’s largest bank, will offer cryptocurrency trading to customers from early 2027 becoming the first Israeli bank to announce such a service.\nCustomers of Leumi and its mobile banking unit, Pepper, will be able to buy, hold and sell bitcoin \nGalaxy Digital (GLXY) will provide trading and services through GalaxyOne Institutional, its platform for banks and asset managers. Leumi has also signed an agreement to use Galaxy’s custody infrastructure, formerly known as GK8, to support the offering.\nThe tie-up gives Galaxy a banking partner in Israel and places Leumi among a growing group of financial institutions bringing crypto access inside customer platforms. By embedding trading within its capital-markets app, the bank is betting that clients will favor a regulated banking interface over standalone crypto exchanges.\nMaya Ravia, Leumi’s head of strategy, described digital assets as an increasingly integral part of the global financial system. Galaxy Israel CEO Lior Lamesh said early movers among banks would help define finance’s shift toward open, programmable infrastructure.\nThe companies did not disclose commercial terms, fees or customer eligibility requirements. CoinDesk has reached out to Bank Leumi for further comments.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Bank Leumi, Israel's largest bank, plans to offer bitcoin, ether, and solana trading via its app in early 2027 with Galaxy providing infrastructure, making it the first Israeli bank to do so.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 14,
+      "title": "Google will now allow users to remove visible watermark from its AI generations",
+      "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
+      "score": 5.0,
+      "content": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
+      "summary": "Google will let users disable visible watermarks on AI generations while preserving invisible identification markers.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    }
+  ]
+}
