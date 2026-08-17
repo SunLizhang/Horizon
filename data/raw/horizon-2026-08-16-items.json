@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-16",
+  "items": [
+    {
+      "index": 1,
+      "title": "Lakers Deal Caps Billionaire Rush Into Sports",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-15/lakers-deal-caps-billionaire-rush-into-sports-video",
+      "score": 8.0,
+      "content": "Bob Iger and Josh Kushner moved from pursuing a Las Vegas NBA expansion team to agreeing within days to buy the Los Angeles Lakers in a record $12.5 billion deal. Bloomberg News Host of Sports City Randall Williams is on Bloomberg This Weekend with hosts Joe Mathieu and Carol Massar and explains that the transaction comes as Madison Square Garden Sports moves toward separating the Knicks and Rangers businesses and Jeff Bezos joins a group taking a minority stake in Liverpool, underscoring investor demand for scarce live-sports assets. (Source: Bloomberg)",
+      "summary": "Bob Iger and Josh Kushner's record $12.5 billion purchase of the Lakers highlights a billionaire rush into sports assets, with related moves by MSG and Jeff Bezos underscoring investor demand.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 2,
+      "title": "OpenAI upheaval mounts as Sam Altman readies IPO push",
+      "url": "https://www.ft.com/content/53082739-7714-4aae-9816-e55ab423cbee?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Executive exits and safety team changes unsettle staff as the ChatGPT maker prepares for a blockbuster listing",
+      "summary": "OpenAI's internal upheaval intensifies as it prepares for a major IPO, with executive exits and safety team changes unsettling staff.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Bond Traders Agonize Over AI Companies’ $70 Billion of Shadow Credit Backstops",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops",
+      "score": 7.0,
+      "content": "Even before Nvidia Corp.’s splashy $500 billion financing partnership this week, investors were starting to fret over the roughly $70 billion in phantom liabilities that don’t appear on major AI companies’ balance sheets, but could materialize at the worst possible time.",
+      "summary": "Bond traders are worried about $70 billion in hidden credit liabilities from AI companies, especially after Nvidia's large financing deal.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 4,
+      "title": "Colombia Quake Tests New President Days Into Term",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-15/colombia-quake-tests-new-president-days-into-term-video",
+      "score": 7.0,
+      "content": "Rescuers in western Colombia are still searching for survivors after a 7.4 magnitude earthquake killed at least 287 people. Bloomberg News Latin America Government Reporter Mie Dahl joins Bloomberg This Weekend from Bogotá and explains to hosts Joe Mathieu and Carol Massar that the disaster has also disrupted coffee exports and created an immediate leadership test for President Abelardo de la Espriella, who was sworn in just days before the quake struck. (Source: Bloomberg)",
+      "summary": "A 7.4 magnitude earthquake in Colombia killed at least 287 people, disrupted coffee exports, and presented an immediate leadership challenge for the newly inaugurated president.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 5,
+      "title": "Wall Street's private blockchain obsession is a 'race to the bottom,' Ethereum advocate Raman warns",
+      "url": "https://www.coindesk.com/business/2026/08/15/wall-street-s-private-blockchain-obsession-is-a-race-to-the-bottom-ethereum-advocate-raman-warns",
+      "score": 6.0,
+      "content": "Wall Street's private blockchain obsession is a 'race to the bottom,' Ethereum advocate Raman warns\nCentrally controlled, permission-only networks have a role to play in finance, but need a transparent, open base to reap the benefits blockchain technology offers.\n- The resurgence of private, permissioned “consortium chains” risks recreating siloed systems that undermine the interoperability and liquidity blockchain technology was meant to enable, Etherealize CEO Raman says.\n- Etherealize, backed by Vitalik Buterin and the Ethereum Foundation, is pitching Ethereum’s open mainnet as the neutral base to which institutions can add permissioned and privacy-preserving features at higher layers.\n- The rapid uptake of gated networks by major firms contrasts with new Ethereum-based products from firms like BlackRock, sharpening a debate over whether institutional adoption will favor open, public chains or curated systems controlled by corporate sponsors.\nA resurgence in private, gated blockchains that differ fundamentally from open, public networks like Ethereum and Solana by creating silos that don't talk to each other eats away at the potential the technology was designed to achieve, according to Vivek Raman, the co-founder and CEO of Etherealize.\nEtherealize acts to attract traditional finance (TradFi) firms to Etheruem. The 10-year-old blockchain is a base layer for billions of dollars in tokenized assets and the settlement layer underpinning much of decentralized finance (DeFi). Now the story is about attracting institutions such as BlackRock (BLK) to the permissionless ecosystem where all transactions are visible to everyone.\nEthereum stands in contrast to the permissioned systems that are becoming increasingly popular again, as evidenced by the rise of Digital Asset’s Canton Network, Circle’s stablecoin payments play ARC and Stripe’s vertically integrated Tempo blockchain. These systems, which Raman calls \"consortium chains,\" tout their inherent privacy and reduced counterparty risk — attributes that mainstream finance finds attractive.\nSimilar systems, however, have been around the blockchain space for years in one form or another. Early adopters may recall the reams of banks that joined R3’s consortium effort back in 2016, for example, or the many enterprise players that flocked to the Linux-affiliated Hyperledger ecosystem. R3 didn't make it to the end of the year before the big banks like Goldman Sachs, Morgan Stanley and Santander withdrew from the system.\n“It's like we're having consortium chain 2.0,” said Raman in an interview. “This is going to end up being a race to the bottom for consortium chains. You're going to have consortium chains versus consortium chains.”\nRaman likened Ethereum’s mainnet to Hypertext Transfer Protocol, or HTTP, the base layer of the internet itself. A more secure, permissioned, privacy-enabled layer, HTTPS, sits on top. An open base layer is necessary, Raman said, because that's the only way you can have maximum interoperability and maximum liquidity in one place, he said.\n“We strongly believe, and always have done, that you need a global, open, permissionless infrastructure as the base layer,” Raman said. “Then you can build all the permissioning on top of it. Whether that's at the app layer, whether that's the L2 layer, that's where you should have the customizability.”\nBut familiarity with blockchains and distributed-ledger technology has moved on since 2016. The question now is whether the market really cares about decentralization and the aims of the blockchain originators.\nThe rapid adoption of gated systems with clear sponsors suggests the answer is \"No,\" said Christian Catalini, founder of the MIT Cryptoeconomics Lab and the former chief economist of Facebook’s Diem stablecoin project.\n“This phase is all about enterprise sales,” Catalini said in an interview. “So there’s this really interesting tension just now, right as the real money is about to come in, and it’s not clear which way we will land. If we land on these networks that are more curated and have a clear sponsor and anchor entity shaping their rules, then some of the pro-competitive benefits of blockchains will never materialize.”\nEnterprise sales is where Etherealize comes in. The company was seeded by a grant from Ethereum co-founder Vitalik Buterin and the Ethereum Foundation in January 2025 and raised $40 million in Series A funding later the same year.\nBlackRock's new Ethereum-based funds are sign of things moving in what Raman called the right direction. After beginning with the BUIDL token on Ethereum prior to regulatory clarity, the next set of BlackRock funds is compliant with the GENIUS Act, the U.S. regulatory framework for stablecoins.\n“When we have regulatory clarity the institutional money goes toward open networks because that's the rails that no one owns,” Ramen said. “If you go to consortium chains, you're kind of paying the consortium. You have to get permission or be one of the consortium members. And if you're not an early consortium member, then the incentives go away very quickly.”\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "An Ethereum advocate warns that private consortium chains risk recreating siloed systems, advocating for public open networks as a base.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
+      "url": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
+      "score": 5.0,
+      "content": "The woman claimed that AI tools are \"taking everyday life and turning it into child sexual abuse.\"",
+      "summary": "A report that a woman's stepfather allegedly used Grok to turn a childhood photo into explicit imagery, illustrating AI misuse concerns.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 7,
+      "title": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price",
+      "url": "https://www.coindesk.com/markets/2026/08/15/robot-maker-unitree-is-going-public-hyperliquid-traders-see-4x-upside-from-ipo-price",
+      "score": null,
+      "content": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price\nHyperliquid traders value Unitree at nearly $38 billion versus $9 billion at its IPO, leaving leveraged bets vulnerable when trading begins, Allium analysts said.\n- Hyperliquid traders are pricing Unitree near $93 a share, more than four times its $22.37 Shanghai IPO price.\n- Pre-IPO perpetuals let traders speculate on a company's eventual market price without owning its shares.\n- The premium creates a potentially volatile convergence when Unitree starts trading on the stock market, with leveraged positions vulnerable to liquidation, Allium analysts pointed out.\nCrypto traders are betting that Unitree Robotics will be worth more than four times its IPO valuation when the Chinese robot maker debuts on the public markets.\nUnitree priced its Shanghai STAR Market offering at 150.80 yuan ($22.37) per share, valuing the company at roughly $9 billion. Pre-IPO perpetual contracts trading through Hyperliquid, however, were between $92 and $94 on Friday, equivalent to a valuation of about $38 billion, blockchain analytics firm Allium said in a report.\nThe premium reflects lofty expectations for one of China's closely watched robotics companies. Founded in Hangzhou in 2016, Unitree makes four-legged and humanoid robots for research, industrial and consumer applications. Revenue reached $253 million last year, up 335%, while humanoid robot shipments topped 5,500, according to Allium's report.\nThe firm’s IPO was reportedly 8000 times oversubscribed by retail traders, with trading expected to begin between Aug. 17 and Aug. 21.\nPre-IPO perps\nUnitree's public-market debut is also shaping up to be the latest in a corner of crypto derivatives that has recently expanded rapidly: pre-IPO perpetual futures.\nHyperliquid rose to prominence as an onchain venue for perpetual futures, derivatives that allow traders to take leveraged long or short positions without an expiration date. Markets built on its infrastructure have since expanded the concept beyond crypto into commodities like oil and gold, and most recently, into private companies preparing to go public.\nPre-IPO perps don’t provide ownership in the underlying company, and positions cannot be converted into actual shares. What they enable is a synthetic market for traders to speculate on a company's valuation before its shares begin trading, with the price expected to converge toward the public stock once a reference market becomes available.\nRecent listings have given traders reason to pay attention to that price-discovery mechanism.\nA pre-IPO contract tracking Chinese memory-chip maker CXMT came within 2.5% of its Shanghai opening price at the bell in July, Allium analysts noted.\nHyperliquid traders also correctly anticipated in June that Elon Musk’s SpaceX (SPCX) would debut higher on the stock market than its $135 IPO price.\nPainful convergence\nUnitree has already attracted meaningful activity. There are two Hyperliquid markets — operated by Trade.xyz and Paragon — and altogether have accumulated $9.1 million in open interest and about $59 million in turnover, according to Allium.\nThe contracts traded just 1.6% apart on average when both markets were active, and traded near $92 and $94 most recently, translating to a more than 300% upside from the IPO price.\nThat fourfold premium also means Unitree could have a blockbuster debut and still leave leveraged bulls nursing steep losses.\n“Unitree can open at twice its IPO price and still liquidate a third of long exposure,” Allium said.\nAn opening around $45, double the IPO price, would still be about 52% below the current perp price and could liquidate roughly 33% of long exposure, the analysts said. At the other extreme, a $128 opening price (nearly 6x from the IPO price) could liquidate an estimated 53% of the short positions, the report said. If shares open at around where the perps trade, nothing moves, and neither side is liquidated.\nPositioning on Trade.xyz, the bigger market of the two, is almost evenly split, with $6.5 million long and $6.6 million short. However, smaller traders are more bearish: bets below $50,000 are 70% short by value.\n“Any open away from today's price forces one side of this market out,” Allium said.\nRead more: Hyperliquid is taking crypto perps deep into DeFi’s ‘money LEGO’ land\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Robot maker Unitree is going public. Hyperliquid traders see 4x upside from IPO price",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options",
+      "url": "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options",
+      "score": null,
+      "content": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options\nDirect holdings of IBIT also rose 12% to 407,890 shares, while put option exposure dropped roughly 53% to 143,300 underlying shares during the quarter.\n- UBS boosted its quarterly call option exposure for BlackRock's IBIT by over 24-fold, reaching 1.95 million underlying shares as of June 30.\n- Direct holdings of IBIT also rose 12% to 407,890 shares, while put option exposure dropped roughly 53% to 143,300 underlying shares during the quarter.\n- The filing doesn't clarify if the increase stems from client initiatives, dealer hedging, market-making, or proprietary exposure, and lacks strike prices.\nBanking giant UBS, with over $7 trillion in assets under management, has reported a more than 24-fold quarterly increase in call option exposure tied to BlackRock’s iShares Bitcoin Trust (IBIT) in the second quarter.\nThat increase, which gives it the right to acquire IBIT shares at a later date at a set price, came as its outright IBIT holdings rose about 12%, according to a regulatory filing this week.\nThe Swiss banking group reported calls representing 1.95 million underlying IBIT shares as of June 30, up from 80,000 three months earlier. UBS separately held 407,890 IBIT shares worth about $13.6 million, compared with 364,371 shares at the end of the first quarter, according to its Q1 filing.\nPut option exposure, giving UBS the right but not the obligation to sell IBIT at a set date and price, moved in the opposite direction. UBS reported puts representing 143,300 underlying shares, down about 53% from 303,300 at the end of March.\nIts direct IBIT position also remained below the 548,614 shares reported at the end of 2025, according to its fourth-quarter filing.\nThe disclosure also does not include strike prices or expirations, making it difficult to determine UBS’s net directional exposure from the filing alone.\nThe increase comes as UBS expands its work around client access to digital assets. Earlier this year, the bank started preparing to offer select private banking clients in Switzerland access to bitcoin and ether trading.\nThe filing does not say whether those client initiatives drove the increase in IBIT options. The positions could also reflect dealer hedging, market-making activity, discretionary client portfolios or proprietary exposure.\nRead more: Paul Tudor Jones’ investment firm increases stake in BlackRock's bitcoin ETF after year of selling\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Swiss mega-bank UBS ramps up its Bitcoin exposure with a massive 24-fold surge in ETF call options",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 9,
+      "title": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
+      "url": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city",
+      "score": null,
+      "content": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city\nThe Energy Ministry enacted the year-round restriction to mitigate power capacity shortages, as energy-intensive mining facilities continue to strain regional grids.\n- Moscow and parts of Kursk banned crypto mining and pool participation through Dec. 31, 2032, under government decree No. 936 to preserve power grid stability.\n- The Energy Ministry enacted the year-round restriction to mitigate power-capacity shortages as energy-intensive mining facilities continue to strain regional grids.\n- This decision follows Russia's legalization of registered mining in 2024 and subsequent bans in 10 other regions due to rising electricity demand.\nCrypto mining was banned in Moscow, the surrounding Moscow Region and parts of Kursk, with the restrictions set to run through Dec. 31, 2032.\nThe measure, established under government decree No. 936, also prohibits participation in crypto mining pools. The decree was signed on July 25 and published on July 31, local media reports.\nRussia as a whole accounted for an estimated 175 exahashes per second, or 16.4% of Bitcoin’s global computing power, in the first quarter, according to Luxor’s Hashrate Index. That placed it second behind the U.S., although it’s unclear what capacity was located in the newly restricted region.\nThe country’s Energy Ministry said a year-round restriction was needed to reduce the risk of power-capacity shortages as energy-intensive mining facilities connect to regional grids. Mining currently consumes roughly 1 gigawatt in the Moscow power system, while the region’s data-center capacity could reach 3.6 GW, or 17% of peak demand, by 2032, Interfax reported after the decree was first signed.\nMining is also linked to the country’s Western sanctions.\nRussian companies had been using domestically mined bitcoin in international payments after legal changes designed to counter Western restrictions, Finance Minister Anton Siluanov said in December 2024.\nLegislation passed by parliament in July maintained Russia’s ban on domestic crypto payments but preserved exceptions for foreign-trade settlements and transactions involving mined cryptocurrency, keeping the mechanism available as sanctions restrict conventional payment channels.\nAdding to that, the U.S. Treasury sanctioned BitRiver and 10 subsidiaries in 2022, saying Russian mining companies helped the country monetize its energy resources and could offset the impact of sanctions.\nRussia legalized registered crypto mining back in 2024, before banning the activity in 10 regions through March 2031, citing electricity demand. Year-round restrictions were later extended to southern Irkutsk and most areas of Buryatia and Zabaykalsky Krai.\n- 1\n- 2\n- 3\n- 4\n- 5\n- 6\n- 7\n- 8\n- 9\n- 10\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.\nWhy it matters:\nZcash’s Tachyon upgrade aims to scale shielded payments, improve quantum readiness, and test whether its funding, security, and governance can hold.",
+      "summary": "Why the world’s second-largest Bitcoin mining power is shutting down rigs in its capital city",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 10,
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+      "score": null,
+      "content": "AI coding startup Cursor is now officially a part of SpaceX.",
+      "summary": "SpaceX officially closes its Cursor acquisition",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    }
+  ]
+}
