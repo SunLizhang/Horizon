@@ -1,0 +1,173 @@
+{
+  "date": "2026-08-22",
+  "items": [
+    {
+      "index": 1,
+      "title": "'Something Has To Give' On US Fiscal Policy: Patterson",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-21/-something-has-to-give-on-us-fiscal-policy-patterson-video",
+      "score": 9.0,
+      "content": "Rebecca Patterson, senior fellow at the Council on Foreign Relations and former chief investment strategist at Bridgewater Associates, joins Scarlet Fu and Tom Keene on \"Bloomberg Money.\" Total US public debt surpassed $40 trillion for the first time, and has now surged by a third in less than five years, as US lawmakers continue to shrug off calls to contend with historically wide fiscal deficits. (Source: Bloomberg)",
+      "summary": "US public debt hits a record $40 trillion, rising a third in under five years, highlighting persistent fiscal deficits and rising policy concerns.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 2,
+      "title": "Samsung to return record $80bn to shareholders",
+      "url": "https://www.ft.com/content/d434a48b-4b6c-4071-bf16-da16a6b95bda?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "South Korean chipmaker has come under pressure to distribute more of its bumper profits from AI boom",
+      "summary": "Samsung announces a record $80bn shareholder return, responding to pressure to distribute profits from the AI boom.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Felony charges for citizen deleting phone data at US Border",
+      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
+      "score": 8.0,
+      "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;SflVC\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;SflVC</a><p><a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=_2rokxux5cU\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=_2rokxux5cU</a>\n\n\n--- Top Comments ---\n\n[gblargg]: The decoy passcode feature should boot into a separate partition that looks like a normal phone setup, and during that time quietly erase the user&#x27;s actual data. They would never have known if it worked like this.\n\n[Zak]: For exactly the border search scenario, I wish smartphones could be imaged and restored as easily as PCs. Imagine booting the phone from a flash drive, making an encrypted image of the phone on said drive, and writing a fresh OS before reaching the border. There&#x27;s no deception required to protect sensitive data or avoid the seizure of an expensive phone. Consent to unlocking the phone, refuse to unlock the drive. The drive gets seized and you go on your way (if you&#x27;re a US citizen e...\n\n[simonebrunozzi]: All Archive pages, when accessed from Italy, now are blocked by the Government: &quot;PAGINA INTERDETTA DAL CENTRO NAZIONALE PER IL CONTRASTO DELLA PEDOPORNOGRAFIA ONLINE (C.N.C.P.O.)&quot; “PAGE BLOCKED BY THE NATIONAL CENTER FOR COMBATING ONLINE CHILD PORNOGRAPHY (C.N.C.P.O.)” Oh, we live in an interesting age.\n\n[patcon]: I used to play around on projects adjacent to Tor and TailsOS, and had an idea for a setup I was researching. It&#x27;s a little intense and probably has annoying failure modes, but sharing in case anyone else finds it helpful: - Tasker is an automation app for setting up rules for triggers and actions. It allows extension apps to be created to add new triggers and actions. - someone at one point made an extension to add an action for wiping or factory resetting when triggered - there was an ...\n\n[trollbridge]: U.S. citizens are going to need obtain a burner phone before returning, and load it with the absolute minimum to load boarding passes, etc., perhaps some reading material or a movie to watch on the plane, and be prepared to share full credentials for thing at the border. (I used to do some travel patterns where taking a certain client laptop wasn’t an option. It was an absolute gigantic pain for the type of work I did, but it was just too risky to have a laptop seized and be expected to input...",
+      "summary": "A US citizen faces felony charges for deleting phone data during a border search, raising urgent questions about digital privacy and device security.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 4,
+      "title": "Felony Bench",
+      "url": "https://www.felonybench.com/",
+      "score": 7.0,
+      "content": "\n--- Top Comments ---\n\n[rfw300]: The way that OpenAI has communicated around the HuggingFace incident makes me feel crazy. You created a machine that undertook a malicious campaign of harm against an innocent third-party! You should be doing deep introspection about how your company culture and approach to R&amp;D produces criminal outcomes. Instead, they treat their own felonious behavior like it is an uncontrollable act of God. From Greg Brockman&#x27;s post a few days ago: &gt; The OpenAI-Hugging Face incident (opens in a...\n\n[lxe]: Let&#x27;s say I am &quot;User&quot;. I subscribe through a &quot;Third Party&quot; to use &quot;AI Agent&quot; allowing an &quot;LLM&quot; to run. I want to accomplish some legal non-nefarious task, and run the agent. The agentic loop causes a CFAA-violating behavior. Who gets prosecuted? 1. User 2. The third party model host with whom I have the account 3. The developer of the harness &#x2F;agent software 4. The developer of the LLM model\n\n[beej71]: A computer can never be held accountable. Therefore a computer must never commit a felony.\n\n[john_strinlai]: &gt; Felony Bench counts unique instances where AI agents inadvertently compromise or affect third-party entities.  a bit silly, as one typically has to prove intent (which is why security researchers don&#x27;t get slapped with felonies all the time). &quot;inadvertently&quot; and the existence of guardrails&#x2F;sandboxes&#x2F;etc make it pretty unconvincing that these incidents were intentionally malicious. still a fun thing to track, but the name is just a bit overstated.\n\n[joshstrange]: I was more interested when I thought it was an actual benchmark showing LLM models acting outside what people would consider &quot;right&quot;. As in, leave some creds laying around and don&#x27;t mention them to the LLM and ask it to solve something that it could &quot;cheat&quot; on using the creds. A sort of &quot;do they take the bait to cheat&quot; test. Instead it&#x27;s a collection of what made the news which feels like will not be updated and prove very little.",
+      "summary": "A website that catalogues instances where AI agents inadvertently commit felonies against third parties, sparking important debate on liability and accountability.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 5,
+      "title": "Coldcard ships firmware after $114 million bitcoin theft; says AI helped catch more bugs",
+      "url": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs",
+      "score": 7.0,
+      "content": "",
+      "summary": "Coldcard ships a firmware update after a $114M bitcoin theft, crediting AI-assisted bug catching for improvements.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "MANTRA token plunges 18% to record low as blockchain halts after exploit",
+      "url": "https://www.coindesk.com/tech/2026/08/21/mantra-token-plunges-18-to-record-low-as-blockchain-halts-after-exploit",
+      "score": 7.0,
+      "content": "",
+      "summary": "MANTRA token plunges 18% to a record low as its blockchain halts following an exploit.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "Nellie Liang: ‘Ultimately the goal is to signal that high rates are a concern’",
+      "url": "https://www.ft.com/content/3d6256cc-cd21-461a-b4c4-2b368d59d696?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "Former Treasury official on what Scott Bessent is up to",
+      "summary": "Former Treasury official Nellie Liang comments on Scott Bessent's aim to signal that high rates are a concern.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 8,
+      "title": "Healey warned to limit Budget borrowing amid bond sell-off",
+      "url": "https://www.ft.com/content/2d7e64e8-386a-4987-ae4d-04b6bf2a5e6a?syn-25a6b1a6=1",
+      "score": 6.0,
+      "content": "New chancellor plans to stay ‘well within’ Labour’s fiscal rules, say allies",
+      "summary": "The UK chancellor plans to keep Budget borrowing within Labour's fiscal rules following a bond market sell-off.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 9,
+      "title": "Anthropic’s Opus 4.6 is a smut-machine",
+      "url": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
+      "score": 6.0,
+      "content": "Anthropic forbids its Claude models from generating sexually explicit content. But a series of tests conducted by TechCrunch found that it didn't take much to get past the restriction.",
+      "summary": "TechCrunch reports that Anthropic's Claude Opus 4.6 can be easily prompted to generate sexually explicit content despite restrictions.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+      "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+      "score": 6.0,
+      "content": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
+      "summary": "Nvidia research suggests that fine-tuning and the surrounding harness, not just the AI model, are key to keeping AI agents on track.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 11,
+      "title": "Crypto advocates join in suing Illinois over digital asset tax",
+      "url": "https://www.coindesk.com/policy/2026/08/21/crypto-advocates-join-in-suing-illinois-over-digital-asset-tax",
+      "score": 5.0,
+      "content": "",
+      "summary": "Crypto advocates have joined a lawsuit against Illinois over its digital asset tax policy.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 12,
+      "title": "Analysts split on whether Bitcoin's surge past key levels signals a new bull run",
+      "url": "https://www.coindesk.com/markets/2026/08/21/analysts-split-on-whether-bitcoin-s-surge-past-key-levels-signals-a-new-bull-run",
+      "score": 5.0,
+      "content": "",
+      "summary": "Analysts are divided on whether Bitcoin's rise above key levels indicates the start of a new bull market.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 13,
+      "title": "Nvidia partners with data center developer Cloverleaf",
+      "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+      "score": 3.0,
+      "content": "Nvidia continues to pour money into data center development — just as AI data centers bring lots of money into Nvidia.",
+      "summary": "Nvidia announces a partnership with data center developer Cloverleaf, continuing its investment in AI-focused infrastructure.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 14,
+      "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+      "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+      "score": null,
+      "content": "There's about to be a big fight to secure access to space.",
+      "summary": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    }
+  ]
+}

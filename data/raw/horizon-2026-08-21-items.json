@@ -1,0 +1,161 @@
+{
+  "date": "2026-08-21",
+  "items": [
+    {
+      "index": 1,
+      "title": "The August 17 outage",
+      "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+      "score": 8.0,
+      "content": "\n--- Top Comments ---\n\n[afc]: &gt; Both incidents were capacity failures at their core. We failed to scale critical components before demand exceeded their capacity. This is the wrong way to think about this because there&#x27;s no such thing as infinite capacity. A large distributed system will be simultaneously mostly idle and (in some subcomponents) overloaded. The root cause is not &quot;a component didn&#x27;t have enough capacity (because of auto scaling failures)&quot;, but rather &quot;this complex system collapse...\n\n[blakesterz]: &quot;Since April, monthly commits have grown from 1.4 billion to 2.9 billion. &quot;\n  \nWow, that is some incredible growth in a really short time.\n\n[madrox]: I applaud GitHub. However, I think no matter how valiant they are they will not climb out from under this. The scale problem will keep getting worse, and it&#x27;s getting worse in a way I don&#x27;t think is translating to more money for them. Sooner or later, they&#x27;re going to have to charge for things currently free. I&#x27;ve been saying this for a while:  https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47534499\n\n[aesthetics1]: &gt; Since April, monthly commits have grown from 1.4 billion to 2.9 billion Bonkers. You can tell the entire industry is in a &quot;productivity panic&quot; and here&#x27;s more proof. There&#x27;s a velocity zealot crying tears of joy somewhere.\n\n[iot_devs]: &gt; Originally this was caused by an Istio sidecar pod reaching its concurrency limits and failing to auto scale correctly because of a misconfigured policy that watched host service but not sidecar limits. I operated services at similar scale, and generally we use to put a bit of slack so that you would get an alarm when capacity goes up to 80%+ (or whatever number makes sense) This allows to check, in the morning, after coffee, why the load balancer fleet didn&#x27;t scale up automatically...",
+      "summary": "GitHub's analysis of the August 17 outage highlights capacity failures and unprecedented growth in commits, offering important lessons for large-scale system reliability.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "Scott Bessent takes on bond vigilantes in $32tn Treasury market",
+      "url": "https://www.ft.com/content/f01ff762-3e68-4bac-bb73-6f35a6bf2771?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Wall Street investors say move to buy more long-term US debt is a ‘band-aid on a bullet hole’",
+      "summary": "Treasury Secretary Scott Bessent is responding to bond vigilantes by increasing purchases of long-term US debt, a move Wall Street investors view as insufficient.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Ping An’s Profit Rises as Stock Market Rally Boosts Returns",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-20/ping-an-s-profit-rises-as-stock-market-rally-boosts-returns",
+      "score": 8.0,
+      "content": "Ping An Insurance (Group) Co.’s profit rose 36% in the first half, sending its shares higher, as China’s stock-market rally bolstered investment returns.",
+      "summary": "Ping An's first-half profit rose 36% as China's equity market rally lifted investment returns, sending shares higher.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 4,
+      "title": "Monte Paschi Bids €34 Billion for BPM, Banca Generali",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-21/monte-paschi-bids-34-billion-for-bpm-banca-generali-video",
+      "score": 8.0,
+      "content": "Banca Monte dei Paschi is seeking to buy two separate banks for a combined value of €34 billion ($40 billion) as it seeks to prevent being bought by rival Intesa Sanpaolo. The Italian lender said it’s launching an all-share bid for Banco BPM valuing it at €25.3 billion and another one for Banca Generali valuing it €8.7 billion, according to a statement Friday, confirming an earlier Bloomberg News report. Tommaso Ebhardt reports from Milan. (Source: Bloomberg)",
+      "summary": "Banca Monte dei Paschi launches €34 billion all-share bids for Banco BPM and Banca Generali to fend off Intesa Sanpaolo.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 5,
+      "title": "MANTRA token plunges 18% to record low as blockchain halts after exploit",
+      "url": "https://www.coindesk.com/tech/2026/08/21/mantra-token-plunges-18-to-record-low-as-blockchain-halts-after-exploit",
+      "score": 7.0,
+      "content": "",
+      "summary": "MANTRA token falls 18% to a record low after an exploit triggers a blockchain halt.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Binance now lets AI agents trade, but keeping them in check is largely up to users",
+      "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
+      "score": 7.0,
+      "content": "Binance's Agent OS works with tools such as ChatGPT, Claude Code, and Cursor.",
+      "summary": "Binance introduces Agent OS, letting AI agents trade via tools like ChatGPT, Claude Code, and Cursor, with users bearing oversight responsibility.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 7,
+      "title": "Japanese inflation rises as central bank weighs rate increase",
+      "url": "https://www.ft.com/content/4e128c45-b84c-4fc3-98bf-c5033c201ea6?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Bank of Japan under pressure to act on rates in September as yen weakens despite joint intervention",
+      "summary": "Japanese inflation is rising, increasing pressure on the Bank of Japan to raise interest rates in September amid yen weakness.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 8,
+      "title": "Elon Musk's X is exploring stablecoins to pay influencers and content providers",
+      "url": "https://www.coindesk.com/business/2026/08/20/elon-musk-s-x-is-exploring-stablecoins-to-pay-influencers-and-content-providers",
+      "score": 6.0,
+      "content": "",
+      "summary": "Elon Musk's X is reportedly exploring stablecoin payments for influencers and content providers, a fintech-oriented move with moderate industry interest.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 9,
+      "title": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+      "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+      "score": 6.0,
+      "content": "ChatGPT and other AI models are now authoring and editing much of the new web.",
+      "summary": "A study finds that a third of web pages published since ChatGPT's launch show signs of AI authorship.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "ChatGPT can now send texts for you with new Apple Messages plug-in",
+      "url": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+      "score": 5.0,
+      "content": "Ever wanted someone else to do your texting for you? ChatGPT is being offered up as an automated text scribe via a new Apple Messages integration.",
+      "summary": "ChatGPT is being integrated with Apple Messages to help automate texting.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 11,
+      "title": "Google gives publishers a new way to fight AI-driven traffic losses",
+      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+      "score": 5.0,
+      "content": "Google is giving publishers a new button that lets readers make them a preferred source across Search, Discover, and Google News, potentially boosting their traffic as AI search sends fewer clicks to the web.",
+      "summary": "Google introduces a button for publishers to become a reader's preferred source in Search, Discover, and Google News to counter AI-driven traffic declines.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 12,
+      "title": "Bitcoin, ether and solana climb as another $1 billion shorts get wiped out",
+      "url": "https://www.coindesk.com/markets/2026/08/21/bitcoin-ether-and-solana-climb-as-another-usd1-billion-shorts-get-wiped-out",
+      "score": 5.0,
+      "content": "",
+      "summary": "Bitcoin, ether, and solana rose as over $1 billion in short positions were liquidated.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 13,
+      "title": "Bitcoin breaks out of six-week range, tops $71,000 as $3 billion in shorts get wiped out",
+      "url": "https://www.coindesk.com/markets/2026/08/20/bitcoin-breaks-out-of-six-week-range-tops-usd71-000-as-usd3-billion-in-shorts-get-wiped-out",
+      "score": 5.0,
+      "content": "",
+      "summary": "Bitcoin breaks out of a six-week range to exceed $71,000, wiping out $3 billion in short positions.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    }
+  ]
+}

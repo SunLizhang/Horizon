@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-23",
+  "items": [
+    {
+      "index": 1,
+      "title": "Who owns government bonds?",
+      "url": "https://www.ft.com/content/b48dd083-0cdb-4f48-8be3-c73c000e3cdf?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "As governments borrow more, the buyers of their debt are changing",
+      "summary": "The FT examines how the composition of government bond buyers is evolving amid rising sovereign debt levels.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 2,
+      "title": "How Germany’s doctors, lawyers and dentists got burnt by private markets bets",
+      "url": "https://www.ft.com/content/00342102-98ee-47a7-b2cf-7878b9131afd?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Questions mount over management of mandatory pension schemes for professionals worth €300bn",
+      "summary": "Questions are mounting over the management of Germany's €300bn professional pension schemes due to losses from private markets investments.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Canada Pushes Back as US Trade Talks Collapse",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-22/canada-pushes-back-as-us-trade-talks-collapse-video",
+      "score": 8.0,
+      "content": "Bloomberg News Executive Editor for Canada Derek Decloet joins David Gura and Christina Ruffini on Bloomberg This Weekend and explains that Canadians are frustrated but not necessarily surprised after last-minute US-Canada negotiations collapsed, triggering 50% US tariffs on about $20 billion of Canadian goods and a dollar-for-dollar retaliation pledge from Ottawa. (Source: Bloomberg)",
+      "summary": "US-Canada trade negotiations collapse, triggering 50% US tariffs on about $20 billion of Canadian goods and Canada's pledge to retaliate dollar-for-dollar.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 4,
+      "title": "Qatar cuts state spending at home and abroad as war shrinks economy",
+      "url": "https://www.ft.com/content/efe10069-cbe3-4071-a091-26afa74fb4b3?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Wealthy Gulf nation has been hard hit by US-Iran conflict over Strait of Hormuz",
+      "summary": "Qatar is cutting state spending at home and abroad as its economy shrinks due to the US-Iran conflict and Strait of Hormuz tensions.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 5,
+      "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
+      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+      "score": 7.0,
+      "content": "A new study finds leading AI labs have few publicly documented plans for containing rogue models, raising questions about preparedness as AI systems increasingly demonstrate unexpected and potentially dangerous behavior.",
+      "summary": "A new study finds frontier AI labs have few publicly documented plans for containing rogue models, raising safety preparedness concerns.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
+      "url": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
+      "score": 6.0,
+      "content": "",
+      "summary": "The Sandbox pauses bridging to Base and BNB Chain following an exploit, highlighting ongoing security challenges in Web3 gaming platforms.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "OpenAI says California should strengthen its AI safety bill",
+      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+      "score": 6.0,
+      "content": "OpenAI is calling for California to strengthen SB 53, an AI safety bill that the company previously opposed.",
+      "summary": "OpenAI now urges California to strengthen SB 53, an AI safety bill it previously opposed.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 8,
+      "title": "Crypto exchange BitMart weighs partial restart and creditor payouts weeks after announcing shutdown",
+      "url": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown",
+      "score": 5.0,
+      "content": "",
+      "summary": "BitMart is reportedly considering a partial restart and creditor payouts weeks after announcing its shutdown.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 9,
+      "title": "Tokenized stocks risk repeating Wall Street’s 1960s ‘paper crisis,’ Fairmint CEO says",
+      "url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says",
+      "score": 5.0,
+      "content": "",
+      "summary": "Fairmint CEO warns that tokenized stocks could repeat Wall Street's 1960s paper crisis due to operational and settlement risks.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 10,
+      "title": "Harvard’s $699 startup bootcamp offers AI avatars of its instructors",
+      "url": "https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/",
+      "score": 5.0,
+      "content": "In the HBS Foundry program, AI avatars provide feedback during practice pitches and board meetings.",
+      "summary": "Harvard's $699 startup bootcamp uses AI avatars of instructors to provide feedback during practice pitches and board meetings.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 11,
+      "title": "Kalshi off-limits in multiple states as prediction markets, CFTC team up for battle",
+      "url": "https://www.coindesk.com/news-analysis/2026/08/21/kalshi-off-limits-in-multiple-states-as-prediction-markets-cftc-team-up-for-battle",
+      "score": null,
+      "content": "",
+      "summary": "Kalshi off-limits in multiple states as prediction markets, CFTC team up for battle",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    }
+  ]
+}
