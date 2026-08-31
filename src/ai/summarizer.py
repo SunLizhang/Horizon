@@ -399,8 +399,11 @@ class DailySummarizer:
         if language == "zh":
             star = "⭐" if isinstance(score, (int, float)) or (isinstance(score, str) and score.replace('.','').isdigit()) else ""
             url_line = f"[原文]({url})" if url else ""
+            # 优先使用富化生成的中文内容（artifact 的 primary block / 中文标题）；
+            # 富化失败时回退到分析摘要（可能是英文原文，供后续人工翻译或展示）。
+            zh_body = primary_content or summary
             lines = [
-                f"{index}. {star}{score} {summary}",
+                f"{index}. {star}{score} {zh_body}",
                 f"   🔗 {url_line}" if url_line else "",
                 "",
             ]

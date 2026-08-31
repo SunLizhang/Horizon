@@ -1121,6 +1121,20 @@ class HorizonOrchestrator:
 
         items_data = []
         for i, item in enumerate(items):
+            # 富化结果存在 item.processing.artifacts["zh"]（profile-driven 重构后不再写 metadata）。
+            # 这里从 artifact 提取中文字段；兼容旧 metadata 字段。
+            artifact = (
+                item.processing.artifacts.get("zh")
+                if item.processing and item.processing.artifacts
+                else None
+            )
+            primary_block = next(
+                (b for b in artifact.blocks if b.primary), None
+            ) if artifact else None
+            background_block = next(
+                (b for b in artifact.blocks if b.id == "background"), None
+            ) if artifact else None
+
             items_data.append({
                 "index": i + 1,
                 "title": item.title,
@@ -1128,8 +1142,14 @@ class HorizonOrchestrator:
                 "score": item.processing.analysis.score if item.processing and item.processing.analysis else None,
                 "content": item.content or "",
                 "summary": item.processing.analysis.summary if item.processing and item.processing.analysis else "",
-                "detailed_summary_zh": item.metadata.get("detailed_summary_zh", ""),
-                "background_zh": item.metadata.get("background_zh", ""),
+                "detailed_summary_zh": (
+                    (primary_block.content if primary_block else "")
+                    or item.metadata.get("detailed_summary_zh", "")
+                ),
+                "background_zh": (
+                    (background_block.content if background_block else "")
+                    or item.metadata.get("background_zh", "")
+                ),
                 "source_type": item.source_type.value,
                 "feed_name": item.metadata.get("feed_name", ""),
             })
