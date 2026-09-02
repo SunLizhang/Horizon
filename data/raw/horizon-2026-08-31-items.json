@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-31",
+  "items": [
+    {
+      "index": 1,
+      "title": "Big Tech profits get $160bn boost from gains on stakes in other AI companies",
+      "url": "https://www.ft.com/content/a5a0081f-e998-4c80-b967-cc535cbc4933?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Analysts say large paper windfalls on investments in OpenAI, Anthropic and SpaceX have muddied the tech sector’s earnings metrics",
+      "summary": "Big Tech earnings are inflated by $160bn in unrealized gains from stakes in OpenAI, Anthropic, and SpaceX, muddying sector profit metrics.",
+      "detailed_summary_zh": "分析师称，大型科技公司因持有OpenAI、Anthropic和SpaceX等公司的股权而获得约1600亿美元的未实现账面收益，使行业利润指标被夸大。",
+      "background_zh": "大型科技公司所持OpenAI、Anthropic和SpaceX等AI企业的股权出现大幅账面增值，按照会计准则可在利润中确认未实现收益。分析师认为，这类纸上收益使得科技板块的盈利指标变得不再清晰。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 2,
+      "title": "Rising bond yields add tens of billions to G7 countries’ debt costs",
+      "url": "https://www.ft.com/content/bbe90db5-64ac-441d-87e4-e984c5ef8629?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "World’s biggest developed economies face higher financing costs since start of US-Iran war, weighing on public finances",
+      "summary": "Rising bond yields since the US-Iran conflict are adding tens of billions to G7 countries' debt financing costs, straining public finances.",
+      "detailed_summary_zh": "据英国《金融时报》报道，自美伊冲突爆发以来，七国集团的债券收益率上升，导致这些国家的债务融资成本增加数百亿，财政压力加大。",
+      "background_zh": "报道称，自美国与伊朗冲突开始以来，全球债券收益率上升，令七国集团（G7）主要发达经济体的债务融资成本增加数百亿美元。债券收益率上升意味着政府发行新债或滚动旧债时需支付更高利息。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Shein Set for Long-Awaited Hong Kong IPO Debut (Correct)",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-30/shien-set-for-long-awaited-hong-kong-ipo-debut",
+      "score": 8.0,
+      "content": "From a peak valuation of 100 billion dollars to a targeted debut at a fraction of that figure, ultra-fast fashion giant Shein is preparing for a long-awaited public listing. But as regulatory crackdowns close tax loopholes and squeeze profit margins, the digital retailer is being forced to radically remake its business model. Bloomberg’s Minmin Low reports from Hong Kong. (Corrects spelling of the company's name in the headline.) (Source: Bloomberg)",
+      "summary": "Shein is preparing for its long-awaited Hong Kong IPO at a valuation well below its prior $100 billion peak, amid regulatory crackdowns and margin pressures.",
+      "detailed_summary_zh": "据彭博报道，快时尚电商希音（Shein）正准备在香港上市，目标估值远低于其此前1000亿美元的峰值，原因是监管整顿压缩利润率、迫使公司调整商业模式。",
+      "background_zh": "Shein此前峰值估值达1000亿美元，现计划以约270亿美元估值在香港上市。公司面临监管收紧、美国进口关税豁免取消，并因一次性会计费用在2026年初录得9900万美元亏损。",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 4,
+      "title": "Shein’s $100 Billion Valuation Falls to $26 Billion",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-30/shein-s-100-billion-valuation-falls-to-26-billion-video",
+      "score": 8.0,
+      "content": "Shein is heading toward a Hong Kong listing at a valuation of about $26.5 billion, roughly a quarter of its 2022 peak, after earlier efforts to list in New York and London ran into regulatory hurdles. Bloomberg News Consumer Finance Reporter Lisa Du is on Bloomberg This Weekend with hosts Christina Ruffini and Bailey Lipschultz and says the fast-fashion giant is pitching investors on expanding beyond its core brand by acquiring or partnering with other labels, even as geopolitical, regulatory and reputational risks weigh on its growth story. (Source: Bloomberg)",
+      "summary": "Shein's valuation has plunged to about $26.5 billion ahead of a Hong Kong listing, roughly a quarter of its 2022 peak, amid regulatory and reputational risks.",
+      "detailed_summary_zh": "据彭博社报道，希音（Shein）正以约265亿美元的估值推进香港上市，约为其2022年1000亿美元峰值估值的四分之一；此前该公司在纽约和伦敦的上市计划均遇到监管障碍。",
+      "background_zh": "快时尚电商希音此前曾寻求在纽约和伦敦上市，均因监管障碍受阻，此次转而寻求香港上市。",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 5,
+      "title": "Crypto market makers are cashing in on bitcoin's rally - without betting on direction",
+      "url": "https://www.coindesk.com/markets/2026/08/28/crypto-market-makers-are-cashing-in-on-bitcoin-s-rally-without-betting-on-direction",
+      "score": 5.0,
+      "content": "",
+      "summary": "Coindesk reports that crypto market makers are earning from bitcoin's rally via non-directional strategies.",
+      "detailed_summary_zh": "据CoinDesk报道，在比特币近期上涨期间，加密货币做市商正通过不押注涨跌方向的非方向性策略获利。",
+      "background_zh": "比特币价格回升至8万美元上方后，加密货币做市商正通过基差交易等非方向性策略赚取收益，即同时买卖相关资产以赚取价差或波动率收益，而不是押注价格涨跌。这通常被视为市场成熟和机构化程度提高的表现。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Haiku R1/beta6 has been released",
+      "url": "https://www.haiku-os.org/news/2026-08-26_haiku_r1_beta6",
+      "score": 5.0,
+      "content": "\n--- Top Comments ---\n\n[SyneRyder]: Just a heads-up for those trying it out, I&#x27;ve found a couple of regressions in Beta 6 that rendered my Haiku system unbootable, until I remembered about hammering the space key during the boot sequence to get to the safe mode menu. In my case, my ThinkPad X1 (Yoga 3rd Gen) used to boot despite what appeared to be kernel panics, but typing &quot;continue&quot; at the kernel prompt would skip past them and everything would then work fine. In Beta 6, it now hangs at boot instead with no ker...\n\n[pmkary]: I&#x27;m so happy. Haiku to me, is visually the most beautiful operating system out there. The icons, apps, designs. If there be anything that can ever steal the spotlight from Mac; it would be Haiku. And the OS is perhaps the one and only one that remains a tool in the old sense. All other operating systems are now service and signups and telemetry and notifications; this is the last resort remaining for the rest of us. I only wonder sometimes when it is going to become usable. With LLMs I&#...\n\n[dmead]: I can&#x27;t see steve blamer&#x27;s face without remembering how fun beos was in the 90s.\n\n[chukar]: Always love seeing Haiku releases. Brings back memories of trying it out on an old machine, still hoping for a modern browser.\n\n[Aldipower]: Haiku could theoretically fill a niche for music production workflows. Ultra tight MIDI timing and sequencing, low-latency audio and a beautiful desktop. I hope this dream comes true eventually.",
+      "summary": "Haiku R1/beta6, a new beta of the open-source BeOS-inspired operating system, has been released.",
+      "detailed_summary_zh": "Haiku R1/beta6 已于 2026 年 8 月 26 日发布，这是开源、BeOS 风格操作系统 Haiku 的新测试版本。该版本主要面向社区测试者，但已有用户报告在 ThinkPad X1 Yoga（第 3 代）上出现启动回归，引导时挂起，需按空格进入安全模式并输入 continue 才能绕过。目前尚无详细更新说明；社区仍期望 Haiku 未来能获得现代浏览器、低延迟音频等能力。",
+      "background_zh": "Haiku 是一款开源的、灵感来自 BeOS 的操作系统，由以志愿者为主的小型团队开发。R1/beta6 是该项目第六个测试版，距上一个测试版 R1/beta5（2026 年 9 月发布）仅约一周，并且紧邻 Haiku 项目成立 25 周年。该版本可通过 HaikuDepot 安装，并提供 SHA256 校验的 x86_64 镜像下载。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 7,
+      "title": "From Hawala to Swift: Inside the 1,000-year battle to move money safely",
+      "url": "https://www.coindesk.com/business/2026/08/30/from-hawala-to-swift-inside-the-1-000-year-battle-to-move-money-safely",
+      "score": 5.0,
+      "content": "",
+      "summary": "An overview of the evolution of money transfer systems from informal hawala networks to modern SWIFT infrastructure.",
+      "detailed_summary_zh": "本文是CoinDesk于2026年8月30日发表的一篇文章，作者为Olivier Acuna，主题是从非正式的哈瓦拉（hawala）网络到现代SWIFT基础设施的资金转移系统演变。文章属于历史性概述，覆盖资金转移领域的关键发展和背景，但并未提供具体的重大技术突破或事件性新闻。由于缺乏详细内容，本文仅能确定其主题范围和基本定位，无法提供更具体的技术细节或数据。",
+      "background_zh": "哈瓦拉（Hawala）是一种源自8世纪的非正式资金转移系统，通过信任和口头协议在代理网络间转移价值，无需实际移动现金。现代银行间通信则于1977年取得重大进展，当时SWIFT系统上线，首批连接了22个国家的518家银行。2001年“9·11”事件后，国际社会开始加强对哈瓦拉等非正规汇款系统的监管，国际货币基金组织等机构也参与了相关框架的讨论。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+      "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+      "score": 5.0,
+      "content": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and health studies everywhere his (and others') turbines have gone in.",
+      "summary": "Elon Musk's SpaceX foundry aims to accelerate gas turbine production, but faces pollution-related backlash and lawsuits.",
+      "detailed_summary_zh": "马斯克的SpaceX正在建设一座秘密铸造厂，用于自行铸造涡轮叶片，并宣称能以比其他任何人快18个月的速度让燃气发电上线。然而，这一押注面临污染问题：在他及其他人的燃气轮机所在地，已引发诉讼和健康研究。该铸造厂旨在加速燃气轮机生产，但污染争议可能成为其障碍。",
+      "background_zh": "SpaceX正在得克萨斯州巴斯特罗普建设一座铸造厂，用于生产大型燃气轮机的叶片和导流叶片。据The Information报道，全球目前只有三家铸造厂能够制造这些热端部件，订单已排到2029至2030年，供应严重受限。马斯克希望通过自建供应链，加速燃气轮机发电设施上线，以满足AI数据中心的电力需求，但燃气发电本身已引发污染相关的诉讼和健康研究。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+      "score": 5.0,
+      "content": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
+      "summary": "Caterpillar is leveraging its autonomous mining experience to improve AI deployment in industrial settings.",
+      "detailed_summary_zh": "卡特彼勒正将其在偏远矿区推动自动驾驶设备商用数十年所积累的经验，应用到工业场景的人工智能部署上。该公司此前长期在采矿现场部署自动化机器，如今把这些实践经验作为AI落地的依据。文章目前只给出了方向性介绍，未披露具体的AI技术方案、涉及的产品版本或部署时间表。对于关注工业自动化和AI落地的读者来说，这显示了传统重工业公司正尝试把已验证的自动化经验迁移到更广泛的人工智能应用领域。",
+      "background_zh": "卡特彼勒（Caterpillar）在偏远矿场运营自动驾驶矿用设备已有约三十年，积累了将自动化技术部署到严苛工业环境的经验。该公司目前正把这些经验转化为企业级AI部署策略，并承诺在五年内投入1亿美元用于员工培训，以解决将AI整合进现有客户工作流这一核心瓶颈。这些背景信息来自TechCrunch原文及相关报道。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "Michael Saylor hints at first bitcoin purchase in two months",
+      "url": "https://www.coindesk.com/markets/2026/08/30/bitcoin-nears-usd79-000-as-michael-saylor-hints-at-first-bitcoin-purchase-in-two-months",
+      "score": 4.0,
+      "content": "",
+      "summary": "Michael Saylor hints at a possible bitcoin purchase, but the report provides no confirmed details or substantive analysis.",
+      "detailed_summary_zh": "迈克尔·塞勒暗示可能进行两个月来的首次比特币购买，但截至报道时并无确认的交易或具体金额。",
+      "background_zh": "迈克尔·塞勒是Strategy（原MicroStrategy）的执行董事长，该公司以大量买入比特币闻名。在暂停买入约10周、专注于资本管理和股票回购后，他发布了“We're ₿ack”并附上持仓图表，暗示可能恢复买入；公司目前持有超过81.8万枚比特币。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    }
+  ]
+}

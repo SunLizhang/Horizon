@@ -1,0 +1,173 @@
+{
+  "date": "2026-09-01",
+  "items": [
+    {
+      "index": 1,
+      "title": "Google Has Removed MV2 Extensions from the Chrome Web Store, Including UBO",
+      "url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108/",
+      "score": 8.0,
+      "content": "\n--- Top Comments ---\n\n[beloch]: Ad blocking has become a safety issue.  My parents are at an age where they fall for things.  If a malicious ad pops up and offers to install McAfee, some other form of crapware, or outright scamware, they&#x27;ll click that ad and install the thing.  Then I&#x27;ll get called over when the computer starts acting screwy. If Google, MS, etc. had ever gotten together and developed a way to filter malicious ads out of their own ad services, maybe we wouldn&#x27;t be having this conversation.  Th...\n\n[Night_Thastus]: I know Firefox&#x27;s share of browser share has dwindled to almost nothing. I know sooner or later, well within my lifetime, it will be gone. But I will keep using it until they pry it from my hands. And if they do, I&#x27;ll use forks until those break down too. I can&#x27;t stand Google, or what Chrome has become. No single company should have such unilateral control over the internet and its information.\n\n[gardnr]: I remember in 2010 when Chrome made the web so much better for everyone. All the early adopters were singing its praise and encouraging friends and family to use it. Now, I encourage people to use anything but Chrome. Firefox is really great these days.\n\n[Lovesong]: Few years ago when google announced their MV2 plan I moved to Firefox. I don&#x27;t think in all this time I ever missed Chrome for anything in particular outside of maybe 1 or 2 websites that didn&#x27;t have proper support. Switch to Firefox if you haven&#x27;t already really.\n\n[cisc]: The solution is to use Firefox. uBlock Origin always worked best in Firefox anyway:  https:&#x2F;&#x2F;github.com&#x2F;gorhill&#x2F;uBlock&#x2F;wiki&#x2F;uBlock-Origin-works-b...",
+      "summary": "Google has begun removing Manifest V2 extensions from the Chrome Web Store, including uBlock Origin, signaling a major shift in browser extension capabilities.",
+      "detailed_summary_zh": "谷歌已开始从 Chrome 网上应用店移除基于 Manifest V2 的扩展程序，包括知名的广告拦截扩展 uBlock Origin。这标志着浏览器扩展架构向 Manifest V3 的重大转变，将影响数百万用户和依赖旧版 API 的扩展开发者。Manifest V3 限制远程代码和某些过滤方式，使 uBlock Origin 等拦截工具的能力受到削弱。目前 Firefox 仍支持 uBlock Origin，许多用户被建议迁移到 Firefox 或其他浏览器以继续获得完整广告拦截功能。此变化也凸显了单一公司对网络标准和信息控制的担忧。",
+      "background_zh": "谷歌将 Chrome 扩展从 Manifest V2 迁移到 Manifest V3，这是一次重大的架构变更，旨在提升扩展的安全性和性能，但也限制了广告拦截扩展的能力。2024 年 8 月 31 日，Chrome 网上应用店删除了剩余的 Manifest V2 扩展列表，包括原版 uBlock Origin，导致这些扩展不再在 Chrome 上运行，不过 Chrome 建议用户在 2025 年 6 月之前手动移除这些扩展，而当时已有临时解决方案可重新启用它们。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "Cronos halts blockchain after $75 million lending exploit hits lending app Tectonic",
+      "url": "https://www.coindesk.com/tech/2026/08/31/cronos-halts-blockchain-after-usd75-million-lending-exploit-hits-lending-app-tectonic",
+      "score": 8.0,
+      "content": "",
+      "summary": "Cronos halted its blockchain after a $75 million exploit hit the Tectonic lending app, underscoring DeFi security risks.",
+      "detailed_summary_zh": "Cronos 区块链在 Tectonic 借贷应用遭遇约 7500 万美元漏洞攻击后暂停运行。Tectonic 是 Cronos 链上的 DeFi 借贷协议，此次漏洞迫使网络层面采取停机应对措施。该事件凸显了 DeFi 借贷协议面临的重大安全风险。目前尚不清楚资金是否可追回以及网络何时恢复。",
+      "background_zh": "Cronos 是一个基于 Cosmos SDK 的 EVM 兼容区块链，由 Crypto.com 支持，Tectonic 则是其上的去中心化借贷协议，用户可存入资产并借出其他代币。此次攻击中，攻击者操纵了 Tectonic 上流动性很低的 TONIC 代币价格，据链上研究者估算在 20 分钟内将价格推高约 100 倍，然后用这些虚高价值的代币作为抵押品借出约 7500 万美元资金。由于漏洞影响巨大，Cronos 网络于 8 月 30 日暂停了区块生产以控制风险。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "Apple’s Ternus Takes the CEO Reins",
+      "url": "https://www.bloomberg.com/news/videos/2026-08-31/apple-s-ternus-takes-the-ceo-reins-video",
+      "score": 8.0,
+      "content": "Stepping into his new role as Apple's chief executive officer on Sept. 1, John Ternus won’t have much time before the company begins its annual fall product rollouts. This year the lineup will include an unusually ambitious slate of devices he’s been teasing for months internally, including the first foldable iPhone and a smart display that can recognize who’s speaking and tailor content to them. Bloomberg News Managing Editor for Consumers Tech Mark Gurman reports on what's next for Apple. (Source: Bloomberg)",
+      "summary": "Bloomberg reports on John Ternus becoming Apple CEO and previews an ambitious fall product lineup.",
+      "detailed_summary_zh": "约翰·特努斯于9月1日正式接任苹果首席执行官，上任伊始便迎来公司年度秋季产品发布季。今年产品线格外雄心勃勃，包括传闻已久的首款折叠屏iPhone，以及一款能识别说话者并为其定制内容的智能显示器。彭博社消费科技主编马克·古尔曼报道了苹果的下一步动向。这一管理层变动是科技行业重大事件，新CEO需要立即应对密集的新品发布节奏。",
+      "background_zh": "约翰·特努斯（John Ternus）自2021年起担任苹果公司硬件工程高级副总裁，并是苹果高管团队成员。2026年4月，苹果宣布蒂姆·库克（Tim Cook）将出任董事会执行主席，约翰·特努斯则于2026年9月1日正式接任首席执行官。这一人事交接为苹果后续的产品发布和战略方向奠定了新的领导基础。",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 4,
+      "title": "NYSE owner ICE taps tZERO for tokenized securities push, takes stake in firm",
+      "url": "https://www.coindesk.com/business/2026/08/31/nyse-owner-ice-taps-tzero-for-tokenized-securities-push-takes-stake-in-firm",
+      "score": 8.0,
+      "content": "",
+      "summary": "NYSE owner ICE is partnering with tZERO and taking a stake to advance tokenized securities, marking a notable step toward blockchain-based trading infrastructure.",
+      "detailed_summary_zh": "纽约证券交易所母公司洲际交易所（ICE）已与tZERO达成合作并入股该公司，以推进代币化证券（即基于区块链发行和交易的传统证券）。此举标志着主流交易所运营商向区块链交易基础设施迈出一步。",
+      "background_zh": "洲际交易所（ICE）是纽约证券交易所的母公司，tZERO 是一家区块链金融基础设施公司；双方宣布达成一系列协议，围绕公开代币化证券市场的转让代理和经纪-交易商基础设施展开合作。此前，NYSE 曾与 Securitize 签署类似的谅解备忘录。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 5,
+      "title": "Trump says US will hit Iran ‘hard’ as conflict reignites",
+      "url": "https://www.ft.com/content/8b09b3fc-bb61-4d9f-aac6-bcef9883fa16?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Oil prices rise after exchange of fire between warring countries ends weeks of relative quiet",
+      "summary": "Oil prices rise as US-Iran conflict reignites, with Trump threatening to hit Iran 'hard' after an exchange of fire.",
+      "detailed_summary_zh": "美国与伊朗发生交火，结束了数周相对平静，特朗普随后威胁要对伊朗“狠狠打击”，国际油价随之上涨。",
+      "background_zh": "美国与伊朗此前的冲突已持续一段时间，但双方已有一个多月未直接交火。此次伊朗发动袭击、双方再度交火，结束了这段相对平静期，促使特朗普威胁对伊朗实施更多打击。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 6,
+      "title": "US regulator claims Amazon manipulated advertising prices",
+      "url": "https://www.ft.com/content/bafde798-4860-45bb-9226-633a211e8508?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Federal Trade Commission sues ecommerce giant alleging it overcharged about 1.2mn businesses leading to higher prices for consumers",
+      "summary": "FT reports the FTC sued Amazon for allegedly overcharging about 1.2 million businesses on advertising, leading to higher consumer prices.",
+      "detailed_summary_zh": "美国联邦贸易委员会（FTC）起诉电商巨头亚马逊，指控其向约120万家企业多收广告费用，并称这一做法推高了消费者价格。",
+      "background_zh": "此前FTC曾就亚马逊的电商业务和Prime会员注册问题提起诉讼，但这是首次针对其广告业务。此次诉讼由FTC与22个州联合提起，指控亚马逊欺骗广告客户并抬高广告价格。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 7,
+      "title": "KKR to net giant windfall from $17bn sale of USI to Aon",
+      "url": "https://www.ft.com/content/23125dd8-2d09-4c6a-8e55-3245741fba45?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Gain is one of the largest earned by a public private equity firm on a single deal",
+      "summary": "KKR is set to reap one of the largest gains ever for a public PE firm from the $17bn sale of USI to Aon.",
+      "detailed_summary_zh": "KKR预计将从以170亿美元将USI出售给Aon的交易中获得巨额收益，这是上市私募股权公司单笔交易中最大收益之一。",
+      "background_zh": "怡安（Aon）宣布以170亿美元从私募股权公司KKR手中收购竞争对手USI Insurance Services，这是近年来规模最大的保险业收购之一。KKR此前持有USI，这笔交易将为KKR带来公开上市私募股权公司中规模最大的单笔交易收益之一。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 8,
+      "title": "The Pentagon now has its own version of ChatGPT and Grok",
+      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+      "score": 7.0,
+      "content": "Versions of OpenAI's ChatGPT and SpaceXAI's Grok will join Google's Gemini on the Pentagon's central portal for AI tools.",
+      "summary": "The Pentagon is incorporating OpenAI's ChatGPT and SpaceXAI's Grok alongside Google's Gemini into its central AI portal.",
+      "detailed_summary_zh": "据TechCrunch报道，美国五角大楼正将其中央AI工具门户扩展，加入OpenAI的ChatGPT和SpaceXAI的Grok，与已有的Google Gemini并列。这一举措标志着美国军方对商用AI工具的采纳进入新阶段，可能对AI行业和国家安全产生重要影响。报道未提供具体部署时间表或使用范围，但表明美国国防部正寻求利用主流大模型提升内部AI能力。此举也凸显了AI企业在军事应用领域日益增长的角色。",
+      "background_zh": "五角大楼正在将美国国防部内部使用的生成式AI工具整合到一个名为GenAI.mil的中央门户中。此前，谷歌的Gemini已在该门户上提供，而OpenAI的ChatGPT和SpaceXAI的Grok也通过了“影响级别5”（IL5）认证，IL5是为存储和处理非公开敏感非机密数据的环境授予的最高授权。这一举措背景是美国联邦政府在测试和采纳商业AI模型用于日常任务，同时需遵守严格的数据安全与合规要求。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout",
+      "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+      "score": 7.0,
+      "content": "Nvidia invests $3.5 billion into Taiwanese chipmaker MediaTek. The deal shows how Nvidia plans to stay essential to AI infrastructure as Big Tech begins to build its own AI chips.",
+      "summary": "Nvidia invests $3.5 billion in MediaTek to reinforce its role in AI infrastructure amid Big Tech's move toward custom AI chips.",
+      "detailed_summary_zh": "英伟达宣布向台湾芯片制造商联发科投资35亿美元，以在大型科技公司开始自研AI芯片之际维持其在AI基础设施中的关键地位。",
+      "background_zh": "英伟达通过购买可转换债券（可转换为股票的债券）向台湾芯片制造商MediaTek投资35亿美元，这是MediaTek总额39亿美元债券发行的一部分，Alphabet也参与了此次发行。两家公司在AI数据中心、消费PC和汽车平台已有合作，此举显示英伟达在大型科技公司开始自研AI芯片之际，计划巩固其在AI基础设施中的地位。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "Zcash private transactions could go from three-second waits to under 200 milliseconds",
+      "url": "https://www.coindesk.com/tech/2026/08/31/zcash-private-transactions-could-go-from-three-second-waits-to-under-200-milliseconds",
+      "score": 6.0,
+      "content": "",
+      "summary": "Zcash private transactions may see a dramatic speedup from three seconds to under 200 milliseconds.",
+      "detailed_summary_zh": "据CoinDesk 2026年8月31日报道，Zcash隐私交易的处理时间可能从约3秒大幅缩短至200毫秒以下。这一改进涉及区块链隐私性与密码学性能的优化，若得以实现，将显著提升Zcash隐私交易的实时性和可用性。不过，分析指出该性能提升目前尚无具体实现细节支持，且其影响可能局限于特定用例，缺乏改变更广泛技术范式的证据。",
+      "background_zh": "Zcash 隐私交易会隐藏发送方、接收方和转账金额，但为了证明这类隐藏交易仍然符合网络规则，用户钱包需要在付款前完成大量密码学计算，即生成零知识证明。这一过程过去通常需要数秒。Zakura 作为 Zcash 生态开发者发布了开源密码学工具包，可将证明生成时间从约三秒缩短到 200 毫秒以下，从而显著提升隐私交易体验。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 11,
+      "title": "Instagram puts new limits on undisclosed AI profiles",
+      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "score": 6.0,
+      "content": "As frustration over AI influencers has been growing, Instagram is limiting the reach of undisclosed AI profiles.",
+      "summary": "Instagram restricts the reach of AI profiles that fail to disclose their artificial nature, responding to growing concerns about AI influencers.",
+      "detailed_summary_zh": "Instagram正在限制未披露人工智能身份的账号的触达范围，以回应日渐增长的对AI网红的担忧。该政策要求AI资料必须明确披露其人工合成性质，否则将受到流量和曝光上的限制。这是平台针对AI生成内容透明度采取的最新审核措施，旨在减少用户混淆和潜在欺骗。具体限制幅度和生效时间尚未公布，但政策直接针对未标注的AI驱动账号。",
+      "background_zh": "Instagram 是 Meta 旗下的社交平台，近年出现大量以 AI 生成人物形象运营的“AI 网红”账号。由于这些账号可能误导用户，Instagram 于 2026 年 8 月 31 日宣布将原有的 AI 创作者标签更名为“AI-generated profile”（AI 生成的个人资料），并规定未标注该标签、但个人资料中使用 AI 生成人物的账号，其内容在 Reels 和 Explore 中的触达将受到限制。此举是在外界对 AI 网红不满情绪上升的背景下推出的。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 12,
+      "title": "The US is building barriers around drones and robots, but China has scale to get around them",
+      "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
+      "score": 6.0,
+      "content": "The U.S. is shutting out more foreign-made drones and robots. China’s scale means the global competition may simply move elsewhere.",
+      "summary": "The article discusses how US restrictions on foreign drones and robots may be circumvented by China's manufacturing scale, potentially shifting global competition.",
+      "detailed_summary_zh": "美国正在对更多外国制造的无人机和机器人设置准入壁垒，试图将中国产品排除在关键市场之外。然而，中国在制造规模和供应链整合上的优势使得这些限制难以彻底奏效，全球竞争可能只是从美国市场转移到其他地区。文章指出，这种政策博弈的实质是规模经济与行政壁垒的较量，中国企业仍可能借助产能和成本优势在第三方市场维持竞争力。整体来看，壁垒虽然改变了部分贸易流向，但并未根本扭转中国在无人机与机器人领域的供给主导地位。",
+      "background_zh": "美国在2026年7月和8月加强了对无人机和先进机器人市场的限制，限制外国机器人系统进入，并对进口无人机及其零部件征收高额关税。与此同时，Counterpoint报告显示，今年上半年全球人形机器人出货量达2.2万台，其中绝大多数来自中国制造商，显示中国在机器人制造上的规模优势。这些限制与中国的规模优势共同推动全球竞争可能向其他地区转移。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 13,
+      "title": "Strategy returns to bitcoin buys, adding $370 million of BTC last week",
+      "url": "https://www.coindesk.com/markets/2026/08/31/strategy-returns-to-bitcoin-buys-adding-usd370-million-worth-last-week",
+      "score": 6.0,
+      "content": "",
+      "summary": "Strategy added $370 million in bitcoin last week, continuing its corporate treasury strategy.",
+      "detailed_summary_zh": "Strategy（原MicroStrategy）上周买入约3.7亿美元的比特币，这是实际购买金额，延续其将比特币作为公司库藏储备资产的策略。",
+      "background_zh": "Strategy是一家上市公司，前身为MicroStrategy，以持有比特币作为公司储备闻名；本次增持属于其既定库藏策略的一部分。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 14,
+      "title": "I turned my security cameras into an automatic bird identification system",
+      "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
+      "score": 5.0,
+      "content": "\n--- Top Comments ---\n\n[ben1040]: I did exactly this with BirdNet-Go and my Unifi doorbell cam.  Unifi exposes an RTSP feed for each camera so it was easy for the tool to just &quot;listen&quot; to the doorbell and start classifying. I have a spare e-ink display and my next weekend project to follow onto this is to wire it up so it shows some faux &quot;woodcut&quot; images of birds detected, or something like that.\n\n[maciejb]: I tried that with my Aqara camera. The mic there has no windshield, though; wind noise was terrible. Also I couldn’t get Aqara support to enable higher sampling rates in the firmware than 16kHz; BirdNET expects 48kHz audio samples. Ended up installing a better microphone attached to a RPi3A+ and using a RaspberyPi 4 which I already owned for hosting BirdNET-Go\n https:&#x2F;&#x2F;maciejb.me&#x2F;posts&#x2F;birdnet-go-setup&#x2F;  Much better sound quality now!\n\n[comboy]: Btw, Merlin Bird ID app by Cornell University is so good that I got some people interested that weren&#x27;t into that topic at all.\n\n[tacodestroyer]: Nice! I never thought about using my security cameras but ended up building a regular Birdnet-Pi with a microphone. I took it one step further to make it portable so that I can use it when we hike or travel to new places. Added a little e-ink display to the front and it allows me to see Top 3 for the day, last detected, and total number for the day. Case I used to make it portable and fit the display\n https:&#x2F;&#x2F;makerworld.com&#x2F;en&#x2F;models&#x2F;1336154-portable-pi-sdr-cas...\n\n[KyleWasTaken]: Heads up. I noticed the screenshot of your markdown card has an ASCII block that goes below the baseline. `U+2588` (Full block) tends to do that depending on a lot of things. I made a change to the markdown card sometime ago that uses only `U+2581` through `U+ 2587` instead to avoid that issue. It&#x27;s under a collapsed block here:  https:&#x2F;&#x2F;www.kyleniewiada.org&#x2F;blog&#x2F;2025&#x2F;05&#x2F;backyard-bird-trac...",
+      "summary": "A personal project write-up on using BirdNET-Go with security cameras to identify birds automatically, useful for practitioners but without sufficient evidence of deep technical insight.",
+      "detailed_summary_zh": "",
+      "background_zh": "很多人家中已有安防摄像头，作者想利用它们而不是另买设备来做自动鸟类识别。这些摄像头通常提供RTSP视频/音频流，可以交给BirdNET-Go这类工具持续监听环境声音。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    }
+  ]
+}
