@@ -1,0 +1,161 @@
+{
+  "date": "2026-09-09",
+  "items": [
+    {
+      "index": 1,
+      "title": "Latest Oil Market News and Analysis for Sept. 9",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-08/latest-oil-market-news-and-analysis-for-sept-9",
+      "score": 9.0,
+      "content": "Oil extended gains after the US struck multiple Iranian tankers near the vital crude-export hub of Kharg Island, escalating hostilities and stoking fears of deeper disruptions through the Strait of Hormuz.",
+      "summary": "Oil extends gains as US strikes on Iranian tankers near Kharg Island raise fears of deeper supply disruptions through the Strait of Hormuz.",
+      "detailed_summary_zh": "美国袭击了伊朗哈格岛附近的数艘油轮，加剧中东紧张局势，并引发市场对霍尔木兹海峡供应中断的担忧，油价因此延续涨势。",
+      "background_zh": "美国近日在伊朗主要原油出口枢纽哈尔克岛附近多次打击油轮，以加大经济施压；此前伊朗革命卫队曾袭击其他船只作为报复，使霍尔木兹海峡这一全球重要输油要道的供应风险上升。",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 2,
+      "title": "Oil nears $100 as US launches new strikes on Iranian tankers",
+      "url": "https://www.ft.com/content/b460b828-6183-4914-9140-5dfb6d61312c?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "American military hit ‘multiple’ ships linked to Iran’s Revolutionary Guards in response to more attempted missile attacks on a US Navy warship",
+      "summary": "US military strikes on Iranian tankers push oil prices toward $100 per barrel amid heightened Middle East tensions.",
+      "detailed_summary_zh": "美国军方表示，为回应伊朗方面针对美国海军军舰的更多导弹袭击企图，已打击多艘与伊朗伊斯兰革命卫队有关联的船只；事件发生后，油价逼近每桶100美元。",
+      "background_zh": "美国军方打击了多艘与伊朗伊斯兰革命卫队有联系的油轮，以回应伊朗方面对美国海军军舰的更多导弹袭击企图。霍尔木兹海峡承载全球约21%的原油供应，油轮通行受阻加剧供应担忧，推动油价逼近每桶100美元。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "UK pays highest borrowing cost since 1998 at gilt sale",
+      "url": "https://www.ft.com/content/b23151c3-b4c1-4f96-a801-f3507d907cc7?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Thirty-year gilts priced at a yield of 5.82%, underscoring pressure on public finances from global bond sell-off",
+      "summary": "UK pays highest borrowing cost since 1998 at a gilt sale, with 30-year yields at 5.82%, highlighting fiscal pressure from the global bond sell-off.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 4,
+      "title": "Saudi energy facilities hit by wave of Houthi strikes",
+      "url": "https://www.ft.com/content/d9bc67e2-97f4-47ef-8de5-1ae48d841018?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Attacks threaten to open another front in war engulfing Middle East",
+      "summary": "Houthi attacks on Saudi energy infrastructure threaten broader Middle East conflict and potential oil supply disruptions.",
+      "detailed_summary_zh": "据英国《金融时报》报道，胡塞武装对沙特阿拉伯的能源设施发动了一系列袭击。报道称，这些袭击可能在中东原有冲突之外打开一条新战线，但暂未提供设施受损或石油供应受影响的具体细节。",
+      "background_zh": "也门胡塞武装对沙特阿拉伯能源设施的袭击引发了油价上涨，并导致沙特对胡塞武装控制区实施报复性打击。据报道，胡塞武装的袭击造成沙特石油设施暂时关闭，并导致73人受伤。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 5,
+      "title": "Mistral raises €3B as sovereign AI becomes big business",
+      "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+      "score": 8.0,
+      "content": "The French AI lab has raised €3 billion at a €21 billion valuation in a Series D round led by Samsung, Scaleup Europe, and PSG Equity.",
+      "summary": "French AI lab Mistral raised €3B at a €21B valuation in a Series D round led by Samsung, Scaleup Europe, and PSG Equity.",
+      "detailed_summary_zh": "法国AI公司Mistral已完成30亿欧元的D轮融资，估值达210亿欧元，本轮由Samsung、Scaleup Europe和PSG Equity领投。",
+      "background_zh": "Mistral是一家法国AI实验室，本轮融资的目标是推动“主权AI”——即由各国或机构自主掌控模型与数据而非依赖外部云厂商——以及开放权重（open-weight）模型的发展。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 6,
+      "title": "Cronos executes controversial blockchain rollback to recover crypto worth $111 million",
+      "url": "https://www.coindesk.com/business/2026/09/08/cronos-executes-controversial-blockchain-rollback-to-recover-crypto-worth-usd111-million",
+      "score": 8.0,
+      "content": "",
+      "summary": "Cronos executes a controversial blockchain rollback to recover $111 million in crypto, raising significant concerns about immutability and governance.",
+      "detailed_summary_zh": "Cronos网络执行了一次有争议的区块链回滚，以追回价值1.11亿美元的加密货币。此次事件引发了外界对区块链不可篡改性和治理模式的严重担忧。由于具体回滚机制、受影响资产范围及补偿安排尚未披露，技术细节仍不明确。这一决定可能对Cronos生态系统的信任度和治理公信力产生持久影响。",
+      "background_zh": "Cronos 是与 Crypto.com 交易所关联的区块链网络。区块链通常依赖不可篡改的账本和交易最终性，但此次紧急情况下，验证者通过共识回滚了链条，撤销了约 10,961 个区块及其中的交易（约两小时数据），以追回一次安全漏洞中被盗的价值约 1.11 亿美元的数字资产。此事打破了“已确认交易不可撤销”的常规预期，说明在验证者共识允许时，紧急回滚可以覆盖交易最终性。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 7,
+      "title": "Circle agrees to buy cross-border payments firm Tazapay for $400 million",
+      "url": "https://www.coindesk.com/business/2026/09/08/circle-agrees-to-buy-cross-border-payments-firm-tazapay-for-usd400-million",
+      "score": 7.0,
+      "content": "",
+      "summary": "Circle has agreed to acquire cross-border payments firm Tazapay for $400 million, a notable consolidation in digital finance.",
+      "detailed_summary_zh": "Circle 已同意以 4 亿美元收购跨境支付公司 Tazapay。",
+      "background_zh": "Circle是发行美元稳定币USDC的金融科技公司；Tazapay是一家跨法币支付平台，处理超过250亿美元年化交易量、覆盖100多个市场，约60%交易额已涉及稳定币。此次以Circle Class A普通股全股票支付，是Circle自2018年收购加密交易所Poloniex以来最大并购。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
+      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+      "score": 7.0,
+      "content": "Cognition's valuation multiple is higher than Cursor's was before selling to SpaceX.",
+      "summary": "Cognition's $48B valuation marks a major private market event, suggesting strong investor belief in the competitiveness of AI coding markets.",
+      "detailed_summary_zh": "据TechCrunch报道，AI编程公司Cognition的估值已达到480亿美元。报道称，这一估值倍数高于Cursor被SpaceX收购前的估值倍数，显示投资者认为AI编程市场远未形成赢家通吃的格局。",
+      "background_zh": "SpaceX 上月以600亿美元收购了另一家AI编程公司Cursor，并曾试图收购Cognition但未成功。Cognition在5月融资10亿美元时估值为260亿美元，本月早前已在进行至少400亿美元估值的新一轮融资洽谈。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Muse – Meta’s personal AI agent",
+      "url": "https://ai.meta.com/muse/",
+      "score": 7.0,
+      "content": "\n--- Top Comments ---\n\n[dools]: I love how the marketing departments of these things always imagine people are just constantly plagued by the hassle of organising their flights, restaurant bookings and movie tickets\n\n[modeless]: Does anyone else remember &quot;Facebook M&quot;? In 2015 Facebook (not yet renamed to Meta) launched a personal assistant named simply &quot;M&quot; that lived in Messenger and functioned remarkably like ChatGPT does today. At the time it was basically entirely humans on the backend, with the idea that they could replace humans incrementally as they collected data. Really ahead of its time. They shut it down in 2018, which seems shortsighted in hindsight. That data would have been invaluable...\n\n[misrasaurabh1]: I really don&#x27;t want to share all my personal life information with meta like this.\n\n[sroerick]: Facebook is the first to market with a polished openclaw? Good for them. I&#x27;m sure many others will criticize other aspects of Meta, and rightly so. But imagine using a Claw agent with zero tech support available\n\n[declan_roberts]: &quot;With its own browser&quot; I can&#x27;t even begin to comprehend what kind of personal and PII data this thing will be scraping from its users. Caveat emptor!\n\n--- From rss ---\nMeta's new personal AI agent Muse wants access to users' email, calendars, payments, health services, and more — making the company's biggest consumer AI bet yet a major test of whether people still trust Meta with their data.",
+      "summary": "Meta announces Muse, a personal AI agent with its own browser, sparking discussion about privacy and the company's history with AI assistants.",
+      "detailed_summary_zh": "Meta 宣布推出个人 AI 代理 Muse，配有自己的浏览器，并寻求接入用户的电子邮件、日历、支付和健康服务等数据。这被视为 Meta 迄今最大的消费级 AI 押注，也是对用户是否仍信任 Meta 处理个人数据的直接检验。虽然具体技术实现与上线细节尚未公布，但社区讨论已聚焦于隐私风险，并提到 Meta 曾在 2015 年推出 Messenger 内的人工辅助助手 Facebook M，后于 2018 年关闭。该产品可能让 Meta 获得远超以往消费级产品的个人生活数据，实际授权范围与信任成本将成为关键看点。",
+      "background_zh": "Muse 是 Meta 于周二（2026 年 9 月 8 日）发布的个人 AI 助手，依托由首席 AI 官 Alexandr Wang 领导开发的 AI 实验室最新模型，用户可以通过直接向它发消息来委派其在安全云环境中自动完成日程管理、邮件整理、支付和支付相关任务。Meta 宣称 Muse 从设计之初就将隐私与安全“内置”其中，并借此考验用户是否仍愿意让公司接触更广泛的个人数据。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 10,
+      "title": "Hackers are stealing Claude tokens from subscribers",
+      "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "score": 7.0,
+      "content": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
+      "summary": "Hackers are stealing Claude tokens from subscribers, prompting Anthropic to warn users after a reported unauthorized usage incident.",
+      "detailed_summary_zh": "网络安全事件显示，有人正从 Claude 订阅用户手中窃取令牌。据 TechCrunch 报道，上月一名 Claude 用户发现自己未使用账户时，令牌仍在消耗。Anthropic 随后就黑客窃取令牌的行为向用户发出警告。此类令牌通常用于认证账号或调用 API，一旦被盗可能导致未经授权的使用和费用损失。该事件凸显 AI 服务账号凭据正成为攻击者的目标。",
+      "background_zh": "Claude 是 Anthropic 提供的 AI 助手服务，用户通常按 token 用量或订阅额度付费；报道中所称的“窃取 token”是指攻击者盗取用户账号凭据后冒用其额度调用 Claude API 或模型服务。此类攻击常借助能够窃取登录凭据的 infostealer 恶意软件完成，Anthropic 在发现可疑活动后会强制用户退出登录、使现有授权失效、发放部分退款，并提醒用户可能已感染恶意软件。此前也已有关于黑客劫持账户用于“挖取”AI token 的类似事件报道。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 11,
+      "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
+      "url": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
+      "score": 7.0,
+      "content": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
+      "summary": "Google is shortening Chrome's release cycle to every two weeks to expedite security patches and feature delivery in response to an AI-influenced security landscape.",
+      "detailed_summary_zh": "Google 已加快 Chrome 的发布节奏，改为大约每两周推送一次更新，以便更快提供安全补丁和新功能。这一变化是在 AI 改变安全威胁格局的背景下作出的，目的是缩短漏洞修复的响应时间。虽然官方透露的信息简短，但该节奏将影响全球 Chrome 稳定版用户和依赖浏览器兼容性的开发工作。目前尚未看到谷歌提供具体的版本编号、强制更新机制或对开发者的详细指引。",
+      "background_zh": "Google 此前在 2026 年早些时候承诺调整 Chrome 的发布节奏，并于 2026 年 9 月 8 日随 Chrome 153 稳定版在桌面端、Android 和 iOS 发布，将新版本周期从原来的每四周一次缩短为每两周一次。此次调整的背景是 AI 影响下的安全威胁变化，Google 希望通过更频繁的稳定版发布加快安全补丁和功能推送速度。过去 Chrome 长期采用四周稳定版周期，企业用户和安全团队需要适应更短的兼容性与测试窗口。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 12,
+      "title": "Visa combines VisaNet data with onchain lending to power stablecoin card working capital",
+      "url": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges",
+      "score": 6.0,
+      "content": "",
+      "summary": "Visa is opening VisaNet settlement data to blockchain lenders to support stablecoin card working capital amid surging crypto card volume.",
+      "detailed_summary_zh": "Visa宣布将向其支付结算网络VisaNet上的数据开放给区块链贷款机构，以支持稳定币卡相关营运资金融资，原因是加密货币卡片交易量正在激增。该消息目前尚无具体融资金额或业务规模披露。",
+      "background_zh": "Visa表示，将把其支付网络VisaNet的结算数据分享给基于区块链的贷款机构，用于评估稳定币关联卡项目及金融科技公司的信贷风险，帮助它们获得运营资金。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 13,
+      "title": "Strive’s SATA nears $1 billion market cap as Strategy’s STRC continues to underperform",
+      "url": "https://www.coindesk.com/markets/2026/09/08/strive-s-sata-nears-usd1-billion-market-cap-as-strategy-s-strc-continues-to-underperform",
+      "score": 5.0,
+      "content": "",
+      "summary": "Strive's SATA approaches $1 billion in market cap while Strategy's STRC underperforms, highlighting contrasting performance in crypto investment vehicles.",
+      "detailed_summary_zh": "据 CoinDesk 报道，Strive 的加密货币投资产品 SATA 市值正逼近 10 亿美元，而 Strategy 的同类产品 STRC 继续表现不佳。",
+      "background_zh": "STRC 和 SATA 都是比特币支持的优先股：STRC 由 Strategy 发行，SATA 由 Strive（纳斯达克：ASST）发行，后者是一家由 Vivek Ramaswamy 共同创立的比特币财务公司。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    }
+  ]
+}
