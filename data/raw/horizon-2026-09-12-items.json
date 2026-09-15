@@ -1,0 +1,173 @@
+{
+  "date": "2026-09-12",
+  "items": [
+    {
+      "index": 1,
+      "title": "A misalignment of AI in mathematics",
+      "url": "https://mathandai.org/",
+      "score": 8.0,
+      "content": "<a href=\"https:&#x2F;&#x2F;terrytao.wordpress.com&#x2F;2026&#x2F;09&#x2F;11&#x2F;a-severe-misalignment-of-ai-in-mathematics&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;terrytao.wordpress.com&#x2F;2026&#x2F;09&#x2F;11&#x2F;a-severe-misalignm...</a><p><a href=\"https:&#x2F;&#x2F;www.economist.com&#x2F;science-and-technology&#x2F;2026&#x2F;09&#x2F;11&#x2F;top-mathematicians-are-outraged-by-openais-methods\" rel=\"nofollow\">https:&#x2F;&#x2F;www.economist.com&#x2F;science-and-technology&#x2F;2026&#x2F;09&#x2F;11&#x2F;...</a>, <a href=\"https:&#x2F;&#x2F;unwall.app&#x2F;www.economist.com&#x2F;science-and-technology&#x2F;2026&#x2F;09&#x2F;11&#x2F;top-mathematicians-are-outraged-by-openais-methods\" rel=\"nofollow\">https:&#x2F;&#x2F;unwall.app&#x2F;www.economist.com&#x2F;science-and-technology&#x2F;...</a>\n\n\n--- Top Comments ---\n\n[tmhn2]: As a mathematician maybe I am a  little  more optimistic than this declaration. I am thinking of Mochizuki&#x27;s abc conjecture:  He worked in relative isolation, and dumped a huge incomprehensible proof on the community (to oversimplify a bit).  That&#x27;s not totally unlike what might happen if AI generates a huge, incomprehensible proof of let&#x27;s say RH. Well, what is the result?  In the Mochizuki case, it was a lot of skepticism, but it also generated conferences, papers, talks in t...\n\n[jeremysalwen]: To me it doesn&#x27;t seem like what AI has destroyed is the ability for mathematicians to develop understanding and share it with each other, but rather it&#x27;s destroyed the yardstick (solving open problems) that has traditionally been used to measure how much they have contributed to that understanding. I do see how this is a problem in terms of assigning credit, but I think the cat is already out of the bag in terms of these models being capable.  Even without AI labs spending millions ...\n\n[david-gpu]: Tao&#x27;s critique of AI in the field of mathematics reminds me of what French art critic Charles Baudelaire said in the 19th century about photography [0]. Baudelaire argued that photography became a haven for failed painters, the sorts of hacks that could not finish proper training. Photography, as a mechanical rendering of the world, could only record what already existed; it couldn&#x27;t transform reality the way a painting could. He also criticized the public&#x27;s craze for &quot;rus...\n\n[gwd]: This sounds a lot to me like people in the 90&#x27;s complaining that computers were destroying chess.  Thirty years later, chess is more popular than it ever was, and chess players are better than they ever have been.  I wouldn&#x27;t be surprised if there are now more chess books now than there ever have been.  Furthermore, it turns out that a lot of chess books written before computers were just wrong about a lot of things.  It turns out having an oracle for the &quot;right&quot; answer in...\n\n[lll-o-lll]: &gt; We are witnessing a general threat to intellectual work This is the crux of it and goes far beyond Mathematics or Computer Science. To get a bunch of humans to do anything, you have to motivate them. Kleos and Timē; renown and stuff. These AI companies threaten to rip this away from everyone but themselves, and this recent millennium prize is the perfect example. Solving this problem as a human would have led to tremendous Kleos; my name would be written in the annals of mathematics, lec...",
+      "summary": "A Hacker News discussion linking Terry Tao's critique and an Economist report on AI's disruptive and controversial role in mathematics, with extensive community debate about proof, credit, and understanding.",
+      "detailed_summary_zh": "这则 Hacker News 帖子汇总了两条链接：陶哲轩（Terry Tao）的博客文章《A severe misalignment of AI in mathematics》（链接标注日期为 2026 年 9 月 11 日），以及《经济学人》同日刊出的报道，内容为顶尖数学家对 OpenAI 做法的愤怒。帖子本身以链接聚合为主，没有展开技术论证，因此可确认的事实主要限于“陶哲轩提出批评”和“《经济学人》报道数学家不满”这两点及其指向的争议本身。正因如此，讨论的价值落在社区反应上：数学家、开发者与观察者对 AI 生成的证明是否可理解、学术贡献如何署名、以及“解决公开问题”这一衡量标准是否仍然有效展开争论。",
+      "background_zh": "2026年9月，陶哲轩（Terence Tao）等人在 mathandai.org 发布题为《数学中AI的严重错位》的声明，指出近月来AI在解决重大数学问题上的成功已在数学界内外引发关注。据《经济学人》报道，OpenAI 于9月8日宣布其内部模型解决了重大数学问题，其中纳维-斯托克斯问题（Navier-Stokes）的解法与数学家 Tristan Buckmaster 和 Levent Alpöge 所用的方法相近，引发优先权与原创性争议；OpenAI 数学家 Sébastien Bubeck 则否认了有关证明来源的传闻。约24至25位菲尔兹奖得主联署公开信，警告AI在缺乏人类理解的情况下解题会威胁数学与智力工作的根基。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 2,
+      "title": "India starts tokenizing $620 billion corporate bond market with digital rupee settlement",
+      "url": "https://www.coindesk.com/markets/2026/09/11/india-starts-tokenizing-usd620-billion-corporate-bond-market-with-digital-rupee-settlement",
+      "score": 8.0,
+      "content": "",
+      "summary": "India has reportedly begun tokenizing its $620 billion corporate bond market with digital rupee settlement, a significant market-infrastructure and CBDC development.",
+      "detailed_summary_zh": "据CoinDesk报道，印度已开始将规模约6200亿美元的公司债券市场进行代币化，并用数字卢比（印度央行发行的数字货币）完成结算。该报道未提供代币化的具体范围、参与机构或实施时间表。",
+      "background_zh": "这项试点名为 Demat 2.0，由印度证券交易委员会（SEBI）推动，做法是把公司债变成分布式账本上的数字凭证（即“代币化”），并通过印度央行面向金融机构的批发型数字卢比完成付款。据上述报道，二级市场交易和散户参与预计要到后续阶段才开放。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 3,
+      "title": "IEA warns of ‘lost period’ in global oil demand",
+      "url": "https://www.ft.com/content/ab6f6433-1f23-4153-a02b-7984d14734c6?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Strait of Hormuz will not reopen this year, agency says, warning of sharp drop in demand as refined product prices soar",
+      "summary": "The IEA warns that the Strait of Hormuz will not reopen this year, causing a 'lost period' in global oil demand as refined product prices surge.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 4,
+      "title": "Core CPI rose a faster-than-forecast 0.3% in August, setting up possible Fed rate hike",
+      "url": "https://www.coindesk.com/markets/2026/09/11/core-cpi-rose-a-faster-than-forecast-0-3-in-august-setting-up-fed-rate-hike",
+      "score": 7.0,
+      "content": "",
+      "summary": "U.S. core consumer prices rose a faster-than-expected 0.3% in August, raising the possibility of a Federal Reserve rate hike.",
+      "detailed_summary_zh": "美国8月核心消费者价格指数（剔除食品和能源的CPI）环比上涨0.3%，涨幅高于市场预期，这使美联储有可能加息。该数据来自CoinDesk的报道，具体同比数据、预测基线和市场反应细节未在现有内容中给出。",
+      "background_zh": "核心CPI剔除了波动较大的食品和能源价格，常被用来观察潜在通胀走势。据美国劳工统计局公布的数据，8月整体CPI环比上涨0.4%、同比上涨3.4%，均与预期一致，而核心CPI环比上涨0.3%，略高于预期。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 5,
+      "title": "Houthis seize Red Sea islands in lightning offensive",
+      "url": "https://www.ft.com/content/976fa0d6-ed09-4a6f-be02-ff4317b45f40?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Advance against Saudi-backed forces cements Yemeni rebels’ control over vital shipping artery and roils energy markets",
+      "summary": "Houthi forces seized Red Sea islands from Saudi-backed forces, cementing rebel control over a vital shipping artery and unsettling energy markets.",
+      "detailed_summary_zh": "据英国《金融时报》报道，胡塞武装在一轮快速进攻中从沙特支持的部队手中夺取了红海岛屿，巩固了这支也门叛军对这条重要航运通道的控制，并引发能源市场不安。该报道未说明被夺取岛屿的具体名称或数量。",
+      "background_zh": "胡塞武装是伊朗支持的也门反政府武装，自2014年以来一直与沙特支持的也门政府军交战。此次被其夺取的岛屿位于曼德海峡（Bab el-Mandeb）——这条连接红海与亚丁湾的狭窄水道是欧洲与亚洲之间的重要贸易通道，也是沙特石油出口的关键通道，此前由沙特支持的部队控制。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 6,
+      "title": "Saudi Arabia shuts East-West pipeline that bypasses Hormuz after attacks",
+      "url": "https://www.ft.com/content/3bafb3ae-ba94-44f0-984c-ec7c9f54a5e0?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Move is likely to put further momentum behind fast-rising oil prices",
+      "summary": "Saudi Arabia has shut its East-West pipeline after attacks, a move expected to push already rising oil prices higher.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 7,
+      "title": "Scott Bessent fails to break ‘fever’ in US bond market",
+      "url": "https://www.ft.com/content/dd4cc4a0-844e-486a-b99c-b379d457019b?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Treasury secretary’s $6bn buying operation insufficient to stem recent surge in borrowing costs, investors warn",
+      "summary": "Treasury Secretary Scott Bessent’s $6bn bond-buying operation was insufficient to curb a recent surge in US borrowing costs, investors warned.",
+      "detailed_summary_zh": "据英国《金融时报》报道，美国财政部长斯科特·贝森特（Scott Bessent）推动的一笔60亿美元购债操作，未能遏制近期美国借贷成本的上涨，投资者对此发出警告。",
+      "background_zh": "背景：美国财政部长斯科特·贝森特周三宣布将长期国债回购规模提高至最多60亿美元，为此前常规操作的三倍，旨在压低政府借贷成本；但投资者警告称，此举未能遏制近期美债收益率上行，有报道称收益率已升至三年高位。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 8,
+      "title": "OpenAI’s feud with mathematicians is only escalating",
+      "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "score": 6.0,
+      "content": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
+      "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work, escalating an ongoing feud.",
+      "detailed_summary_zh": "二十五位顶尖数学家联名签署了一封公开信，认为人工智能实验室正在威胁他们从事的智力工作。此举使这些数学家与AI实验室之间持续已久的争执进一步升级。目前所给材料并未说明这封公开信的具体诉求、签署者名单的构成细节，也未包含OpenAI或其他AI实验室对此的回应。事件由此把AI在数学研究中的角色以及学术劳动价值的问题再次推到公开争论之中。",
+      "background_zh": "这场争议的核心，是人工智能实验室与学术界数学研究者之间长期积累的紧张关系，涉及研究方向、署名与人才培养等问题。据 LavX News 报道，在数十名数学家联署批评人工智能对数学学科影响的公开信之后，OpenAI 退出了对加州理工学院一项数学黑客松活动的赞助。需要注意的是，公开信联署者在不同报道中被分别描述为「25 位」和「数十名」，具体人数与后续影响仍待更多信息确认。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
+      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "score": 6.0,
+      "content": "An Anthropic researcher resigned this week,&#160;warning in a post on X&#160;that the company is “racing straight to self-improving superintelligence and gambling with our lives”.&#160;The company&#8217;s own alignment&#160;lead&#160;even&#160;co-signed the message&#160;rather than walking it back.&#160;It&#8217;s&#160;the kind of&#160;doomer&#160;warning the AI industry has flirted with before, but the timing, with Anthropic reportedly&#160;preparing for&#160;an IPO, makes it land differently.&#160; On [&#8230;]",
+      "summary": "An Anthropic researcher resigned with a stark AI-safety warning, and the company's alignment lead co-signed it, raising questions as Anthropic reportedly prepares for an IPO.",
+      "detailed_summary_zh": "Anthropic 一名研究员本周辞职，并在 X 上发文警告称，公司正“径直冲向可自我改进的超级智能，拿我们的生命冒险”。公司自身的对齐负责人没有收回这一说法，反而共同签署了这条信息。这并非 AI 行业首次出现此类末日警告，但有报道称 Anthropic 正在筹备 IPO，使这一警告的时机显得格外敏感。TechCrunch 的一档播客就此展开讨论，但现有内容只是简短预告，未提供新的技术细节或具体证据。",
+      "background_zh": "Anthropic 是一家把 AI 安全作为核心叙事的头部大模型公司，内部设有对齐（alignment）团队，而业界围绕“自我改进的超级智能”是否会危及人类的争论已持续多年。此次辞职的研究者 Jacob Coxon 表示，自己过去三年先后在 OpenAI 和 Anthropic 从事预训练研究，并称两家公司都没有负责任地行事；他的指控之所以引发关注，部分原因在于 Anthropic 的对齐负责人共同签署了这一表态，而非出面否认。与此同时，有报道称 Anthropic 正筹备 IPO，这使安全层面的公开质疑与公司上市进程交织在一起。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 10,
+      "title": "Live updates: Bitcoin gives up early gains, with markets moving to price in multiple rate hikes",
+      "url": "https://www.coindesk.com/business/2026/09/11/live-updates-bitcoin-sinks-to-usd77-000-as-cpi-lands-with-hike-odds-near-70",
+      "score": 6.0,
+      "content": "",
+      "summary": "Bitcoin fell to about $77,000 after CPI data as markets priced in multiple rate hikes with odds near 70%.",
+      "detailed_summary_zh": "据CoinDesk报道，在美国CPI数据公布后，比特币回吐早前涨幅，跌至约7.7万美元，同时市场对加息的预期升温，加息概率接近70%。报道未提供CPI的具体数值、此前的比较基准，也未说明加息预期的变化幅度。",
+      "background_zh": "美联储定于9月16日召开议息会议，此前公布的8月生产者价格指数（PPI，反映批发环节价格）同比上涨5.4%、高于预期，已把市场对加息的押注从54%推高至61%。本次CPI（消费者价格指数，反映居民端通胀）发布后，衍生品市场对下周加息25个基点的概率定价升至约85%至90%。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 11,
+      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+      "score": 5.0,
+      "content": "\n--- Top Comments ---\n\n[yunusabd]: My favorite story: 1. Dev publishes app with Google Admob integration to the Play Store. 2. Buys Google Ads to drive traffic to the app. 3. Google Admob bans his account for invalid traffic.  https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;admob&#x2F;comments&#x2F;1vzg3fu&#x2F;i_paid_googl...\n\n[phenomen]: If you have their IP addresses in your dashboard, go to Google Ads &gt; Admin &gt; Account Settings &gt; IP Exclusions. Then, add the entire network&#x2F;data center range there (i.e. 123.4.5.*). In 99% of cases, these bot networks are not run from residential providers. You can confirm IPs at  https:&#x2F;&#x2F;ipgeolocation.io&#x2F;  After running Google Ads for a couple of years, our current exclusion list has over 4000 networks just in the US.\n\n[dave_sid]: Google ads are a con. Meta ads are a con. If someone tells you you’re just not doing it right yet, they’re probably trying to sell you something.\n\n[pseudonymidy]: Your post led me to install your app and play through 10 puzzles. The post doesn’t even show the app! What’s the name for this sort of marketing? I really like the interface you’ve built for completing the puzzles. Very clean - it’s very nice to not be bombarded at every screen.\n\n[rybosworld]: I&#x27;ve suspected that google has been turning a blind eye to ad fraud for a few years now. In the early-mid 2010&#x27;s, ad fraud wasn&#x27;t nearly as common. And it&#x27;s absolutely not the case that google can&#x27;t detect ad fraud - in fact they are VERY good at detecting it when they want to.",
+      "summary": "A developer reports that most ad-driven app installs from a $220 Google Ads spend appeared to be bots, sparking discussion about ad fraud and mitigation tactics.",
+      "detailed_summary_zh": "一名开发者在博客中报告，他在 Google 应用广告上花费 220 美元后，约 60% 的安装量看起来来自机器人。该文在 Hacker News 上获得 240 点讨论，关注点集中在广告欺诈检测、平台信任以及应对手段。帖子属于单一开发者的经验叙述，没有提供完整方法论或新颖技术分析，且广告平台机器人欺诈并非新出现的问题。因此，这一事件更适合作为了解 Google Ads 无效流量风险与社区应对实践的案例，而非可外推的行业统计数据。",
+      "background_zh": "无效流量（invalid traffic）和机器人点击在数字广告中并非新问题，Google 为 Google Ads 提供无效流量相关指引，并披露其使用 AI 识别和应对广告欺诈。Google Ads 帮助社区中有广告主反映，即使将投放地区限定为澳大利亚，仍遭遇大量机器人点击。一些缓解建议强调证据质量——单次异常点击不足以判定机器人流量，应结合更广泛的流量模式来识别机器人网络。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 12,
+      "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "score": 5.0,
+      "content": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
+      "summary": "Garry Tan argues that US open-weight AI labs should distill American frontier models to provide stronger non-Chinese open-weight options.",
+      "detailed_summary_zh": "Y Combinator 的 Garry Tan 主张，美国的开源权重（open-weight）AI 实验室应当对美国前沿模型采用同类训练技术，也就是进行“蒸馏”，从而为美国提供更丰富、更强的非中国开源权重模型选项。这一表态出现在美中 AI 竞争的背景下，蒸馏与开源权重已成为行业讨论的焦点之一。目前它只是一项高层立场陈述，没有配套的具体技术细节、政策行动或新的实验结果，因此其实际影响力和可操作性仍不明确。",
+      "background_zh": "模型蒸馏通常指用能力更强的前沿模型生成的输出作为训练数据，让规模更小、成本更低的模型获得接近的能力，因此被视为开放权重模型快速追赶的一条捷径。当前争议的背景是，OpenAI 和 Anthropic 等前沿模型厂商指控中国开源竞争者在蒸馏其模型，而监管是否介入成为讨论焦点。知名创业孵化器 Y Combinator 的 CEO Garry Tan 主张对此“什么都不做”，即不让监管限制蒸馏，并认为美国的小型开放权重 AI 实验室同样可以对美国前沿模型做蒸馏，从而提供更多非中国的开放权重选择。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 13,
+      "title": "Metaplanet cuts executive reward pool by 41%, extinguishes $220 million in value",
+      "url": "https://www.coindesk.com/business/2026/09/11/metaplanet-cuts-executive-reward-pool-by-41-extinguishes-usd220-million-in-value",
+      "score": 5.0,
+      "content": "",
+      "summary": "Metaplanet reportedly cut its executive reward pool by 41%, extinguishing $220 million in value, according to CoinDesk.",
+      "detailed_summary_zh": "据 CoinDesk 报道，Metaplanet 将其高管奖励池削减了41%，约2.2亿美元的奖励价值随之被抹去。该报道未说明削减的具体生效时间或涉及的奖励形式。",
+      "background_zh": "此前 Metaplanet 的股权激励安排包含一个面向内部人士的奖励池，规模约3.1946亿股；公司承认这会放大股东稀释，因为奖励股份会增加流通股数量。此次取消1.31亿股后，该池降至1.8819亿股；若剔除内部人士已行权的认股权证，剩余部分减少55.5%至1.0537亿股。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 14,
+      "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "score": 4.0,
+      "content": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
+      "summary": "Mecka AI is reportedly nearing a $500M valuation in a Sequoia-led round amid interest in robot training data, though few deal details are provided.",
+      "detailed_summary_zh": "据 TechCrunch 报道，成立两年的机器人训练数据初创公司 Mecka AI 正接近完成一轮由红杉资本领投的融资，估值约 5 亿美元；报道未披露本轮融资金额、上一轮估值或具体交易条款。该轮融资距该公司宣布 A 轮融资仅过去数月。",
+      "background_zh": "Mecka AI 是一家总部位于纽约的初创公司，通过采集人类动作数据，为仿人机器人等机器人提供训练数据。该公司于2026年6月宣布完成6000万美元的A轮融资，而据两名知情人士透露，此次由红杉资本领投的新一轮融资距离上一轮仅数月。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    }
+  ]
+}

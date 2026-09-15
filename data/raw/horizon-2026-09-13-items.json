@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-13",
+  "items": [
+    {
+      "index": 1,
+      "title": "India’s central bank tells Tata Sons to take conglomerate public",
+      "url": "https://www.ft.com/content/6a173e7c-cfe8-4ab8-8c8f-b90871cc907e?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "RBI rejects group’s appeal against forced listing, setting the stage for what could become India’s biggest IPO",
+      "summary": "India's central bank rejected Tata Sons' appeal against a forced listing, setting up a potential record IPO for the conglomerate.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 2,
+      "title": "Saudi Arabia shuts East-West pipeline that bypasses Hormuz after attacks",
+      "url": "https://www.ft.com/content/3bafb3ae-ba94-44f0-984c-ec7c9f54a5e0?syn-25a6b1a6=1",
+      "score": 8.0,
+      "content": "Move is likely to put further momentum behind fast-rising oil prices",
+      "summary": "Saudi Arabia has reportedly shut the East-West pipeline bypassing Hormuz after attacks, a major energy supply development likely to push oil prices higher.",
+      "detailed_summary_zh": "",
+      "background_zh": "",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 3,
+      "title": "Oil Supply Risks Rise After Saudi Pipeline Attack",
+      "url": "https://www.bloomberg.com/news/videos/2026-09-12/oil-supply-risks-rise-after-saudi-pipeline-attack-video",
+      "score": 8.0,
+      "content": "Saudi Arabia shut its East-West Pipeline as a precaution after multiple attacks, threatening a crucial route for moving crude to the Red Sea while bypassing disruptions in the Strait of Hormuz. Bloomberg Economics' Ziad Daoud says prolonged disruption could tighten global energy supplies further, adding pressure to oil and US diesel prices. (Source: Bloomberg)",
+      "summary": "Saudi Arabia's precautionary shutdown of the East-West Pipeline after attacks threatens a key Red Sea crude route and could tighten global energy supplies if prolonged.",
+      "detailed_summary_zh": "沙特阿拉伯在遭受多次袭击后出于预防考虑关闭了东西输油管道，这条绕开霍尔木兹海峡、把原油输往红海的通道因此受阻。彭博经济研究的齐亚德·达乌德表示，若中断持续，可能进一步收紧全球能源供应，并给油价和美国柴油价格带来压力。",
+      "background_zh": "这条东西管道（又称Petroline）全长约1201公里，把沙特东部油田的原油输送到红海沿岸的延布港，在霍尔木兹海峡通行实际受阻后已成为沙特主要的原油出口通道。据Argus报道，该管道此前已恢复满负荷运转，其满负荷输油能力约为每日700万桶。",
+      "source_type": "rss",
+      "feed_name": "Bloomberg Finance"
+    },
+    {
+      "index": 4,
+      "title": "Larry Ellison to sell up to $7.5bn worth of Oracle stock",
+      "url": "https://www.ft.com/content/25b1abb0-790f-4315-9b0c-530d959a086f?syn-25a6b1a6=1",
+      "score": 7.0,
+      "content": "Founder to offload as many as 50mn shares as company posts higher revenue from data centres but faces investor fears it is overcommitted to AI",
+      "summary": "Larry Ellison plans to sell up to $7.5bn of Oracle stock as the company reports higher data-centre revenue but faces investor fears over its AI commitments.",
+      "detailed_summary_zh": "据英国《金融时报》报道，甲骨文创始人拉里·埃里森计划出售最多5000万股公司股票，按报道所述价值最高达75亿美元。此前甲骨文公布数据中心业务收入上升，但部分投资者担忧公司在人工智能方面投入过度。",
+      "background_zh": "甲骨文联合创始人兼执行主席拉里·埃里森此次减持之际，公司正大举转向AI云基础设施，包括与OpenAI达成据报价值3000亿美元的合作协议，这引发了投资者对其AI投入过度的担忧。",
+      "source_type": "rss",
+      "feed_name": "FT Markets"
+    },
+    {
+      "index": 5,
+      "title": "Nigel Farage’s Reform UK lands $97 million donations from two crypto billionaires in 24 hours",
+      "url": "https://www.coindesk.com/business/2026/09/12/nigel-farage-s-reform-uk-lands-usd97-million-donations-from-two-crypto-billionaires-in-24-hours",
+      "score": 6.0,
+      "content": "",
+      "summary": "Nigel Farage’s Reform UK reportedly received $97 million in donations from two crypto billionaires in 24 hours, highlighting crypto wealth’s growing role in UK politics.",
+      "detailed_summary_zh": "据 CoinDesk 报道，奈杰尔·法拉奇领导的英国改革党（Reform UK）在 24 小时内收到两位加密货币亿万富翁共计 9700 万美元的捐款。报道未说明捐款人身份、捐款用途，也未提供该党方面的回应，因此这一数字目前属于媒体报道而非经官方确认的结果。",
+      "background_zh": "Reform UK 是由脱欧运动人士奈杰尔·法拉奇领导的反移民政党。报道称，加密富豪本·德洛和克里斯托弗·哈伯恩各捐 3600 万英镑，合计 7200 万英镑（9700 万美元），CoinDesk 称这一合计金额相当于英国历史上最大的个人政治捐款。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 6,
+      "title": "Make your first edit to OpenStreetMap",
+      "url": "https://high5apps.github.io/josm-plugin-website-wizard/",
+      "score": 6.0,
+      "content": "\n--- Top Comments ---\n\n[_russross]: I started contributing to OSM recently after a bike trail was built near me. The arial imagery typically takes years to refresh around here so I walked it a few times to capture GPX tracks and then drew the new path. It was exciting to see my contribution percolate out to various apps that depend on OSM, and meanwhile Google and Apple have both ignored my edit suggestions and deny the path exists. So I have a fairly fresh newcomer&#x27;s perspective and here&#x27;s what I suggest to get start...\n\n[sp8962]: Oh dear. Using JOSM for your 1st edit is definitely not recommended. Doing the same with iD (the editor embedded in the OSM website) is faster and there&#x27;s even a tutorial that will explain a bit about how things work.\n\n[celsoazevedo]: This seems to be a very powerful way to contribute to OpenStreetMap, but I&#x27;m not sure if it&#x27;s the right option for a new user. I have over 2k contributions and most are from the Every Door app (  https:&#x2F;&#x2F;every-door.app&#x2F;  ) on my phone. If adding new data is too &quot;scary&quot;, then maybe use StreetComplete (  https:&#x2F;&#x2F;streetcomplete.app&#x2F;  ) which essentially asks questions about missing or existing old data. I&#x27;ve added buildings, fixed layouts, e...\n\n[pferde]: After you create an OSM account, there is also  https:&#x2F;&#x2F;maproulette.org , which has tons of little tasks to fix, grouped into challenges, and many of them can be done using just the aerial photos, from the comfort of your seat. Then there is also mapping for humanitarian purposes,  https:&#x2F;&#x2F;tasks.hotosm.org&#x2F; , which has mapping projects prepared by disaster response teams, and you can help by updating maps of areas recently affected by disasters. E.g. recently there wa...\n\n[nobody42]: https:&#x2F;&#x2F;streetcomplete.app  - basic task-based, on-the-ground, app for Android  https:&#x2F;&#x2F;every-door.app  - intermediate on-the-ground app for smartphones  https:&#x2F;&#x2F;rapideditor.org  - AI-assisted mapping in browser  https:&#x2F;&#x2F;www.hotosm.org  - task-based mapping in browser  https:&#x2F;&#x2F;josm.openstreetmap.de  - advanced editor for desktop (this post)  https:&#x2F;&#x2F;www.comaps.app  - actually use the map with ability to make minor changes",
+      "summary": "A guide and wizard for making a first OpenStreetMap edit, with community debate about the best beginner editor.",
+      "detailed_summary_zh": "Hacker News 上出现了由用户 juliantigler 分享的一个面向新手的 OpenStreetMap 编辑向导项目，页面位于 high5apps.github.io/josm-plugin-website-wizard/，从项目命名看与 JOSM 编辑器相关。该条目未提供页面正文内容，因此无法确认向导覆盖的具体步骤、支持的平台或版本要求。围绕这一话题，社区讨论的核心并非该工具本身，而是“新手第一次编辑 OSM 应该用哪个编辑器”这一长期争议。多位有实际贡献经验的用户指出，JOSM 对初次编辑者并不友好，更推荐 OSM 官网内置的 iD 编辑器，以及 StreetComplete、Every Door、MapRoulette 等门槛更低的工具。",
+      "background_zh": "OpenStreetMap 是一个由社区协作维护的开放地图项目，贡献者可使用多种编辑器添加和修正地理数据。JOSM 是其中的 Java 桌面编辑器，可配置性强、适合深入的详细编辑，但上手门槛相对较高，learnOSM 分别为它和 OpenStreetMap 网站内置的 iD 编辑器提供了入门教程。面向新手的还有 StreetComplete 这类 Android 应用，它通过询问附近缺失或过期的信息，让不具备标签体系知识的初学者也能直接参与贡献。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    },
+    {
+      "index": 7,
+      "title": "Bitcoin Suisse plans to cut up to half its Swiss jobs as it shifts work abroad",
+      "url": "https://www.coindesk.com/business/2026/09/12/bitcoin-suisse-plans-to-cut-up-to-half-its-swiss-jobs-as-it-shifts-work-abroad",
+      "score": 5.0,
+      "content": "",
+      "summary": "Bitcoin Suisse reportedly plans to cut up to half of its Swiss workforce as it moves work overseas, a notable but narrowly scoped crypto-sector restructuring.",
+      "detailed_summary_zh": "据报道，瑞士加密金融服务公司 Bitcoin Suisse 计划裁减最多一半的瑞士本地员工，并将部分工作转移至海外。该消息来自媒体报道，目前尚无具体的裁员人数、时间表或财务影响数据。",
+      "background_zh": "比特币瑞士（Bitcoin Suisse）是一家提供加密资产大额交易经纪、托管和代币发行等服务的瑞士公司；据 crypto.news 报道，此次调整涉及最多 60 个瑞士岗位，并计划关闭哥本哈根 IT 站点、把技术工作集中到海外中心。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 8,
+      "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+      "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+      "score": 5.0,
+      "content": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
+      "summary": "OpenAI CEO Sam Altman indicated the company will not go public in 2026 despite a confidential IPO filing.",
+      "detailed_summary_zh": "OpenAI 首席执行官萨姆·奥尔特曼表示，公司虽已秘密提交首次公开募股（IPO）申请，但在 2026 年上市“并不明智”，今年不会上市。",
+      "background_zh": "此前OpenAI已以保密方式提交了IPO（首次公开募股）申请，而该公司首席执行官萨姆·奥尔特曼在周六公开的一档采访中表示，现在并不是上市的好时机，并称“不会是2026年”。",
+      "source_type": "rss",
+      "feed_name": "TechCrunch AI"
+    },
+    {
+      "index": 9,
+      "title": "Anthropic CEO calls for AI race to slow down citing safety. Musk and OpenAI's Altman agrees",
+      "url": "https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees",
+      "score": 5.0,
+      "content": "\n\n--- From rss ---\nAnthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?",
+      "summary": "Anthropic's CEO reportedly calls for slowing the AI race for safety, with Musk and OpenAI's Altman agreeing, according to a headline-only item.",
+      "detailed_summary_zh": "据 CoinDesk 于 2026 年 9 月 12 日发布的报道，Anthropic 首席执行官 Dario Amodei 以安全为由，呼吁放慢人工智能竞赛的节奏。该报道称，马斯克与 OpenAI 首席执行官 Sam Altman 对此表示认同，并提到“pace the frontier”（把握前沿节奏）这一说法。不过，这条来自一家加密货币新闻媒体科技板块的消息仅有标题式内容，没有给出各方提出的具体政策、时间表、技术手段或限制条件，也未说明该表态是否伴随任何正式承诺或协议。因此，目前无法判断这一立场会如何实际影响前沿模型的研发节奏，或对 AI 安全与治理讨论产生何种后果。",
+      "background_zh": "该话题的核心人物来自几家主要的AI机构：Anthropic 首席执行官 Dario Amodei、OpenAI 首席执行官 Sam Altman，以及 Elon Musk。据媒体报道，Amodei 于周六公开呼吁放缓AI开发，Altman 与 Musk 随后对此表示支持，相关表态被置于业界对AI安全担忧上升的背景之下。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 10,
+      "title": "Bitcoin activity, passports exposed after Revolut falls for fake government request",
+      "url": "https://www.coindesk.com/tech/2026/09/12/bitcoin-activity-passports-exposed-after-revolut-falls-for-fake-government-request",
+      "score": 5.0,
+      "content": "",
+      "summary": "Revolut reportedly exposed customer passports and Bitcoin activity after being tricked by a fake government request, a security incident of moderate interest with limited technical detail provided.",
+      "detailed_summary_zh": "据报道，Revolut 在一起安全事件中轻信了一份冒充政府机构的伪造请求，导致客户护照资料与比特币相关活动信息遭到泄露。该事件涉及数据泄露、社会工程攻击、隐私与金融科技等议题，CoinDesk 记者 Shaurya Malwa 于 2026 年 9 月 12 日进行了报道。目前公开信息仅为标题层面的描述，未披露受影响客户的数量、泄露数据的具体范围、事件发生的时间线，也未说明 Revolut 在核实此类请求时采取了哪些流程。",
+      "background_zh": "Revolut 是一家提供银行与加密货币服务的金融科技公司，为满足反洗钱和身份核验等合规要求，会保存客户的护照、住址证明以及比特币等交易历史。此次事件中，攻击者伪造政府部门的邮件或请求，在通过 Revolut 内部审核后获取了这些本应受保护的数据；报道强调这更像是一次因社会工程而导致的授权披露，而非系统被直接入侵。随着互联网中 AI 生成内容增多，核实此类政府请求真伪的难度可能进一步上升。",
+      "source_type": "rss",
+      "feed_name": "CoinDesk"
+    },
+    {
+      "index": 11,
+      "title": "Nvidia is the central bank of AI",
+      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+      "score": 3.0,
+      "content": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;kt50V\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;kt50V</a>\n\n\n--- Top Comments ---\n\n[JumpCrisscross]: &gt;  worth around $5.4trn  Note that the Fed has a $6.7tn balance sheet [1]. (This is a silly comparison. But still fun.) The real comparison: Nvidia&#x27;s $500+ billion of investments and commitments [2] is substantially more than any easing the Fed has done in the same time [3]. Monetarily, Nvidia is creating a  lot  of money in our economy. The good news: I have seen no evidence Nvidia has borrowed against its stock or otherwise linked its equity value to these commitments. Its stock cou...\n\n[manlymuppet]: I&#x27;ve always found it interesting when corporations start acting like public institutions. When traditionally philosophical, social contract ideas apply to things like corporate governance. Or like here, where private structures get powerful and important enough to resemble government structures. The ideas we deal with when we discuss society and organization aren&#x27;t exclusive to government, they relate to human nature in general. I wonder if in the future we will have more discussion...\n\n[thrownawaysz]: I wonder when they will give up on the gaming market because that could take down several publishers and developers. I really don&#x27;t think it&#x27;s an if question but a when because it almost feels like an afterthought at this point (they removed the standalone gaming revenue report from the financial reports this summer). Also I don&#x27;t think AMD and Intel is capable &quot;to step in&quot; to replace them.\n\n[anu7df]: Cracks are starting to appear. Open Ai and Anthropic are publicly asking for slowdown in AI research. Translation: We see this technology not being any more useful than what it is now, no AGI is coming, and the first one to accept this and slow down the dollar burn rate will incur the wrath of the market. So let&#x27;s say this big boogey man technology will end all life on earth and we all slow down together. Bonus points if we can lobby for this to be included in the national security bucke...\n\n[tolugenius]: Archive:  http:&#x2F;&#x2F;archive.today&#x2F;kt50V",
+      "summary": "A Hacker News discussion linking to an Economist piece that analogizes Nvidia to a central bank, with comments offering unverified figures and speculation rather than substantive financial reporting.",
+      "detailed_summary_zh": "黑客新闻（Hacker News）上的一则讨论帖链接了《经济学人》一篇文章，该文把英伟达类比为「AI 的中央银行」。帖中评论者给出了未经证实的数字，例如英伟达市值约 5.4 万亿美元、投资与承诺逾 5000 亿美元，并将其与美联储 6.7 万亿美元的资产负债表相比较，这些说法属于个人推测，并非有来源的财务报道。",
+      "background_zh": "2026年8月10日，英伟达与阿波罗、贝莱德、黑石、布鲁克菲尔德、高盛和KKR签署谅解备忘录，计划引导超过5000亿美元第三方资本投向基于英伟达硬件的AI数据中心，而大部分债务不计入英伟达自身资产负债表——这正是评论者把英伟达类比为央行、认为它在为AI经济“创造货币”的由来。",
+      "source_type": "hackernews",
+      "feed_name": ""
+    }
+  ]
+}

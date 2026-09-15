@@ -13,7 +13,7 @@ import os
 import sys
 
 CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "config.json")
-TARGET = "deepseek-v4-flash"
+TARGET = "deepseek-flash"
 
 
 def main() -> int:
