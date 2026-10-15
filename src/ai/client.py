@@ -206,10 +206,16 @@ class OpenAIClient(AIClient):
         fallback = "no_key" if config.provider == AIProvider.OLLAMA else None
         api_key = _resolve_api_key(config, fallback=fallback)
 
-        kwargs = {"api_key": api_key}
+        kwargs: dict = {"api_key": api_key}
         base_url = self._resolve_base_url(config)
         if base_url:
             kwargs["base_url"] = base_url
+
+        # DeepSeek 走 CloudFront,边缘节点可能间歇性挂起(连接建立但服务器不回数据),
+        # SDK 默认 600s 超时会卡死整个聚合任务。缩短超时+自动重试绕过坏节点。
+        if config.provider == AIProvider.DEEPSEEK:
+            kwargs.setdefault("timeout", 30.0)
+            kwargs.setdefault("max_retries", 2)
 
         self.client = AsyncOpenAI(**kwargs)
         self.model = config.model
