@@ -61,4 +61,5 @@ logs/*.log
 # todo
 todo.txt
 .ruff_cache
-.pytest_cachedata/raw/
+.pytest_cache
+data/raw/
